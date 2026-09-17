@@ -13,6 +13,11 @@ const path = Astro.url.pathname.replace(/\/$/, '');
 const isCurrent = (p: string) => (path === href(p).replace(/\/$/, '') ? 'page' : undefined);
 const buildToday = todayIso();
 
+// The header styles the first word plain and the rest in the accent colour.
+// A single-word name simply renders entirely in the accent colour.
+const [brandLead, ...brandTail] = siteConfig.name.split(' ');
+const brandRest = brandTail.join(' ');
+
 const nav = [
   { p: '', label: 'Today', icon: 'today' },
   { p: 'calendar', label: 'Calendar', icon: 'calendar' },
@@ -33,7 +38,7 @@ const nav = [
     <link rel="icon" href={href('icon.svg')} type="image/svg+xml" />
     <link rel="apple-touch-icon" href={href('icon-180.png')} />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-title" content="D44 Hub" />
+    <meta name="apple-mobile-web-app-title" content={siteConfig.shortName} />
     <meta name="robots" content="index,follow" />
     <script is:inline>
       /* Preference storage. Defined first so component scripts can rely on it.
@@ -58,7 +63,9 @@ const nav = [
   </head>
   <body data-build-date={buildToday} data-base={base}>
     <header class="site-head">
-      <a class="brand" href={href('')}>D44 <span>Parent Hub</span></a>
+      <a class="brand" href={href('')}>
+        {brandRest ? <>{brandLead} <span>{brandRest}</span></> : <span>{brandLead}</span>}
+      </a>
       {showDate && <span class="today-label" data-today-label>{longDate(buildToday)}</span>}
     </header>
 
@@ -87,11 +94,13 @@ const nav = [
 
     <script is:inline>
       /* ------------------------------------------------------------------
-         The only client-side JavaScript on the site. It does three things:
+         The only client-side JavaScript on the site:
            1. reads school preferences from localStorage (never a server),
            2. hides events that are not relevant to those schools,
            3. re-sorts Today / This week / Coming up against the *device*
-              clock, so a cached build can never claim the wrong day.
+              clock, so a cached build can never claim the wrong day,
+           4. collapses an event published by both the district and a school,
+           5. caps the visible "Coming up" list and builds .ics files on click.
          Everything renders correctly without it, just less personally.
          ------------------------------------------------------------------ */
       (function () {
@@ -232,7 +241,7 @@ const nav = [
           var locEl = card.querySelector('.event-loc');
           var srcEl = card.querySelector('.source-line a');
           var title = titleEl ? titleEl.textContent.trim() : 'Event';
-          var lines = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//D44 Parent Hub//EN', 'CALSCALE:GREGORIAN', 'BEGIN:VEVENT'];
+          var lines = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//' + document.title.split(' · ').pop() + '//EN', 'CALSCALE:GREGORIAN', 'BEGIN:VEVENT'];
           lines.push('UID:' + card.getAttribute('data-date') + '-' + Math.abs(hash(title)) + '@d44-parent-hub');
           lines.push('DTSTAMP:' + stampUtc(new Date()));
 

@@ -86,7 +86,7 @@ for (const size of [180, 192, 512]) {
 
 writeFileSync(
   path.join(OUT, 'icon.svg'),
-  `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="D44 Parent Hub">
+  `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Calendar">
   <rect width="64" height="64" rx="14" fill="#2f6d5f"/>
   <g fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="round">
     <rect x="15" y="18" width="34" height="30" rx="4"/>

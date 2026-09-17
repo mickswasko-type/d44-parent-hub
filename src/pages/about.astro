@@ -6,7 +6,7 @@ import { siteConfig } from '../../site.config';
 
 const needsReview = schools.filter((s) => s.needsReview.length > 0);
 ---
-<Base title="About" description="Who builds D44 Parent Hub, where its information comes from, and what it does not collect.">
+<Base title="About" description={`Who builds ${siteConfig.name}, where its information comes from, and what it does not collect.`}>
   <h1>About this site</h1>
 
   <section>
@@ -76,7 +76,7 @@ const needsReview = schools.filter((s) => s.needsReview.length > 0);
     <section>
       <h2>Support</h2>
       <div class="card">
-        <h3>Useful? Help keep D44 Parent Hub running.</h3>
+        <h3>Useful? Help keep {siteConfig.name} running.</h3>
         <p class="lede">Optional. No parent information is ever behind a paywall.</p>
         <p style="margin-top:12px"><a class="btn" href={siteConfig.supportUrl} rel="noopener">Support this project</a></p>
       </div>
