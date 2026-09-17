@@ -1,0 +1,53 @@
+---
+import { selectableSchools } from '../lib/data';
+interface Props { heading?: string; compact?: boolean; }
+const { heading = 'Which schools matter to you?', compact = false } = Astro.props;
+---
+<div class="card">
+  <h3>{heading}</h3>
+  <p class="lede">Stored only in this browser. No account, no names, nothing sent anywhere.</p>
+  <div class="chips" style="margin-top:14px" data-school-chips>
+    {selectableSchools.map((s) => (
+      <button type="button" class="chip" aria-pressed="false" data-school-id={s.id} data-school-label={s.id}>
+        {s.shortName}
+      </button>
+    ))}
+  </div>
+  {!compact && (
+    <p class="lede" style="margin-top:14px">
+      Pick none to see everything district-wide. You can change this any time.
+    </p>
+  )}
+</div>
+
+<script is:inline>
+  /* One delegated handler for every picker on the page. A page may render the
+     picker more than once (onboarding + "change my schools"), so binding per
+     instance would double-toggle each click and silently cancel itself out. */
+  (function () {
+    if (window.__d44PickerBound) return;
+    window.__d44PickerBound = true;
+
+    function sync() {
+      var selected = window.d44.schools();
+      document.querySelectorAll('[data-school-chips] .chip').forEach(function (chip) {
+        var on = selected.indexOf(chip.getAttribute('data-school-id')) !== -1;
+        chip.setAttribute('aria-pressed', on ? 'true' : 'false');
+      });
+    }
+    window.d44.syncPickers = sync;
+
+    document.addEventListener('click', function (ev) {
+      var chip = ev.target && ev.target.closest && ev.target.closest('[data-school-chips] .chip');
+      if (!chip) return;
+      var id = chip.getAttribute('data-school-id');
+      var current = window.d44.schools();
+      var i = current.indexOf(id);
+      if (i === -1) current.push(id); else current.splice(i, 1);
+      window.d44.setSchools(current);
+      sync();
+    });
+
+    sync();
+  })();
+</script>

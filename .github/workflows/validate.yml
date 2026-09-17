@@ -1,0 +1,26 @@
+name: Validate data
+
+on:
+  pull_request:
+  push:
+    branches-ignore: [main]
+  schedule:
+    # Weekly link check, so a dead official link is caught before a parent taps it.
+    - cron: '30 13 * * 1'
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run validate
+      - name: Check official links
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        run: npm run validate -- --links
+      - run: npm run build

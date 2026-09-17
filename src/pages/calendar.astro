@@ -1,0 +1,121 @@
+---
+import Base from '../layouts/Base.astro';
+import EventCard from '../components/EventCard.astro';
+import { allEvents, upcomingFrom, selectableSchools } from '../lib/data';
+import { todayIso, longDate, dateOf, addDays } from '../lib/dates';
+
+const today = todayIso();
+const events = upcomingFrom(today, allEvents).filter((e) => dateOf(e.startDate) <= addDays(today, 180));
+
+const grouped = events.reduce<Record<string, typeof events>>((acc, e) => {
+  const key = dateOf(e.startDate);
+  (acc[key] ??= []).push(e);
+  return acc;
+}, {});
+
+const CATEGORY_FILTERS = [
+  { id: 'no-school', label: 'No school' },
+  { id: 'early-dismissal', label: 'Early dismissal' },
+  { id: 'deadline', label: 'Deadlines' },
+  { id: 'pta', label: 'PTA' },
+  { id: 'performance', label: 'Performances' },
+  { id: 'sports', label: 'Sports' },
+];
+---
+<Base title="Calendar" description="Every upcoming District 44 event in one chronological list, filterable by school and type.">
+  <h1>Calendar</h1>
+  <p class="lede">The next six months, district-wide and by school. Chronological, not a grid.</p>
+
+  <section>
+    <h2>Filter</h2>
+    <div class="chips" data-filter-schools>
+      <button type="button" class="chip" aria-pressed="true" data-filter-school="all">All my schools</button>
+      {selectableSchools.map((s) => (
+        <button type="button" class="chip" data-filter-school={s.id} aria-pressed="false">{s.shortName}</button>
+      ))}
+    </div>
+    <div class="chips" style="margin-top:8px" data-filter-categories>
+      <button type="button" class="chip" aria-pressed="true" data-filter-category="all">All types</button>
+      {CATEGORY_FILTERS.map((c) => (
+        <button type="button" class="chip" data-filter-category={c.id} aria-pressed="false">{c.label}</button>
+      ))}
+    </div>
+  </section>
+
+  <section data-calendar>
+    {Object.entries(grouped).map(([date, dayEvents]) => (
+      <div data-day={date} style="margin-bottom:24px">
+        <h2 style="margin-bottom:8px">{longDate(date)}</h2>
+        <div class="stack">
+          {dayEvents.map((e) => (
+            <div data-category={e.category} data-schools={e.schoolIds.join(',')}>
+              <EventCard event={e} today={today} />
+            </div>
+          ))}
+        </div>
+      </div>
+    ))}
+    <p class="empty" data-calendar-empty hidden>No events match these filters.</p>
+  </section>
+</Base>
+
+<script is:inline>
+  (function () {
+    var root = document.querySelector('[data-calendar]');
+    if (!root) return;
+    var schoolFilter = 'all';
+    var categoryFilter = 'all';
+
+    function press(group, attr, value) {
+      document.querySelectorAll('[' + group + '] .chip').forEach(function (c) {
+        c.setAttribute('aria-pressed', c.getAttribute(attr) === value ? 'true' : 'false');
+      });
+    }
+
+    function apply() {
+      var mine = window.d44.schools();
+      var anyVisible = false;
+
+      root.querySelectorAll('[data-category]').forEach(function (el) {
+        var ids = (el.getAttribute('data-schools') || '').split(',');
+        var okSchool;
+        if (schoolFilter === 'all') {
+          okSchool = mine.length === 0 || ids.some(function (id) {
+            return id === 'district' || mine.indexOf(id) !== -1;
+          });
+        } else {
+          okSchool = ids.indexOf(schoolFilter) !== -1;
+        }
+        var okCategory = categoryFilter === 'all' || el.getAttribute('data-category') === categoryFilter;
+        el.hidden = !(okSchool && okCategory);
+        if (!el.hidden) anyVisible = true;
+      });
+
+      root.querySelectorAll('[data-day]').forEach(function (day) {
+        var visible = Array.prototype.slice.call(day.querySelectorAll('[data-category]'))
+          .some(function (c) { return !c.hidden; });
+        day.hidden = !visible;
+      });
+
+      var empty = document.querySelector('[data-calendar-empty]');
+      if (empty) empty.hidden = anyVisible;
+    }
+
+    document.querySelectorAll('[data-filter-school]').forEach(function (chip) {
+      chip.addEventListener('click', function () {
+        schoolFilter = chip.getAttribute('data-filter-school');
+        press('data-filter-schools', 'data-filter-school', schoolFilter);
+        apply();
+      });
+    });
+    document.querySelectorAll('[data-filter-category]').forEach(function (chip) {
+      chip.addEventListener('click', function () {
+        categoryFilter = chip.getAttribute('data-filter-category');
+        press('data-filter-categories', 'data-filter-category', categoryFilter);
+        apply();
+      });
+    });
+
+    apply();
+  })();
+</script>

@@ -1,0 +1,16 @@
+{
+  "name": "D44 Parent Hub",
+  "short_name": "D44 Hub",
+  "description": "Independent parent guide to Lombard School District 44. Not affiliated with or endorsed by the district.",
+  "start_url": "/d44-parent-hub/",
+  "scope": "/d44-parent-hub/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f7f7f5",
+  "theme_color": "#2f6d5f",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

@@ -1,0 +1,59 @@
+---
+import type { HubEvent } from '../lib/types';
+import SourceLine from './SourceLine.astro';
+import { dayNumber, dayOfWeek, monthShort, timeOf, dateOf, relativeDay } from '../lib/dates';
+import { schoolLabel } from '../lib/data';
+import { icsDataUrl, icsFileName } from '../lib/ics';
+
+interface Props { event: HubEvent; today: string; showSource?: boolean; }
+const { event, today, showSource = true } = Astro.props;
+
+const ALERT = new Set(['no-school', 'early-dismissal']);
+const tone = event.category === 'deadline' || event.featured ? 'is-deadline' : ALERT.has(event.category) ? 'is-alert' : '';
+
+const start = dateOf(event.startDate);
+const end = event.endDate ? dateOf(event.endDate) : start;
+const multiDay = end > start;
+const rel = relativeDay(start, today);
+
+const CATEGORY_LABELS: Record<string, string> = {
+  'no-school': 'No school', 'early-dismissal': 'Early dismissal', holiday: 'Break',
+  conference: 'Conferences', deadline: 'Deadline', sports: 'Sports',
+  performance: 'Performance', meeting: 'Meeting', pta: 'PTA', event: 'Event',
+};
+
+const names = event.schoolIds.map(schoolLabel).join(', ');
+const isSample = (event as HubEvent & { sample?: boolean }).sample === true;
+---
+<article
+  class:list={['event', 'card', tone]}
+  data-date={start}
+  data-end={end}
+  data-schools={event.schoolIds.join(',')}
+>
+  <div class="when">
+    <div class="dow">{rel === 'Today' ? 'Today' : dayOfWeek(start)}</div>
+    <div class="day">{dayNumber(start)}</div>
+    <div class="time">{event.allDay ? monthShort(start) : timeOf(event.startDate)}</div>
+  </div>
+  <div>
+    <h3 class="title">{event.title}</h3>
+    <p class="meta">
+      {rel === 'Tomorrow' && <span class="badge">Tomorrow</span>}
+      {rel === 'Tomorrow' && ' '}
+      {names}
+      {multiDay && ` · through ${monthShort(end)} ${dayNumber(end)}`}
+      {' · '}
+      <span class:list={['badge', ALERT.has(event.category) && 'alert', event.category === 'deadline' && 'deadline']}>
+        {CATEGORY_LABELS[event.category] ?? 'Event'}
+      </span>
+      {isSample && <span class="badge sample">Sample</span>}
+    </p>
+    {event.description && <p class="desc">{event.description.slice(0, 220)}</p>}
+    {event.location && <p class="desc">📍 {event.location}</p>}
+    <p class="source">
+      <a href={icsDataUrl(event)} download={icsFileName(event)}>Add to calendar</a>
+    </p>
+    {showSource && <SourceLine sourceName={event.sourceName} sourceUrl={event.sourceUrl} lastChecked={event.lastChecked} />}
+  </div>
+</article>

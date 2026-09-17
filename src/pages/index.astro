@@ -1,17 +1,125 @@
 ---
+import Base from '../layouts/Base.astro';
+import EventCard from '../components/EventCard.astro';
+import SchoolPicker from '../components/SchoolPicker.astro';
+import TaskGrid from '../components/TaskGrid.astro';
+import { allEvents, tasks, upcomingFrom, syncStatuses } from '../lib/data';
+import { todayIso, schoolWeek, addDays, dateOf } from '../lib/dates';
+import { siteConfig } from '../../site.config';
 
+const today = todayIso();
+const week = schoolWeek(today);
+const horizon = addDays(today, 60);
+
+const upcoming = upcomingFrom(today, allEvents).filter((e) => dateOf(e.startDate) <= horizon);
+
+// Server-side partition for the no-JS case and for first paint. The inline
+// script re-partitions against the device clock, so a stale build self-corrects.
+const isToday = (e: typeof upcoming[number]) =>
+  dateOf(e.startDate) <= today && dateOf(e.endDate ?? e.startDate) >= today;
+const inWeek = (e: typeof upcoming[number]) =>
+  dateOf(e.startDate) > today && dateOf(e.startDate) >= week.start && dateOf(e.startDate) <= week.end;
+
+const todayEvents = upcoming.filter(isToday);
+const weekEvents = upcoming.filter((e) => !isToday(e) && inWeek(e));
+const laterEvents = upcoming.filter((e) => !isToday(e) && !inWeek(e)).slice(0, 25);
+
+const dontForget = upcoming
+  .filter((e) => e.featured || e.category === 'deadline')
+  .filter((e) => dateOf(e.actionDeadline ?? e.startDate) >= today)
+  .slice(0, 4);
+
+const primaryTasks = tasks.filter((t) => t.primary);
+const failing = syncStatuses.filter((s) => !s.ok);
 ---
+<Base showDate>
+  <h1>What's happening<span data-has-prefs hidden> at <span data-school-name>your schools</span></span>?</h1>
+  <p class="lede">An independent, parent-built view of Lombard D44. Everything links back to the official source.</p>
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+  {failing.length > 0 && (
+    <div class="card" style="margin-top:16px;border-left:4px solid var(--alert)">
+      <h3>Some information may be out of date</h3>
+      <p class="lede">
+        {failing.length} source{failing.length === 1 ? '' : 's'} could not be refreshed on the last check, so you are
+        seeing the last good copy. Check the official district site for anything time-sensitive.
+      </p>
+    </div>
+  )}
+
+  <section data-needs-prefs>
+    <h2>Set up</h2>
+    <SchoolPicker />
+  </section>
+
+  {dontForget.length > 0 && (
+    <section>
+      <h2>Don't forget</h2>
+      <div class="stack">
+        {dontForget.map((e) => <EventCard event={e} today={today} />)}
+      </div>
+    </section>
+  )}
+
+  <div data-partition>
+    <section>
+      <h2>Today</h2>
+      <div class="stack" data-bucket="today">
+        {todayEvents.map((e) => <EventCard event={e} today={today} />)}
+      </div>
+      <p class="empty" data-empty-for="today" hidden={todayEvents.length > 0}>
+        Nothing scheduled today. That is usually good news.
+      </p>
+    </section>
+
+    <section>
+      <h2>{week.isNextWeek ? 'Next week' : 'Rest of this week'}</h2>
+      <div class="stack" data-bucket="week">
+        {weekEvents.map((e) => <EventCard event={e} today={today} />)}
+      </div>
+      <p class="empty" data-empty-for="week" hidden={weekEvents.length > 0}>
+        Nothing else on the calendar this week.
+      </p>
+    </section>
+
+    <section>
+      <h2>Coming up</h2>
+      <div class="stack" data-bucket="upcoming">
+        {laterEvents.map((e) => <EventCard event={e} today={today} />)}
+      </div>
+      <p class="empty" data-empty-for="upcoming" hidden={laterEvents.length > 0}>
+        Nothing else in the next two months.
+      </p>
+    </section>
+  </div>
+
+  <section>
+    <h2>I need to…</h2>
+    <TaskGrid tasks={primaryTasks} />
+    <p class="source" style="margin-top:10px">
+      <a href={`${import.meta.env.BASE_URL}resources`.replace(/\/{2,}/g, '/')}>See all parent resources →</a>
+    </p>
+  </section>
+
+  <section data-has-prefs hidden>
+    <h2>My schools</h2>
+    <SchoolPicker heading="Change your schools" compact />
+  </section>
+
+  {siteConfig.submissionsFormUrl && (
+    <section>
+      <h2>Help improve this</h2>
+      <a class="btn block" href={siteConfig.submissionsFormUrl} rel="noopener">See something missing? Tell us</a>
+      <p class="lede" style="margin-top:8px">Every submission is reviewed by a person before it appears.</p>
+    </section>
+  )}
+
+  {siteConfig.supportUrl && (
+    <section>
+      <div class="card">
+        <h3>Useful? Help keep D44 Parent Hub running.</h3>
+        <p class="lede">Entirely optional. Nothing here is ever behind a paywall.</p>
+        <p style="margin-top:12px"><a class="btn" href={siteConfig.supportUrl} rel="noopener">Support this project</a></p>
+      </div>
+    </section>
+  )}
+</Base>

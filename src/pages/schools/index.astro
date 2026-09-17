@@ -1,0 +1,23 @@
+---
+import Base from '../../layouts/Base.astro';
+import { selectableSchools } from '../../lib/data';
+const base = import.meta.env.BASE_URL;
+---
+<Base title="Schools" description="Contact details, attendance lines and upcoming events for each Lombard District 44 school.">
+  <h1>Schools</h1>
+  <p class="lede">Phone numbers, attendance lines and what is coming up at each building.</p>
+
+  <section>
+    <div class="stack">
+      {selectableSchools.map((s) => (
+        <a class="card" href={`${base}schools/${s.id}`.replace(/\/{2,}/g, '/')} style="text-decoration:none;color:inherit">
+          <h3>{s.name}</h3>
+          <p class="meta" style="color:var(--text-muted);margin:4px 0 0">
+            {s.mainPhone ?? 'Phone not verified'}
+            {s.attendancePhone && ` · Attendance ${s.attendancePhone}`}
+          </p>
+        </a>
+      ))}
+    </div>
+  </section>
+</Base>

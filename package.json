@@ -9,12 +9,19 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "sync": "node scripts/sync/sync-calendars.mjs",
+    "validate": "node scripts/validate/validate-data.mjs",
+    "icons": "node scripts/generate-icons.mjs"
   },
   "dependencies": {
-    "astro": "^7.3.3"
+    "astro": "^7.3.3",
+    "ical.js": "^2.2.1"
   },
   "allowScripts": {
     "esbuild": true
+  },
+  "devDependencies": {
+    "typescript": "^7.0.2"
   }
 }

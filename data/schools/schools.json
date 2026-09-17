@@ -1,0 +1,199 @@
+{
+  "$comment": "Curated school records. RULE: never invent a value. Unverified fields MUST be null and listed in needsReview. Every record carries sourceUrl + lastChecked so a parent (or a reviewer) can confirm it against the official site.",
+  "schools": [
+    {
+      "id": "district",
+      "name": "District 44",
+      "shortName": "District",
+      "level": "district",
+      "isDistrict": true,
+      "website": "https://www.sd44.org/",
+      "address": "150 W. Madison Street, Lombard, IL 60148",
+      "mainPhone": "630-827-4400",
+      "attendancePhone": null,
+      "principal": null,
+      "calendarUrl": "https://www.sd44.org/resources/calendars",
+      "ptaUrl": null,
+      "sourceName": "Lombard Elementary District 44",
+      "sourceUrl": "https://www.sd44.org/",
+      "lastChecked": "2026-09-17",
+      "needsReview": [
+        "attendancePhone"
+      ],
+      "notApplicable": [
+        "principal",
+        "ptaUrl"
+      ]
+    },
+    {
+      "id": "bf",
+      "name": "Butterfield Elementary School",
+      "shortName": "Butterfield",
+      "level": "elementary",
+      "isDistrict": false,
+      "website": "https://bf.sd44.org/",
+      "address": null,
+      "mainPhone": "630-827-4000",
+      "attendancePhone": "630-827-4001",
+      "principal": null,
+      "calendarUrl": "https://bf.sd44.org/",
+      "ptaUrl": null,
+      "sourceName": "Butterfield Elementary School",
+      "sourceUrl": "https://bf.sd44.org/",
+      "lastChecked": "2026-09-17",
+      "needsReview": [
+        "address",
+        "principal",
+        "ptaUrl"
+      ]
+    },
+    {
+      "id": "gw",
+      "name": "Glenn Westlake Middle School",
+      "shortName": "Glenn Westlake",
+      "level": "middle",
+      "isDistrict": false,
+      "website": "https://gw.sd44.org/",
+      "address": "1514 S. Main Street, Lombard, IL 60148",
+      "mainPhone": "630-827-4500",
+      "attendancePhone": "630-827-4502",
+      "principal": null,
+      "calendarUrl": "https://gw.sd44.org/",
+      "ptaUrl": null,
+      "sourceName": "Glenn Westlake Middle School",
+      "sourceUrl": "https://gw.sd44.org/",
+      "lastChecked": "2026-09-17",
+      "needsReview": [
+        "principal",
+        "ptaUrl"
+      ]
+    },
+    {
+      "id": "wh",
+      "name": "Hammerschmidt Elementary School",
+      "shortName": "Hammerschmidt",
+      "level": "elementary",
+      "isDistrict": false,
+      "website": "https://wh.sd44.org/",
+      "address": "617 S. Hammerschmidt Avenue, Lombard, IL 60148",
+      "mainPhone": "630-827-4200",
+      "attendancePhone": "630-827-4201",
+      "principal": null,
+      "calendarUrl": "https://wh.sd44.org/",
+      "ptaUrl": null,
+      "sourceName": "Hammerschmidt Elementary School",
+      "sourceUrl": "https://wh.sd44.org/",
+      "lastChecked": "2026-09-17",
+      "needsReview": [
+        "principal",
+        "ptaUrl"
+      ]
+    },
+    {
+      "id": "ec",
+      "name": "John Schroder Early Childhood Center",
+      "shortName": "JSECC",
+      "level": "early-childhood",
+      "isDistrict": false,
+      "website": "https://ec.sd44.org/",
+      "address": "1519 S. Grace Street, Lombard, IL 60148",
+      "mainPhone": "630-827-4260",
+      "attendancePhone": null,
+      "principal": null,
+      "calendarUrl": "https://ec.sd44.org/",
+      "ptaUrl": null,
+      "sourceName": "John Schroder Early Childhood Center",
+      "sourceUrl": "https://ec.sd44.org/",
+      "lastChecked": "2026-09-17",
+      "needsReview": [
+        "attendancePhone",
+        "principal",
+        "ptaUrl"
+      ]
+    },
+    {
+      "id": "md",
+      "name": "Madison Elementary School",
+      "shortName": "Madison",
+      "level": "elementary",
+      "isDistrict": false,
+      "website": "https://md.sd44.org/",
+      "address": "150 W. Madison Street, Lombard, IL 60148",
+      "mainPhone": "630-827-4100",
+      "attendancePhone": "630-827-4101",
+      "principal": null,
+      "calendarUrl": "https://md.sd44.org/",
+      "ptaUrl": null,
+      "sourceName": "Madison Elementary School",
+      "sourceUrl": "https://md.sd44.org/",
+      "lastChecked": "2026-09-17",
+      "needsReview": [
+        "principal",
+        "ptaUrl"
+      ]
+    },
+    {
+      "id": "mh",
+      "name": "Manor Hill Elementary School",
+      "shortName": "Manor Hill",
+      "level": "elementary",
+      "isDistrict": false,
+      "website": "https://mh.sd44.org/",
+      "address": "1464 S. Main Street, Lombard, IL 60148",
+      "mainPhone": "630-827-4300",
+      "attendancePhone": "630-827-4301",
+      "principal": null,
+      "calendarUrl": "https://mh.sd44.org/",
+      "ptaUrl": null,
+      "sourceName": "Manor Hill Elementary School",
+      "sourceUrl": "https://mh.sd44.org/",
+      "lastChecked": "2026-09-17",
+      "needsReview": [
+        "principal",
+        "ptaUrl"
+      ]
+    },
+    {
+      "id": "pv",
+      "name": "Park View Elementary School",
+      "shortName": "Park View",
+      "level": "elementary",
+      "isDistrict": false,
+      "website": "https://pv.sd44.org/",
+      "address": "341 N. Elizabeth Street, Lombard, IL 60148",
+      "mainPhone": "630-827-4040",
+      "attendancePhone": "630-827-4041",
+      "principal": null,
+      "calendarUrl": "https://pv.sd44.org/",
+      "ptaUrl": null,
+      "sourceName": "Park View Elementary School",
+      "sourceUrl": "https://pv.sd44.org/",
+      "lastChecked": "2026-09-17",
+      "needsReview": [
+        "principal",
+        "ptaUrl"
+      ]
+    },
+    {
+      "id": "pl",
+      "name": "Pleasant Lane Elementary School",
+      "shortName": "Pleasant Lane",
+      "level": "elementary",
+      "isDistrict": false,
+      "website": "https://pl.sd44.org/",
+      "address": "401 N. Main Street, Lombard, IL 60148",
+      "mainPhone": "630-827-4640",
+      "attendancePhone": "630-827-4641",
+      "principal": null,
+      "calendarUrl": "https://pl.sd44.org/",
+      "ptaUrl": null,
+      "sourceName": "Pleasant Lane Elementary School",
+      "sourceUrl": "https://pl.sd44.org/",
+      "lastChecked": "2026-09-17",
+      "needsReview": [
+        "principal",
+        "ptaUrl"
+      ]
+    }
+  ]
+}

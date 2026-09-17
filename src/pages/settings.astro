@@ -1,0 +1,30 @@
+---
+import Base from '../layouts/Base.astro';
+import SchoolPicker from '../components/SchoolPicker.astro';
+---
+<Base title="My schools" description="Choose which District 44 schools this site shows you. Stored only in your browser.">
+  <h1>My schools</h1>
+  <p class="lede">Used to decide what you see first. Stored in this browser only.</p>
+
+  <section>
+    <SchoolPicker heading="Which schools matter to you?" />
+  </section>
+
+  <section>
+    <h2>What is stored</h2>
+    <div class="card">
+      <p class="lede" style="margin:0">
+        Only the school choices above, in your browser's local storage. No account, no student names, no student IDs,
+        no login details, nothing sent to a server. Clearing your browser data clears it.
+      </p>
+      <p style="margin:14px 0 0"><button class="btn" type="button" data-clear-prefs>Clear my preferences</button></p>
+    </div>
+  </section>
+</Base>
+
+<script is:inline>
+  document.querySelector('[data-clear-prefs]')?.addEventListener('click', function () {
+    window.d44.setSchools([]);
+    if (window.d44.syncPickers) window.d44.syncPickers();
+  });
+</script>

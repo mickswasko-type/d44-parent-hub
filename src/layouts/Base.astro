@@ -1,0 +1,205 @@
+---
+import '../styles/global.css';
+import Icon from '../components/Icon.astro';
+import { siteConfig } from '../../site.config';
+import { longDate, todayIso } from '../lib/dates';
+
+interface Props { title?: string; description?: string; showDate?: boolean; }
+const { title, description = siteConfig.description, showDate = false } = Astro.props;
+
+const base = import.meta.env.BASE_URL;
+const href = (p: string) => `${base}${p}`.replace(/\/{2,}/g, '/');
+const path = Astro.url.pathname.replace(/\/$/, '');
+const isCurrent = (p: string) => (path === href(p).replace(/\/$/, '') ? 'page' : undefined);
+const buildToday = todayIso();
+
+const nav = [
+  { p: '', label: 'Today', icon: 'today' },
+  { p: 'calendar', label: 'Calendar', icon: 'calendar' },
+  { p: 'resources', label: 'I need to…', icon: 'tasks' },
+  { p: 'schools', label: 'Schools', icon: 'building' },
+];
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>{title ? `${title} · ${siteConfig.name}` : `${siteConfig.name} — ${siteConfig.tagline}`}</title>
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#2f6d5f" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#15161a" media="(prefers-color-scheme: dark)" />
+    <link rel="manifest" href={href('manifest.webmanifest')} />
+    <link rel="icon" href={href('icon.svg')} type="image/svg+xml" />
+    <link rel="apple-touch-icon" href={href('icon-180.png')} />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="D44 Hub" />
+    <meta name="robots" content="index,follow" />
+    <script is:inline>
+      /* Preference storage. Defined first so component scripts can rely on it.
+         Everything is local to this browser; nothing is ever transmitted. */
+      (function () {
+        var KEY = 'd44:schools';
+        var GRADE_KEY = 'd44:grades';
+        function read(key) {
+          try { return JSON.parse(localStorage.getItem(key) || '[]'); } catch (e) { return []; }
+        }
+        function write(key, value) {
+          try { localStorage.setItem(key, JSON.stringify(value)); } catch (e) { /* private mode */ }
+        }
+        window.d44 = {
+          schools: function () { return read(KEY); },
+          setSchools: function (ids) { write(KEY, ids); if (window.d44.apply) window.d44.apply(); },
+          grades: function () { return read(GRADE_KEY); },
+          setGrades: function (g) { write(GRADE_KEY, g); },
+        };
+      })();
+    </script>
+  </head>
+  <body data-build-date={buildToday} data-base={base}>
+    <header class="site-head">
+      <a class="brand" href={href('')}>D44 <span>Parent Hub</span></a>
+      {showDate && <span class="today-label" data-today-label>{longDate(buildToday)}</span>}
+    </header>
+
+    <main class="wrap">
+      <slot />
+    </main>
+
+    <footer class="site-foot">
+      <p><strong>{siteConfig.disclaimer}</strong></p>
+      <p>
+        <a href={siteConfig.officialSiteUrl} rel="noopener">Official District 44 site</a> ·
+        <a href={href('about')}>About this site</a> ·
+        <a href={href('settings')}>My schools</a>
+      </p>
+      <p>Where this site and official district communication disagree, the district is right.</p>
+    </footer>
+
+    <nav class="tabbar" aria-label="Primary">
+      {nav.map((n) => (
+        <a href={href(n.p)} aria-current={isCurrent(n.p)}>
+          <Icon name={n.icon} />
+          <span>{n.label}</span>
+        </a>
+      ))}
+    </nav>
+
+    <script is:inline>
+      /* ------------------------------------------------------------------
+         The only client-side JavaScript on the site. It does three things:
+           1. reads school preferences from localStorage (never a server),
+           2. hides events that are not relevant to those schools,
+           3. re-sorts Today / This week / Coming up against the *device*
+              clock, so a cached build can never claim the wrong day.
+         Everything renders correctly without it, just less personally.
+         ------------------------------------------------------------------ */
+      (function () {
+        function localToday() {
+          var d = new Date();
+          return new Intl.DateTimeFormat('en-CA', {
+            timeZone: 'America/Chicago', year: 'numeric', month: '2-digit', day: '2-digit',
+          }).format(d);
+        }
+
+        function addDays(iso, n) {
+          var d = new Date(iso + 'T12:00:00Z');
+          d.setUTCDate(d.getUTCDate() + n);
+          return d.toISOString().slice(0, 10);
+        }
+
+        function schoolWeek(today) {
+          var dow = new Date(today + 'T12:00:00Z').getUTCDay();
+          if (dow === 0) return [addDays(today, 1), addDays(today, 5)];
+          if (dow === 6) return [addDays(today, 2), addDays(today, 6)];
+          return [addDays(today, 1 - dow), addDays(today, 5 - dow)];
+        }
+
+        /* Move each event card into the section that matches the real date. */
+        function repartition(today) {
+          var host = document.querySelector('[data-partition]');
+          if (!host) return;
+          var week = schoolWeek(today);
+          var buckets = {
+            today: host.querySelector('[data-bucket="today"]'),
+            week: host.querySelector('[data-bucket="week"]'),
+            upcoming: host.querySelector('[data-bucket="upcoming"]'),
+          };
+          if (!buckets.today || !buckets.week || !buckets.upcoming) return;
+
+          var cards = Array.prototype.slice.call(host.querySelectorAll('[data-date]'));
+          cards.forEach(function (card) {
+            var start = card.getAttribute('data-date');
+            var end = card.getAttribute('data-end') || start;
+            var target;
+            if (start <= today && end >= today) target = buckets.today;
+            else if (start > today && start <= week[1] && start >= week[0]) target = buckets.week;
+            else if (end < today) { card.remove(); return; }
+            else target = buckets.upcoming;
+            if (card.parentNode !== target) target.appendChild(card);
+          });
+
+          Object.keys(buckets).forEach(function (k) {
+            var list = buckets[k];
+            var nodes = Array.prototype.slice.call(list.querySelectorAll('[data-date]'));
+            nodes.sort(function (a, b) {
+              return a.getAttribute('data-date').localeCompare(b.getAttribute('data-date'));
+            });
+            nodes.forEach(function (n) { list.appendChild(n); });
+          });
+
+          var label = document.querySelector('[data-today-label]');
+          if (label) {
+            label.textContent = new Intl.DateTimeFormat('en-US', {
+              timeZone: 'UTC', weekday: 'long', month: 'long', day: 'numeric',
+            }).format(new Date(today + 'T12:00:00Z'));
+          }
+        }
+
+        /* Hide anything that is not about one of the chosen schools. */
+        function apply() {
+          var selected = window.d44.schools();
+          document.documentElement.setAttribute('data-personalized', selected.length ? 'yes' : 'no');
+
+          document.querySelectorAll('[data-schools]').forEach(function (el) {
+            var ids = (el.getAttribute('data-schools') || '').split(',');
+            var relevant = selected.length === 0 || ids.some(function (id) {
+              return id === 'district' || selected.indexOf(id) !== -1;
+            });
+            el.hidden = !relevant;
+          });
+
+          document.querySelectorAll('[data-empty-for]').forEach(function (el) {
+            var list = document.querySelector('[data-bucket="' + el.getAttribute('data-empty-for') + '"]');
+            if (!list) return;
+            var visible = Array.prototype.slice.call(list.children).some(function (c) { return !c.hidden; });
+            el.hidden = visible;
+          });
+
+          document.querySelectorAll('[data-school-name]').forEach(function (el) {
+            el.textContent = selected.length
+              ? selected.map(function (id) {
+                  var chip = document.querySelector('[data-school-label="' + id + '"]');
+                  return chip ? chip.textContent.trim() : id;
+                }).join(' & ')
+              : 'District 44';
+          });
+
+          document.querySelectorAll('[data-needs-prefs]').forEach(function (el) { el.hidden = selected.length > 0; });
+          document.querySelectorAll('[data-has-prefs]').forEach(function (el) { el.hidden = selected.length === 0; });
+        }
+
+        window.d44.apply = apply;
+        repartition(localToday());
+        apply();
+        window.addEventListener('pageshow', function () { repartition(localToday()); apply(); });
+
+        if ('serviceWorker' in navigator) {
+          window.addEventListener('load', function () {
+            navigator.serviceWorker.register(document.body.dataset.base + 'sw.js').catch(function () {});
+          });
+        }
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,105 @@
+{
+  "$comment": "Registry of upstream data sources. Each entry is fetched independently by scripts/sync/sync-calendars.mjs. A failure in one source must never affect another. Every source must carry a human-checkable url so a non-developer can verify where data comes from.",
+  "sources": [
+    {
+      "id": "d44-district",
+      "sourceName": "District 44 Public Calendar",
+      "sourceType": "ics",
+      "schoolIds": [
+        "district"
+      ],
+      "calendarId": "sd44.org_k14a6pllc5bsg6798qn7de35i4@group.calendar.google.com",
+      "sourceUrl": "https://www.sd44.org/resources/calendars",
+      "enabled": true
+    },
+    {
+      "id": "bf-calendar",
+      "sourceName": "Butterfield Elementary Calendar",
+      "sourceType": "ics",
+      "schoolIds": [
+        "bf"
+      ],
+      "calendarId": "sd44.org_1m10rnp8fapaj54r6kfpc2gnk4@group.calendar.google.com",
+      "sourceUrl": "https://bf.sd44.org/",
+      "enabled": false
+    },
+    {
+      "id": "gw-calendar",
+      "sourceName": "Glenn Westlake Middle School Public Events",
+      "sourceType": "ics",
+      "schoolIds": [
+        "gw"
+      ],
+      "calendarId": "sd44.org_42s628drps8dcha55ckjpetnr4@group.calendar.google.com",
+      "sourceUrl": "https://gw.sd44.org/",
+      "enabled": false
+    },
+    {
+      "id": "wh-calendar",
+      "sourceName": "Hammerschmidt Elementary Calendar",
+      "sourceType": "ics",
+      "schoolIds": [
+        "wh"
+      ],
+      "calendarId": "sd44.org_cdiq367q9472k2jniroep7mf6g@group.calendar.google.com",
+      "sourceUrl": "https://wh.sd44.org/",
+      "enabled": false
+    },
+    {
+      "id": "ec-calendar",
+      "sourceName": "John Schroder Early Childhood Center Calendar",
+      "sourceType": "ics",
+      "schoolIds": [
+        "ec"
+      ],
+      "calendarId": "sd44.org_o7198n7u171j50t22rsuj93o30@group.calendar.google.com",
+      "sourceUrl": "https://ec.sd44.org/",
+      "enabled": false
+    },
+    {
+      "id": "md-calendar",
+      "sourceName": "Madison Elementary Calendar",
+      "sourceType": "ics",
+      "schoolIds": [
+        "md"
+      ],
+      "calendarId": "sd44.org_g1nbq1nujdti0rmfjcqmf1h4sg@group.calendar.google.com",
+      "sourceUrl": "https://md.sd44.org/",
+      "enabled": false
+    },
+    {
+      "id": "mh-calendar",
+      "sourceName": "Manor Hill Elementary Public Events",
+      "sourceType": "ics",
+      "schoolIds": [
+        "mh"
+      ],
+      "calendarId": "sd44.org_8tnjuiojik15td8itrlll2p424@group.calendar.google.com",
+      "sourceUrl": "https://mh.sd44.org/",
+      "enabled": false
+    },
+    {
+      "id": "pv-calendar",
+      "sourceName": "Park View Elementary Calendar",
+      "sourceType": "ics",
+      "schoolIds": [
+        "pv"
+      ],
+      "calendarId": "sd44.org_an5j0aj69aepnmmm8a8k8imm8g@group.calendar.google.com",
+      "sourceUrl": "https://pv.sd44.org/",
+      "enabled": false
+    },
+    {
+      "id": "pl-calendar",
+      "sourceName": "Pleasant Lane Elementary Public Events",
+      "sourceType": "ics",
+      "schoolIds": [
+        "pl"
+      ],
+      "calendarId": "sd44.org_23sn9sefo5p5vk932v6odk5in4@group.calendar.google.com",
+      "sourceUrl": "https://pl.sd44.org/",
+      "enabled": false
+    }
+  ],
+  "$comment2": "Hybrid rollout: the district feed is live now to validate the schema against real data. Flip a school to enabled:true once its output has been reviewed."
+}

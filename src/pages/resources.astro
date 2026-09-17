@@ -1,0 +1,46 @@
+---
+import Base from '../layouts/Base.astro';
+import TaskGrid from '../components/TaskGrid.astro';
+import SourceLine from '../components/SourceLine.astro';
+import { tasks, questions } from '../lib/data';
+import { siteConfig } from '../../site.config';
+
+const base = import.meta.env.BASE_URL;
+const resolve = (url: string) => (url.startsWith('internal:') ? `${base}${url.slice(10)}`.replace(/\/{2,}/g, '/') : url);
+---
+<Base title="I need to…" description="Common District 44 parent tasks, organized by what you are trying to do.">
+  <h1>I need to…</h1>
+  <p class="lede">Organized by what you are trying to do, not by which department owns it.</p>
+
+  <section>
+    <h2>Shortcuts</h2>
+    <TaskGrid tasks={tasks} />
+  </section>
+
+  <section>
+    <h2>Questions</h2>
+    <div class="stack">
+      {questions.map((q) => (
+        <article class="card">
+          <h3>{q.question}</h3>
+          <p class="lede">{q.answer}</p>
+          <p style="margin:10px 0 0">
+            {q.links.map((l) => (
+              <a class="btn" style="margin:4px 6px 0 0" href={resolve(l.url)} rel="noopener">{l.label}</a>
+            ))}
+          </p>
+          <SourceLine sourceName={q.sourceName} sourceUrl={q.sourceUrl} lastChecked={`${q.lastChecked}T12:00:00.000Z`} />
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section>
+    <h2>Something missing?</h2>
+    {siteConfig.submissionsFormUrl ? (
+      <a class="btn block primary" href={siteConfig.submissionsFormUrl} rel="noopener">Tell us what's missing</a>
+    ) : (
+      <p class="empty">A submission form is coming. Until then, the official district site is the place to go.</p>
+    )}
+  </section>
+</Base>

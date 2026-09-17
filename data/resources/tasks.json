@@ -1,0 +1,171 @@
+{
+  "$comment": "The 'I need to...' shortcuts. Every url must point at the authoritative official destination, never a copy of it. 'primary' items appear on the homepage; the rest live on the resources page.",
+  "tasks": [
+    {
+      "id": "report-absence",
+      "label": "Report an absence",
+      "intent": "My child is sick or will be out today.",
+      "icon": "phone",
+      "url": "internal:/schools",
+      "usesSchoolAttendancePhone": true,
+      "sourceName": "District 44",
+      "sourceUrl": "https://www.sd44.org/resources/student-parent-handbook-inside-your-schools",
+      "lastChecked": "2026-09-17",
+      "primary": true
+    },
+    {
+      "id": "lunch-menu",
+      "label": "See lunch menus",
+      "intent": "What is for lunch this week?",
+      "icon": "tray",
+      "url": "https://www.sd44.org/resources/food-services",
+      "sourceName": "District 44 Food Services",
+      "sourceUrl": "https://www.sd44.org/resources/food-services",
+      "lastChecked": "2026-09-17",
+      "primary": true
+    },
+    {
+      "id": "pay-lunch",
+      "label": "Pay for lunch & fees",
+      "intent": "Add money to my child's account or pay school fees.",
+      "icon": "card",
+      "url": "https://www.sd44.org/resources/fees-myschoolbucks",
+      "sourceName": "District 44 Fees & MySchoolBucks",
+      "sourceUrl": "https://www.sd44.org/resources/fees-myschoolbucks",
+      "lastChecked": "2026-09-17",
+      "primary": true
+    },
+    {
+      "id": "grades",
+      "label": "View grades (Skyward)",
+      "intent": "Check grades, attendance and student records.",
+      "icon": "chart",
+      "url": "https://skyward.iscorp.com/LombardElemSD44ILStuSTS/",
+      "sourceName": "Skyward Family Access",
+      "sourceUrl": "https://www.sd44.org/",
+      "lastChecked": "2026-09-17",
+      "primary": true
+    },
+    {
+      "id": "parentsquare",
+      "label": "Open ParentSquare",
+      "intent": "Read school messages and notifications.",
+      "icon": "message",
+      "url": "https://www.sd44.org/resources/parentsquare",
+      "sourceName": "District 44 ParentSquare",
+      "sourceUrl": "https://www.sd44.org/resources/parentsquare",
+      "lastChecked": "2026-09-17",
+      "primary": true
+    },
+    {
+      "id": "calendar",
+      "label": "Official school calendar",
+      "intent": "See the district's own published calendar and PDFs.",
+      "icon": "calendar",
+      "url": "https://www.sd44.org/resources/calendars",
+      "sourceName": "District 44 Calendars",
+      "sourceUrl": "https://www.sd44.org/resources/calendars",
+      "lastChecked": "2026-09-17",
+      "primary": true
+    },
+    {
+      "id": "registration",
+      "label": "Registration",
+      "intent": "Register a new student or complete yearly registration.",
+      "icon": "clipboard",
+      "url": "https://www.sd44.org/resources/registration",
+      "sourceName": "District 44 Registration",
+      "sourceUrl": "https://www.sd44.org/resources/registration",
+      "lastChecked": "2026-09-17",
+      "primary": true
+    },
+    {
+      "id": "contact-school",
+      "label": "Contact my school",
+      "intent": "Find the office phone number and address.",
+      "icon": "building",
+      "url": "internal:/schools",
+      "sourceName": "D44 Parent Hub",
+      "sourceUrl": "https://www.sd44.org/",
+      "lastChecked": "2026-09-17",
+      "primary": true
+    },
+    {
+      "id": "virtual-backpack",
+      "label": "Virtual Backpack",
+      "intent": "Flyers, forms and supply information sent home.",
+      "icon": "bag",
+      "url": "https://www.sd44.org/resources/virtual-backpack",
+      "sourceName": "District 44 Virtual Backpack",
+      "sourceUrl": "https://www.sd44.org/resources/virtual-backpack",
+      "lastChecked": "2026-09-17",
+      "primary": false
+    },
+    {
+      "id": "bus",
+      "label": "Bus information",
+      "intent": "Find bus routes and transportation details.",
+      "icon": "bus",
+      "url": "https://www.sd44.org/resources/bus-information",
+      "sourceName": "District 44 Bus Information",
+      "sourceUrl": "https://www.sd44.org/resources/bus-information",
+      "lastChecked": "2026-09-17",
+      "primary": false
+    },
+    {
+      "id": "closings",
+      "label": "Emergency closings",
+      "intent": "Is school closed for weather or an emergency?",
+      "icon": "alert",
+      "url": "https://www.sd44.org/resources/emergency-closing",
+      "sourceName": "District 44 Emergency Closing",
+      "sourceUrl": "https://www.sd44.org/resources/emergency-closing",
+      "lastChecked": "2026-09-17",
+      "primary": false
+    },
+    {
+      "id": "health",
+      "label": "Health services / nurse",
+      "intent": "Medication forms, immunizations and health requirements.",
+      "icon": "health",
+      "url": "https://www.sd44.org/departments/special-services/health-services",
+      "sourceName": "District 44 Health Services",
+      "sourceUrl": "https://www.sd44.org/departments/special-services/health-services",
+      "lastChecked": "2026-09-17",
+      "primary": false
+    },
+    {
+      "id": "handbook",
+      "label": "Student & parent handbook",
+      "intent": "Read the rules, policies and school-day details.",
+      "icon": "book",
+      "url": "https://www.sd44.org/resources/student-parent-handbook-inside-your-schools",
+      "sourceName": "District 44 Student/Parent Handbook",
+      "sourceUrl": "https://www.sd44.org/resources/student-parent-handbook-inside-your-schools",
+      "lastChecked": "2026-09-17",
+      "primary": false
+    },
+    {
+      "id": "volunteer",
+      "label": "Volunteer at school",
+      "intent": "Help out in a classroom or at an event.",
+      "icon": "hands",
+      "url": "https://www.sd44.org/resources/volunteering",
+      "sourceName": "District 44 Volunteering",
+      "sourceUrl": "https://www.sd44.org/resources/volunteering",
+      "lastChecked": "2026-09-17",
+      "primary": false
+    },
+    {
+      "id": "boundary",
+      "label": "Which school are we in?",
+      "intent": "Check the attendance boundary for my address.",
+      "icon": "map",
+      "url": "https://www.sd44.org/district/boundary-map",
+      "sourceName": "District 44 Boundary Map",
+      "sourceUrl": "https://www.sd44.org/district/boundary-map",
+      "lastChecked": "2026-09-17",
+      "primary": false
+    }
+  ]
+}

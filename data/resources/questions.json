@@ -1,0 +1,134 @@
+{
+  "$comment": "The parent resource finder, organized by what a parent is trying to do. Answers must be short and must link to the official source rather than restating policy.",
+  "questions": [
+    {
+      "id": "report-absence",
+      "question": "How do I report an absence?",
+      "answer": "Call your school's attendance line directly. Each building has its own number, listed on your school's page here.",
+      "links": [{ "label": "Find my school's attendance line", "url": "internal:/schools" }],
+      "tags": ["absence", "sick", "attendance"],
+      "sourceName": "District 44 school sites",
+      "sourceUrl": "https://www.sd44.org/",
+      "lastChecked": "2026-09-17"
+    },
+    {
+      "id": "see-grades",
+      "question": "Where do I see grades?",
+      "answer": "Grades, attendance and student records are in Skyward Family Access.",
+      "links": [{ "label": "Skyward Family Access", "url": "https://skyward.iscorp.com/LombardElemSD44ILStuSTS/" }],
+      "tags": ["grades", "skyward", "portal", "report card"],
+      "sourceName": "Skyward Family Access",
+      "sourceUrl": "https://www.sd44.org/",
+      "lastChecked": "2026-09-17"
+    },
+    {
+      "id": "lunch-money",
+      "question": "How do I add lunch money or pay fees?",
+      "answer": "District 44 uses MySchoolBucks for meal accounts and school fees.",
+      "links": [{ "label": "Fees & MySchoolBucks", "url": "https://www.sd44.org/resources/fees-myschoolbucks" }],
+      "tags": ["lunch", "money", "fees", "pay", "myschoolbucks"],
+      "sourceName": "District 44 Fees & MySchoolBucks",
+      "sourceUrl": "https://www.sd44.org/resources/fees-myschoolbucks",
+      "lastChecked": "2026-09-17"
+    },
+    {
+      "id": "lunch-menu",
+      "question": "Where is the lunch menu?",
+      "answer": "Menus are published by District 44 Food Services.",
+      "links": [{ "label": "Food Services", "url": "https://www.sd44.org/resources/food-services" }],
+      "tags": ["lunch", "menu", "breakfast", "food"],
+      "sourceName": "District 44 Food Services",
+      "sourceUrl": "https://www.sd44.org/resources/food-services",
+      "lastChecked": "2026-09-17"
+    },
+    {
+      "id": "register",
+      "question": "How do I register a student?",
+      "answer": "New and returning student registration is handled through the district registration page.",
+      "links": [{ "label": "Registration", "url": "https://www.sd44.org/resources/registration" }],
+      "tags": ["register", "enroll", "new student", "kindergarten"],
+      "sourceName": "District 44 Registration",
+      "sourceUrl": "https://www.sd44.org/resources/registration",
+      "lastChecked": "2026-09-17"
+    },
+    {
+      "id": "messages-app",
+      "question": "What app is used for school messages?",
+      "answer": "District 44 uses ParentSquare for district and school communication by email, text and app notification.",
+      "links": [{ "label": "About ParentSquare", "url": "https://www.sd44.org/resources/parentsquare" }],
+      "tags": ["parentsquare", "app", "messages", "notifications"],
+      "sourceName": "District 44 ParentSquare",
+      "sourceUrl": "https://www.sd44.org/resources/parentsquare",
+      "lastChecked": "2026-09-17"
+    },
+    {
+      "id": "school-closed",
+      "question": "Is school closed for weather?",
+      "answer": "Emergency closing announcements come from the district. ParentSquare notifications are the fastest official channel.",
+      "links": [{ "label": "Emergency closing information", "url": "https://www.sd44.org/resources/emergency-closing" }],
+      "tags": ["snow day", "closed", "weather", "emergency"],
+      "sourceName": "District 44 Emergency Closing",
+      "sourceUrl": "https://www.sd44.org/resources/emergency-closing",
+      "lastChecked": "2026-09-17"
+    },
+    {
+      "id": "nurse",
+      "question": "How do I contact the nurse or handle medication?",
+      "answer": "Health requirements, medication forms and immunization information come from Health Services. For a same-day question, call your school office.",
+      "links": [
+        { "label": "Health Services", "url": "https://www.sd44.org/departments/special-services/health-services" },
+        { "label": "My school's phone number", "url": "internal:/schools" }
+      ],
+      "tags": ["nurse", "health", "medication", "immunization"],
+      "sourceName": "District 44 Health Services",
+      "sourceUrl": "https://www.sd44.org/departments/special-services/health-services",
+      "lastChecked": "2026-09-17"
+    },
+    {
+      "id": "supply-list",
+      "question": "Where is the school supply list?",
+      "answer": "Supply lists are distributed by each school, usually through the Virtual Backpack or your school's own site.",
+      "links": [
+        { "label": "Virtual Backpack", "url": "https://www.sd44.org/resources/virtual-backpack" },
+        { "label": "My school's site", "url": "internal:/schools" }
+      ],
+      "tags": ["supplies", "supply list", "school supplies"],
+      "sourceName": "District 44 Virtual Backpack",
+      "sourceUrl": "https://www.sd44.org/resources/virtual-backpack",
+      "lastChecked": "2026-09-17"
+    },
+    {
+      "id": "breaks",
+      "question": "When is spring break?",
+      "answer": "Break dates come from the official student calendar. The upcoming ones also appear in this site's calendar view.",
+      "links": [
+        { "label": "Official calendars & PDFs", "url": "https://www.sd44.org/resources/calendars" },
+        { "label": "Upcoming events here", "url": "internal:/calendar" }
+      ],
+      "tags": ["spring break", "winter break", "no school", "holiday", "days off"],
+      "sourceName": "District 44 Calendars",
+      "sourceUrl": "https://www.sd44.org/resources/calendars",
+      "lastChecked": "2026-09-17"
+    },
+    {
+      "id": "bus",
+      "question": "How do I find out about the bus?",
+      "answer": "Routes and transportation questions are handled through the district bus information page.",
+      "links": [{ "label": "Bus information", "url": "https://www.sd44.org/resources/bus-information" }],
+      "tags": ["bus", "transportation", "route", "stop"],
+      "sourceName": "District 44 Bus Information",
+      "sourceUrl": "https://www.sd44.org/resources/bus-information",
+      "lastChecked": "2026-09-17"
+    },
+    {
+      "id": "which-school",
+      "question": "Which school is my address in?",
+      "answer": "Attendance boundaries are published on the district boundary map.",
+      "links": [{ "label": "Boundary map", "url": "https://www.sd44.org/district/boundary-map" }],
+      "tags": ["boundary", "which school", "address", "zone"],
+      "sourceName": "District 44 Boundary Map",
+      "sourceUrl": "https://www.sd44.org/district/boundary-map",
+      "lastChecked": "2026-09-17"
+    }
+  ]
+}

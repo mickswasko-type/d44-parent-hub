@@ -1,0 +1,77 @@
+---
+import Base from '../../layouts/Base.astro';
+import EventCard from '../../components/EventCard.astro';
+import SourceLine from '../../components/SourceLine.astro';
+import { selectableSchools, eventsForSchool, upcomingFrom, syncStatuses } from '../../lib/data';
+import { todayIso } from '../../lib/dates';
+import type { School } from '../../lib/types';
+
+export function getStaticPaths() {
+  return selectableSchools.map((school) => ({ params: { id: school.id }, props: { school } }));
+}
+
+const { school } = Astro.props as { school: School };
+const today = todayIso();
+const events = upcomingFrom(today, eventsForSchool(school.id)).slice(0, 15);
+const stale = syncStatuses.find((s) => !s.ok && s.sourceId.startsWith(school.id));
+
+const telHref = (p: string) => `tel:${p.replace(/[^0-9]/g, '')}`;
+---
+<Base title={school.name} description={`Contact details and upcoming events for ${school.name}, Lombard District 44.`}>
+  <h1>{school.name}</h1>
+  <p class="lede">Lombard School District 44</p>
+
+  {school.attendancePhone && (
+    <section>
+      <h2>Report an absence</h2>
+      <a class="btn block primary" href={telHref(school.attendancePhone)}>Call attendance · {school.attendancePhone}</a>
+      <p class="lede" style="margin-top:8px">Call the attendance line directly. This site cannot report an absence for you.</p>
+    </section>
+  )}
+
+  <section>
+    <h2>Contact</h2>
+    <div class="card">
+      <dl style="margin:0;display:grid;grid-template-columns:auto 1fr;gap:8px 16px">
+        <dt style="color:var(--text-muted)">Phone</dt>
+        <dd style="margin:0">{school.mainPhone ? <a href={telHref(school.mainPhone)}>{school.mainPhone}</a> : <em>Not verified</em>}</dd>
+        <dt style="color:var(--text-muted)">Address</dt>
+        <dd style="margin:0">{school.address ?? <em>Not verified — see the school site</em>}</dd>
+        <dt style="color:var(--text-muted)">Principal</dt>
+        <dd style="margin:0">{school.principal ?? <em>Not verified — see the school site</em>}</dd>
+        <dt style="color:var(--text-muted)">Website</dt>
+        <dd style="margin:0"><a href={school.website} rel="noopener">{school.website.replace(/^https?:\/\//, '').replace(/\/$/, '')}</a></dd>
+        <dt style="color:var(--text-muted)">PTA</dt>
+        <dd style="margin:0">{school.ptaUrl ? <a href={school.ptaUrl} rel="noopener">PTA page</a> : <em>Not verified</em>}</dd>
+      </dl>
+      <SourceLine sourceName={school.sourceName} sourceUrl={school.sourceUrl} lastChecked={`${school.lastChecked}T12:00:00.000Z`} />
+    </div>
+    {school.needsReview.length > 0 && (
+      <p class="lede" style="margin-top:10px;font-size:0.82rem">
+        Fields marked "not verified" are intentionally blank. This site does not guess school information —
+        check <a href={school.website} rel="noopener">the official school site</a>.
+      </p>
+    )}
+  </section>
+
+  <section>
+    <h2>Upcoming</h2>
+    {stale && <p class="empty">This school's feed could not be refreshed on the last check. Showing the last good copy.</p>}
+    <div class="stack">
+      {events.map((e) => <EventCard event={e} today={today} showSource={false} />)}
+    </div>
+    {events.length === 0 && (
+      <p class="empty">
+        No school-specific events yet. District-wide events appear on the <a href={import.meta.env.BASE_URL}>home page</a>.
+      </p>
+    )}
+  </section>
+
+  <section>
+    <h2>Official links</h2>
+    <div class="stack">
+      <a class="btn block" href={school.website} rel="noopener">School website</a>
+      {school.calendarUrl && <a class="btn block" href={school.calendarUrl} rel="noopener">School calendar</a>}
+    </div>
+  </section>
+</Base>

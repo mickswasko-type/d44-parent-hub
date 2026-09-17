@@ -1,0 +1,81 @@
+---
+import Base from '../layouts/Base.astro';
+import { syncStatuses, syncRanAt, schools } from '../lib/data';
+import { sinceLabel } from '../lib/dates';
+import { siteConfig } from '../../site.config';
+
+const needsReview = schools.filter((s) => s.needsReview.length > 0);
+---
+<Base title="About" description="Who builds D44 Parent Hub, where its information comes from, and what it does not collect.">
+  <h1>About this site</h1>
+
+  <section>
+    <h2>What this is</h2>
+    <div class="card">
+      <p style="margin:0">{siteConfig.disclaimer}</p>
+      <p class="lede" style="margin-top:12px">
+        District information is organized around departments and buildings. This site tries to organize it around
+        what a parent needs to know or do. Where the two disagree,
+        <a href={siteConfig.officialSiteUrl} rel="noopener">District 44</a> is right.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Privacy</h2>
+    <div class="card">
+      <p class="lede" style="margin:0">
+        No accounts. No student names, IDs or schedules. No ParentSquare or Skyward credentials — this site never asks
+        you to sign in to anything, and links straight to the official destination instead. Your school choices live in
+        your browser's local storage and are never transmitted.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Where the information comes from</h2>
+    <p class="lede">
+      Calendars are read directly from District 44's own public calendar feeds, on a schedule. Last run
+      {sinceLabel(syncRanAt)}.
+    </p>
+    <div class="stack">
+      {syncStatuses.map((s) => (
+        <div class="card">
+          <h3>{s.sourceName}</h3>
+          <p class="meta" style="color:var(--text-muted);margin:4px 0 0">
+            {s.ok ? `${s.eventCount} events · checked ${sinceLabel(s.lastChecked)}` : `Last check failed: ${s.error}`}
+            {s.servingStaleData && ' · showing last good copy'}
+          </p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  {needsReview.length > 0 && (
+    <section>
+      <h2>Known gaps</h2>
+      <p class="lede">
+        Information this site could not verify from an official source. It is left blank on purpose rather than guessed.
+      </p>
+      <div class="stack">
+        {needsReview.map((s) => (
+          <div class="card">
+            <h3>{s.shortName}</h3>
+            <p class="meta" style="color:var(--text-muted);margin:4px 0 0">Unverified: {s.needsReview.join(', ')}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  )}
+
+  {siteConfig.supportUrl && (
+    <section>
+      <h2>Support</h2>
+      <div class="card">
+        <h3>Useful? Help keep D44 Parent Hub running.</h3>
+        <p class="lede">Optional. No parent information is ever behind a paywall.</p>
+        <p style="margin-top:12px"><a class="btn" href={siteConfig.supportUrl} rel="noopener">Support this project</a></p>
+      </div>
+    </section>
+  )}
+</Base>

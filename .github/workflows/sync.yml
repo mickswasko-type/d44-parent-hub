@@ -1,0 +1,65 @@
+name: Sync calendars
+
+on:
+  schedule:
+    # 09:20 UTC ≈ 4:20am Chicago — new data is in place before anyone looks.
+    - cron: '20 9 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+
+      - name: Fetch and normalize sources
+        id: sync
+        # Never abort the job here: a partial sync still produces good data for
+        # every source that worked, and the failure is reported below.
+        continue-on-error: true
+        run: npm run sync
+
+      - name: Validate generated data
+        run: npm run validate
+
+      - name: Commit changes
+        run: |
+          if [[ -z "$(git status --porcelain data/)" ]]; then
+            echo "No data changes."
+            exit 0
+          fi
+          git config user.name  "d44-hub-bot"
+          git config user.email "noreply@github.com"
+          git add data/
+          git commit -m "data: scheduled calendar sync $(date -u +%Y-%m-%d)"
+          git push
+
+      - name: Open an issue if a source failed
+        if: steps.sync.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          title="Calendar sync failed"
+          existing=$(gh issue list --state open --search "$title in:title" --json number --jq '.[0].number')
+          body=$(printf 'The scheduled calendar sync reported at least one failing source.\n\nRun: %s/%s/actions/runs/%s\n\nThe site is still serving the last known good data for those sources — check `data/events/_sync-status.json` for the error text.\n\nIf a feed format changed upstream, fix the parser in `scripts/normalize/`; do not hand-edit generated files.' "$GITHUB_SERVER_URL" "$GITHUB_REPOSITORY" "$GITHUB_RUN_ID")
+          if [[ -n "$existing" ]]; then
+            gh issue comment "$existing" --body "$body"
+          else
+            gh issue create --title "$title" --body "$body" --label "sync-failure" || \
+            gh issue create --title "$title" --body "$body"
+          fi
+
+      - name: Fail the job if a source failed
+        if: steps.sync.outcome == 'failure'
+        run: |
+          echo "::error::One or more sources failed to sync. See data/events/_sync-status.json."
+          exit 1

@@ -1,0 +1,14 @@
+{
+  "ranAt": "2026-09-17T15:05:07.815Z",
+  "statuses": [
+    {
+      "sourceId": "d44-district",
+      "sourceName": "District 44 Public Calendar",
+      "ok": true,
+      "eventCount": 184,
+      "lastChecked": "2026-09-17T15:05:07.815Z",
+      "error": null,
+      "servingStaleData": false
+    }
+  ]
+}

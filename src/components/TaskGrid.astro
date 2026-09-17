@@ -1,0 +1,21 @@
+---
+import type { ParentTask } from '../lib/types';
+import Icon from './Icon.astro';
+interface Props { tasks: ParentTask[]; }
+const { tasks } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const resolve = (url: string) => (url.startsWith('internal:') ? `${base}${url.slice(10)}`.replace(/\/{2,}/g, '/') : url);
+---
+<div class="tasks">
+  {tasks.map((t) => (
+    <a
+      class="task"
+      href={resolve(t.url)}
+      rel={t.url.startsWith('http') ? 'noopener' : undefined}
+      data-task-id={t.id}
+    >
+      <Icon name={t.icon} />
+      <span>{t.label}</span>
+    </a>
+  ))}
+</div>
