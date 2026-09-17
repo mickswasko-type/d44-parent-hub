@@ -24,7 +24,7 @@ const readJson = async (rel) => JSON.parse(await readFile(path.join(ROOT, rel), 
 
 function validateEvent(e, where, schoolIds) {
   const at = `${where} [${e.id ?? 'no-id'}]`;
-  for (const field of ['id','title','startDate','sourceName','sourceUrl','sourceType','lastChecked','importedAt']) {
+  for (const field of ['id','title','startDate','sourceId','sourceName','sourceUrl','sourceType','lastChecked','importedAt']) {
     if (!e[field]) fail(`${at}: missing required field "${field}"`);
   }
   if (typeof e.allDay !== 'boolean') fail(`${at}: allDay must be a boolean`);
@@ -104,6 +104,7 @@ async function main() {
     ? await readJson('data/events/_sync-status.json') : { statuses: [] };
   for (const s of status.statuses) {
     if (!s.ok) warn(`source "${s.sourceId}" last sync FAILED: ${s.error}${s.servingStaleData ? ' (serving previous data)' : ''}`);
+    else if (s.empty) warn(`source "${s.sourceId}" parsed but has no events — check whether the school still publishes this calendar`);
   }
 
   if (checkLinks) {

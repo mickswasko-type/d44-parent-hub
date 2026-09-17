@@ -44,10 +44,13 @@ async function syncSource(source, now) {
     const ics = await fetchWithTimeout(icsUrl(source.calendarId));
     const events = normalizeIcs(ics, source, now);
 
-    // A feed that suddenly returns nothing is far more likely to be a broken
-    // upstream than a genuinely empty school calendar. Keep what we had.
+    // A feed that *used* to have events and suddenly returns none is far more
+    // likely to be a broken upstream than a genuinely empty calendar.
     if (events.length === 0 && existsSync(outFile)) {
-      throw new Error('Feed parsed but produced 0 events; keeping previous data');
+      const prev = JSON.parse(await readFile(outFile, 'utf8'));
+      if ((prev.events?.length ?? 0) > 0) {
+        throw new Error('Feed parsed but produced 0 events; keeping previous data');
+      }
     }
 
     await writeFile(
@@ -58,7 +61,14 @@ async function syncSource(source, now) {
         2,
       ) + '\n',
     );
-    return { sourceId: source.id, sourceName: source.sourceName, ok: true, eventCount: events.length, lastChecked: now.toISOString(), error: null, servingStaleData: false };
+    // An empty feed is not a failure, but it is never silently fine either:
+    // a school that stopped publishing looks identical to a working feed
+    // unless we say so. Surfaced in validate and on the About page.
+    if (events.length === 0) {
+      console.warn(`[sync] EMPTY ${source.id}: feed parsed but has no events in the window`);
+    }
+
+    return { sourceId: source.id, sourceName: source.sourceName, ok: true, empty: events.length === 0, eventCount: events.length, lastChecked: now.toISOString(), error: null, servingStaleData: false };
   } catch (err) {
     const hasStale = existsSync(outFile);
     let staleCount = 0;
@@ -69,7 +79,7 @@ async function syncSource(source, now) {
       staleChecked = prev.lastChecked ?? null;
     }
     console.error(`[sync] FAILED ${source.id}: ${err.message}${hasStale ? ' (previous data kept)' : ' (no previous data)'}`);
-    return { sourceId: source.id, sourceName: source.sourceName, ok: false, eventCount: staleCount, lastChecked: staleChecked, error: err.message, servingStaleData: hasStale };
+    return { sourceId: source.id, sourceName: source.sourceName, ok: false, empty: false, eventCount: staleCount, lastChecked: staleChecked, error: err.message, servingStaleData: hasStale };
   }
 }
 
@@ -89,7 +99,8 @@ async function main() {
   await writeFile(STATUS_FILE, JSON.stringify({ ranAt: now.toISOString(), statuses: kept }, null, 2) + '\n');
 
   for (const s of kept) {
-    console.log(`[sync] ${s.ok ? 'ok  ' : 'FAIL'} ${s.sourceId.padEnd(14)} ${String(s.eventCount).padStart(5)} events`);
+    const label = !s.ok ? 'FAIL ' : s.empty ? 'EMPTY' : 'ok   ';
+    console.log(`[sync] ${label} ${s.sourceId.padEnd(14)} ${String(s.eventCount).padStart(5)} events`);
   }
 
   const failed = kept.filter((s) => !s.ok);

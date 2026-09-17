@@ -32,20 +32,16 @@
       "level": "elementary",
       "isDistrict": false,
       "website": "https://bf.sd44.org/",
-      "address": null,
+      "address": "2S 500 Gray Avenue, Lombard, IL 60148",
       "mainPhone": "630-827-4000",
       "attendancePhone": "630-827-4001",
-      "principal": null,
+      "principal": "Hayley Schmelzle",
       "calendarUrl": "https://bf.sd44.org/",
-      "ptaUrl": null,
+      "ptaUrl": "https://bf.sd44.org/resources/pta",
       "sourceName": "Butterfield Elementary School",
-      "sourceUrl": "https://bf.sd44.org/",
+      "sourceUrl": "https://bf.sd44.org/about-us",
       "lastChecked": "2026-09-17",
-      "needsReview": [
-        "address",
-        "principal",
-        "ptaUrl"
-      ]
+      "needsReview": []
     },
     {
       "id": "gw",
@@ -57,14 +53,13 @@
       "address": "1514 S. Main Street, Lombard, IL 60148",
       "mainPhone": "630-827-4500",
       "attendancePhone": "630-827-4502",
-      "principal": null,
+      "principal": "Mike Kettwig",
       "calendarUrl": "https://gw.sd44.org/",
       "ptaUrl": null,
       "sourceName": "Glenn Westlake Middle School",
-      "sourceUrl": "https://gw.sd44.org/",
+      "sourceUrl": "https://gw.sd44.org/about-us",
       "lastChecked": "2026-09-17",
       "needsReview": [
-        "principal",
         "ptaUrl"
       ]
     },
@@ -78,16 +73,13 @@
       "address": "617 S. Hammerschmidt Avenue, Lombard, IL 60148",
       "mainPhone": "630-827-4200",
       "attendancePhone": "630-827-4201",
-      "principal": null,
+      "principal": "David J. Danielski",
       "calendarUrl": "https://wh.sd44.org/",
-      "ptaUrl": null,
+      "ptaUrl": "https://wh.sd44.org/resources/pta",
       "sourceName": "Hammerschmidt Elementary School",
-      "sourceUrl": "https://wh.sd44.org/",
+      "sourceUrl": "https://wh.sd44.org/about-us",
       "lastChecked": "2026-09-17",
-      "needsReview": [
-        "principal",
-        "ptaUrl"
-      ]
+      "needsReview": []
     },
     {
       "id": "ec",
@@ -99,16 +91,17 @@
       "address": "1519 S. Grace Street, Lombard, IL 60148",
       "mainPhone": "630-827-4260",
       "attendancePhone": null,
-      "principal": null,
+      "principal": "Catherine Angelos",
       "calendarUrl": "https://ec.sd44.org/",
       "ptaUrl": null,
       "sourceName": "John Schroder Early Childhood Center",
-      "sourceUrl": "https://ec.sd44.org/",
+      "sourceUrl": "https://ec.sd44.org/about-us",
       "lastChecked": "2026-09-17",
       "needsReview": [
-        "attendancePhone",
-        "principal",
         "ptaUrl"
+      ],
+      "notApplicable": [
+        "attendancePhone"
       ]
     },
     {
@@ -121,14 +114,13 @@
       "address": "150 W. Madison Street, Lombard, IL 60148",
       "mainPhone": "630-827-4100",
       "attendancePhone": "630-827-4101",
-      "principal": null,
+      "principal": "Oscar Suarez",
       "calendarUrl": "https://md.sd44.org/",
       "ptaUrl": null,
       "sourceName": "Madison Elementary School",
-      "sourceUrl": "https://md.sd44.org/",
+      "sourceUrl": "https://md.sd44.org/about-us",
       "lastChecked": "2026-09-17",
       "needsReview": [
-        "principal",
         "ptaUrl"
       ]
     },
@@ -142,14 +134,13 @@
       "address": "1464 S. Main Street, Lombard, IL 60148",
       "mainPhone": "630-827-4300",
       "attendancePhone": "630-827-4301",
-      "principal": null,
+      "principal": "Eric Haren",
       "calendarUrl": "https://mh.sd44.org/",
       "ptaUrl": null,
       "sourceName": "Manor Hill Elementary School",
-      "sourceUrl": "https://mh.sd44.org/",
+      "sourceUrl": "https://mh.sd44.org/about-us",
       "lastChecked": "2026-09-17",
       "needsReview": [
-        "principal",
         "ptaUrl"
       ]
     },
@@ -163,16 +154,13 @@
       "address": "341 N. Elizabeth Street, Lombard, IL 60148",
       "mainPhone": "630-827-4040",
       "attendancePhone": "630-827-4041",
-      "principal": null,
+      "principal": "Andrea Geigner",
       "calendarUrl": "https://pv.sd44.org/",
-      "ptaUrl": null,
+      "ptaUrl": "https://pv.sd44.org/resources/pta",
       "sourceName": "Park View Elementary School",
-      "sourceUrl": "https://pv.sd44.org/",
+      "sourceUrl": "https://pv.sd44.org/about-us",
       "lastChecked": "2026-09-17",
-      "needsReview": [
-        "principal",
-        "ptaUrl"
-      ]
+      "needsReview": []
     },
     {
       "id": "pl",
@@ -184,16 +172,13 @@
       "address": "401 N. Main Street, Lombard, IL 60148",
       "mainPhone": "630-827-4640",
       "attendancePhone": "630-827-4641",
-      "principal": null,
+      "principal": "Rita Tameling",
       "calendarUrl": "https://pl.sd44.org/",
-      "ptaUrl": null,
+      "ptaUrl": "https://pl.sd44.org/resources/pta",
       "sourceName": "Pleasant Lane Elementary School",
-      "sourceUrl": "https://pl.sd44.org/",
+      "sourceUrl": "https://pl.sd44.org/about-us",
       "lastChecked": "2026-09-17",
-      "needsReview": [
-        "principal",
-        "ptaUrl"
-      ]
+      "needsReview": []
     }
   ]
 }

@@ -4,6 +4,7 @@ import tasksDoc from '../../data/resources/tasks.json';
 import questionsDoc from '../../data/resources/questions.json';
 import manualDoc from '../../data/manual/manual-events.json';
 import statusDoc from '../../data/events/_sync-status.json';
+import sourcesDoc from '../../data/sources/sources.json';
 
 /**
  * Every generated source file is picked up automatically, so adding a source
@@ -16,6 +17,13 @@ export const tasks = tasksDoc.tasks as ParentTask[];
 export const questions = questionsDoc.questions as ResourceAnswer[];
 export const syncStatuses = statusDoc.statuses as SyncStatus[];
 export const syncRanAt: string = statusDoc.ranAt;
+export const sources = sourcesDoc.sources;
+
+/** The sync result for a school's own calendar feed, if it has one. */
+export function sourceStatusForSchool(schoolId: string): SyncStatus | undefined {
+  const source = sources.find((s) => s.enabled && s.schoolIds.includes(schoolId) && schoolId !== 'district');
+  return source ? syncStatuses.find((st) => st.sourceId === source.id) : undefined;
+}
 
 export const schoolsById = new Map(schools.map((s) => [s.id, s]));
 export const selectableSchools = schools.filter((s) => !s.isDistrict);
@@ -53,3 +61,40 @@ export function upcomingFrom(today: string, events: HubEvent[] = allEvents): Hub
 }
 
 export const schoolLabel = (id: string): string => schoolsById.get(id)?.shortName ?? id;
+
+/** Extra names a school is known by in calendar titles. */
+const SCHOOL_ALIASES: Record<string, string[]> = {
+  gw: ['gwms'],
+  ec: ['jsecc'],
+};
+
+/**
+ * A normalized title used only for duplicate detection. The district prefixes
+ * per-school events with the school name ("Hammerschmidt PTA Meeting") while
+ * the school's own feed does not ("PTA Meeting - LRC"), so the prefix is
+ * stripped before comparing.
+ */
+export function titleKeyFor(event: HubEvent): string {
+  const flatten = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+  let key = flatten(event.title);
+
+  const names = event.schoolIds
+    .filter((id) => id !== 'district')
+    .flatMap((id) => {
+      const school = schoolsById.get(id);
+      if (!school) return [];
+      return [
+        school.shortName,
+        school.name.replace(/ (Elementary|Middle) School$/, ''),
+        ...(SCHOOL_ALIASES[id] ?? []),
+      ];
+    })
+    .map(flatten)
+    .filter(Boolean)
+    .sort((a, b) => b.length - a.length);
+
+  for (const name of names) {
+    if (key.startsWith(name + ' ')) { key = key.slice(name.length).trim(); break; }
+  }
+  return key.slice(0, 48);
+}

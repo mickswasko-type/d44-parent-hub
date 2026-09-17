@@ -162,6 +162,7 @@ const nav = [
           document.documentElement.setAttribute('data-personalized', selected.length ? 'yes' : 'no');
 
           document.querySelectorAll('[data-schools]').forEach(function (el) {
+            if (el.closest('[data-ignore-prefs]')) { el.hidden = false; return; }
             var ids = (el.getAttribute('data-schools') || '').split(',');
             var relevant = selected.length === 0 || ids.some(function (id) {
               return id === 'district' || selected.indexOf(id) !== -1;
@@ -187,11 +188,152 @@ const nav = [
 
           document.querySelectorAll('[data-needs-prefs]').forEach(function (el) { el.hidden = selected.length > 0; });
           document.querySelectorAll('[data-has-prefs]').forEach(function (el) { el.hidden = selected.length === 0; });
+
+          if (window.d44.collapseDuplicates) window.d44.collapseDuplicates(document);
+
+          /* "Coming up" renders the whole window so personalization has
+             something to choose from; only a readable slice is shown. */
+          var upcoming = document.querySelector('[data-bucket="upcoming"]');
+          if (upcoming) {
+            var shown = 0;
+            var cappedCount = 0;
+            Array.prototype.slice.call(upcoming.children).forEach(function (card) {
+              if (card.hidden) return;
+              if (shown < 12) { shown++; return; }
+              card.hidden = true;
+              cappedCount++;
+            });
+            var more = document.querySelector('[data-more-link]');
+            if (more) more.hidden = cappedCount === 0;
+          }
+
+          document.querySelectorAll('[data-empty-for]').forEach(function (el) {
+            var list = document.querySelector('[data-bucket="' + el.getAttribute('data-empty-for') + '"]');
+            if (!list) return;
+            var visible = Array.prototype.slice.call(list.children).some(function (c) { return !c.hidden; });
+            el.hidden = visible;
+          });
         }
+
+        /* "Add to calendar": build a one-event .ics from what is already on the
+           card, at click time. Embedding the files inline instead cost ~300KB
+           on the calendar page. */
+        function pad(n) { return n < 10 ? '0' + n : '' + n; }
+        function stampUtc(d) {
+          return d.getUTCFullYear() + pad(d.getUTCMonth() + 1) + pad(d.getUTCDate()) + 'T' +
+                 pad(d.getUTCHours()) + pad(d.getUTCMinutes()) + pad(d.getUTCSeconds()) + 'Z';
+        }
+        function stampDate(iso) { return iso.slice(0, 10).replace(/-/g, ''); }
+        function esc(v) { return String(v).replace(/([,;\\])/g, '\\$1').replace(/\n/g, '\\n'); }
+
+        function buildIcs(card) {
+          var allDay = card.hasAttribute('data-allday');
+          var titleEl = card.querySelector('.title');
+          var locEl = card.querySelector('.event-loc');
+          var srcEl = card.querySelector('.source-line a');
+          var title = titleEl ? titleEl.textContent.trim() : 'Event';
+          var lines = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//D44 Parent Hub//EN', 'CALSCALE:GREGORIAN', 'BEGIN:VEVENT'];
+          lines.push('UID:' + card.getAttribute('data-date') + '-' + Math.abs(hash(title)) + '@d44-parent-hub');
+          lines.push('DTSTAMP:' + stampUtc(new Date()));
+
+          if (allDay) {
+            var endDay = new Date((card.getAttribute('data-end') || card.getAttribute('data-date')) + 'T12:00:00Z');
+            endDay.setUTCDate(endDay.getUTCDate() + 1); // ICS all-day DTEND is exclusive
+            lines.push('DTSTART;VALUE=DATE:' + stampDate(card.getAttribute('data-date')));
+            lines.push('DTEND;VALUE=DATE:' + stampDate(endDay.toISOString()));
+          } else {
+            var startAt = card.getAttribute('data-start-at');
+            var endAt = card.getAttribute('data-end-at') || startAt;
+            lines.push('DTSTART:' + stampUtc(new Date(startAt)));
+            lines.push('DTEND:' + stampUtc(new Date(endAt)));
+          }
+
+          lines.push('SUMMARY:' + esc(title));
+          if (locEl) lines.push('LOCATION:' + esc(locEl.textContent.trim()));
+          if (srcEl) lines.push('DESCRIPTION:' + esc('Source: ' + srcEl.textContent.trim() + ' — ' + srcEl.href));
+          lines.push('END:VEVENT', 'END:VCALENDAR');
+          return lines.join('\r\n');
+        }
+
+        function hash(str) {
+          var h = 0;
+          for (var i = 0; i < str.length; i++) { h = (h << 5) - h + str.charCodeAt(i); h |= 0; }
+          return h;
+        }
+
+        function enableIcsButtons() {
+          document.querySelectorAll('button[data-ics]').forEach(function (btn) { btn.hidden = false; });
+        }
+
+        document.addEventListener('click', function (ev) {
+          var btn = ev.target && ev.target.closest && ev.target.closest('button[data-ics]');
+          if (!btn) return;
+          var card = btn.closest('[data-date]');
+          if (!card) return;
+          var titleEl = card.querySelector('.title');
+          var name = (titleEl ? titleEl.textContent.trim() : 'event')
+            .toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 40) || 'event';
+          var blob = new Blob([buildIcs(card)], { type: 'text/calendar;charset=utf-8' });
+          var url = URL.createObjectURL(blob);
+          var a = document.createElement('a');
+          a.href = url;
+          a.download = name + '.ics';
+          document.body.appendChild(a);
+          a.click();
+          document.body.removeChild(a);
+          setTimeout(function () { URL.revokeObjectURL(url); }, 1000);
+        });
+
+        /* The district and an individual school often publish the same day
+           ("Early Release Day" vs "EARLY RELEASE DAY - 1:15pm Dismissal").
+           Once we know which schools this parent picked, prefer the school's
+           own feed over the district's copy: it is the more specific one, and
+           usually carries the actual dismissal time. Only the district copy is
+           ever hidden, and only when the school's own version is visible.
+
+           Visibility is owned by the card itself on most pages, but by a
+           filter wrapper on the calendar page, so resolve that first. */
+        function visibilityOwner(card) {
+          return card.closest('[data-category]') || card;
+        }
+
+        function collapseDuplicates(scope) {
+          var byDate = {};
+          scope.querySelectorAll('[data-title-key]').forEach(function (card) {
+            if (card.closest('[data-ignore-prefs]')) return;
+            var owner = visibilityOwner(card);
+            if (owner.hidden) return;
+            var d = card.getAttribute('data-date');
+            (byDate[d] = byDate[d] || []).push(card);
+          });
+
+          Object.keys(byDate).forEach(function (date) {
+            var cards = byDate[date];
+            cards.forEach(function (a) {
+              if (a.getAttribute('data-source-id') !== 'd44-district') return;
+              var ownerA = visibilityOwner(a);
+              if (ownerA.hidden) return;
+              var ak = a.getAttribute('data-title-key');
+              for (var i = 0; i < cards.length; i++) {
+                var b = cards[i];
+                if (b === a) continue;
+                if (b.getAttribute('data-source-id') === 'd44-district') continue;
+                if (visibilityOwner(b).hidden) continue;
+                var bk = b.getAttribute('data-title-key');
+                if (ak && bk && (ak.indexOf(bk) === 0 || bk.indexOf(ak) === 0)) {
+                  ownerA.hidden = true;
+                  return;
+                }
+              }
+            });
+          });
+        }
+        window.d44.collapseDuplicates = collapseDuplicates;
 
         window.d44.apply = apply;
         repartition(localToday());
         apply();
+        enableIcsButtons();
         window.addEventListener('pageshow', function () { repartition(localToday()); apply(); });
 
         if ('serviceWorker' in navigator) {

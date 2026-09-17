@@ -43,7 +43,11 @@ const needsReview = schools.filter((s) => s.needsReview.length > 0);
         <div class="card">
           <h3>{s.sourceName}</h3>
           <p class="meta" style="color:var(--text-muted);margin:4px 0 0">
-            {s.ok ? `${s.eventCount} events · checked ${sinceLabel(s.lastChecked)}` : `Last check failed: ${s.error}`}
+            {!s.ok
+              ? `Last check failed: ${s.error}`
+              : s.empty
+                ? `No events published · checked ${sinceLabel(s.lastChecked)}`
+                : `${s.eventCount} events · checked ${sinceLabel(s.lastChecked)}`}
             {s.servingStaleData && ' · showing last good copy'}
           </p>
         </div>

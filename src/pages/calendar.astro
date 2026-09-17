@@ -5,7 +5,7 @@ import { allEvents, upcomingFrom, selectableSchools } from '../lib/data';
 import { todayIso, longDate, dateOf, addDays } from '../lib/dates';
 
 const today = todayIso();
-const events = upcomingFrom(today, allEvents).filter((e) => dateOf(e.startDate) <= addDays(today, 180));
+const events = upcomingFrom(today, allEvents).filter((e) => dateOf(e.startDate) <= addDays(today, 90));
 
 const grouped = events.reduce<Record<string, typeof events>>((acc, e) => {
   const key = dateOf(e.startDate);
@@ -24,7 +24,7 @@ const CATEGORY_FILTERS = [
 ---
 <Base title="Calendar" description="Every upcoming District 44 event in one chronological list, filterable by school and type.">
   <h1>Calendar</h1>
-  <p class="lede">The next six months, district-wide and by school. Chronological, not a grid.</p>
+  <p class="lede">The next three months, district-wide and by school. Chronological, not a grid.</p>
 
   <section>
     <h2>Filter</h2>
@@ -90,6 +90,8 @@ const CATEGORY_FILTERS = [
         el.hidden = !(okSchool && okCategory);
         if (!el.hidden) anyVisible = true;
       });
+
+      if (window.d44.collapseDuplicates) window.d44.collapseDuplicates(root);
 
       root.querySelectorAll('[data-day]').forEach(function (day) {
         var visible = Array.prototype.slice.call(day.querySelectorAll('[data-category]'))

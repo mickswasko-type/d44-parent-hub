@@ -8,7 +8,9 @@
     "endDate": null,
     "allDay": true,
     "location": null,
-    "schoolIds": ["md"],
+    "schoolIds": [
+      "md"
+    ],
     "category": "deadline",
     "sourceName": "Madison Elementary Virtual Backpack",
     "sourceUrl": "https://www.sd44.org/resources/virtual-backpack",
@@ -17,7 +19,8 @@
     "importedAt": "2026-09-17T00:00:00.000Z",
     "manualOverride": true,
     "featured": true,
-    "actionDeadline": "2026-10-20"
+    "actionDeadline": "2026-10-20",
+    "sourceId": "manual"
   },
   "events": [
     {
@@ -28,7 +31,9 @@
       "endDate": null,
       "allDay": true,
       "location": null,
-      "schoolIds": ["district"],
+      "schoolIds": [
+        "district"
+      ],
       "category": "deadline",
       "sourceName": "Sample fixture data",
       "sourceUrl": "https://www.sd44.org/resources/registration",
@@ -38,7 +43,8 @@
       "manualOverride": true,
       "featured": true,
       "actionDeadline": "2026-09-30",
-      "sample": true
+      "sample": true,
+      "sourceId": "manual"
     },
     {
       "id": "sample-supply-dropoff",
@@ -48,7 +54,10 @@
       "endDate": null,
       "allDay": true,
       "location": null,
-      "schoolIds": ["md", "pv"],
+      "schoolIds": [
+        "md",
+        "pv"
+      ],
       "category": "deadline",
       "sourceName": "Sample fixture data",
       "sourceUrl": "https://www.sd44.org/resources/volunteering",
@@ -58,7 +67,8 @@
       "manualOverride": true,
       "featured": true,
       "actionDeadline": "2026-10-06",
-      "sample": true
+      "sample": true,
+      "sourceId": "manual"
     }
   ]
 }

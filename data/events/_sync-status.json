@@ -1,12 +1,93 @@
 {
-  "ranAt": "2026-09-17T15:05:07.815Z",
+  "ranAt": "2026-09-17T15:31:45.611Z",
   "statuses": [
     {
       "sourceId": "d44-district",
       "sourceName": "District 44 Public Calendar",
       "ok": true,
+      "empty": false,
       "eventCount": 184,
-      "lastChecked": "2026-09-17T15:05:07.815Z",
+      "lastChecked": "2026-09-17T15:31:45.611Z",
+      "error": null,
+      "servingStaleData": false
+    },
+    {
+      "sourceId": "bf-calendar",
+      "sourceName": "Butterfield Elementary Calendar",
+      "ok": true,
+      "empty": false,
+      "eventCount": 123,
+      "lastChecked": "2026-09-17T15:31:45.611Z",
+      "error": null,
+      "servingStaleData": false
+    },
+    {
+      "sourceId": "gw-calendar",
+      "sourceName": "Glenn Westlake Middle School Public Events",
+      "ok": true,
+      "empty": true,
+      "eventCount": 0,
+      "lastChecked": "2026-09-17T15:31:45.611Z",
+      "error": null,
+      "servingStaleData": false
+    },
+    {
+      "sourceId": "wh-calendar",
+      "sourceName": "Hammerschmidt Elementary Calendar",
+      "ok": true,
+      "empty": false,
+      "eventCount": 91,
+      "lastChecked": "2026-09-17T15:31:45.611Z",
+      "error": null,
+      "servingStaleData": false
+    },
+    {
+      "sourceId": "ec-calendar",
+      "sourceName": "John Schroder Early Childhood Center Calendar",
+      "ok": true,
+      "empty": false,
+      "eventCount": 15,
+      "lastChecked": "2026-09-17T15:31:45.611Z",
+      "error": null,
+      "servingStaleData": false
+    },
+    {
+      "sourceId": "md-calendar",
+      "sourceName": "Madison Elementary Calendar",
+      "ok": true,
+      "empty": false,
+      "eventCount": 96,
+      "lastChecked": "2026-09-17T15:31:45.611Z",
+      "error": null,
+      "servingStaleData": false
+    },
+    {
+      "sourceId": "mh-calendar",
+      "sourceName": "Manor Hill Elementary Public Events",
+      "ok": true,
+      "empty": false,
+      "eventCount": 22,
+      "lastChecked": "2026-09-17T15:31:45.611Z",
+      "error": null,
+      "servingStaleData": false
+    },
+    {
+      "sourceId": "pv-calendar",
+      "sourceName": "Park View Elementary Calendar",
+      "ok": true,
+      "empty": false,
+      "eventCount": 148,
+      "lastChecked": "2026-09-17T15:31:45.611Z",
+      "error": null,
+      "servingStaleData": false
+    },
+    {
+      "sourceId": "pl-calendar",
+      "sourceName": "Pleasant Lane Elementary Public Events",
+      "ok": true,
+      "empty": false,
+      "eventCount": 205,
+      "lastChecked": "2026-09-17T15:31:45.611Z",
       "error": null,
       "servingStaleData": false
     }

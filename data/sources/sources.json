@@ -21,7 +21,7 @@
       ],
       "calendarId": "sd44.org_1m10rnp8fapaj54r6kfpc2gnk4@group.calendar.google.com",
       "sourceUrl": "https://bf.sd44.org/",
-      "enabled": false
+      "enabled": true
     },
     {
       "id": "gw-calendar",
@@ -32,7 +32,7 @@
       ],
       "calendarId": "sd44.org_42s628drps8dcha55ckjpetnr4@group.calendar.google.com",
       "sourceUrl": "https://gw.sd44.org/",
-      "enabled": false
+      "enabled": true
     },
     {
       "id": "wh-calendar",
@@ -43,7 +43,7 @@
       ],
       "calendarId": "sd44.org_cdiq367q9472k2jniroep7mf6g@group.calendar.google.com",
       "sourceUrl": "https://wh.sd44.org/",
-      "enabled": false
+      "enabled": true
     },
     {
       "id": "ec-calendar",
@@ -54,7 +54,7 @@
       ],
       "calendarId": "sd44.org_o7198n7u171j50t22rsuj93o30@group.calendar.google.com",
       "sourceUrl": "https://ec.sd44.org/",
-      "enabled": false
+      "enabled": true
     },
     {
       "id": "md-calendar",
@@ -65,7 +65,7 @@
       ],
       "calendarId": "sd44.org_g1nbq1nujdti0rmfjcqmf1h4sg@group.calendar.google.com",
       "sourceUrl": "https://md.sd44.org/",
-      "enabled": false
+      "enabled": true
     },
     {
       "id": "mh-calendar",
@@ -76,7 +76,7 @@
       ],
       "calendarId": "sd44.org_8tnjuiojik15td8itrlll2p424@group.calendar.google.com",
       "sourceUrl": "https://mh.sd44.org/",
-      "enabled": false
+      "enabled": true
     },
     {
       "id": "pv-calendar",
@@ -87,7 +87,7 @@
       ],
       "calendarId": "sd44.org_an5j0aj69aepnmmm8a8k8imm8g@group.calendar.google.com",
       "sourceUrl": "https://pv.sd44.org/",
-      "enabled": false
+      "enabled": true
     },
     {
       "id": "pl-calendar",
@@ -98,8 +98,8 @@
       ],
       "calendarId": "sd44.org_23sn9sefo5p5vk932v6odk5in4@group.calendar.google.com",
       "sourceUrl": "https://pl.sd44.org/",
-      "enabled": false
+      "enabled": true
     }
   ],
-  "$comment2": "Hybrid rollout: the district feed is live now to validate the schema against real data. Flip a school to enabled:true once its output has been reviewed."
+  "$comment2": "All nine public District 44 calendars are enabled. Disable a source here if its feed becomes unreliable; the site keeps its last good data either way."
 }

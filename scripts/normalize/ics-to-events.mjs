@@ -21,9 +21,20 @@ export function normalizeIcs(icsText, source, now = new Date()) {
   const windowEnd = new Date(now.getTime() + WINDOW_FORWARD_DAYS * 864e5);
   const checkedAt = now.toISOString();
 
+  const vevents = comp.getAllSubcomponents('vevent');
+
+  // A moved or edited occurrence of a recurring series appears twice in the
+  // feed: once as a VEVENT carrying RECURRENCE-ID, and once inside its master
+  // series. ical.js folds the override into the master when both are present,
+  // so processing the standalone copy as well would duplicate the event.
+  const masterUids = new Set(
+    vevents.filter((v) => !v.getFirstPropertyValue('recurrence-id')).map((v) => v.getFirstPropertyValue('uid')),
+  );
+
   const events = [];
-  for (const vevent of comp.getAllSubcomponents('vevent')) {
+  for (const vevent of vevents) {
     if ((vevent.getFirstPropertyValue('status') || '').toUpperCase() === 'CANCELLED') continue;
+    if (vevent.getFirstPropertyValue('recurrence-id') && masterUids.has(vevent.getFirstPropertyValue('uid'))) continue;
 
     const event = new ICAL.Event(vevent);
     if (!event.startDate) continue;
@@ -39,9 +50,15 @@ export function normalizeIcs(icsText, source, now = new Date()) {
     }
   }
 
+  // Belt and braces: ids are content-derived, so an exact id collision is an
+  // exact duplicate. Upstream calendars do occasionally contain them.
+  const byId = new Map();
+  for (const e of events) if (!byId.has(e.id)) byId.set(e.id, e);
+  const unique = [...byId.values()];
+
   // Stable ordering keeps generated JSON diffs readable in git.
-  events.sort((a, b) => a.startDate.localeCompare(b.startDate) || a.title.localeCompare(b.title));
-  return events;
+  unique.sort((a, b) => a.startDate.localeCompare(b.startDate) || a.title.localeCompare(b.title));
+  return unique;
 }
 
 function expandRecurring(event, windowStart, windowEnd) {
@@ -85,6 +102,7 @@ function toHubEvent(event, occ, source, checkedAt) {
     location: event.location ? event.location.trim() : null,
     schoolIds: inferSchoolIds(title, source.schoolIds),
     category: categorize(title, description || ''),
+    sourceId: source.id,
     sourceName: source.sourceName,
     sourceUrl: source.sourceUrl,
     sourceType: 'ics',

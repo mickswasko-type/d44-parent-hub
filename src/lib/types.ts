@@ -11,6 +11,7 @@ export interface HubEvent {
   schoolIds: string[];
   category: EventCategory;
   /** Provenance — required on every record, imported or manual. */
+  sourceId: string;
   sourceName: string;
   sourceUrl: string;
   sourceType: SourceType;
@@ -88,6 +89,8 @@ export interface SyncStatus {
   sourceId: string;
   sourceName: string;
   ok: boolean;
+  /** Parsed successfully but contains no events — usually a calendar the school stopped maintaining. */
+  empty?: boolean;
   eventCount: number;
   lastChecked: string;
   /** Set when the most recent run failed and stale-but-valid data was kept. */

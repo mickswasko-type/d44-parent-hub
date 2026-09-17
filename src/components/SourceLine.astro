@@ -4,7 +4,7 @@ import { sinceLabel } from '../lib/dates';
 interface Props { sourceName: string; sourceUrl: string; lastChecked?: string | null; }
 const { sourceName, sourceUrl, lastChecked = null } = Astro.props;
 ---
-<p class="source">
+<p class="source source-line">
   <span>Source: <a href={sourceUrl} rel="noopener">{sourceName}</a></span>
   {lastChecked && <span>· Last checked {sinceLabel(lastChecked)}</span>}
 </p>

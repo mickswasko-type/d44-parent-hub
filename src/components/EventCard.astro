@@ -2,8 +2,7 @@
 import type { HubEvent } from '../lib/types';
 import SourceLine from './SourceLine.astro';
 import { dayNumber, dayOfWeek, monthShort, timeOf, dateOf, relativeDay } from '../lib/dates';
-import { schoolLabel } from '../lib/data';
-import { icsDataUrl, icsFileName } from '../lib/ics';
+import { schoolLabel, titleKeyFor } from '../lib/data';
 
 interface Props { event: HubEvent; today: string; showSource?: boolean; }
 const { event, today, showSource = true } = Astro.props;
@@ -24,12 +23,21 @@ const CATEGORY_LABELS: Record<string, string> = {
 
 const names = event.schoolIds.map(schoolLabel).join(', ');
 const isSample = (event as HubEvent & { sample?: boolean }).sample === true;
+
+// Used only to spot the same event arriving from two feeds (e.g. an early
+// release day published by both the district and your school).
+const titleKey = titleKeyFor(event);
 ---
 <article
   class:list={['event', 'card', tone]}
   data-date={start}
   data-end={end}
+  data-start-at={event.allDay ? undefined : event.startDate}
+  data-end-at={event.allDay || !event.endDate ? undefined : event.endDate}
+  data-allday={event.allDay ? '' : undefined}
   data-schools={event.schoolIds.join(',')}
+  data-title-key={titleKey}
+  data-source-id={event.sourceId}
 >
   <div class="when">
     <div class="dow">{rel === 'Today' ? 'Today' : dayOfWeek(start)}</div>
@@ -50,10 +58,13 @@ const isSample = (event as HubEvent & { sample?: boolean }).sample === true;
       {isSample && <span class="badge sample">Sample</span>}
     </p>
     {event.description && <p class="desc">{event.description.slice(0, 220)}</p>}
-    {event.location && <p class="desc">📍 {event.location}</p>}
-    <p class="source">
-      <a href={icsDataUrl(event)} download={icsFileName(event)}>Add to calendar</a>
-    </p>
-    {showSource && <SourceLine sourceName={event.sourceName} sourceUrl={event.sourceUrl} lastChecked={event.lastChecked} />}
+    {event.location && <p class="desc">📍 <span class="event-loc">{event.location}</span></p>}
+    {/* Built on click rather than embedded: 500+ inline .ics data URLs added
+        300KB to the calendar page. Hidden until the script enables it, so it
+        is never a dead control. */}
+    <p class="source"><button type="button" class="linklike" data-ics hidden>Add to calendar</button></p>
+    {showSource && (
+      <SourceLine sourceName={event.sourceName} sourceUrl={event.sourceUrl} lastChecked={event.lastChecked} />
+    )}
   </div>
 </article>

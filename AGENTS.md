@@ -34,20 +34,23 @@ and the district disagree, the district is right.
   `public/manifest.webmanifest`.
 - **Data lives in `data/` as plain JSON** and is imported at build time by
   `src/lib/data.ts`. There is no database and no runtime API.
-- **Client-side JavaScript is limited to three jobs**, all in the inline scripts
-  in `src/layouts/Base.astro` and `src/components/SchoolPicker.astro`:
+- **Client-side JavaScript is limited to a few well-defined jobs**, all in the
+  inline scripts in `src/layouts/Base.astro` and `src/components/SchoolPicker.astro`:
   1. read/write school preferences in `localStorage`,
   2. hide events that are not relevant to the chosen schools,
   3. re-partition Today / This week / Coming up against the *device* clock, so a
-     cached or stale build can never claim the wrong day.
-  Every page renders correctly with JavaScript disabled — just not personalized.
+     cached or stale build can never claim the wrong day,
+  4. collapse an event that arrives from both the district and a school feed,
+  5. cap the visible "Coming up" list, and build a one-event `.ics` on click.
+  Every page renders correctly with JavaScript disabled — just not personalized,
+  and without "Add to calendar", which is hidden until the script enables it.
 - **Service worker** (`public/sw.js`) is network-first, so an online parent never
   sees stale events; the cache only covers being offline.
 
 ```
 src/components   presentational .astro components
 src/layouts      Base.astro — head, nav, footer, personalization script
-src/lib          types, data loading, date math, ICS export
+src/lib          types, data loading, date math, duplicate-title keys
 src/pages        routes (index, calendar, resources, schools, settings, about)
 data/schools     curated school records
 data/sources     the source registry — add a feed here, not in code
@@ -70,7 +73,7 @@ Every event — imported or manual — uses the `HubEvent` shape in
 | `title`, `description`, `startDate`, `endDate`, `allDay`, `location` | the event |
 | `schoolIds` | `['district']` or specific school ids |
 | `category` | one of the values in `EventCategory` |
-| `sourceName`, `sourceUrl`, `sourceType` | **provenance — never optional** |
+| `sourceId`, `sourceName`, `sourceUrl`, `sourceType` | **provenance — never optional** |
 | `lastChecked`, `importedAt` | freshness |
 | `manualOverride` | a human edited this; sync must not clobber it |
 | `featured`, `actionDeadline` | drives the "Don't forget" section |
@@ -80,8 +83,15 @@ Conventions worth knowing:
 - All-day events store **date-only** strings (`YYYY-MM-DD`); timed events store
   full ISO timestamps.
 - ICS `DTEND` for all-day events is *exclusive* upstream; we store an
-  **inclusive** `endDate` so a break never appears a day too long. `src/lib/ics.ts`
-  converts back when exporting.
+  **inclusive** `endDate` so a break never appears a day too long. The
+  "Add to calendar" builder in `Base.astro` converts back when exporting.
+- A moved occurrence of a recurring series (`RECURRENCE-ID`) appears twice in a
+  feed. ical.js folds it into the master, so the standalone copy is skipped —
+  see `scripts/normalize/ics-to-events.mjs`.
+- The district calendar and a school calendar often publish the *same* day with
+  different wording. Both are kept in the data (they have different sources);
+  the district copy is hidden in the browser when the school's own version is
+  visible to that parent.
 - Manual records win over imported ones with the same `id` (`dedupe()` in
   `src/lib/data.ts`).
 
@@ -144,8 +154,13 @@ public Google Calendar → ICS → scripts/normalize → normalized JSON → com
 
 - `.github/workflows/sync.yml` runs daily at 09:20 UTC and on demand.
 - Each source is fetched independently. One failing source never affects another.
-- On failure the previous good file is **kept**, not emptied. A feed that parses
-  but returns zero events is treated as a failure for the same reason.
+- On failure the previous good file is **kept**, not emptied. A feed that used
+  to have events and suddenly returns none is treated as a failure for the same
+  reason.
+- A feed that parses but has genuinely never had events in the window is marked
+  `empty` rather than `ok`. It does not fail the build — some schools simply
+  stop maintaining their calendar — but it is surfaced in `npm run validate`,
+  on the About page, and on that school's page.
 - Failures are written to `data/events/_sync-status.json`, surfaced in the UI
   (homepage banner and the About page), reported as a GitHub issue, and make the
   workflow red.
