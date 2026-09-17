@@ -1,4 +1,4 @@
-# CLAUDE.md — D44 Parent Hub
+# CLAUDE.md — My D44 PASS (repository: d44-parent-hub)
 
 Instructions for any AI agent (or human) working in this repository. Read this
 before changing anything.
