@@ -1,5 +1,5 @@
 {
-  "ranAt": "2026-09-17T15:53:35.230Z",
+  "ranAt": "2026-09-17T15:56:14.730Z",
   "statuses": [
     {
       "sourceId": "d44-district",
@@ -7,7 +7,7 @@
       "ok": true,
       "empty": false,
       "eventCount": 184,
-      "lastChecked": "2026-09-17T15:53:35.230Z",
+      "lastChecked": "2026-09-17T15:56:14.730Z",
       "error": null,
       "servingStaleData": false
     },
@@ -17,7 +17,7 @@
       "ok": true,
       "empty": false,
       "eventCount": 123,
-      "lastChecked": "2026-09-17T15:53:35.230Z",
+      "lastChecked": "2026-09-17T15:56:14.730Z",
       "error": null,
       "servingStaleData": false
     },
@@ -27,7 +27,7 @@
       "ok": true,
       "empty": true,
       "eventCount": 0,
-      "lastChecked": "2026-09-17T15:53:35.230Z",
+      "lastChecked": "2026-09-17T15:56:14.730Z",
       "error": null,
       "servingStaleData": false
     },
@@ -37,7 +37,7 @@
       "ok": true,
       "empty": false,
       "eventCount": 91,
-      "lastChecked": "2026-09-17T15:53:35.230Z",
+      "lastChecked": "2026-09-17T15:56:14.730Z",
       "error": null,
       "servingStaleData": false
     },
@@ -47,7 +47,7 @@
       "ok": true,
       "empty": false,
       "eventCount": 15,
-      "lastChecked": "2026-09-17T15:53:35.230Z",
+      "lastChecked": "2026-09-17T15:56:14.730Z",
       "error": null,
       "servingStaleData": false
     },
@@ -57,7 +57,7 @@
       "ok": true,
       "empty": false,
       "eventCount": 96,
-      "lastChecked": "2026-09-17T15:53:35.230Z",
+      "lastChecked": "2026-09-17T15:56:14.730Z",
       "error": null,
       "servingStaleData": false
     },
@@ -67,7 +67,7 @@
       "ok": true,
       "empty": false,
       "eventCount": 22,
-      "lastChecked": "2026-09-17T15:53:35.230Z",
+      "lastChecked": "2026-09-17T15:56:14.730Z",
       "error": null,
       "servingStaleData": false
     },
@@ -76,8 +76,8 @@
       "sourceName": "Park View Elementary Calendar",
       "ok": true,
       "empty": false,
-      "eventCount": 181,
-      "lastChecked": "2026-09-17T15:53:35.230Z",
+      "eventCount": 174,
+      "lastChecked": "2026-09-17T15:56:14.730Z",
       "error": null,
       "servingStaleData": false
     },
@@ -87,7 +87,7 @@
       "ok": true,
       "empty": false,
       "eventCount": 205,
-      "lastChecked": "2026-09-17T15:53:35.230Z",
+      "lastChecked": "2026-09-17T15:56:14.730Z",
       "error": null,
       "servingStaleData": false
     }

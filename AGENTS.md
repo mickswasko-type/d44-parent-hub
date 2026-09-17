@@ -74,7 +74,7 @@ Every event — imported or manual — uses the `HubEvent` shape in
 | `schoolIds` | `['district']` or specific school ids |
 | `category` | one of the values in `EventCategory` |
 | `sourceId`, `sourceName`, `sourceUrl`, `sourceType` | **provenance — never optional** |
-| `lastChecked`, `importedAt` | freshness |
+| `importedAt` | when this record was first seen; preserved across syncs |
 | `manualOverride` | a human edited this; sync must not clobber it |
 | `featured`, `actionDeadline` | drives the "Don't forget" section |
 
@@ -82,6 +82,16 @@ Conventions worth knowing:
 
 - All-day events store **date-only** strings (`YYYY-MM-DD`); timed events store
   full ISO timestamps.
+- **Never derive an all-day date through `toJSDate()`.** It returns *local*
+  midnight, so the result differs between a laptop and a UTC CI runner — which
+  silently rewrote every event id on each sync. Use `canonicalStamp()` in
+  `scripts/normalize/ics-to-events.mjs`.
+- `lastChecked` is stored **once per generated file**, not on every record, so a
+  sync with no upstream changes is a one-line diff instead of a two-thousand
+  line one. `src/lib/data.ts` stamps it back onto each event at load time, and
+  the UI still shows it per card. Manual records carry their own.
+- `importedAt` is carried forward for events that already existed, for the same
+  reason. It means "first seen", not "last synced".
 - ICS `DTEND` for all-day events is *exclusive* upstream; we store an
   **inclusive** `endDate` so a break never appears a day too long. The
   "Add to calendar" builder in `Base.astro` converts back when exporting.

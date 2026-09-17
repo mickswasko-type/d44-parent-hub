@@ -10,7 +10,10 @@ import sourcesDoc from '../../data/sources/sources.json';
  * Every generated source file is picked up automatically, so adding a source
  * means adding a row to sources.json — no code change here.
  */
-const generated = import.meta.glob<{ events: HubEvent[] }>('../../data/events/generated/*.json', { eager: true });
+const generated = import.meta.glob<{ lastChecked: string; events: HubEvent[] }>(
+  '../../data/events/generated/*.json',
+  { eager: true },
+);
 
 export const schools = schoolsDoc.schools as School[];
 export const tasks = tasksDoc.tasks as ParentTask[];
@@ -40,7 +43,12 @@ function dedupe(events: HubEvent[]): HubEvent[] {
 }
 
 const manualEvents = manualDoc.events as HubEvent[];
-const importedEvents = Object.values(generated).flatMap((m) => m.events);
+// `lastChecked` is stored once per file rather than on every record, so that a
+// sync with no upstream changes produces a one-line diff. The UI still shows it
+// per card, so it is stamped back on here.
+const importedEvents = Object.values(generated).flatMap((file) =>
+  file.events.map((event) => ({ ...event, lastChecked: file.lastChecked })),
+);
 
 export const allEvents: HubEvent[] = dedupe([...importedEvents, ...manualEvents]).sort(
   (a, b) => a.startDate.localeCompare(b.startDate) || a.title.localeCompare(b.title),

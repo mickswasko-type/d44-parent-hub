@@ -8,7 +8,6 @@ export const WINDOW_BACK_DAYS = 30;
 export const WINDOW_FORWARD_DAYS = 400;
 const MAX_OCCURRENCES_PER_SERIES = 400;
 
-const isoDate = (d) => d.toISOString().slice(0, 10);
 
 /**
  * Convert an ICS document into normalized HubEvent records.
@@ -19,7 +18,7 @@ export function normalizeIcs(icsText, source, now = new Date()) {
   const comp = new ICAL.Component(jcal);
   const windowStart = new Date(now.getTime() - WINDOW_BACK_DAYS * 864e5);
   const windowEnd = new Date(now.getTime() + WINDOW_FORWARD_DAYS * 864e5);
-  const checkedAt = now.toISOString();
+  const importedAt = now.toISOString();
 
   const vevents = comp.getAllSubcomponents('vevent');
 
@@ -46,7 +45,7 @@ export function normalizeIcs(icsText, source, now = new Date()) {
     for (const occ of occurrences) {
       const start = occ.startDate.toJSDate();
       if (start < windowStart || start > windowEnd) continue;
-      events.push(toHubEvent(event, occ, source, checkedAt));
+      events.push(toHubEvent(event, occ, source, importedAt));
     }
   }
 
@@ -76,27 +75,47 @@ function expandRecurring(event, windowStart, windowEnd) {
   return out;
 }
 
-function toHubEvent(event, occ, source, checkedAt) {
+/**
+ * A timezone-independent string for an ICS time value.
+ *
+ * `toJSDate()` on an all-day value returns *local* midnight, so its ISO form
+ * differs between a laptop in Chicago and a GitHub runner in UTC. That silently
+ * rewrote every event id on each sync and could shift a date across the day
+ * boundary in eastern timezones. All-day values therefore use the calendar
+ * date as written; timed values are absolute instants and are safe.
+ */
+function canonicalStamp(time) {
+  if (!time) return null;
+  if (time.isDate) {
+    const pad = (n) => String(n).padStart(2, '0');
+    return `${time.year}-${pad(time.month)}-${pad(time.day)}`;
+  }
+  return time.toJSDate().toISOString();
+}
+
+/** Subtract a day from a YYYY-MM-DD string without going through local time. */
+function previousDay(dateStr) {
+  const [y, m, d] = dateStr.split('-').map(Number);
+  return new Date(Date.UTC(y, m - 1, d - 1)).toISOString().slice(0, 10);
+}
+
+function toHubEvent(event, occ, source, importedAt) {
   const allDay = occ.startDate.isDate;
-  const startJs = occ.startDate.toJSDate();
-  const endJs = occ.endDate ? occ.endDate.toJSDate() : null;
+  const startDate = canonicalStamp(occ.startDate);
+  const rawEnd = canonicalStamp(occ.endDate);
 
   // ICS all-day DTEND is exclusive. Store an inclusive end so the UI never
   // shows a break running one day longer than it does.
-  const endDate = !endJs
-    ? null
-    : allDay
-      ? isoDate(new Date(endJs.getTime() - 864e5))
-      : endJs.toISOString();
+  const endDate = !rawEnd ? null : allDay ? previousDay(rawEnd) : rawEnd;
 
   const title = (event.summary || 'Untitled event').trim();
   const description = event.description ? event.description.trim() : null;
 
   return {
-    id: stableId(source.id, event.uid, startJs.toISOString()),
+    id: stableId(source.id, event.uid, startDate),
     title,
     description,
-    startDate: allDay ? isoDate(startJs) : startJs.toISOString(),
+    startDate,
     endDate,
     allDay,
     location: event.location ? event.location.trim() : null,
@@ -106,8 +125,9 @@ function toHubEvent(event, occ, source, checkedAt) {
     sourceName: source.sourceName,
     sourceUrl: source.sourceUrl,
     sourceType: 'ics',
-    lastChecked: checkedAt,
-    importedAt: checkedAt,
+    // `lastChecked` lives on the file, not on every record: stamping each
+    // event would rewrite the whole file on every sync and bury real changes.
+    importedAt,
     manualOverride: false,
     featured: false,
     actionDeadline: null,

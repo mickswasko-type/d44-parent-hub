@@ -44,6 +44,18 @@ async function syncSource(source, now) {
     const ics = await fetchWithTimeout(icsUrl(source.calendarId));
     const events = normalizeIcs(ics, source, now);
 
+    // Keep the original importedAt for events we already had, so a daily sync
+    // only shows what genuinely changed upstream. Re-stamping every record
+    // turned a no-op sync into a two-thousand-line diff that nobody can review.
+    if (existsSync(outFile)) {
+      const previous = JSON.parse(await readFile(outFile, 'utf8'));
+      const seenBefore = new Map((previous.events ?? []).map((e) => [e.id, e.importedAt]));
+      for (const event of events) {
+        const original = seenBefore.get(event.id);
+        if (original) event.importedAt = original;
+      }
+    }
+
     // A feed that *used* to have events and suddenly returns none is far more
     // likely to be a broken upstream than a genuinely empty calendar.
     if (events.length === 0 && existsSync(outFile)) {

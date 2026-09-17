@@ -69,10 +69,12 @@ async function main() {
       const doc = await readJson(`data/events/generated/${file}`);
       if (!Array.isArray(doc.events)) { fail(`${file}: "events" must be an array`); continue; }
       const seen = new Set();
+      if (!doc.lastChecked) fail(`${file}: missing file-level "lastChecked"`);
       for (const e of doc.events) {
         if (seen.has(e.id)) fail(`${file}: duplicate event id ${e.id}`);
         seen.add(e.id);
-        validateEvent(e, file, schoolIds);
+        // lastChecked lives on the file; validate the record as the site sees it.
+        validateEvent({ ...e, lastChecked: doc.lastChecked }, file, schoolIds);
       }
       totalEvents += doc.events.length;
     }
