@@ -165,6 +165,8 @@ const nav = [
           }
         }
 
+        var hadPrefsOnLoad = window.d44.schools().length > 0;
+
         /* Hide anything that is not about one of the chosen schools. */
         function apply() {
           var selected = window.d44.schools();
@@ -195,8 +197,16 @@ const nav = [
               : 'District 44';
           });
 
+          /* Reactive: follows the current selection, so the headline names
+             your schools the moment you tap one. */
           document.querySelectorAll('[data-needs-prefs]').forEach(function (el) { el.hidden = selected.length > 0; });
           document.querySelectorAll('[data-has-prefs]').forEach(function (el) { el.hidden = selected.length === 0; });
+
+          /* Decided once, on load. Hiding the setup card the moment the first
+             school is tapped takes the control away mid-interaction, so a
+             parent with two children cannot pick the second one. */
+          document.querySelectorAll('[data-onboarding]').forEach(function (el) { el.hidden = hadPrefsOnLoad; });
+          document.querySelectorAll('[data-onboarded]').forEach(function (el) { el.hidden = !hadPrefsOnLoad; });
 
           if (window.d44.collapseDuplicates) window.d44.collapseDuplicates(document);
 

@@ -50,7 +50,7 @@ const failing = syncStatuses.filter((s) => !s.ok);
     </div>
   )}
 
-  <section data-needs-prefs>
+  <section data-onboarding>
     <h2>Set up</h2>
     <SchoolPicker />
   </section>
@@ -107,7 +107,7 @@ const failing = syncStatuses.filter((s) => !s.ok);
     </p>
   </section>
 
-  <section data-has-prefs hidden>
+  <section data-onboarded hidden>
     <h2>My schools</h2>
     <SchoolPicker heading="Change your schools" compact />
   </section>
