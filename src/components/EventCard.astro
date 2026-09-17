@@ -42,13 +42,16 @@ const titleKey = titleKeyFor(event);
   <div class="when">
     <div class="dow">{rel === 'Today' ? 'Today' : dayOfWeek(start)}</div>
     <div class="day">{dayNumber(start)}</div>
-    <div class="time">{event.allDay ? monthShort(start) : timeOf(event.startDate)}</div>
+    {/* The month always shows. A weekday and a number alone ("FRI 13") is
+        unreadable two months out — the time belongs with the other detail. */}
+    <div class="time">{monthShort(start)}</div>
   </div>
   <div>
     <h3 class="title">{event.title}</h3>
     <p class="meta">
       {rel === 'Tomorrow' && <span class="badge">Tomorrow</span>}
       {rel === 'Tomorrow' && ' '}
+      {!event.allDay && <><strong class="at-time">{timeOf(event.startDate)}</strong>{' · '}</>}
       {names}
       {multiDay && ` · through ${monthShort(end)} ${dayNumber(end)}`}
       {' · '}

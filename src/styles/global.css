@@ -141,6 +141,7 @@ section > h2 { margin-bottom: 12px; }
 .event .when .time { font-size: 0.72rem; font-variant-numeric: tabular-nums; }
 .event .title { font-weight: 600; margin: 0 0 2px; }
 .event .meta { font-size: 0.82rem; color: var(--text-muted); margin: 0; }
+.event .meta .at-time { color: var(--text); font-weight: 650; font-variant-numeric: tabular-nums; }
 .event .desc { font-size: 0.88rem; color: var(--text-muted); margin: 6px 0 0; }
 
 .event.is-alert { border-left: 4px solid var(--alert); background: var(--alert-soft); }

@@ -58,7 +58,7 @@ const failing = syncStatuses.filter((s) => !s.ok);
   {dontForget.length > 0 && (
     <section>
       <h2>Don't forget</h2>
-      <div class="stack">
+      <div class="stack" data-expires>
         {dontForget.map((e) => <EventCard event={e} today={today} />)}
       </div>
     </section>

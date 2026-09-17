@@ -126,6 +126,15 @@ const nav = [
 
         /* Move each event card into the section that matches the real date. */
         function repartition(today) {
+          /* Deadlines outside the partitioned buckets still have to expire, or
+             a build that is a day stale shows one that has already passed.
+             Runs before the early return below, so it is not tied to a page
+             having partitioned sections. */
+          document.querySelectorAll('[data-expires] [data-date]').forEach(function (card) {
+            var end = card.getAttribute('data-end') || card.getAttribute('data-date');
+            if (end < today) card.remove();
+          });
+
           var host = document.querySelector('[data-partition]');
           if (!host) return;
           var week = schoolWeek(today);
