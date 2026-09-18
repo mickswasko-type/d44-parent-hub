@@ -133,8 +133,16 @@ Conventions worth knowing:
 
 - Minimum touch target 48px (`--tap`); chips 44px.
 - Visible focus rings on everything interactive (`:focus-visible`).
-- Colors meet WCAG AA contrast in both light and dark mode. Never encode meaning
-  in color alone — every coloured card also carries a text badge.
+- Colors meet WCAG AA contrast in both light and dark mode, verified before use,
+  not assumed. Current accents: `#a4161a` on white (7.75:1) and `#ff7a7a` on
+  `#1c1c1c` (6.75:1). Text drawn *on* the accent uses `--accent-ink`.
+- Never encode meaning in color alone — every coloured card also carries a text
+  badge.
+- A selected control must be obvious at a glance on a phone in daylight. A tinted
+  background that differs from the unselected state only in hue is not enough:
+  the selected school chips previously went from `rgb(30,32,37)` to
+  `rgb(29,56,49)`, which read as "nothing happened" and caused parents to tap
+  twice and deselect.
 - Semantic headings in order; `aria-current` on the active nav item;
   `aria-pressed` on toggle chips.
 - Respect `prefers-reduced-motion` and `prefers-color-scheme`.
@@ -192,9 +200,13 @@ public Google Calendar → ICS → scripts/normalize → normalized JSON → com
 4. **Never replace good data with empty data.** Prefer stale-but-labelled over
    blank.
 5. **Never hand-edit `data/events/generated/`.**
-6. **Never imitate District 44 branding**, use district logos, or word anything
-   so that the site could be mistaken for an official district service. The
-   footer disclaimer is required on every page.
+6. **Never imitate District 44 branding.** The palette is red/black/white at the
+   site owner's request, echoing the district's colours — that is a deliberate
+   decision, so do not "fix" it back. The line it must not cross: no district
+   logo or crest, no official-sounding wording, and layout and typography stay
+   distinct. Red is reserved for brand and interaction; alerts and deadlines use
+   amber, so red never means two things at once. The footer disclaimer is
+   required on every page.
 7. **Never add credential fields, payment forms, or student data collection.**
    Support payments go to an external provider link only.
 8. **Never remove provenance** (`sourceName` / `sourceUrl` / `lastChecked`) from

@@ -10,7 +10,7 @@ import { deflateSync } from 'node:zlib';
 import { writeFileSync } from 'node:fs';
 import path from 'node:path';
 
-const BG = [47, 109, 95];      // --accent
+const BG = [164, 22, 26];      // --accent
 const FG = [255, 255, 255];
 
 const crc32 = (buf) => {
@@ -60,7 +60,7 @@ function pixel(x, y, size) {
   const r = 0.18;
   const cx = Math.min(Math.max(u, r), 1 - r);
   const cy = Math.min(Math.max(v, r), 1 - r);
-  if (Math.hypot(u - cx, v - cy) > r) return [247, 247, 245];
+  if (Math.hypot(u - cx, v - cy) > r) return [245, 244, 243];
 
   const inBody = u > 0.24 && u < 0.76 && v > 0.3 && v < 0.74;
   const inHeader = inBody && v < 0.42;
@@ -87,7 +87,7 @@ for (const size of [180, 192, 512]) {
 writeFileSync(
   path.join(OUT, 'icon.svg'),
   `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Calendar">
-  <rect width="64" height="64" rx="14" fill="#2f6d5f"/>
+  <rect width="64" height="64" rx="14" fill="#a4161a"/>
   <g fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="round">
     <rect x="15" y="18" width="34" height="30" rx="4"/>
     <path d="M15 27h34M23 14v6M41 14v6"/>

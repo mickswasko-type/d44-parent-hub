@@ -34,11 +34,18 @@ const dontForget = upcoming
 
 const primaryTasks = tasks.filter((t) => t.primary);
 const calendarHref = `${import.meta.env.BASE_URL}calendar`.replace(/\/{2,}/g, '/');
+const settingsHref = `${import.meta.env.BASE_URL}settings`.replace(/\/{2,}/g, '/');
+const resourcesHref = `${import.meta.env.BASE_URL}resources`.replace(/\/{2,}/g, '/');
 const failing = syncStatuses.filter((s) => !s.ok);
 ---
 <Base showDate>
   <h1>What's happening<span data-has-prefs hidden> at <span data-school-name>your schools</span></span>?</h1>
   <p class="lede">An independent, parent-built view of Lombard D44. Everything links back to the official source.</p>
+
+  <div class="scope-bar" data-has-prefs hidden>
+    <p class="scope-label">Showing <strong data-school-name>your schools</strong></p>
+    <a class="btn" href={settingsHref}>Change my schools</a>
+  </div>
 
   {failing.length > 0 && (
     <div class="card" style="margin-top:16px;border-left:4px solid var(--alert)">
@@ -53,6 +60,14 @@ const failing = syncStatuses.filter((s) => !s.ok);
   <section data-onboarding>
     <h2>Set up</h2>
     <SchoolPicker />
+  </section>
+
+  <section>
+    <h2>I need to…</h2>
+    <TaskGrid tasks={primaryTasks} />
+    <p class="source" style="margin-top:10px">
+      <a href={resourcesHref}>See all parent resources →</a>
+    </p>
   </section>
 
   {dontForget.length > 0 && (
@@ -98,19 +113,6 @@ const failing = syncStatuses.filter((s) => !s.ok);
       </p>
     </section>
   </div>
-
-  <section>
-    <h2>I need to…</h2>
-    <TaskGrid tasks={primaryTasks} />
-    <p class="source" style="margin-top:10px">
-      <a href={`${import.meta.env.BASE_URL}resources`.replace(/\/{2,}/g, '/')}>See all parent resources →</a>
-    </p>
-  </section>
-
-  <section data-onboarded hidden>
-    <h2>My schools</h2>
-    <SchoolPicker heading="Change your schools" compact />
-  </section>
 
   {siteConfig.submissionsFormUrl && (
     <section>

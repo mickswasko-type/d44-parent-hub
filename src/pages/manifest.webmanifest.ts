@@ -18,8 +18,8 @@ export const GET: APIRoute = () =>
         scope: siteConfig.base,
         display: 'standalone',
         orientation: 'portrait',
-        background_color: '#f7f7f5',
-        theme_color: '#2f6d5f',
+        background_color: '#f5f4f3',
+        theme_color: '#a4161a',
         icons: [
           { src: 'icon-192.png', sizes: '192x192', type: 'image/png', purpose: 'any' },
           { src: 'icon-512.png', sizes: '512x512', type: 'image/png', purpose: 'any' },
