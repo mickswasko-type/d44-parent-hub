@@ -1,0 +1,133 @@
+---
+/**
+ * "Add to your phone" — the closest thing to an app this site can offer.
+ *
+ * Android/Chrome fires `beforeinstallprompt`, so there we can show a real
+ * button that opens the native installer. iOS gives no such hook at all: the
+ * only route is Share → Add to Home Screen, so there we show the actual steps
+ * rather than a button that cannot work.
+ *
+ * `variant="card"` is the dismissible homepage nudge; `variant="page"` is the
+ * permanent copy on the settings page, which never hides itself.
+ */
+interface Props { variant?: 'card' | 'page'; }
+const { variant = 'card' } = Astro.props;
+const isPage = variant === 'page';
+---
+<div class="install" data-install data-install-variant={variant} hidden={!isPage}>
+  <div class="install-head">
+    <h3>{isPage ? 'Add to your phone' : 'Add this to your home screen'}</h3>
+    {!isPage && (
+      <button type="button" class="install-dismiss" data-install-dismiss aria-label="Not now">×</button>
+    )}
+  </div>
+  <p class="lede">Opens like an app — full screen, one tap, no browser bar.</p>
+
+  <!-- Android / desktop Chrome: a real install button, shown only once the
+       browser tells us it is installable. -->
+  <p data-install-android hidden style="margin:14px 0 0">
+    <button type="button" class="btn primary block" data-install-button>Add to home screen</button>
+  </p>
+
+  <!-- iPhone / iPad: no programmatic install exists. -->
+  <ol data-install-ios hidden class="install-steps">
+    <li>Tap the <strong>Share</strong> button <span class="ios-share" aria-hidden="true"></span> at the bottom of Safari.</li>
+    <li>Scroll down and tap <strong>Add to Home Screen</strong>.</li>
+    <li>Tap <strong>Add</strong>. It will appear with your other apps.</li>
+  </ol>
+
+  <!-- Anything else, including a browser that has not offered installation. -->
+  <p data-install-other hidden class="lede" style="margin-top:12px">
+    In your browser menu, look for <strong>Add to Home screen</strong> or <strong>Install</strong>.
+    In Safari on iPhone it is under the Share button.
+  </p>
+
+  <p data-install-done hidden class="lede" style="margin-top:12px">
+    ✓ Already installed — you are using the app version right now.
+  </p>
+</div>
+
+<script is:inline>
+  (function () {
+    if (window.__d44InstallBound) return;
+    window.__d44InstallBound = true;
+
+    var DISMISS_KEY = 'd44:installDismissed';
+    var deferred = null;
+
+    function isStandalone() {
+      return window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
+    }
+
+    /* iPadOS reports itself as MacIntel, so touch points are what actually
+       catch an iPad. Platform + touch alone is not enough though: it also
+       matches a touch-capable Mac and any device emulator, which would show
+       Safari instructions to someone who cannot follow them. Require a Safari
+       user agent and rule out the Chromium family. */
+    function isIos() {
+      var ua = navigator.userAgent;
+      if (/iphone|ipad|ipod/i.test(ua)) return true;
+      return navigator.platform === 'MacIntel' &&
+        navigator.maxTouchPoints > 1 &&
+        /Safari/.test(ua) &&
+        !/Android|Chrome|Chromium|Edg|CriOS|FxiOS/.test(ua);
+    }
+
+    function dismissed() {
+      try { return localStorage.getItem(DISMISS_KEY) === '1'; } catch (e) { return false; }
+    }
+
+    function show(selector, on) {
+      document.querySelectorAll(selector).forEach(function (el) { el.hidden = !on; });
+    }
+
+    function render() {
+      var installed = isStandalone();
+      var installable = !!deferred || isIos();
+
+      document.querySelectorAll('[data-install]').forEach(function (card) {
+        var isPage = card.getAttribute('data-install-variant') === 'page';
+        /* The settings copy is always available. The homepage nudge only
+           appears where installing is actually possible — no dead-end prompt
+           on a desktop browser that cannot do it. */
+        card.hidden = isPage ? false : installed || dismissed() || !installable;
+      });
+
+      show('[data-install-done]', installed);
+      show('[data-install-android]', !installed && !!deferred);
+      /* If the browser offers a real installer, prefer it over instructions. */
+      show('[data-install-ios]', !installed && !deferred && isIos());
+      show('[data-install-other]', !installed && !deferred && !isIos());
+    }
+
+    window.addEventListener('beforeinstallprompt', function (ev) {
+      ev.preventDefault();
+      deferred = ev;
+      render();
+    });
+
+    window.addEventListener('appinstalled', function () {
+      deferred = null;
+      render();
+    });
+
+    document.addEventListener('click', function (ev) {
+      var target = ev.target;
+      if (!target || !target.closest) return;
+
+      if (target.closest('[data-install-dismiss]')) {
+        try { localStorage.setItem(DISMISS_KEY, '1'); } catch (e) { /* private mode */ }
+        render();
+        return;
+      }
+
+      if (target.closest('[data-install-button]') && deferred) {
+        deferred.prompt();
+        deferred.userChoice.then(function () { deferred = null; render(); });
+      }
+    });
+
+    render();
+    window.addEventListener('load', render);
+  })();
+</script>

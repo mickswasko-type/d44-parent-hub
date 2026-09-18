@@ -261,3 +261,51 @@ section > h2 { margin-bottom: 12px; }
 @media (min-width: 560px) {
   .tasks { grid-template-columns: repeat(3, 1fr); }
 }
+
+/* --- add to home screen --- */
+.install {
+  margin-top: 16px;
+  padding: 16px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.install-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
+.install-head h3 { margin: 0; }
+.install-dismiss {
+  flex: none;
+  width: 36px; height: 36px; margin: -6px -6px 0 0;
+  display: flex; align-items: center; justify-content: center;
+  background: none; border: 0; border-radius: 50%;
+  font-size: 1.5rem; line-height: 1; color: var(--text-faint); cursor: pointer;
+}
+.install-dismiss:active { background: var(--surface-2); }
+.install-steps {
+  margin: 14px 0 0;
+  padding-left: 22px;
+  font-size: 0.92rem;
+  color: var(--text-muted);
+}
+.install-steps li { margin-bottom: 8px; }
+.install-steps strong { color: var(--text); }
+/* The iOS share glyph, so the instruction matches what is on screen. */
+.ios-share {
+  display: inline-block; vertical-align: -3px;
+  width: 15px; height: 17px; margin: 0 1px;
+  border: 1.6px solid var(--accent);
+  border-top: 0;
+  border-radius: 3px;
+  position: relative;
+}
+.ios-share::before {
+  content: ''; position: absolute; left: 50%; top: -7px;
+  width: 1.6px; height: 9px; background: var(--accent); transform: translateX(-50%);
+}
+.ios-share::after {
+  content: ''; position: absolute; left: 50%; top: -7px;
+  width: 6px; height: 6px;
+  border-left: 1.6px solid var(--accent); border-top: 1.6px solid var(--accent);
+  transform: translateX(-50%) rotate(45deg);
+}

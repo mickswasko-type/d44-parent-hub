@@ -41,11 +41,19 @@ and the district disagree, the district is right.
   3. re-partition Today / This week / Coming up against the *device* clock, so a
      cached or stale build can never claim the wrong day,
   4. collapse an event that arrives from both the district and a school feed,
-  5. cap the visible "Coming up" list, and build a one-event `.ics` on click.
+  5. cap the visible "Coming up" list, and build a one-event `.ics` on click,
+  6. offer "Add to home screen" (`InstallCard.astro`) — a real install button
+     where `beforeinstallprompt` fires, Safari's Share steps on iOS, which has
+     no programmatic install at all, and nothing where installing is impossible.
   Every page renders correctly with JavaScript disabled — just not personalized,
   and without "Add to calendar", which is hidden until the script enables it.
 - **Service worker** (`public/sw.js`) is network-first, so an online parent never
   sees stale events; the cache only covers being offline.
+- **Icons come in two shapes** (`npm run icons`). The rounded-square versions are
+  for browser tabs and the `any` purpose; `icon-180.png` (iOS) and
+  `icon-maskable-512.png` (Android) are full bleed, because both platforms crop
+  the icon themselves and a light backdrop behind a rounded square leaves pale
+  wedges in the corners. Keep the glyph inside the centre 80% safe zone.
 
 ```
 src/components   presentational .astro components

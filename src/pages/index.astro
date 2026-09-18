@@ -3,6 +3,7 @@ import Base from '../layouts/Base.astro';
 import EventCard from '../components/EventCard.astro';
 import SchoolPicker from '../components/SchoolPicker.astro';
 import TaskGrid from '../components/TaskGrid.astro';
+import InstallCard from '../components/InstallCard.astro';
 import { allEvents, tasks, upcomingFrom, syncStatuses } from '../lib/data';
 import { todayIso, schoolWeek, addDays, dateOf } from '../lib/dates';
 import { siteConfig } from '../../site.config';
@@ -69,6 +70,8 @@ const failing = syncStatuses.filter((s) => !s.ok);
       <a href={resourcesHref}>See all parent resources →</a>
     </p>
   </section>
+
+  <InstallCard />
 
   {dontForget.length > 0 && (
     <section>

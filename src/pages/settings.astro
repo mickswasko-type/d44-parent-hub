@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import SchoolPicker from '../components/SchoolPicker.astro';
+import InstallCard from '../components/InstallCard.astro';
 ---
 <Base title="My schools" description="Choose which District 44 schools this site shows you. Stored only in your browser.">
   <h1>My schools</h1>
@@ -8,6 +9,11 @@ import SchoolPicker from '../components/SchoolPicker.astro';
 
   <section>
     <SchoolPicker heading="Which schools matter to you?" />
+  </section>
+
+  <section>
+    <h2>Use it like an app</h2>
+    <InstallCard variant="page" />
   </section>
 
   <section>

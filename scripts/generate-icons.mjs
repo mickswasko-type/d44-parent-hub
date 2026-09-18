@@ -53,14 +53,25 @@ function png(size, pixel) {
   ]);
 }
 
-/** Rounded square background with a simple white calendar glyph. */
-function pixel(x, y, size) {
+/**
+ * The calendar glyph. `bleed` fills the whole canvas instead of drawing a
+ * rounded square on a light backdrop.
+ *
+ * Android masks a "maskable" icon to whatever shape the launcher uses, and iOS
+ * rounds the home-screen icon itself. Either will slice the corners off — and
+ * with a light backdrop behind the rounded square, those corners show up as
+ * pale wedges around the icon. Full bleed avoids that; the glyph stays inside
+ * the centre 80% safe zone so masking never clips it.
+ */
+function glyph(x, y, size, bleed) {
   const u = x / size;
   const v = y / size;
-  const r = 0.18;
-  const cx = Math.min(Math.max(u, r), 1 - r);
-  const cy = Math.min(Math.max(v, r), 1 - r);
-  if (Math.hypot(u - cx, v - cy) > r) return [245, 244, 243];
+  if (!bleed) {
+    const r = 0.18;
+    const cx = Math.min(Math.max(u, r), 1 - r);
+    const cy = Math.min(Math.max(v, r), 1 - r);
+    if (Math.hypot(u - cx, v - cy) > r) return [245, 244, 243];
+  }
 
   const inBody = u > 0.24 && u < 0.76 && v > 0.3 && v < 0.74;
   const inHeader = inBody && v < 0.42;
@@ -78,11 +89,22 @@ function pixel(x, y, size) {
   return BG;
 }
 
+const rounded = (x, y, size) => glyph(x, y, size, false);
+const fullBleed = (x, y, size) => glyph(x, y, size, true);
+
 const OUT = path.resolve(import.meta.dirname, '../public');
-for (const size of [180, 192, 512]) {
-  writeFileSync(path.join(OUT, `icon-${size}.png`), png(size, pixel));
+
+// Browser tab / "any" purpose: the rounded square reads as an icon on its own.
+for (const size of [192, 512]) {
+  writeFileSync(path.join(OUT, `icon-${size}.png`), png(size, rounded));
   console.log(`[icons] wrote public/icon-${size}.png`);
 }
+
+// iOS home screen and Android maskable: full bleed, shaped by the OS.
+writeFileSync(path.join(OUT, 'icon-180.png'), png(180, fullBleed));
+console.log('[icons] wrote public/icon-180.png (full bleed, iOS)');
+writeFileSync(path.join(OUT, 'icon-maskable-512.png'), png(512, fullBleed));
+console.log('[icons] wrote public/icon-maskable-512.png (full bleed, Android)');
 
 writeFileSync(
   path.join(OUT, 'icon.svg'),
