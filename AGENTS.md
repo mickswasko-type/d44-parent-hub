@@ -117,6 +117,18 @@ Conventions worth knowing:
   files are picked up automatically.
 - **Never hand-edit files in `data/events/generated/`.** They are overwritten by
   every sync. Corrections belong in `data/manual/manual-events.json`.
+- **Lunch menus (FD MealPlanner) must not be ingested.** The district publishes
+  no menus itself; its only channel is fdmealplanner.com (Whitsons Culinary
+  Group). Their Terms of Use prohibit "systematic retrieval of data or other
+  Site Content ... to create or compile, directly or indirectly, a collection,
+  compilation, database or directory without written permission", and every API
+  endpoint is gated behind an RSA-encrypted anonymous-token handshake.
+  Reproducing that handshake is technically possible and was deliberately not
+  done. The menu shortcut links to the district's own Food Services page
+  instead. If written permission is ever obtained, record it here; the pieces
+  are `GET {apiservicelocatorstenant}/api/v2/data-locator-webapi/3/meals`,
+  tenantId 3, accountId 466 (Lombard Elementary SD), and a per-school
+  locationId (Hammerschmidt is 2058).
 
 ## Privacy rules
 
