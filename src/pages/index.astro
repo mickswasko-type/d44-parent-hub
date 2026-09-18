@@ -43,6 +43,7 @@ const resourcesHref = `${import.meta.env.BASE_URL}resources`.replace(/\/{2,}/g, 
 const failing = syncStatuses.filter((s) => !s.ok);
 ---
 <Base showDate>
+  <p class="eyebrow">{siteConfig.tagline}</p>
   <h1>What's happening<span data-has-prefs hidden> at <span data-school-name>your schools</span></span>?</h1>
   <p class="lede">An independent, parent-built view of Lombard D44. Everything links back to the official source.</p>
 

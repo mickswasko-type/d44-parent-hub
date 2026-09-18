@@ -354,3 +354,13 @@ section > h2 { margin-bottom: 12px; }
 .week-summary {
   margin: 10px 0 0; font-size: 0.85rem; color: var(--text-muted);
 }
+
+/* Expands the name in the header directly above it: "My D44 PASS" → what PASS means. */
+.eyebrow {
+  margin: 2px 0 6px;
+  font-size: 0.72rem;
+  font-weight: 650;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
