@@ -1,5 +1,5 @@
 import ICAL from 'ical.js';
-import { categorize } from './categorize.mjs';
+import { categorize, needsAction } from './categorize.mjs';
 import { inferSchoolIds } from './school-affinity.mjs';
 import { createHash } from 'node:crypto';
 
@@ -121,6 +121,7 @@ function toHubEvent(event, occ, source, importedAt) {
     location: event.location ? event.location.trim() : null,
     schoolIds: inferSchoolIds(title, source.schoolIds),
     category: categorize(title, description || ''),
+    needsAction: needsAction(title, description || ''),
     sourceId: source.id,
     sourceName: source.sourceName,
     sourceUrl: source.sourceUrl,

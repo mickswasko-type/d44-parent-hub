@@ -221,6 +221,20 @@ const nav = [
 
           /* "Coming up" renders the whole window so personalization has
              something to choose from; only a readable slice is shown. */
+          /* Same treatment for "Don't forget": show the soonest few that are
+             actually this parent's. */
+          var expiring = document.querySelector('[data-expires]');
+          if (expiring) {
+            var kept = 0;
+            Array.prototype.slice.call(expiring.children).forEach(function (card) {
+              if (card.hidden) return;
+              if (kept < 4) { kept++; return; }
+              card.hidden = true;
+            });
+            var section = expiring.closest('section');
+            if (section) section.hidden = kept === 0;
+          }
+
           var upcoming = document.querySelector('[data-bucket="upcoming"]');
           if (upcoming) {
             var shown = 0;
@@ -234,6 +248,8 @@ const nav = [
             var more = document.querySelector('[data-more-link]');
             if (more) more.hidden = cappedCount === 0;
           }
+
+          updateWeekStrip(localToday());
 
           document.querySelectorAll('[data-empty-for]').forEach(function (el) {
             var list = document.querySelector('[data-bucket="' + el.getAttribute('data-empty-for') + '"]');
@@ -325,6 +341,26 @@ const nav = [
           return card.closest('[data-category]') || card;
         }
 
+        /* Titles for the same event rarely nest neatly: the district writes
+           "Pleasant Lane Picture Day" while the school writes "School Picture
+           Day!". Prefix matching misses that, so compare word sets instead and
+           treat one as a duplicate when its words are all contained in the
+           other. Two words minimum, so a bare "Meeting" cannot swallow
+           something more specific. */
+        function words(key) {
+          return (key || '').split(' ').filter(function (w) { return w.length > 2; });
+        }
+
+        function sameEvent(keyA, keyB) {
+          var a = words(keyA);
+          var b = words(keyB);
+          if (!a.length || !b.length) return false;
+          var short = a.length <= b.length ? a : b;
+          var long = a.length <= b.length ? b : a;
+          if (short.length < 2) return short[0] === long[0] && long.length === 1;
+          return short.every(function (w) { return long.indexOf(w) !== -1; });
+        }
+
         function collapseDuplicates(scope) {
           var byDate = {};
           scope.querySelectorAll('[data-title-key]').forEach(function (card) {
@@ -347,8 +383,7 @@ const nav = [
                 if (b === a) continue;
                 if (b.getAttribute('data-source-id') === 'd44-district') continue;
                 if (visibilityOwner(b).hidden) continue;
-                var bk = b.getAttribute('data-title-key');
-                if (ak && bk && (ak.indexOf(bk) === 0 || bk.indexOf(ak) === 0)) {
+                if (sameEvent(ak, b.getAttribute('data-title-key'))) {
                   ownerA.hidden = true;
                   return;
                 }
@@ -357,6 +392,66 @@ const nav = [
           });
         }
         window.d44.collapseDuplicates = collapseDuplicates;
+
+        /* Week strip: recompute against the device clock and whatever is
+           actually visible to this parent, so it always agrees with the lists
+           below it. Precedence is what a parent needs to act on first. */
+        var WEEK_LABELS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'];
+        var WEEK_TEXT = { off: 'No school', early: 'Early out', action: 'Plan ahead', busy: '', quiet: '' };
+
+        function dayNumberOf(iso) {
+          return String(parseInt(iso.slice(8, 10), 10));
+        }
+
+        function updateWeekStrip(today) {
+          var strip = document.querySelector('[data-week-strip]');
+          if (!strip) return;
+          var week = schoolWeek(today);
+
+          /* One card per event is enough; a card hidden by preferences or
+             collapsed as a duplicate must not colour the strip. */
+          var visible = [];
+          document.querySelectorAll('[data-date][data-category]').forEach(function (card) {
+            var owner = card.closest('[data-category]') === card ? card : card;
+            if (owner.hidden || card.hidden) return;
+            if (card.closest('[data-ignore-prefs]')) return;
+            visible.push(card);
+          });
+
+          var notable = [];
+          strip.querySelectorAll('[data-week-cell]').forEach(function (cell, i) {
+            var date = addDays(week[0], i);
+            var status = 'quiet';
+            for (var n = 0; n < visible.length; n++) {
+              var card = visible[n];
+              var start = card.getAttribute('data-date');
+              var end = card.getAttribute('data-end') || start;
+              if (start > date || end < date) continue;
+              var cat = card.getAttribute('data-category');
+              if (cat === 'no-school' || cat === 'holiday') { status = 'off'; break; }
+              if (cat === 'early-dismissal') { status = 'early'; continue; }
+              if (status === 'early') continue;
+              if (card.hasAttribute('data-action')) { status = 'action'; continue; }
+              if (status !== 'action') status = 'busy';
+            }
+
+            cell.className = 'week-day is-' + status + (date === today ? ' is-today' : '');
+            cell.setAttribute('data-week-date', date);
+            cell.querySelector('.wd').textContent = WEEK_LABELS[i];
+            cell.querySelector('.wn').textContent = dayNumberOf(date);
+            cell.querySelector('.wtext').textContent = WEEK_TEXT[status] || '';
+            if (status === 'off' || status === 'early') {
+              notable.push(WEEK_LABELS[i] + ': ' + (status === 'off' ? 'no school' : 'early dismissal'));
+            }
+          });
+
+          var summary = document.querySelector('[data-week-summary]');
+          if (summary) {
+            summary.textContent = notable.length
+              ? notable.join(' · ')
+              : 'No days off or early dismissals this week.';
+          }
+        }
 
         window.d44.apply = apply;
         repartition(localToday());

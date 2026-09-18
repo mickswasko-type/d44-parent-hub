@@ -10,6 +10,8 @@ export interface HubEvent {
   location: string | null;
   schoolIds: string[];
   category: EventCategory;
+  /** Requires a parent to do something beforehand (send, sign, dress, order). */
+  needsAction: boolean;
   /** Provenance — required on every record, imported or manual. */
   sourceId: string;
   sourceName: string;
@@ -51,6 +53,8 @@ export interface School {
   attendancePhone: string | null;
   principal: string | null;
   calendarUrl: string | null;
+  /** Direct link to this school's current supply list PDF. */
+  supplyListUrl: string | null;
   ptaUrl: string | null;
   sourceName: string;
   sourceUrl: string;

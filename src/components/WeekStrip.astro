@@ -1,0 +1,49 @@
+---
+/**
+ * Five cells, Monday to Friday, answering "what does this week look like?"
+ * without reading anything.
+ *
+ * Rendered server-side for the build week so it still says something useful
+ * with JavaScript off, then recomputed in the browser against the device clock
+ * and the parent's own schools — same treatment as the event sections.
+ */
+import { allEvents, isRelevant } from '../lib/data';
+import { todayIso, schoolWeek, addDays, dateOf, dayNumber } from '../lib/dates';
+
+const today = todayIso();
+const week = schoolWeek(today);
+const LABELS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'];
+
+function statusFor(date: string) {
+  const onDay = allEvents.filter(
+    (e) => dateOf(e.startDate) <= date && dateOf(e.endDate ?? e.startDate) >= date && isRelevant(e, []),
+  );
+  if (onDay.some((e) => e.category === 'no-school' || e.category === 'holiday')) return 'off';
+  if (onDay.some((e) => e.category === 'early-dismissal')) return 'early';
+  if (onDay.some((e) => e.needsAction)) return 'action';
+  return onDay.length ? 'busy' : 'quiet';
+}
+
+const days = LABELS.map((label, i) => {
+  const date = addDays(week.start, i);
+  return { label, date, day: dayNumber(date), status: statusFor(date), isToday: date === today };
+});
+---
+<section class="week-wrap" data-week-strip>
+  <h2>{week.isNextWeek ? 'Next week' : 'This week'}</h2>
+  <ol class="week-strip">
+    {days.map((d, i) => (
+      <li
+        class:list={['week-day', `is-${d.status}`, d.isToday && 'is-today']}
+        data-week-cell={i}
+        data-week-date={d.date}
+      >
+        <span class="wd">{d.label}</span>
+        <span class="wn">{d.day}</span>
+        <span class="wm" aria-hidden="true"></span>
+        <span class="wtext">{''}</span>
+      </li>
+    ))}
+  </ol>
+  <p class="week-summary" data-week-summary></p>
+</section>

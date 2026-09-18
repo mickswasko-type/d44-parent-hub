@@ -2,7 +2,7 @@
   "sourceId": "pv-calendar",
   "sourceName": "Park View Elementary Calendar",
   "sourceUrl": "https://pv.sd44.org/",
-  "lastChecked": "2026-09-17T15:56:14.730Z",
+  "lastChecked": "2026-09-18T02:19:44.670Z",
   "events": [
     {
       "id": "pv-calendar-3efa16eba842",
@@ -16,6 +16,7 @@
         "pv"
       ],
       "category": "event",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -37,6 +38,7 @@
         "pv"
       ],
       "category": "pta",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -58,6 +60,7 @@
         "pv"
       ],
       "category": "event",
+      "needsAction": true,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -79,6 +82,7 @@
         "pv"
       ],
       "category": "event",
+      "needsAction": true,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -100,6 +104,7 @@
         "pv"
       ],
       "category": "early-dismissal",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -121,6 +126,7 @@
         "pv"
       ],
       "category": "pta",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -142,6 +148,7 @@
         "pv"
       ],
       "category": "early-dismissal",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -163,6 +170,7 @@
         "pv"
       ],
       "category": "early-dismissal",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -184,6 +192,7 @@
         "pv"
       ],
       "category": "pta",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -205,6 +214,7 @@
         "pv"
       ],
       "category": "event",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -226,6 +236,7 @@
         "pv"
       ],
       "category": "event",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -247,6 +258,7 @@
         "pv"
       ],
       "category": "no-school",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -268,6 +280,7 @@
         "pv"
       ],
       "category": "meeting",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -289,6 +302,7 @@
         "pv"
       ],
       "category": "early-dismissal",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -310,6 +324,7 @@
         "pv"
       ],
       "category": "pta",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -331,6 +346,7 @@
         "pv"
       ],
       "category": "pta",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -352,6 +368,7 @@
         "pv"
       ],
       "category": "event",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -373,6 +390,7 @@
         "pv"
       ],
       "category": "performance",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -394,6 +412,7 @@
         "pv"
       ],
       "category": "event",
+      "needsAction": true,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -415,6 +434,7 @@
         "pv"
       ],
       "category": "event",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -436,6 +456,7 @@
         "pv"
       ],
       "category": "performance",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -457,6 +478,7 @@
         "pv"
       ],
       "category": "event",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -478,6 +500,7 @@
         "pv"
       ],
       "category": "performance",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -499,6 +522,7 @@
         "pv"
       ],
       "category": "performance",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -520,6 +544,7 @@
         "pv"
       ],
       "category": "no-school",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -541,6 +566,7 @@
         "pv"
       ],
       "category": "no-school",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -562,6 +588,7 @@
         "pv"
       ],
       "category": "no-school",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -583,6 +610,7 @@
         "pv"
       ],
       "category": "performance",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -604,6 +632,7 @@
         "pv"
       ],
       "category": "meeting",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -625,6 +654,7 @@
         "pv"
       ],
       "category": "performance",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -646,6 +676,7 @@
         "pv"
       ],
       "category": "pta",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -667,6 +698,7 @@
         "pv"
       ],
       "category": "event",
+      "needsAction": true,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -688,6 +720,7 @@
         "pv"
       ],
       "category": "event",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -709,6 +742,7 @@
         "pv"
       ],
       "category": "performance",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -730,6 +764,7 @@
         "pv"
       ],
       "category": "performance",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -751,6 +786,7 @@
         "pv"
       ],
       "category": "pta",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -772,6 +808,7 @@
         "pv"
       ],
       "category": "event",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -793,6 +830,7 @@
         "pv"
       ],
       "category": "performance",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -814,6 +852,7 @@
         "pv"
       ],
       "category": "performance",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -835,6 +874,7 @@
         "pv"
       ],
       "category": "early-dismissal",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -856,6 +896,7 @@
         "pv"
       ],
       "category": "no-school",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -877,6 +918,7 @@
         "pv"
       ],
       "category": "performance",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -898,6 +940,7 @@
         "pv"
       ],
       "category": "performance",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -919,6 +962,7 @@
         "pv"
       ],
       "category": "event",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -940,6 +984,7 @@
         "pv"
       ],
       "category": "performance",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -961,6 +1006,7 @@
         "pv"
       ],
       "category": "meeting",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -982,6 +1028,7 @@
         "pv"
       ],
       "category": "performance",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -1003,6 +1050,7 @@
         "pv"
       ],
       "category": "event",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -1024,6 +1072,7 @@
         "pv"
       ],
       "category": "event",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -1045,6 +1094,7 @@
         "pv"
       ],
       "category": "performance",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -1066,6 +1116,7 @@
         "pv"
       ],
       "category": "pta",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -1087,6 +1138,7 @@
         "pv"
       ],
       "category": "performance",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -1108,6 +1160,7 @@
         "pv"
       ],
       "category": "pta",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -1129,6 +1182,7 @@
         "pv"
       ],
       "category": "no-school",
+      "needsAction": true,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -1150,6 +1204,7 @@
         "pv"
       ],
       "category": "no-school",
+      "needsAction": true,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -1171,6 +1226,7 @@
         "pv"
       ],
       "category": "no-school",
+      "needsAction": true,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -1192,6 +1248,7 @@
         "pv"
       ],
       "category": "performance",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -1213,6 +1270,7 @@
         "pv"
       ],
       "category": "no-school",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -1234,6 +1292,7 @@
         "pv"
       ],
       "category": "no-school",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -1255,6 +1314,7 @@
         "pv"
       ],
       "category": "performance",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -1276,6 +1336,7 @@
         "pv"
       ],
       "category": "event",
+      "needsAction": true,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -1297,6 +1358,7 @@
         "pv"
       ],
       "category": "event",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -1318,6 +1380,7 @@
         "pv"
       ],
       "category": "event",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -1339,6 +1402,7 @@
         "pv"
       ],
       "category": "performance",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -1360,6 +1424,7 @@
         "pv"
       ],
       "category": "performance",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -1381,6 +1446,7 @@
         "pv"
       ],
       "category": "performance",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -1402,6 +1468,7 @@
         "pv"
       ],
       "category": "event",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -1423,6 +1490,7 @@
         "pv"
       ],
       "category": "performance",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -1444,6 +1512,7 @@
         "pv"
       ],
       "category": "meeting",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -1465,6 +1534,7 @@
         "pv"
       ],
       "category": "performance",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -1486,6 +1556,7 @@
         "pv"
       ],
       "category": "pta",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -1507,6 +1578,7 @@
         "pv"
       ],
       "category": "event",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -1528,6 +1600,7 @@
         "pv"
       ],
       "category": "performance",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -1549,6 +1622,7 @@
         "pv"
       ],
       "category": "event",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -1570,6 +1644,7 @@
         "pv"
       ],
       "category": "early-dismissal",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -1591,6 +1666,7 @@
         "pv"
       ],
       "category": "pta",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -1612,6 +1688,7 @@
         "pv"
       ],
       "category": "no-school",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -1633,6 +1710,7 @@
         "pv"
       ],
       "category": "event",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -1654,6 +1732,7 @@
         "pv"
       ],
       "category": "event",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -1675,6 +1754,7 @@
         "pv"
       ],
       "category": "performance",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -1696,6 +1776,7 @@
         "pv"
       ],
       "category": "performance",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -1717,6 +1798,7 @@
         "pv"
       ],
       "category": "event",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -1738,6 +1820,7 @@
         "pv"
       ],
       "category": "meeting",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -1759,6 +1842,7 @@
         "pv"
       ],
       "category": "performance",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -1780,6 +1864,7 @@
         "pv"
       ],
       "category": "performance",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -1801,6 +1886,7 @@
         "pv"
       ],
       "category": "no-school",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -1822,6 +1908,7 @@
         "pv"
       ],
       "category": "no-school",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -1843,6 +1930,7 @@
         "pv"
       ],
       "category": "event",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -1864,6 +1952,7 @@
         "pv"
       ],
       "category": "performance",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -1885,6 +1974,7 @@
         "pv"
       ],
       "category": "performance",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -1906,6 +1996,7 @@
         "pv"
       ],
       "category": "pta",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -1927,6 +2018,7 @@
         "pv"
       ],
       "category": "performance",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -1948,6 +2040,7 @@
         "pv"
       ],
       "category": "event",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -1969,6 +2062,7 @@
         "pv"
       ],
       "category": "performance",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -1990,6 +2084,7 @@
         "pv"
       ],
       "category": "early-dismissal",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -2011,6 +2106,7 @@
         "pv"
       ],
       "category": "performance",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -2032,6 +2128,7 @@
         "pv"
       ],
       "category": "event",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -2053,6 +2150,7 @@
         "pv"
       ],
       "category": "performance",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -2074,6 +2172,7 @@
         "pv"
       ],
       "category": "performance",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -2095,6 +2194,7 @@
         "pv"
       ],
       "category": "event",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -2116,6 +2216,7 @@
         "pv"
       ],
       "category": "performance",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -2137,6 +2238,7 @@
         "pv"
       ],
       "category": "meeting",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -2158,6 +2260,7 @@
         "pv"
       ],
       "category": "performance",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -2179,6 +2282,7 @@
         "pv"
       ],
       "category": "early-dismissal",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -2200,6 +2304,7 @@
         "pv"
       ],
       "category": "no-school",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -2221,6 +2326,7 @@
         "pv"
       ],
       "category": "event",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -2242,6 +2348,7 @@
         "pv"
       ],
       "category": "performance",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -2263,6 +2370,7 @@
         "pv"
       ],
       "category": "performance",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -2284,6 +2392,7 @@
         "pv"
       ],
       "category": "pta",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -2305,6 +2414,7 @@
         "pv"
       ],
       "category": "event",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -2326,6 +2436,7 @@
         "pv"
       ],
       "category": "performance",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -2347,6 +2458,7 @@
         "pv"
       ],
       "category": "performance",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -2368,6 +2480,7 @@
         "pv"
       ],
       "category": "event",
+      "needsAction": true,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -2389,6 +2502,7 @@
         "pv"
       ],
       "category": "no-school",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -2410,6 +2524,7 @@
         "pv"
       ],
       "category": "event",
+      "needsAction": true,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -2431,6 +2546,7 @@
         "pv"
       ],
       "category": "pta",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -2452,6 +2568,7 @@
         "pv"
       ],
       "category": "event",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -2473,6 +2590,7 @@
         "pv"
       ],
       "category": "performance",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -2494,6 +2612,7 @@
         "pv"
       ],
       "category": "performance",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -2515,6 +2634,7 @@
         "pv"
       ],
       "category": "event",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -2536,6 +2656,7 @@
         "pv"
       ],
       "category": "event",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -2557,6 +2678,7 @@
         "pv"
       ],
       "category": "performance",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -2578,6 +2700,7 @@
         "pv"
       ],
       "category": "meeting",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -2599,6 +2722,7 @@
         "pv"
       ],
       "category": "performance",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -2620,6 +2744,7 @@
         "pv"
       ],
       "category": "pta",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -2641,6 +2766,7 @@
         "pv"
       ],
       "category": "early-dismissal",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -2662,6 +2788,7 @@
         "pv"
       ],
       "category": "event",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -2683,6 +2810,7 @@
         "pv"
       ],
       "category": "performance",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -2704,6 +2832,7 @@
         "pv"
       ],
       "category": "performance",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -2725,6 +2854,7 @@
         "pv"
       ],
       "category": "pta",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -2746,6 +2876,7 @@
         "pv"
       ],
       "category": "event",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -2767,6 +2898,7 @@
         "pv"
       ],
       "category": "performance",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -2788,6 +2920,7 @@
         "pv"
       ],
       "category": "performance",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -2809,6 +2942,7 @@
         "pv"
       ],
       "category": "no-school",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -2830,74 +2964,12 @@
         "pv"
       ],
       "category": "no-school",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
       "sourceType": "ics",
       "importedAt": "2026-09-17T15:55:26.864Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
-    {
-      "id": "pv-calendar-d523bf400406",
-      "title": "Chorus Rehersal",
-      "description": null,
-      "startDate": "2027-03-30T12:45:00.000Z",
-      "endDate": "2027-03-30T13:30:00.000Z",
-      "allDay": false,
-      "location": null,
-      "schoolIds": [
-        "pv"
-      ],
-      "category": "event",
-      "sourceId": "pv-calendar",
-      "sourceName": "Park View Elementary Calendar",
-      "sourceUrl": "https://pv.sd44.org/",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:55:26.864Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
-    {
-      "id": "pv-calendar-23b4af45f0ed",
-      "title": "4th Grade Band & Orchestra Rehearsal",
-      "description": null,
-      "startDate": "2027-03-30T21:00:00.000Z",
-      "endDate": "2027-03-30T22:00:00.000Z",
-      "allDay": false,
-      "location": "Glenn Westlake Middle School, 1514 S Main St, Lombard, IL 60148, USA",
-      "schoolIds": [
-        "pv"
-      ],
-      "category": "performance",
-      "sourceId": "pv-calendar",
-      "sourceName": "Park View Elementary Calendar",
-      "sourceUrl": "https://pv.sd44.org/",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:31:45.611Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
-    {
-      "id": "pv-calendar-1f433edf6e45",
-      "title": "5th Grade Band & Orchestra Rehearsal",
-      "description": null,
-      "startDate": "2027-04-01T20:45:00.000Z",
-      "endDate": "2027-04-01T21:45:00.000Z",
-      "allDay": false,
-      "location": "Glenn Westlake Middle School, 1514 S Main St, Lombard, IL 60148, USA",
-      "schoolIds": [
-        "pv"
-      ],
-      "category": "performance",
-      "sourceId": "pv-calendar",
-      "sourceName": "Park View Elementary Calendar",
-      "sourceUrl": "https://pv.sd44.org/",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:31:45.611Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null
@@ -2914,6 +2986,7 @@
         "pv"
       ],
       "category": "event",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -2935,6 +3008,7 @@
         "pv"
       ],
       "category": "pta",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -2956,6 +3030,7 @@
         "pv"
       ],
       "category": "event",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -2977,6 +3052,7 @@
         "pv"
       ],
       "category": "performance",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -2998,11 +3074,34 @@
         "pv"
       ],
       "category": "performance",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
       "sourceType": "ics",
       "importedAt": "2026-09-17T15:31:45.611Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "pv-calendar-0da4d1a3c959",
+      "title": "D44 Pancake Breakfast- Music Fundaraiser",
+      "description": null,
+      "startDate": "2027-04-10T12:30:00.000Z",
+      "endDate": "2027-04-10T17:00:00.000Z",
+      "allDay": false,
+      "location": "Glenn Westlake Middle School, 1514 S Main St, Lombard, IL 60148, USA",
+      "schoolIds": [
+        "pv"
+      ],
+      "category": "event",
+      "needsAction": false,
+      "sourceId": "pv-calendar",
+      "sourceName": "Park View Elementary Calendar",
+      "sourceUrl": "https://pv.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-09-18T02:19:44.670Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null
@@ -3019,6 +3118,7 @@
         "pv"
       ],
       "category": "event",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -3040,6 +3140,7 @@
         "pv"
       ],
       "category": "meeting",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -3061,32 +3162,12 @@
         "pv"
       ],
       "category": "early-dismissal",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
       "sourceType": "ics",
       "importedAt": "2026-09-17T15:55:26.864Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
-    {
-      "id": "pv-calendar-75be94a275d1",
-      "title": "4th Grade Band & Orchestra Rehearsal",
-      "description": null,
-      "startDate": "2027-04-14T21:00:00.000Z",
-      "endDate": "2027-04-14T22:00:00.000Z",
-      "allDay": false,
-      "location": "Glenn Westlake Middle School, 1514 S Main St, Lombard, IL 60148, USA",
-      "schoolIds": [
-        "pv"
-      ],
-      "category": "performance",
-      "sourceId": "pv-calendar",
-      "sourceName": "Park View Elementary Calendar",
-      "sourceUrl": "https://pv.sd44.org/",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:31:45.611Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null
@@ -3103,6 +3184,29 @@
         "pv"
       ],
       "category": "performance",
+      "needsAction": false,
+      "sourceId": "pv-calendar",
+      "sourceName": "Park View Elementary Calendar",
+      "sourceUrl": "https://pv.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-09-17T15:31:45.611Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "pv-calendar-75be94a275d1",
+      "title": "4th Grade Band & Orchestra Rehearsal",
+      "description": null,
+      "startDate": "2027-04-14T21:00:00.000Z",
+      "endDate": "2027-04-14T22:00:00.000Z",
+      "allDay": false,
+      "location": "Glenn Westlake Middle School, 1514 S Main St, Lombard, IL 60148, USA",
+      "schoolIds": [
+        "pv"
+      ],
+      "category": "performance",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -3124,6 +3228,7 @@
         "pv"
       ],
       "category": "performance",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -3145,6 +3250,7 @@
         "pv"
       ],
       "category": "pta",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -3166,6 +3272,7 @@
         "pv"
       ],
       "category": "event",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -3187,6 +3294,7 @@
         "pv"
       ],
       "category": "performance",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -3208,6 +3316,7 @@
         "pv"
       ],
       "category": "performance",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -3229,6 +3338,7 @@
         "pv"
       ],
       "category": "event",
+      "needsAction": true,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -3250,6 +3360,7 @@
         "pv"
       ],
       "category": "pta",
+      "needsAction": true,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -3271,6 +3382,7 @@
         "pv"
       ],
       "category": "event",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -3292,6 +3404,7 @@
         "pv"
       ],
       "category": "performance",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -3313,6 +3426,7 @@
         "pv"
       ],
       "category": "event",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -3334,6 +3448,7 @@
         "pv"
       ],
       "category": "pta",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -3355,6 +3470,7 @@
         "pv"
       ],
       "category": "event",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -3376,6 +3492,7 @@
         "pv"
       ],
       "category": "performance",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -3397,6 +3514,7 @@
         "pv"
       ],
       "category": "event",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -3418,6 +3536,7 @@
         "pv"
       ],
       "category": "performance",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -3439,6 +3558,7 @@
         "pv"
       ],
       "category": "performance",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -3460,6 +3580,7 @@
         "pv"
       ],
       "category": "meeting",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -3481,6 +3602,7 @@
         "pv"
       ],
       "category": "early-dismissal",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -3502,6 +3624,7 @@
         "pv"
       ],
       "category": "pta",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -3523,6 +3646,7 @@
         "pv"
       ],
       "category": "performance",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -3544,6 +3668,7 @@
         "pv"
       ],
       "category": "event",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -3565,6 +3690,7 @@
         "pv"
       ],
       "category": "no-school",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -3586,6 +3712,7 @@
         "pv"
       ],
       "category": "event",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -3607,6 +3734,7 @@
         "pv"
       ],
       "category": "early-dismissal",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -3628,6 +3756,7 @@
         "pv"
       ],
       "category": "event",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",
@@ -3649,6 +3778,7 @@
         "pv"
       ],
       "category": "meeting",
+      "needsAction": false,
       "sourceId": "pv-calendar",
       "sourceName": "Park View Elementary Calendar",
       "sourceUrl": "https://pv.sd44.org/",

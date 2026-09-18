@@ -4,6 +4,7 @@ import EventCard from '../components/EventCard.astro';
 import SchoolPicker from '../components/SchoolPicker.astro';
 import TaskGrid from '../components/TaskGrid.astro';
 import InstallCard from '../components/InstallCard.astro';
+import WeekStrip from '../components/WeekStrip.astro';
 import { allEvents, tasks, upcomingFrom, syncStatuses } from '../lib/data';
 import { todayIso, schoolWeek, addDays, dateOf } from '../lib/dates';
 import { siteConfig } from '../../site.config';
@@ -28,10 +29,12 @@ const weekEvents = upcoming.filter((e) => !isToday(e) && inWeek(e));
 // once we know which events are actually theirs.
 const laterEvents = upcoming.filter((e) => !isToday(e) && !inWeek(e));
 
+// Not sliced here, for the same reason as laterEvents: capping before
+// personalization left a parent at one school with an empty section while
+// other schools' items used up the quota. Capped client-side instead.
 const dontForget = upcoming
-  .filter((e) => e.featured || e.category === 'deadline')
-  .filter((e) => dateOf(e.actionDeadline ?? e.startDate) >= today)
-  .slice(0, 4);
+  .filter((e) => e.featured || e.category === 'deadline' || e.needsAction)
+  .filter((e) => dateOf(e.actionDeadline ?? e.startDate) >= today);
 
 const primaryTasks = tasks.filter((t) => t.primary);
 const calendarHref = `${import.meta.env.BASE_URL}calendar`.replace(/\/{2,}/g, '/');
@@ -57,6 +60,8 @@ const failing = syncStatuses.filter((s) => !s.ok);
       </p>
     </div>
   )}
+
+  <WeekStrip />
 
   <section data-onboarding>
     <h2>Set up</h2>

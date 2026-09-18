@@ -88,6 +88,10 @@ const hasDedicatedLine = school.attendancePhone !== null;
     <div class="stack">
       <a class="btn block" href={school.website} rel="noopener">School website</a>
       {school.calendarUrl && <a class="btn block" href={school.calendarUrl} rel="noopener">School calendar</a>}
+      {school.supplyListUrl && (
+        <a class="btn block" href={school.supplyListUrl} rel="noopener">School supply list</a>
+      )}
+      {school.ptaUrl && <a class="btn block" href={school.ptaUrl} rel="noopener">PTA</a>}
     </div>
   </section>
 </Base>

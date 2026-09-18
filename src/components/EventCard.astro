@@ -8,7 +8,12 @@ interface Props { event: HubEvent; today: string; showSource?: boolean; }
 const { event, today, showSource = true } = Astro.props;
 
 const ALERT = new Set(['no-school', 'early-dismissal']);
-const tone = event.category === 'deadline' || event.featured ? 'is-deadline' : ALERT.has(event.category) ? 'is-alert' : '';
+const tone =
+  event.category === 'deadline' || event.featured || event.needsAction
+    ? 'is-deadline'
+    : ALERT.has(event.category)
+      ? 'is-alert'
+      : '';
 
 const start = dateOf(event.startDate);
 const end = event.endDate ? dateOf(event.endDate) : start;
@@ -38,6 +43,8 @@ const titleKey = titleKeyFor(event);
   data-schools={event.schoolIds.join(',')}
   data-title-key={titleKey}
   data-source-id={event.sourceId}
+  data-category={event.category}
+  data-action={event.needsAction ? '' : undefined}
 >
   <div class="when">
     <div class="dow">{rel === 'Today' ? 'Today' : dayOfWeek(start)}</div>
@@ -58,6 +65,7 @@ const titleKey = titleKeyFor(event);
       <span class:list={['badge', ALERT.has(event.category) && 'alert', event.category === 'deadline' && 'deadline']}>
         {CATEGORY_LABELS[event.category] ?? 'Event'}
       </span>
+      {event.needsAction && <> <span class="badge action">Plan ahead</span></>}
       {isSample && <span class="badge sample">Sample</span>}
     </p>
     {event.description && <p class="desc">{event.description.slice(0, 220)}</p>}

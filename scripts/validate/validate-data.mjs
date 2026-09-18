@@ -28,6 +28,7 @@ function validateEvent(e, where, schoolIds) {
     if (!e[field]) fail(`${at}: missing required field "${field}"`);
   }
   if (typeof e.allDay !== 'boolean') fail(`${at}: allDay must be a boolean`);
+  if (typeof e.needsAction !== 'boolean') fail(`${at}: needsAction must be a boolean`);
   if (!CATEGORIES.has(e.category)) fail(`${at}: unknown category "${e.category}"`);
   if (e.allDay && !ISO_DATE.test(e.startDate)) fail(`${at}: all-day startDate must be YYYY-MM-DD`);
   if (!e.allDay && !ISO_DATETIME.test(e.startDate)) fail(`${at}: timed startDate must be a full ISO timestamp`);

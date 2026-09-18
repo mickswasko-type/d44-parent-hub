@@ -20,7 +20,8 @@
     "manualOverride": true,
     "featured": true,
     "actionDeadline": "2026-10-20",
-    "sourceId": "manual"
+    "sourceId": "manual",
+    "needsAction": true
   },
   "events": []
 }

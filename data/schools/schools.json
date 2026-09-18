@@ -23,7 +23,8 @@
       "notApplicable": [
         "principal",
         "ptaUrl"
-      ]
+      ],
+      "supplyListUrl": "https://drive.google.com/drive/folders/1Q7o2SST9drY77pkqNADKTfB7rER_RF68"
     },
     {
       "id": "bf",
@@ -41,7 +42,8 @@
       "sourceName": "Butterfield Elementary School",
       "sourceUrl": "https://bf.sd44.org/about-us",
       "lastChecked": "2026-09-17",
-      "needsReview": []
+      "needsReview": [],
+      "supplyListUrl": "https://drive.google.com/file/d/17BGCKW2W2lXSfUdZqS9P02hzHMarJLCTRSxZBl9N0BY/view"
     },
     {
       "id": "gw",
@@ -61,7 +63,8 @@
       "lastChecked": "2026-09-17",
       "needsReview": [
         "ptaUrl"
-      ]
+      ],
+      "supplyListUrl": "https://drive.google.com/file/d/1GQU54beoFDObjpfJDZynBPBByvQ1sAx19E750BayIlc/view"
     },
     {
       "id": "wh",
@@ -79,7 +82,8 @@
       "sourceName": "Hammerschmidt Elementary School",
       "sourceUrl": "https://wh.sd44.org/about-us",
       "lastChecked": "2026-09-17",
-      "needsReview": []
+      "needsReview": [],
+      "supplyListUrl": "https://drive.google.com/file/d/1MsAi3DFuLkpFJHiaRUv2sj32tFYTMnwjVPJxQbVMbpo/view"
     },
     {
       "id": "ec",
@@ -102,7 +106,8 @@
       ],
       "notApplicable": [
         "attendancePhone"
-      ]
+      ],
+      "supplyListUrl": "https://drive.google.com/file/d/1fct3a7gAHEBtvi1ccv71bVb1d4tAkjDJaZoFIeLf0Aw/view"
     },
     {
       "id": "md",
@@ -122,7 +127,8 @@
       "lastChecked": "2026-09-17",
       "needsReview": [
         "ptaUrl"
-      ]
+      ],
+      "supplyListUrl": "https://drive.google.com/file/d/1eTeOxaXRxsABSF4yvGHCEeSCCy3M9W1iU5WncXlWKGM/view"
     },
     {
       "id": "mh",
@@ -142,7 +148,8 @@
       "lastChecked": "2026-09-17",
       "needsReview": [
         "ptaUrl"
-      ]
+      ],
+      "supplyListUrl": "https://drive.google.com/file/d/1jsKGvwxuz3BPKs6LV319K3J3v-qJPsu1W2dch6ZuqYM/view"
     },
     {
       "id": "pv",
@@ -160,7 +167,8 @@
       "sourceName": "Park View Elementary School",
       "sourceUrl": "https://pv.sd44.org/about-us",
       "lastChecked": "2026-09-17",
-      "needsReview": []
+      "needsReview": [],
+      "supplyListUrl": "https://drive.google.com/file/d/1CuE5XcMRdpAEFfKE_Nr3DCimW64EmBulgPtezbjMPNY/view"
     },
     {
       "id": "pl",
@@ -178,7 +186,14 @@
       "sourceName": "Pleasant Lane Elementary School",
       "sourceUrl": "https://pl.sd44.org/about-us",
       "lastChecked": "2026-09-17",
-      "needsReview": []
+      "needsReview": [],
+      "supplyListUrl": "https://drive.google.com/file/d/1Mv1p0uxzHd3KXX24nDsnmqDZZMCErBvYZMjVbwGFv_0/view"
     }
-  ]
+  ],
+  "$supplyListSource": {
+    "sourceName": "District 44 School Supply Lists (Google Drive)",
+    "sourceUrl": "https://drive.google.com/drive/folders/1Q7o2SST9drY77pkqNADKTfB7rER_RF68",
+    "lastChecked": "2026-09-17",
+    "note": "Folder is titled by school year. When the district publishes next year's lists, re-read the folder and update every supplyListUrl — the file ids change."
+  }
 }

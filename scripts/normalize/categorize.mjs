@@ -41,3 +41,37 @@ export const CATEGORY_LABELS = {
   pta: 'PTA',
   event: 'Event',
 };
+
+/**
+ * Does this event require a parent to *do* something beforehand — send money,
+ * sign a slip, dress the child a particular way — as opposed to simply
+ * happening?
+ *
+ * Deliberately says only "plan ahead" rather than naming the action. A rule
+ * that guessed "send money" would be wrong for a free dress-down day, and a
+ * confidently wrong instruction is worse than a vague correct one. The event
+ * title is shown right next to the badge and says the rest.
+ *
+ * Kept separate from `category` on purpose: a book fair is still a PTA event,
+ * and picture day is still an ordinary event. This is an extra axis.
+ */
+const ACTION_RULES = [
+  /\bpicture (day|retake)/i,
+  /\bretakes?\b/i,
+  /\bbook fair\b/i,
+  /\bfield trip\b/i,
+  /\b(permission|consent) (slip|form)/i,
+  /\b(pajama|pyjama|crazy hair|hat day|dress[- ]?(up|down)|spirit (day|week)|wear|costume|twin day|color day|colour day)\b/i,
+  /\b(food|coat|clothing|toy|book|supply) drive\b/i,
+  /\bdonation|canned goods\b/i,
+  /\b(fun ?run|walk[- ]?a[- ]?thon|track[- ]?a[- ]?thon|read[- ]?a[- ]?thon|jog[- ]?a[- ]?thon|fundraiser)\b/i,
+  /\b(sign[- ]?ups?|rsvp|register|registration|order)\b/i,
+  /\b(forms?|money|payment|slip)s? (due|required)\b/i,
+  /\b(bring|send in|turn in|drop off|due)\b/i,
+  /\bconferences?\b/i,
+];
+
+export function needsAction(title = '', description = '') {
+  const haystack = `${title} ${description}`;
+  return ACTION_RULES.some((rule) => rule.test(haystack));
+}

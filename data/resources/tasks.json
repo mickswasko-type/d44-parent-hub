@@ -91,6 +91,17 @@
       "primary": true
     },
     {
+      "id": "supply-list",
+      "label": "School supply list",
+      "intent": "What do I need to buy for the school year?",
+      "icon": "clipboard",
+      "url": "internal:/schools",
+      "sourceName": "District 44 School Supply Lists",
+      "sourceUrl": "https://drive.google.com/drive/folders/1Q7o2SST9drY77pkqNADKTfB7rER_RF68",
+      "lastChecked": "2026-09-17",
+      "primary": false
+    },
+    {
       "id": "virtual-backpack",
       "label": "Virtual Backpack",
       "intent": "Flyers, forms and supply information sent home.",

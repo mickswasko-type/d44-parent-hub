@@ -84,6 +84,7 @@ Every event — imported or manual — uses the `HubEvent` shape in
 | `sourceId`, `sourceName`, `sourceUrl`, `sourceType` | **provenance — never optional** |
 | `importedAt` | when this record was first seen; preserved across syncs |
 | `manualOverride` | a human edited this; sync must not clobber it |
+| `needsAction` | a parent must send, sign, dress or order something beforehand |
 | `featured`, `actionDeadline` | drives the "Don't forget" section |
 
 Conventions worth knowing:
@@ -112,12 +113,26 @@ Conventions worth knowing:
   visible to that parent.
 - Manual records win over imported ones with the same `id` (`dedupe()` in
   `src/lib/data.ts`).
+- `needsAction` is a separate axis from `category`, not a category: a book fair
+  is still a PTA event and picture day is still an ordinary event. The badge says
+  only "Plan ahead" and never guesses *what* to do — "send money" would be wrong
+  for a free dress-down day, and a confidently wrong instruction is worse than a
+  vague correct one. The title next to it says the rest.
+- **Never cap a personalized list at build time.** Slicing before the browser
+  filters by school hands the quota to other schools' events and can empty the
+  section entirely. Render the window and cap visible items in `apply()` — this
+  bit both "Coming up" and "Don't forget".
 
 ## Trusted source rules
 
 - District 44 publishes nine **public Google Calendars** (district + eight
   schools). They are the primary source and are read as ICS. IDs live in
   `data/sources/sources.json`.
+- School supply lists come from the district's public "School Supply Lists -
+  Current Year" Drive folder, one PDF per school, stored as `supplyListUrl`.
+  **The file ids change every year.** When the district publishes next year's
+  lists, re-read the folder and map id→school from the rendered listing rather
+  than from row order. See `$supplyListSource` in `data/schools/schools.json`.
 - Task and resource links must point at the **authoritative official
   destination** — `sd44.org`, the school subdomains, Skyward, MySchoolBucks.
   Never link to a copy, a cache, or a third-party aggregator.

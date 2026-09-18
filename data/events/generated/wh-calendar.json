@@ -2,7 +2,7 @@
   "sourceId": "wh-calendar",
   "sourceName": "Hammerschmidt Elementary Calendar",
   "sourceUrl": "https://wh.sd44.org/",
-  "lastChecked": "2026-09-17T15:56:14.730Z",
+  "lastChecked": "2026-09-18T02:19:44.670Z",
   "events": [
     {
       "id": "wh-calendar-fb5d2861457b",
@@ -16,6 +16,7 @@
         "wh"
       ],
       "category": "event",
+      "needsAction": true,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -37,6 +38,7 @@
         "wh"
       ],
       "category": "event",
+      "needsAction": true,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -58,6 +60,7 @@
         "wh"
       ],
       "category": "event",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -79,6 +82,7 @@
         "wh"
       ],
       "category": "event",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -100,6 +104,7 @@
         "wh"
       ],
       "category": "pta",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -121,6 +126,7 @@
         "wh"
       ],
       "category": "pta",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -142,6 +148,7 @@
         "wh"
       ],
       "category": "pta",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -163,6 +170,7 @@
         "wh"
       ],
       "category": "pta",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -184,6 +192,7 @@
         "wh"
       ],
       "category": "no-school",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -205,6 +214,7 @@
         "wh"
       ],
       "category": "event",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -226,6 +236,7 @@
         "wh"
       ],
       "category": "pta",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -247,6 +258,7 @@
         "wh"
       ],
       "category": "event",
+      "needsAction": true,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -268,6 +280,7 @@
         "wh"
       ],
       "category": "early-dismissal",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -289,6 +302,7 @@
         "wh"
       ],
       "category": "pta",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -310,6 +324,7 @@
         "wh"
       ],
       "category": "pta",
+      "needsAction": true,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -331,6 +346,7 @@
         "wh"
       ],
       "category": "event",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -352,6 +368,7 @@
         "wh"
       ],
       "category": "pta",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -373,6 +390,7 @@
         "wh"
       ],
       "category": "pta",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -394,6 +412,7 @@
         "wh"
       ],
       "category": "no-school",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -415,6 +434,7 @@
         "wh"
       ],
       "category": "no-school",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -436,6 +456,7 @@
         "wh"
       ],
       "category": "no-school",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -457,6 +478,7 @@
         "wh"
       ],
       "category": "pta",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -478,6 +500,7 @@
         "wh"
       ],
       "category": "pta",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -499,6 +522,7 @@
         "wh"
       ],
       "category": "pta",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -520,6 +544,7 @@
         "wh"
       ],
       "category": "pta",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -541,6 +566,7 @@
         "wh"
       ],
       "category": "early-dismissal",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -562,6 +588,7 @@
         "wh"
       ],
       "category": "pta",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -583,6 +610,7 @@
         "wh"
       ],
       "category": "event",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -604,6 +632,7 @@
         "wh"
       ],
       "category": "deadline",
+      "needsAction": true,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -625,6 +654,7 @@
         "wh"
       ],
       "category": "pta",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -646,6 +676,7 @@
         "wh"
       ],
       "category": "pta",
+      "needsAction": true,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -667,6 +698,7 @@
         "wh"
       ],
       "category": "no-school",
+      "needsAction": true,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -688,6 +720,7 @@
         "wh"
       ],
       "category": "no-school",
+      "needsAction": true,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -709,6 +742,7 @@
         "wh"
       ],
       "category": "no-school",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -730,6 +764,7 @@
         "wh"
       ],
       "category": "no-school",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -751,6 +786,7 @@
         "wh"
       ],
       "category": "no-school",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -772,6 +808,7 @@
         "wh"
       ],
       "category": "event",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -793,6 +830,7 @@
         "wh"
       ],
       "category": "pta",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -814,6 +852,7 @@
         "wh"
       ],
       "category": "pta",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -835,6 +874,7 @@
         "wh"
       ],
       "category": "pta",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -856,6 +896,7 @@
         "wh"
       ],
       "category": "early-dismissal",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -877,6 +918,7 @@
         "wh"
       ],
       "category": "pta",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -898,6 +940,7 @@
         "wh"
       ],
       "category": "no-school",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -919,6 +962,7 @@
         "wh"
       ],
       "category": "event",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -940,6 +984,7 @@
         "wh"
       ],
       "category": "pta",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -961,6 +1006,7 @@
         "wh"
       ],
       "category": "pta",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -982,6 +1028,7 @@
         "wh"
       ],
       "category": "no-school",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -1003,6 +1050,7 @@
         "wh"
       ],
       "category": "no-school",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -1024,6 +1072,7 @@
         "wh"
       ],
       "category": "pta",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -1045,6 +1094,7 @@
         "wh"
       ],
       "category": "early-dismissal",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -1066,6 +1116,7 @@
         "wh"
       ],
       "category": "pta",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -1087,6 +1138,7 @@
         "wh"
       ],
       "category": "pta",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -1108,6 +1160,7 @@
         "wh"
       ],
       "category": "no-school",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -1129,6 +1182,7 @@
         "wh"
       ],
       "category": "no-school",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -1150,6 +1204,7 @@
         "wh"
       ],
       "category": "pta",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -1171,6 +1226,7 @@
         "wh"
       ],
       "category": "pta",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -1192,6 +1248,7 @@
         "wh"
       ],
       "category": "pta",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -1213,6 +1270,7 @@
         "wh"
       ],
       "category": "pta",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -1234,6 +1292,7 @@
         "wh"
       ],
       "category": "no-school",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -1255,6 +1314,7 @@
         "wh"
       ],
       "category": "pta",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -1276,6 +1336,7 @@
         "wh"
       ],
       "category": "pta",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -1297,6 +1358,7 @@
         "wh"
       ],
       "category": "event",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -1318,6 +1380,7 @@
         "wh"
       ],
       "category": "pta",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -1339,6 +1402,7 @@
         "wh"
       ],
       "category": "pta",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -1360,6 +1424,7 @@
         "wh"
       ],
       "category": "early-dismissal",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -1381,6 +1446,7 @@
         "wh"
       ],
       "category": "pta",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -1402,6 +1468,7 @@
         "wh"
       ],
       "category": "pta",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -1423,6 +1490,7 @@
         "wh"
       ],
       "category": "no-school",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -1444,6 +1512,7 @@
         "wh"
       ],
       "category": "event",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -1465,6 +1534,7 @@
         "wh"
       ],
       "category": "pta",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -1486,6 +1556,7 @@
         "wh"
       ],
       "category": "early-dismissal",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -1507,6 +1578,7 @@
         "wh"
       ],
       "category": "pta",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -1528,6 +1600,7 @@
         "wh"
       ],
       "category": "pta",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -1549,6 +1622,7 @@
         "wh"
       ],
       "category": "pta",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -1570,6 +1644,7 @@
         "wh"
       ],
       "category": "pta",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -1591,6 +1666,7 @@
         "wh"
       ],
       "category": "pta",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -1612,6 +1688,7 @@
         "wh"
       ],
       "category": "event",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -1633,6 +1710,7 @@
         "wh"
       ],
       "category": "event",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -1654,6 +1732,7 @@
         "wh"
       ],
       "category": "event",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -1675,6 +1754,7 @@
         "wh"
       ],
       "category": "pta",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -1696,6 +1776,7 @@
         "wh"
       ],
       "category": "event",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -1717,6 +1798,7 @@
         "wh"
       ],
       "category": "event",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -1738,6 +1820,7 @@
         "wh"
       ],
       "category": "event",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -1759,6 +1842,7 @@
         "wh"
       ],
       "category": "no-school",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -1780,6 +1864,7 @@
         "wh"
       ],
       "category": "pta",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -1801,6 +1886,7 @@
         "wh"
       ],
       "category": "early-dismissal",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -1822,6 +1908,7 @@
         "wh"
       ],
       "category": "event",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -1843,6 +1930,7 @@
         "wh"
       ],
       "category": "event",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -1864,6 +1952,7 @@
         "wh"
       ],
       "category": "event",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -1885,6 +1974,7 @@
         "wh"
       ],
       "category": "event",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
@@ -1906,6 +1996,7 @@
         "wh"
       ],
       "category": "event",
+      "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
