@@ -2,7 +2,7 @@
   "sourceId": "pv-calendar",
   "sourceName": "Park View Elementary Calendar",
   "sourceUrl": "https://pv.sd44.org/",
-  "lastChecked": "2026-09-18T13:36:13.083Z",
+  "lastChecked": "2026-09-19T13:10:21.106Z",
   "events": [
     {
       "id": "pv-calendar-3efa16eba842",
@@ -357,6 +357,28 @@
       "actionDeadline": null
     },
     {
+      "id": "pv-calendar-f8246a7fc0b6",
+      "title": "Cycling Club",
+      "description": null,
+      "startDate": "2026-09-21T20:20:00.000Z",
+      "endDate": "2026-09-21T21:35:00.000Z",
+      "allDay": false,
+      "location": null,
+      "schoolIds": [
+        "pv"
+      ],
+      "category": "event",
+      "needsAction": false,
+      "sourceId": "pv-calendar",
+      "sourceName": "Park View Elementary Calendar",
+      "sourceUrl": "https://pv.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-09-19T13:10:21.106Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
       "id": "pv-calendar-efaf681b49b2",
       "title": "Chorus Rehersal",
       "description": null,
@@ -379,6 +401,28 @@
       "actionDeadline": null
     },
     {
+      "id": "pv-calendar-dd55a5cdaf36",
+      "title": "Cycling Club",
+      "description": null,
+      "startDate": "2026-09-23T20:20:00.000Z",
+      "endDate": "2026-09-23T21:35:00.000Z",
+      "allDay": false,
+      "location": null,
+      "schoolIds": [
+        "pv"
+      ],
+      "category": "event",
+      "needsAction": false,
+      "sourceId": "pv-calendar",
+      "sourceName": "Park View Elementary Calendar",
+      "sourceUrl": "https://pv.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-09-19T13:10:21.106Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
       "id": "pv-calendar-b467c502f1b0",
       "title": "5th Grade Band & Orchestra Rehearsal",
       "description": null,
@@ -396,6 +440,28 @@
       "sourceUrl": "https://pv.sd44.org/",
       "sourceType": "ics",
       "importedAt": "2026-09-17T15:31:45.611Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "pv-calendar-b6eee0e44416",
+      "title": "Cycling Club",
+      "description": null,
+      "startDate": "2026-09-28T20:20:00.000Z",
+      "endDate": "2026-09-28T21:35:00.000Z",
+      "allDay": false,
+      "location": null,
+      "schoolIds": [
+        "pv"
+      ],
+      "category": "event",
+      "needsAction": false,
+      "sourceId": "pv-calendar",
+      "sourceName": "Park View Elementary Calendar",
+      "sourceUrl": "https://pv.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-09-19T13:10:21.106Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null
@@ -440,6 +506,28 @@
       "sourceUrl": "https://pv.sd44.org/",
       "sourceType": "ics",
       "importedAt": "2026-09-17T15:55:26.864Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "pv-calendar-10583e2155ef",
+      "title": "Cycling Club",
+      "description": null,
+      "startDate": "2026-09-30T20:20:00.000Z",
+      "endDate": "2026-09-30T21:35:00.000Z",
+      "allDay": false,
+      "location": null,
+      "schoolIds": [
+        "pv"
+      ],
+      "category": "event",
+      "needsAction": false,
+      "sourceId": "pv-calendar",
+      "sourceName": "Park View Elementary Calendar",
+      "sourceUrl": "https://pv.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-09-19T13:10:21.106Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null
@@ -506,6 +594,28 @@
       "sourceUrl": "https://pv.sd44.org/",
       "sourceType": "ics",
       "importedAt": "2026-09-17T15:31:45.611Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "pv-calendar-2e6556d8e01b",
+      "title": "Cycling Club",
+      "description": null,
+      "startDate": "2026-10-07T20:20:00.000Z",
+      "endDate": "2026-10-07T21:35:00.000Z",
+      "allDay": false,
+      "location": null,
+      "schoolIds": [
+        "pv"
+      ],
+      "category": "event",
+      "needsAction": false,
+      "sourceId": "pv-calendar",
+      "sourceName": "Park View Elementary Calendar",
+      "sourceUrl": "https://pv.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-09-19T13:10:21.106Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null
@@ -643,6 +753,28 @@
       "actionDeadline": null
     },
     {
+      "id": "pv-calendar-cfbc3a1a6b7f",
+      "title": "Cycling Club",
+      "description": null,
+      "startDate": "2026-10-14T20:20:00.000Z",
+      "endDate": "2026-10-14T21:35:00.000Z",
+      "allDay": false,
+      "location": null,
+      "schoolIds": [
+        "pv"
+      ],
+      "category": "event",
+      "needsAction": false,
+      "sourceId": "pv-calendar",
+      "sourceName": "Park View Elementary Calendar",
+      "sourceUrl": "https://pv.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-09-19T13:10:21.106Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
       "id": "pv-calendar-705938463478",
       "title": "5th Grade Band & Orchestra Rehearsal",
       "description": null,
@@ -682,6 +814,28 @@
       "sourceUrl": "https://pv.sd44.org/",
       "sourceType": "ics",
       "importedAt": "2026-09-17T15:31:45.611Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "pv-calendar-f34b3acccb9b",
+      "title": "Cycling Club",
+      "description": null,
+      "startDate": "2026-10-19T20:20:00.000Z",
+      "endDate": "2026-10-19T21:35:00.000Z",
+      "allDay": false,
+      "location": null,
+      "schoolIds": [
+        "pv"
+      ],
+      "category": "event",
+      "needsAction": false,
+      "sourceId": "pv-calendar",
+      "sourceName": "Park View Elementary Calendar",
+      "sourceUrl": "https://pv.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-09-19T13:10:21.106Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null
@@ -1611,28 +1765,6 @@
       "actionDeadline": null
     },
     {
-      "id": "pv-calendar-4b0b9c2262b4",
-      "title": "Classroom Winter Parties",
-      "description": null,
-      "startDate": "2026-12-17T20:15:00.000Z",
-      "endDate": "2026-12-17T21:00:00.000Z",
-      "allDay": false,
-      "location": null,
-      "schoolIds": [
-        "pv"
-      ],
-      "category": "event",
-      "needsAction": false,
-      "sourceId": "pv-calendar",
-      "sourceName": "Park View Elementary Calendar",
-      "sourceUrl": "https://pv.sd44.org/",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:31:45.611Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
-    {
       "id": "pv-calendar-1744d6c6ddb2",
       "title": "Early Release Day- 1:15pm Dismissal",
       "description": null,
@@ -1672,6 +1804,28 @@
       "sourceUrl": "https://pv.sd44.org/",
       "sourceType": "ics",
       "importedAt": "2026-09-17T15:31:45.611Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "pv-calendar-e7766afe824e",
+      "title": "Classroom Winter Parties",
+      "description": null,
+      "startDate": "2026-12-18T17:00:00.000Z",
+      "endDate": "2026-12-18T17:45:00.000Z",
+      "allDay": false,
+      "location": null,
+      "schoolIds": [
+        "pv"
+      ],
+      "category": "event",
+      "needsAction": false,
+      "sourceId": "pv-calendar",
+      "sourceName": "Park View Elementary Calendar",
+      "sourceUrl": "https://pv.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-09-19T13:10:21.106Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null
@@ -3173,7 +3327,7 @@
       "actionDeadline": null
     },
     {
-      "id": "pv-calendar-75be94a275d1",
+      "id": "pv-calendar-877ef5ea1531",
       "title": "4th Grade Band & Orchestra Rehearsal",
       "description": null,
       "startDate": "2027-04-14T21:00:00.000Z",
@@ -3195,7 +3349,7 @@
       "actionDeadline": null
     },
     {
-      "id": "pv-calendar-877ef5ea1531",
+      "id": "pv-calendar-75be94a275d1",
       "title": "4th Grade Band & Orchestra Rehearsal",
       "description": null,
       "startDate": "2027-04-14T21:00:00.000Z",
@@ -3701,28 +3855,6 @@
       "actionDeadline": null
     },
     {
-      "id": "pv-calendar-655e928f61f2",
-      "title": "Celebration of Learning Parties",
-      "description": null,
-      "startDate": "2027-06-03T19:15:00.000Z",
-      "endDate": "2027-06-03T20:00:00.000Z",
-      "allDay": false,
-      "location": null,
-      "schoolIds": [
-        "pv"
-      ],
-      "category": "event",
-      "needsAction": false,
-      "sourceId": "pv-calendar",
-      "sourceName": "Park View Elementary Calendar",
-      "sourceUrl": "https://pv.sd44.org/",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:31:45.611Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
-    {
       "id": "pv-calendar-488ca8015fc4",
       "title": "Early Release- 1:15pm Dismissal",
       "description": null,
@@ -3762,6 +3894,28 @@
       "sourceUrl": "https://pv.sd44.org/",
       "sourceType": "ics",
       "importedAt": "2026-09-17T15:55:26.864Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "pv-calendar-e05f6ea1f6ce",
+      "title": "Celebration of Learning Parties",
+      "description": null,
+      "startDate": "2027-06-04T16:00:00.000Z",
+      "endDate": "2027-06-04T16:45:00.000Z",
+      "allDay": false,
+      "location": null,
+      "schoolIds": [
+        "pv"
+      ],
+      "category": "event",
+      "needsAction": false,
+      "sourceId": "pv-calendar",
+      "sourceName": "Park View Elementary Calendar",
+      "sourceUrl": "https://pv.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-09-19T13:10:21.106Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null
