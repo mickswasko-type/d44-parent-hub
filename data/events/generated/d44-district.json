@@ -2,30 +2,8 @@
   "sourceId": "d44-district",
   "sourceName": "District 44 Public Calendar",
   "sourceUrl": "https://www.sd44.org/resources/calendars",
-  "lastChecked": "2026-09-19T13:10:21.106Z",
+  "lastChecked": "2026-09-20T13:35:09.539Z",
   "events": [
-    {
-      "id": "d44-district-3ba64c9d0daf",
-      "title": "Hammerschmidt KDG Parent Visit and Supply Drop Off",
-      "description": null,
-      "startDate": "2026-08-20T21:00:00.000Z",
-      "endDate": "2026-08-20T22:30:00.000Z",
-      "allDay": false,
-      "location": "Hammerschmidt Elementary School, 617 Hammerschmidt Ave, Lombard",
-      "schoolIds": [
-        "wh"
-      ],
-      "category": "event",
-      "needsAction": true,
-      "sourceId": "d44-district",
-      "sourceName": "District 44 Public Calendar",
-      "sourceUrl": "https://www.sd44.org/resources/calendars",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:31:45.611Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
     {
       "id": "d44-district-dd537c1da8cd",
       "title": "No School Institute Day",
