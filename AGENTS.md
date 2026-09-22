@@ -91,6 +91,11 @@ Conventions worth knowing:
 
 - All-day events store **date-only** strings (`YYYY-MM-DD`); timed events store
   full ISO timestamps.
+- **Never read a date off a timed event's string.** Timed events are UTC
+  instants; `startDate.slice(0, 10)` is the UTC date, which put every event
+  after ~7pm Chicago on the next day (145 of 603). Use `dateOf()` in
+  `src/lib/dates.ts`, which converts to Chicago. `npm run check:dist` verifies
+  the built pages and runs in CI.
 - **Never derive an all-day date through `toJSDate()`.** It returns *local*
   midnight, so the result differs between a laptop and a UTC CI runner — which
   silently rewrote every event id on each sync. Use `canonicalStamp()` in

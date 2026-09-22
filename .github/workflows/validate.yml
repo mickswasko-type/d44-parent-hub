@@ -24,3 +24,5 @@ jobs:
         if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         run: npm run validate -- --links
       - run: npm run build
+      # The data can be right and the page still wrong; check what parents see.
+      - run: npm run check:dist

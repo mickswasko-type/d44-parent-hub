@@ -12,7 +12,8 @@
     "astro": "astro",
     "sync": "node scripts/sync/sync-calendars.mjs",
     "validate": "node scripts/validate/validate-data.mjs",
-    "icons": "node scripts/generate-icons.mjs"
+    "icons": "node scripts/generate-icons.mjs",
+    "check:dist": "node scripts/validate/check-dist.mjs"
   },
   "dependencies": {
     "astro": "^7.3.3",

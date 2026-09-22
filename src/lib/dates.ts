@@ -7,7 +7,24 @@ export function todayIso(now: Date = new Date()): string {
   return new Intl.DateTimeFormat('en-CA', { timeZone: TZ, year: 'numeric', month: '2-digit', day: '2-digit' }).format(now);
 }
 
-export const dateOf = (iso: string): string => iso.slice(0, 10);
+const localDateFormat = new Intl.DateTimeFormat('en-CA', {
+  timeZone: TZ,
+  year: 'numeric',
+  month: '2-digit',
+  day: '2-digit',
+});
+
+/**
+ * The calendar date an event happens on, as a Lombard parent would say it.
+ *
+ * All-day values are already date-only and pass straight through. Timed values
+ * are stored as UTC instants, so their first ten characters are the *UTC* date:
+ * a 7pm Chicago PTA meeting is 00:00Z the next day. Slicing the string put every
+ * event after ~7pm on the following day — a quarter of all timed events, and
+ * precisely the evening meetings and concerts parents attend. Always convert.
+ */
+export const dateOf = (iso: string): string =>
+  iso.length <= 10 ? iso : localDateFormat.format(new Date(iso));
 
 export function addDays(iso: string, days: number): string {
   const d = new Date(`${dateOf(iso)}T12:00:00Z`);

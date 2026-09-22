@@ -1,4 +1,5 @@
 import type { HubEvent, School, ParentTask, ResourceAnswer, SyncStatus } from './types';
+import { dateOf } from './dates';
 import schoolsDoc from '../../data/schools/schools.json';
 import tasksDoc from '../../data/resources/tasks.json';
 import questionsDoc from '../../data/resources/questions.json';
@@ -65,7 +66,7 @@ export function eventsForSchool(schoolId: string): HubEvent[] {
 }
 
 export function upcomingFrom(today: string, events: HubEvent[] = allEvents): HubEvent[] {
-  return events.filter((e) => (e.endDate?.slice(0, 10) ?? e.startDate.slice(0, 10)) >= today);
+  return events.filter((e) => dateOf(e.endDate ?? e.startDate) >= today);
 }
 
 export const schoolLabel = (id: string): string => schoolsById.get(id)?.shortName ?? id;
