@@ -64,10 +64,14 @@
     {
       "id": "lunch-menu",
       "question": "Where is the lunch menu?",
-      "answer": "Menus are published by District 44 Food Services.",
+      "answer": "Menus are published on FD MealPlanner by Whitsons, the district's food partner. Choose your school, then \"Continue as a guest\" — no account needed. John Schroder Early Childhood Center is not on the menu system.",
       "links": [
         {
-          "label": "Food Services",
+          "label": "Open lunch menus",
+          "url": "https://www.fdmealplanner.com/#menu/mp/LombardElemSD"
+        },
+        {
+          "label": "District Food Services",
           "url": "https://www.sd44.org/resources/food-services"
         }
       ],
@@ -79,7 +83,7 @@
       ],
       "sourceName": "District 44 Food Services",
       "sourceUrl": "https://www.sd44.org/resources/food-services",
-      "lastChecked": "2026-09-17"
+      "lastChecked": "2026-09-22"
     },
     {
       "id": "register",

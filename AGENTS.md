@@ -147,8 +147,11 @@ Conventions worth knowing:
   compilation, database or directory without written permission", and every API
   endpoint is gated behind an RSA-encrypted anonymous-token handshake.
   Reproducing that handshake is technically possible and was deliberately not
-  done. The menu shortcut links to the district's own Food Services page
-  instead. If written permission is ever obtained, record it here; the pieces
+  done. The menu shortcut links to `fdmealplanner.com/#menu/mp/LombardElemSD`
+  — the exact entry point seven of the eight school sites publish, which lands
+  on FD MealPlanner's picker filtered to Lombard schools. JSECC is not on it.
+  Food services sits under Finance & Facilities (Neil Perry, Assistant
+  Superintendent; Hans Budach, Director of Operations) — the people to ask. If written permission is ever obtained, record it here; the pieces
   are `GET {apiservicelocatorstenant}/api/v2/data-locator-webapi/3/meals`,
   tenantId 3, accountId 466 (Lombard Elementary SD), and a per-school
   locationId (Hammerschmidt is 2058).

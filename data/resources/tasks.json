@@ -16,12 +16,12 @@
     {
       "id": "lunch-menu",
       "label": "See lunch menus",
-      "intent": "What is for lunch this week?",
+      "intent": "What is for lunch this week? Opens the official menu, filtered to Lombard schools.",
       "icon": "tray",
-      "url": "https://www.sd44.org/resources/food-services",
-      "sourceName": "District 44 Food Services",
+      "url": "https://www.fdmealplanner.com/#menu/mp/LombardElemSD",
+      "sourceName": "District 44 school websites",
       "sourceUrl": "https://www.sd44.org/resources/food-services",
-      "lastChecked": "2026-09-17",
+      "lastChecked": "2026-09-22",
       "primary": true
     },
     {
