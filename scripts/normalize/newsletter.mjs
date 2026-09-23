@@ -279,8 +279,11 @@ function pickLink(section, pattern) {
 
 /* ------------------------------------------------------------------ digest */
 
+// Includes generic action verbs: "wear" alone must not tie "Wear your classroom
+// colors every Friday" to "Wear Pink Day".
 const STOP = new Set(['the', 'and', 'for', 'with', 'whs', 'pta', 'day', 'days', 'week', 'school',
-  'student', 'students', 'council', 'event', 'hammerschmidt', 'jsecc', 'schroder', 'adult']);
+  'student', 'students', 'council', 'event', 'hammerschmidt', 'jsecc', 'schroder', 'adult',
+  'wear', 'bring', 'send', 'your', 'our', 'every']);
 
 export function significantWords(s) {
   return (s || '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').split(' ')
@@ -341,7 +344,10 @@ export function buildDigest({ post, html, today, calendarEvents, localDate }) {
       acted++;
     }
     if (!acted && needsAction(section.heading)) {
-      todo.push({ verb: 'Remember', topic, date: related?.start ?? null, url: post.url });
+      // A standing habit ("every Friday") has no single date; giving it one
+      // would be the kind of confident wrong detail this site must not show.
+      const recurring = /\b(every|each|weekly|daily)\b|\b(mon|tues|wednes|thurs|fri)days\b/i.test(section.heading);
+      todo.push({ verb: 'Remember', topic, date: recurring ? null : related?.start ?? null, url: post.url });
       acted++;
     }
     if (!acted && !topics.includes(topic)) topics.push(topic);
