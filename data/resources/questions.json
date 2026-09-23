@@ -195,15 +195,15 @@
     {
       "id": "breaks",
       "question": "When is spring break?",
-      "answer": "Break dates come from the official student calendar. The upcoming ones also appear in this site's calendar view.",
+      "answer": "Every day off and early dismissal left this year is on one page here, grouped into long weekends and breaks for your schools. The district also publishes an official one-pager.",
       "links": [
         {
-          "label": "Official calendars & PDFs",
-          "url": "https://www.sd44.org/resources/calendars"
+          "label": "Days off planner",
+          "url": "internal:/days-off"
         },
         {
-          "label": "Upcoming events here",
-          "url": "internal:/calendar"
+          "label": "Official calendars & one-pager",
+          "url": "https://www.sd44.org/resources/calendars"
         }
       ],
       "tags": [
@@ -215,7 +215,7 @@
       ],
       "sourceName": "District 44 Calendars",
       "sourceUrl": "https://www.sd44.org/resources/calendars",
-      "lastChecked": "2026-09-17"
+      "lastChecked": "2026-09-22"
     },
     {
       "id": "bus",

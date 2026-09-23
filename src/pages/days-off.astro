@@ -1,0 +1,268 @@
+---
+import Base from '../layouts/Base.astro';
+import { plannerDays } from '../lib/daysoff';
+import { selectableSchools } from '../lib/data';
+import { todayIso, longDate, monthShort, dayNumber, dayOfWeek } from '../lib/dates';
+
+const today = todayIso();
+const { days, lastDay, latest } = plannerDays(today);
+const names = Object.fromEntries(selectableSchools.map((s) => [s.id, s.shortName]));
+
+// Handed to the browser, which groups days into runs for the parent's schools.
+// `<` is escaped so no label can ever close the script tag early.
+const payload = JSON.stringify({ lastDay, days, names }).replace(/</g, '\\u003c');
+
+const base = import.meta.env.BASE_URL;
+const settingsHref = `${base}settings`.replace(/\/{2,}/g, '/');
+
+// No-JavaScript fallback: every day, district-wide, one line each.
+const fallback = days.reduce<Record<string, typeof days>>((acc, d) => {
+  const key = `${monthShort(d.date)} ${d.date.slice(0, 4)}`;
+  (acc[key] ??= []).push(d);
+  return acc;
+}, {});
+---
+<Base title="Days off" description="Every day off and early dismissal left this school year, for your Lombard D44 schools — built for planning childcare and trips.">
+  <h1>Days off</h1>
+  <p class="lede">Every day off and early dismissal left this school year, grouped the way you plan around them.</p>
+
+  <div class="scope-bar" data-has-prefs hidden>
+    <p class="scope-label">Showing <strong data-school-name>your schools</strong></p>
+    <a class="btn" href={settingsHref}>Change my schools</a>
+  </div>
+
+  <div class="planner-summary card" data-planner-summary>
+    <p>
+      <strong>{days.filter((d) => d.kind === 'off').length}</strong> school days off and
+      <strong>{days.filter((d) => d.kind === 'early').length}</strong> early dismissals left this year, across all schools.
+    </p>
+  </div>
+
+  <p class="planner-actions">
+    <button type="button" class="btn primary" data-planner-export hidden>Add all to my calendar</button>
+    <button type="button" class="btn" data-planner-print hidden>Print</button>
+  </p>
+
+  <div data-planner-list>
+    {Object.entries(fallback).map(([month, list]) => (
+      <section>
+        <h2>{month}</h2>
+        <div class="stack">
+          {list.map((d) => (
+            <div class="planner-row card">
+              <span class="pr-when">{dayOfWeek(d.date)} {monthShort(d.date)} {dayNumber(d.date)}</span>
+              <span class="pr-what">
+                {d.kind === 'off' ? Object.values(d.labels)[0] || 'No school' : `Early dismissal${d.time ? `, ${d.time}` : ''}`}
+              </span>
+            </div>
+          ))}
+        </div>
+      </section>
+    ))}
+  </div>
+
+  {lastDay && (
+    <p class="planner-end">
+      <strong>Last day of school: {longDate(lastDay)}</strong>
+      {latest && latest !== lastDay && <>, or as late as {longDate(latest)} if emergency days are used</>}.
+    </p>
+  )}
+  <p class="source">
+    Source: District 44 and school calendars ·
+    <a href="https://www.sd44.org/resources/calendars" rel="noopener">Official calendars &amp; breaks one-pager</a>
+  </p>
+
+  <script type="application/json" id="planner-data" set:html={payload} />
+</Base>
+
+<script is:inline>
+  /* Groups the parent's days off into runs — "Fri Oct 9 – Tue Oct 13, 5 days
+     in a row" — because that is what childcare and trips are planned around.
+     Consecutive school days off merge across a weekend; a Friday or Monday off
+     counts the weekend it touches. Days that apply to different sets of the
+     parent's schools never merge, so one child's day off is not presented as
+     both children's long weekend. */
+  (function () {
+    var node = document.getElementById('planner-data');
+    var list = document.querySelector('[data-planner-list]');
+    if (!node || !list) return;
+    var data = JSON.parse(node.textContent);
+
+    var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    var DOW = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+
+    function parse(iso) { return new Date(iso + 'T12:00:00Z'); }
+    function addDays(iso, n) { var d = parse(iso); d.setUTCDate(d.getUTCDate() + n); return d.toISOString().slice(0, 10); }
+    function dow(iso) { return parse(iso).getUTCDay(); }
+    function fmt(iso) { var d = parse(iso); return DOW[d.getUTCDay()] + ' ' + MONTHS[d.getUTCMonth()].slice(0, 3) + ' ' + d.getUTCDate(); }
+    function between(a, b) { return Math.round((parse(b) - parse(a)) / 864e5); }
+    function nextSchoolDay(iso) { var d = addDays(iso, 1); while (dow(d) === 0 || dow(d) === 6) d = addDays(d, 1); return d; }
+    function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+    function today() {
+      return new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Chicago', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
+    }
+
+    /* Which of the parent's schools a day applies to. District-wide days apply
+       to all of them; with nothing picked, show every school's days. */
+    function applies(day, selected) {
+      /* Presence, not truthiness: "Non-Attendance Day" tidies to an empty
+         label, and testing the text dropped those district-wide days. */
+      if (Object.prototype.hasOwnProperty.call(day.labels, 'district')) {
+        return selected.length ? selected.slice().sort() : ['district'];
+      }
+      var ids = Object.keys(day.labels).sort();
+      return selected.length ? ids.filter(function (id) { return selected.indexOf(id) !== -1; }) : ids;
+    }
+
+    function labelFor(day, ids) {
+      var order = ['district'].concat(ids);
+      for (var i = 0; i < order.length; i++) if (day.labels[order[i]]) return day.labels[order[i]];
+      return '';
+    }
+
+    function schoolTag(ids, selected) {
+      if (ids[0] === 'district') return '';
+      if (selected.length && ids.length === selected.length) return '';
+      return ids.map(function (id) { return data.names[id] || id; }).join(' & ') + ' only';
+    }
+
+    function headline(run) {
+      if (run.calendarDays >= 7) return run.calendarDays + ' days off';
+      if (run.calendarDays >= 5) return run.calendarDays + ' days in a row';
+      if (run.calendarDays >= 3) return run.calendarDays + '-day weekend';
+      return 'No school';
+    }
+
+    function labelsFor(run) {
+      var seen = [];
+      run.items.forEach(function (it) { if (it.label && seen.indexOf(it.label) === -1) seen.push(it.label); });
+      var breaks = seen.filter(function (l) { return /break/i.test(l); });
+      return (breaks.length ? breaks : seen).join(' · ');
+    }
+
+    function build() {
+      var selected = window.d44 ? window.d44.schools() : [];
+      var now = today();
+      var off = [];
+      var early = [];
+      data.days.forEach(function (d) {
+        if (d.date < now) return;
+        var ids = applies(d, selected);
+        if (!ids.length) return;
+        var item = { date: d.date, ids: ids, label: labelFor(d, ids), time: d.time };
+        (d.kind === 'off' ? off : early).push(item);
+      });
+
+      var runs = [];
+      off.forEach(function (it) {
+        var last = runs[runs.length - 1];
+        if (last && nextSchoolDay(last.end) === it.date && last.ids.join() === it.ids.join()) {
+          last.end = it.date;
+          last.items.push(it);
+        } else {
+          runs.push({ start: it.date, end: it.date, ids: it.ids, items: [it] });
+        }
+      });
+      runs.forEach(function (r) {
+        var from = dow(r.start) === 1 ? addDays(r.start, -2) : r.start;
+        var to = dow(r.end) === 5 ? addDays(r.end, 2) : r.end;
+        r.calendarDays = between(from, to) + 1;
+      });
+      return { selected: selected, now: now, runs: runs, early: early };
+    }
+
+    function render() {
+      var b = build();
+      var rows = b.runs.map(function (r) { return { date: r.start, kind: 'off', run: r }; })
+        .concat(b.early.map(function (e) { return { date: e.date, kind: 'early', item: e }; }))
+        .sort(function (x, y) { return x.date.localeCompare(y.date) || (x.kind === 'off' ? -1 : 1); });
+
+      var html = '';
+      var month = '';
+      rows.forEach(function (row) {
+        var d = parse(row.date);
+        var m = MONTHS[d.getUTCMonth()] + ' ' + d.getUTCFullYear();
+        if (m !== month) {
+          if (month) html += '</div></section>';
+          html += '<section><h2>' + esc(m) + '</h2><div class="stack">';
+          month = m;
+        }
+        if (row.kind === 'off') {
+          var r = row.run;
+          var when = r.start === r.end ? fmt(r.start) : fmt(r.start) + ' – ' + fmt(r.end);
+          var tag = schoolTag(r.ids, b.selected);
+          var big = r.calendarDays >= 3;
+          html += '<div class="planner-row card ' + (big ? 'is-long' : '') + '">' +
+            '<span class="pr-when">' + esc(when) + '</span>' +
+            '<span class="pr-what"><strong>' + esc(headline(r)) + '</strong>' +
+            (labelsFor(r) ? ' · ' + esc(labelsFor(r)) : '') +
+            (tag ? ' <span class="badge">' + esc(tag) + '</span>' : '') + '</span></div>';
+        } else {
+          var e = row.item;
+          var etag = schoolTag(e.ids, b.selected);
+          html += '<div class="planner-row card is-early">' +
+            '<span class="pr-when">' + esc(fmt(e.date)) + '</span>' +
+            '<span class="pr-what"><strong>Early dismissal</strong>' + (e.time ? ' · ' + esc(e.time) : '') +
+            (etag ? ' <span class="badge">' + esc(etag) + '</span>' : '') + '</span></div>';
+        }
+      });
+      if (month) html += '</div></section>';
+      list.innerHTML = html || '<p class="empty">No more days off this school year.</p>';
+
+      var schoolDays = b.runs.reduce(function (n, r) { return n + r.items.length; }, 0);
+      var next = b.runs[0];
+      var summary = document.querySelector('[data-planner-summary]');
+      if (summary) {
+        var inDays = next ? between(b.now, next.start) : null;
+        var when = inDays === 0 ? 'today' : inDays === 1 ? 'tomorrow' : 'in ' + inDays + ' days';
+        var longest = b.runs.slice().sort(function (x, y) { return y.calendarDays - x.calendarDays; })[0];
+        summary.innerHTML =
+          '<p><strong>' + schoolDays + '</strong> school day' + (schoolDays === 1 ? '' : 's') + ' off and <strong>' +
+          b.early.length + '</strong> early dismissal' + (b.early.length === 1 ? '' : 's') + ' left this year.</p>' +
+          (next ? '<p>Next day off: <strong>' + esc(fmt(next.start)) + '</strong> · ' + when + '</p>' : '') +
+          (longest && longest.calendarDays >= 7
+            ? '<p>Longest stretch: <strong>' + esc(fmt(longest.start)) + ' – ' + esc(fmt(longest.end)) + '</strong>, ' + longest.calendarDays + ' days</p>'
+            : '');
+      }
+      window.__d44Planner = b;
+    }
+
+    /* One .ics with every run and early dismissal, for a work calendar. */
+    function exportAll() {
+      var b = window.__d44Planner || build();
+      var stamp = function (iso) { return iso.replace(/-/g, ''); };
+      var nowStamp = new Date().toISOString().replace(/[-:]/g, '').slice(0, 15) + 'Z';
+      var lines = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//D44 PASS//Days off//EN', 'CALSCALE:GREGORIAN'];
+      /* In a work calendar there is no page around the entry, so a day that
+         only one child has off must say whose it is. */
+      var who = function (ids) { var t = schoolTag(ids, b.selected); return t ? ' (' + t + ')' : ''; };
+      var safe = function (s) { return s.replace(/[,;]/g, ' '); };
+      b.runs.forEach(function (r, i) {
+        var labels = labelsFor(r);
+        lines.push('BEGIN:VEVENT', 'UID:dayoff-' + r.start + '-' + i + '@d44-pass', 'DTSTAMP:' + nowStamp,
+          'DTSTART;VALUE=DATE:' + stamp(r.start), 'DTEND;VALUE=DATE:' + stamp(addDays(r.end, 1)),
+          'SUMMARY:' + safe('No school' + who(r.ids) + (labels ? ' — ' + labels : '')), 'TRANSP:TRANSPARENT', 'END:VEVENT');
+      });
+      b.early.forEach(function (e, i) {
+        lines.push('BEGIN:VEVENT', 'UID:early-' + e.date + '-' + i + '@d44-pass', 'DTSTAMP:' + nowStamp,
+          'DTSTART;VALUE=DATE:' + stamp(e.date), 'DTEND;VALUE=DATE:' + stamp(addDays(e.date, 1)),
+          'SUMMARY:' + safe('Early dismissal' + (e.time ? ' ' + e.time : '') + who(e.ids)), 'TRANSP:TRANSPARENT', 'END:VEVENT');
+      });
+      lines.push('END:VCALENDAR');
+      var blob = new Blob([lines.join('\r\n')], { type: 'text/calendar;charset=utf-8' });
+      var url = URL.createObjectURL(blob);
+      var a = document.createElement('a');
+      a.href = url; a.download = 'd44-days-off.ics';
+      document.body.appendChild(a); a.click(); document.body.removeChild(a);
+      setTimeout(function () { URL.revokeObjectURL(url); }, 1000);
+    }
+
+    var exportBtn = document.querySelector('[data-planner-export]');
+    var printBtn = document.querySelector('[data-planner-print]');
+    if (exportBtn) { exportBtn.hidden = false; exportBtn.addEventListener('click', exportAll); }
+    if (printBtn) { printBtn.hidden = false; printBtn.addEventListener('click', function () { window.print(); }); }
+
+    render();
+    window.addEventListener('pageshow', render);
+  })();
+</script>

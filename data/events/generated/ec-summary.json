@@ -1,0 +1,52 @@
+{
+  "sourceId": "ec-summary",
+  "sourceName": "The Schroder Summary, Sep 18 issue",
+  "sourceUrl": "https://www.parentsquare.com/feeds/88759055",
+  "lastChecked": "2026-09-23T00:40:50.013Z",
+  "events": [
+    {
+      "id": "ec-summary-998b6e8b77c5",
+      "title": "Create With Me Day",
+      "description": null,
+      "startDate": "2026-10-08",
+      "endDate": "2026-10-08",
+      "allDay": true,
+      "location": null,
+      "schoolIds": [
+        "ec"
+      ],
+      "category": "event",
+      "needsAction": false,
+      "sourceId": "ec-summary",
+      "sourceName": "The Schroder Summary, Sep 18 issue",
+      "sourceUrl": "https://www.parentsquare.com/feeds/88759055",
+      "sourceType": "newsletter",
+      "importedAt": "2026-09-23T00:40:50.013Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "ec-summary-6f711bac08cc",
+      "title": "Wear Pink Breast Cancer Awareness Day",
+      "description": null,
+      "startDate": "2026-10-14",
+      "endDate": "2026-10-14",
+      "allDay": true,
+      "location": null,
+      "schoolIds": [
+        "ec"
+      ],
+      "category": "event",
+      "needsAction": true,
+      "sourceId": "ec-summary",
+      "sourceName": "The Schroder Summary, Sep 18 issue",
+      "sourceUrl": "https://www.parentsquare.com/feeds/88759055",
+      "sourceType": "newsletter",
+      "importedAt": "2026-09-23T00:40:50.013Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    }
+  ]
+}

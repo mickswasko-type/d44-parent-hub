@@ -3,6 +3,7 @@ import '../styles/global.css';
 import Icon from '../components/Icon.astro';
 import { siteConfig } from '../../site.config';
 import { longDate, todayIso } from '../lib/dates';
+import { selectableSchools } from '../lib/data';
 
 interface Props { title?: string; description?: string; showDate?: boolean; }
 const { title, description = siteConfig.description, showDate = false } = Astro.props;
@@ -12,6 +13,9 @@ const href = (p: string) => `${base}${p}`.replace(/\/{2,}/g, '/');
 const path = Astro.url.pathname.replace(/\/$/, '');
 const isCurrent = (p: string) => (path === href(p).replace(/\/$/, '') ? 'page' : undefined);
 const buildToday = todayIso();
+// Every page needs school names for "Showing Hammerschmidt & JSECC", not just
+// pages that happen to contain a school picker to borrow them from.
+const schoolNames = JSON.stringify(Object.fromEntries(selectableSchools.map((s) => [s.id, s.shortName])));
 
 // The header styles the first word plain and the rest in the accent colour.
 // A single-word name simply renders entirely in the accent colour.
@@ -61,7 +65,7 @@ const nav = [
       })();
     </script>
   </head>
-  <body data-build-date={buildToday} data-base={base}>
+  <body data-build-date={buildToday} data-base={base} data-school-names={schoolNames}>
     <header class="site-head">
       <a class="brand" href={href('')}>
         {brandRest ? <>{brandLead} <span>{brandRest}</span></> : <span>{brandLead}</span>}
@@ -201,12 +205,11 @@ const nav = [
             el.hidden = visible;
           });
 
+          var names = {};
+          try { names = JSON.parse(document.body.getAttribute('data-school-names') || '{}'); } catch (e) { /* keep ids */ }
           document.querySelectorAll('[data-school-name]').forEach(function (el) {
             el.textContent = selected.length
-              ? selected.map(function (id) {
-                  var chip = document.querySelector('[data-school-label="' + id + '"]');
-                  return chip ? chip.textContent.trim() : id;
-                }).join(' & ')
+              ? selected.map(function (id) { return names[id] || id; }).join(' & ')
               : 'District 44';
           });
 

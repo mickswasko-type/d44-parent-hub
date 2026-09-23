@@ -2,7 +2,7 @@
   "sourceId": "wh-calendar",
   "sourceName": "Hammerschmidt Elementary Calendar",
   "sourceUrl": "https://wh.sd44.org/",
-  "lastChecked": "2026-09-23T00:27:30.185Z",
+  "lastChecked": "2026-09-23T00:40:47.154Z",
   "events": [
     {
       "id": "wh-calendar-980256e7f144",
@@ -59,7 +59,7 @@
       "schoolIds": [
         "wh"
       ],
-      "category": "event",
+      "category": "early-dismissal",
       "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",
@@ -1137,7 +1137,7 @@
       "schoolIds": [
         "wh"
       ],
-      "category": "no-school",
+      "category": "early-dismissal",
       "needsAction": false,
       "sourceId": "wh-calendar",
       "sourceName": "Hammerschmidt Elementary Calendar",

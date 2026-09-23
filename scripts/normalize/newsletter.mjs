@@ -69,60 +69,100 @@ function toIsoDate(text) {
 /* -------------------------------------------------------------------- post */
 
 /**
- * Newsletters built in ParentSquare's editor mark blocks with <h1> titles and
- * <h2> subtitles — but authors also stack whole sections as bare <h2>s under
- * the last <h1>. So:
- *   - every <h1> starts a section;
- *   - an <h2> straight after an <h1> (nothing in between) is its subtitle;
- *   - an <h2> that is just a month ("September 2026") stays inside the current
- *     section, where the date list needs it for the year;
- *   - any other <h2> starts a section of its own, remembering its parent.
- * If none of this structure is present the caller reports failure rather than
- * guessing.
+ * Splits a ParentSquare post into sections. Two styles are in use at D44:
+ *
+ *   Editor-built (Hammerschmidt): every block has an <h1> title and usually an
+ *   <h2> subtitle — but authors also stack whole sections as bare <h2>s under
+ *   the last <h1>. So an <h2> straight after an <h1> is its subtitle, a month
+ *   header ("September 2026") stays inside the date list that needs it, and
+ *   any other <h2> starts a section of its own, remembering its parent.
+ *
+ *   Letter-style (Schroder): one rich-text block where each topic is a line in
+ *   bold, followed by an <h2> such as "Upcoming Events". With no <h1> titles to
+ *   go on, a line that is entirely bold starts a section.
+ *
+ * Bold lines only count as headings in letter-style posts, so an emphasised
+ * phrase inside an editor-built post cannot split it. The hero banner (issue
+ * name and date) is decoration and is skipped. If none of this structure is
+ * present, the caller reports failure rather than guessing.
  */
 export function parsePost(html) {
-  const bodyStart = html.search(/<h1\b[^>]*nl-builder_title/i);
-  if (bodyStart < 0) return [];
-  const body = html.slice(bodyStart);
-
-  const tokens = [...body.matchAll(/<(h1|h2)\b([^>]*)>([\s\S]*?)<\/\1>/gi)].map((m) => ({
-    level: m[1].toLowerCase(),
-    text: clean(m[3]),
-    start: m.index,
-    end: m.index + m[0].length,
-  }));
-
+  const anchor = html.search(/nl-builder_blocks/i);
+  if (anchor < 0) return [];
+  // Stop at the page footer, or ParentSquare's own social links get read as
+  // the newsletter's.
+  let body = html.slice(anchor).replace(/<(script|style)[\s\S]*?<\/\1>/gi, '');
+  const footer = body.search(/<footer\b|&copy;|©/i);
+  if (footer > 0) body = body.slice(0, footer);
+  const editorBuilt = /<h1\b[^>]*nl-builder_title/i.test(body);
   const monthHeader = new RegExp(`^${MONTH_RE}\\s+\\d{4}$`, 'i');
+
+  // Walk the body as a sequence of block-level lines, remembering which tag
+  // opened each one.
+  const parts = body.split(/(<\/?(?:div|p|li|ul|ol|h[1-6]|br|tr|td|table|section)\b[^>]*>)/i);
+  const blocks = [];
+  let openTag = '';
+  for (const part of parts) {
+    if (/^<\//.test(part)) { openTag = ''; continue; }
+    if (/^<(div|p|li|ul|ol|h[1-6]|br|tr|td|table|section)\b/i.test(part)) { openTag = part; continue; }
+    const text = clean(part);
+    if (/hero/i.test(openTag)) continue;
+    // Image-only links carry no text but are often the only link a section
+    // has ("Things to know about WHS" is a picture of the guide).
+    if (!text) {
+      if (/<a\b/i.test(part)) blocks.push({ text: '', html: part, level: 0 });
+      continue;
+    }
+    const tag = (openTag.match(/^<(\w+)/) || [])[1]?.toLowerCase() ?? '';
+    if (tag === 'h1' && editorBuilt) { blocks.push({ text, html: part, level: 1 }); continue; }
+    if (tag === 'h2' || tag === 'h1') { blocks.push({ text, html: part, level: 2 }); continue; }
+
+    // Letter-style topics open a paragraph in bold — "**First Fire Drill—
+    // Success!** Great news…" — or stand alone as a bold line. Either way the
+    // bold part is the heading and anything after it is body. Very short or
+    // generic lead-ins ("Note:") are emphasis, not headings.
+    const lead = !editorBuilt && part.match(/^\s*<(strong|b)\b[^>]*>([\s\S]*?)<\/\1>([\s\S]*)$/i);
+    const leadText = lead ? clean(lead[2]) : '';
+    if (lead && !/<a\b/i.test(lead[2]) && leadText.length >= 4 && leadText.length <= 80 &&
+        !/^(note|notes|reminder|important|please note|update)s?:?$/i.test(leadText)) {
+      blocks.push({ text: leadText, html: '', level: 3 });
+      if (clean(lead[3])) blocks.push({ text: clean(lead[3]), html: lead[3], level: 0 });
+      continue;
+    }
+    blocks.push({ text, html: part, level: 0 });
+  }
+
   const units = [];
   let current = null;
   let prev = null;
-  let lastH1 = null;
-
-  for (const t of tokens) {
-    const gapIsEmpty = prev && !clean(body.slice(prev.end, t.start));
-    if (t.level === 'h1') {
-      current = { heading: t.text, subheading: '', parent: null, start: t.start, contentStart: t.end };
+  let lastParent = null;
+  for (const b of blocks) {
+    if (b.level === 1) {
+      current = { heading: b.text, subheading: '', parent: null, lines: [], links: [] };
       units.push(current);
-      lastH1 = current;
-    } else if (current && prev?.level === 'h1' && gapIsEmpty && !current.subheading) {
-      current.subheading = t.text;
-    } else if (current && monthHeader.test(t.text)) {
-      // stays in the current section
-    } else {
-      current = { heading: t.text, subheading: '', parent: lastH1?.heading ?? null, start: t.start, contentStart: t.end };
+      lastParent = current;
+    } else if (b.level === 2 && current && prev?.level === 1 && !current.subheading) {
+      current.subheading = b.text;
+    } else if (b.level === 2 && current && monthHeader.test(b.text)) {
+      current.lines.push(b.text);
+    } else if (b.level >= 2) {
+      current = { heading: b.text, subheading: '', parent: lastParent?.heading ?? null, lines: [], links: [] };
       units.push(current);
+      if (b.level === 2 && !editorBuilt) lastParent = current;
+    } else if (current && b.text) {
+      current.lines.push(b.text);
     }
-    prev = t;
+    if (current && b.level === 0) {
+      for (const m of b.html.matchAll(/<a\b[^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/gi)) {
+        const href = decode(m[1]);
+        if (!/^https?:\/\//.test(href)) continue;
+        if (/parentsquare\.com\/(signin|schools\/\d+\/users)/.test(href)) continue;
+        current.links.push({ href, text: clean(m[2]) });
+      }
+    }
+    prev = b;
   }
-
-  return units.map((u, i) => {
-    const chunk = body.slice(u.contentStart, units[i + 1]?.start ?? body.length);
-    const links = [...chunk.matchAll(/<a\b[^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/gi)]
-      .map((m) => ({ href: decode(m[1]), text: clean(m[2]) }))
-      .filter((l) => /^https?:\/\//.test(l.href))
-      .filter((l) => !/parentsquare\.com\/(signin|schools\/\d+\/users)/.test(l.href));
-    return { heading: u.heading, subheading: u.subheading, parent: u.parent, lines: toLines(chunk), links };
-  });
+  return units;
 }
 
 /* ------------------------------------------------------------------- dates */
@@ -192,7 +232,7 @@ const tidyLabel = (s) => s.replace(/\s+/g, ' ').replace(/[\s,;:.-]+$/, '').trim(
 /* ---------------------------------------------------------------- sections */
 
 /** Sections that are furniture rather than news: social links, standing ads. */
-const SKIP = /facebook|instagram|socials|givebacks|events calendar on website|phone ?book/i;
+const SKIP = /facebook|instagram|socials|givebacks|events calendar on website|phone ?book|contact info|contact us/i;
 /** Evergreen reference links worth keeping, whatever week it is. */
 const RESOURCE = /school calendar|breaks|holidays|things to know|handbook|reference guide|supply list/i;
 
@@ -300,17 +340,22 @@ export function buildDigest({ post, html, today, calendarEvents, localDate }) {
       todo.push({ verb: action.verb, topic, date: related?.start ?? null, url: link.href });
       acted++;
     }
+    if (!acted && needsAction(section.heading)) {
+      todo.push({ verb: 'Remember', topic, date: related?.start ?? null, url: post.url });
+      acted++;
+    }
     if (!acted && !topics.includes(topic)) topics.push(topic);
   }
 
   // Most important first, in tiers a parent would recognise:
-  //   1. things to do for a dated event the kids are part of, soonest first
+  //   1. things to do for a dated event the kids are part of, soonest first,
+  //      then standing reminders ("wear your classroom colors every Friday")
   //   2. the same for adult-only events
   //   3. undated asks (feedback, session proposals)
   //   4. standing asks (membership)
   const tier = (t) =>
-    t.verb === 'Join' ? 4 : !t.date ? 3 : /adult/i.test(t.topic) ? 2 : 1;
-  todo.sort((a, b) => tier(a) - tier(b) || (a.date ?? '').localeCompare(b.date ?? ''));
+    t.verb === 'Join' ? 4 : t.verb === 'Remember' ? 1 : !t.date ? 3 : /adult/i.test(t.topic) ? 2 : 1;
+  todo.sort((a, b) => tier(a) - tier(b) || (a.date ?? '9999').localeCompare(b.date ?? '9999'));
   dates.sort((a, b) => a.start.localeCompare(b.start));
 
   // A topic that already has a to-do does not need repeating underneath.

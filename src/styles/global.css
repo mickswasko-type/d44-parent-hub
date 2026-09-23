@@ -401,3 +401,29 @@ section > h2 { margin-bottom: 12px; }
 .nl-also { margin: 14px 0 0; font-size: 0.86rem; color: var(--text-muted); }
 .nl-also strong { color: var(--text); }
 .nl-fineprint { margin: 4px 0 0; font-size: 0.72rem; color: var(--text-faint); }
+
+/* --- days-off planner --- */
+.planner-summary { margin-top: 16px; }
+.planner-summary p { margin: 0 0 4px; }
+.planner-summary p:last-child { margin-bottom: 0; }
+.planner-actions { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0 0; }
+.planner-row {
+  display: grid; grid-template-columns: 8.8em 1fr; gap: 12px; align-items: baseline;
+  padding: 12px 14px;
+}
+.planner-row .pr-when { font-weight: 650; font-variant-numeric: tabular-nums; }
+.planner-row .pr-what { color: var(--text-muted); }
+.planner-row .pr-what strong { color: var(--text); }
+.planner-row.is-long { border-left: 4px solid var(--accent); }
+.planner-row.is-early { background: var(--alert-soft); }
+.planner-row.is-early .pr-what strong { color: var(--alert); }
+.planner-end { margin: 24px 0 0; }
+@media (max-width: 380px) {
+  .planner-row { grid-template-columns: 1fr; gap: 2px; }
+}
+@media print {
+  .tabbar, .site-foot p:not(:first-child), .scope-bar, .planner-actions, .site-head .today-label { display: none !important; }
+  body { background: #fff; color: #000; }
+  .card { box-shadow: none; break-inside: avoid; }
+  .wrap { padding-bottom: 0; }
+}

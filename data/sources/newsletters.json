@@ -18,8 +18,8 @@
       "widgetUrl": "https://www.parentsquare.com/schools/29348/rss_widget",
       "schoolPageUrl": "https://ec.sd44.org/about-us/weekly-updates",
       "titlePattern": "Schroder Summary",
-      "enabled": false,
-      "consent": null
+      "enabled": true,
+      "consent": "Principal Catherine Angelos agreed, per the site owner, 2026-09-22. The site owner keeps the written permission."
     }
   ]
 }

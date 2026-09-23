@@ -2,7 +2,7 @@
   "sourceId": "bf-calendar",
   "sourceName": "Butterfield Elementary Calendar",
   "sourceUrl": "https://bf.sd44.org/",
-  "lastChecked": "2026-09-23T00:27:30.185Z",
+  "lastChecked": "2026-09-23T00:40:47.154Z",
   "events": [
     {
       "id": "bf-calendar-5ae8d7e64569",
@@ -81,7 +81,7 @@
       "schoolIds": [
         "bf"
       ],
-      "category": "event",
+      "category": "early-dismissal",
       "needsAction": false,
       "sourceId": "bf-calendar",
       "sourceName": "Butterfield Elementary Calendar",
@@ -103,7 +103,7 @@
       "schoolIds": [
         "bf"
       ],
-      "category": "event",
+      "category": "early-dismissal",
       "needsAction": false,
       "sourceId": "bf-calendar",
       "sourceName": "Butterfield Elementary Calendar",
@@ -125,7 +125,7 @@
       "schoolIds": [
         "bf"
       ],
-      "category": "event",
+      "category": "early-dismissal",
       "needsAction": false,
       "sourceId": "bf-calendar",
       "sourceName": "Butterfield Elementary Calendar",

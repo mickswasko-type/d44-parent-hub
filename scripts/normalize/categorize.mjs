@@ -5,6 +5,9 @@
  * explicit so that when a title stops matching, the fix is obvious.
  */
 const RULES = [
+  // Half days say "No School PM" and would otherwise be read as a full day off
+  // — which, next to a Monday holiday, invents a long weekend that isn't one.
+  { category: 'early-dismissal', match: /\b(no school pm|pm only|1\/2 day|½ day|half[- ]day)\b|\bno school pm\b|\b1\/2 school improvement\b/i },
   { category: 'no-school', match: /\b(no school|schools closed|non-attendance|institute day|school closed)\b/i },
   { category: 'early-dismissal', match: /\b(early dismissal|early release|half day|noon dismissal)\b/i },
   { category: 'conference', match: /\b(conferences?|parent[- ]teacher)\b/i },

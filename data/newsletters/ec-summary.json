@@ -1,0 +1,84 @@
+{
+  "id": "ec-summary",
+  "schoolId": "ec",
+  "name": "The Schroder Summary",
+  "postTitle": "Here is this week's Schroder Summary: September 18, 2026",
+  "postUrl": "https://www.parentsquare.com/feeds/88759055",
+  "postedOn": "2026-09-18",
+  "sourceName": "The Schroder Summary, Sep 18 issue",
+  "sourceUrl": "https://ec.sd44.org/about-us/weekly-updates",
+  "lastChecked": "2026-09-23T00:40:50.013Z",
+  "todo": [
+    {
+      "verb": "Remember",
+      "topic": "Wear Your Classroom Colors Every Friday",
+      "date": "2026-10-14",
+      "url": "https://www.parentsquare.com/feeds/88759055"
+    }
+  ],
+  "dates": [
+    {
+      "start": "2026-10-08",
+      "end": null,
+      "label": "Create With Me Day",
+      "onCalendar": false,
+      "needsAction": false
+    },
+    {
+      "start": "2026-10-09",
+      "end": null,
+      "label": "No School (Institute Day)",
+      "onCalendar": true,
+      "needsAction": false
+    },
+    {
+      "start": "2026-10-12",
+      "end": null,
+      "label": "No School",
+      "onCalendar": true,
+      "needsAction": false
+    },
+    {
+      "start": "2026-10-13",
+      "end": null,
+      "label": "No School (School Improvement Day)",
+      "onCalendar": true,
+      "needsAction": false
+    },
+    {
+      "start": "2026-10-14",
+      "end": null,
+      "label": "Wear Pink Breast Cancer Awareness Day",
+      "onCalendar": false,
+      "needsAction": true
+    },
+    {
+      "start": "2026-10-19",
+      "end": null,
+      "label": "Picture Day",
+      "onCalendar": true,
+      "needsAction": true
+    },
+    {
+      "start": "2026-10-26",
+      "end": null,
+      "label": "No School: Developmental Screening",
+      "onCalendar": true,
+      "needsAction": false
+    },
+    {
+      "start": "2026-10-30",
+      "end": null,
+      "label": "Character Day Parade",
+      "onCalendar": true,
+      "needsAction": false
+    }
+  ],
+  "topics": [
+    "First Fire Drill—Success",
+    "Capturing Memories Respectfully",
+    "Pickup & Dismissal Reminders",
+    "Meet Our Team: Ms. Veronica"
+  ],
+  "resources": []
+}

@@ -44,7 +44,8 @@ and the district disagree, the district is right.
   5. cap the visible "Coming up" list, and build a one-event `.ics` on click,
   6. offer "Add to home screen" (`InstallCard.astro`) — a real install button
      where `beforeinstallprompt` fires, Safari's Share steps on iOS, which has
-     no programmatic install at all, and nothing where installing is impossible.
+     no programmatic install at all, and nothing where installing is impossible,
+  7. group days off into runs on `/days-off` for the parent's schools (below).
   Every page renders correctly with JavaScript disabled — just not personalized,
   and without "Add to calendar", which is hidden until the script enables it.
 - **Service worker** (`public/sw.js`) is network-first, so an online parent never
@@ -123,6 +124,24 @@ Conventions worth knowing:
   only "Plan ahead" and never guesses *what* to do — "send money" would be wrong
   for a free dress-down day, and a confidently wrong instruction is worse than a
   vague correct one. The title next to it says the rest.
+- **Days-off planner** (`/days-off`, `src/lib/daysoff.ts`). The build gathers
+  one entry per school day that is off or ends early, with the schools it
+  applies to; the browser groups them into runs for the parent's schools.
+  Consecutive school days off merge across a weekend, and a Friday or Monday
+  off counts the weekend it touches — Oct 9/12/13 is "5 days in a row", not
+  three separate days. Days that apply to *different* sets of the parent's
+  schools never merge, so one child's day off is never shown as both
+  children's long weekend. The year ends at the district's own "Last Day of
+  School" entry; the later "includes emergency days" entry is shown as a note.
+  - A day is district-wide if the `district` key is *present* in its labels.
+    Never test the label text: "Non-Attendance Day" tidies to an empty string,
+    and a truthiness check silently dropped Thanksgiving week and the Friday
+    before spring break.
+  - Half days ("No School PM", "1/2 day") are early dismissals, not days off.
+    Filed as days off, Feb 12 next to Presidents' Day invented a 4-day weekend.
+  - The "Add all to my calendar" export names the school on any entry that is
+    not for all of the parent's schools, because a work calendar has no page
+    around it to explain.
 - **Never cap a personalized list at build time.** Slicing before the browser
   filters by school hands the quota to other schools' events and can empty the
   section entirely. Render the window and cap visible items in `apply()` — this
@@ -151,7 +170,7 @@ Conventions worth knowing:
   latest posts, no login needed. ParentSquare's terms require the **owner's**
   written consent to reuse post content — the owner is the school — so a
   newsletter is `enabled` only once its principal has agreed, recorded in
-  `consent`. Hammerschmidt: yes. JSECC: not yet.
+  `consent`. Hammerschmidt: yes. JSECC: yes.
   - `scripts/normalize/newsletter.mjs` summarises by rule. **No prose is ever
     stored**: only dates with their event names, topic names from headings, an
     action verb chosen by rule, and links. Never switch this to an LLM summary —

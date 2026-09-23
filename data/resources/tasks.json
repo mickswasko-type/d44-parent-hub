@@ -91,6 +91,17 @@
       "primary": true
     },
     {
+      "id": "days-off",
+      "label": "Plan around days off",
+      "intent": "Every day off and early dismissal left this year, grouped into long weekends and breaks.",
+      "icon": "calendar",
+      "url": "internal:/days-off",
+      "sourceName": "District 44 and school calendars",
+      "sourceUrl": "https://www.sd44.org/resources/calendars",
+      "lastChecked": "2026-09-22",
+      "primary": false
+    },
+    {
       "id": "supply-list",
       "label": "School supply list",
       "intent": "What do I need to buy for the school year?",
