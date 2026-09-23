@@ -2,30 +2,8 @@
   "sourceId": "md-calendar",
   "sourceName": "Madison Elementary Calendar",
   "sourceUrl": "https://md.sd44.org/",
-  "lastChecked": "2026-09-23T00:40:47.154Z",
+  "lastChecked": "2026-09-23T14:14:58.731Z",
   "events": [
-    {
-      "id": "md-calendar-faf215573dd2",
-      "title": "NO SCHOOL - Institute Day",
-      "description": null,
-      "startDate": "2026-08-24",
-      "endDate": "2026-08-24",
-      "allDay": true,
-      "location": null,
-      "schoolIds": [
-        "md"
-      ],
-      "category": "no-school",
-      "needsAction": false,
-      "sourceId": "md-calendar",
-      "sourceName": "Madison Elementary Calendar",
-      "sourceUrl": "https://md.sd44.org/",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:55:26.864Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
     {
       "id": "md-calendar-bce2bea50e1e",
       "title": "NO SCHOOL - All Staff Attendance Day",
