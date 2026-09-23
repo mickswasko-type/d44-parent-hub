@@ -2,30 +2,8 @@
   "sourceId": "d44-district",
   "sourceName": "District 44 Public Calendar",
   "sourceUrl": "https://www.sd44.org/resources/calendars",
-  "lastChecked": "2026-09-23T00:24:21.371Z",
+  "lastChecked": "2026-09-23T00:27:30.185Z",
   "events": [
-    {
-      "id": "d44-district-dd537c1da8cd",
-      "title": "No School Institute Day",
-      "description": null,
-      "startDate": "2026-08-24",
-      "endDate": "2026-08-24",
-      "allDay": true,
-      "location": null,
-      "schoolIds": [
-        "district"
-      ],
-      "category": "no-school",
-      "needsAction": false,
-      "sourceId": "d44-district",
-      "sourceName": "District 44 Public Calendar",
-      "sourceUrl": "https://www.sd44.org/resources/calendars",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:55:26.864Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
     {
       "id": "d44-district-6c57ebf57408",
       "title": "No School - School Improvement Day",
