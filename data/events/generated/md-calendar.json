@@ -2,7 +2,7 @@
   "sourceId": "md-calendar",
   "sourceName": "Madison Elementary Calendar",
   "sourceUrl": "https://md.sd44.org/",
-  "lastChecked": "2026-09-22T14:02:30.752Z",
+  "lastChecked": "2026-09-23T00:24:21.371Z",
   "events": [
     {
       "id": "md-calendar-faf215573dd2",
@@ -317,7 +317,7 @@
       "title": "Family Art Night (Support PTA Reflections)",
       "description": null,
       "startDate": "2026-10-08T23:00:00.000Z",
-      "endDate": "2026-10-09T01:00:00.000Z",
+      "endDate": "2026-10-09T00:30:00.000Z",
       "allDay": false,
       "location": null,
       "schoolIds": [
@@ -484,6 +484,28 @@
       "sourceUrl": "https://md.sd44.org/",
       "sourceType": "ics",
       "importedAt": "2026-09-17T15:55:26.864Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "md-calendar-43a27b544e4d",
+      "title": "Dia de Los Muertos Event/Day of the Dead",
+      "description": null,
+      "startDate": "2026-11-06T00:00:00.000Z",
+      "endDate": "2026-11-06T02:00:00.000Z",
+      "allDay": false,
+      "location": null,
+      "schoolIds": [
+        "md"
+      ],
+      "category": "event",
+      "needsAction": false,
+      "sourceId": "md-calendar",
+      "sourceName": "Madison Elementary Calendar",
+      "sourceUrl": "https://md.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-09-23T00:24:21.371Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null
@@ -731,11 +753,11 @@
       "actionDeadline": null
     },
     {
-      "id": "md-calendar-2ad25e0c7869",
+      "id": "md-calendar-c27ba343fb70",
       "title": "PTA Winter Craft Fair - Gym",
       "description": null,
-      "startDate": "2026-12-05T14:00:00.000Z",
-      "endDate": "2026-12-05T21:00:00.000Z",
+      "startDate": "2026-12-05T15:00:00.000Z",
+      "endDate": "2026-12-05T20:00:00.000Z",
       "allDay": false,
       "location": null,
       "schoolIds": [
@@ -747,7 +769,7 @@
       "sourceName": "Madison Elementary Calendar",
       "sourceUrl": "https://md.sd44.org/",
       "sourceType": "ics",
-      "importedAt": "2026-09-17T15:31:45.611Z",
+      "importedAt": "2026-09-23T00:24:21.371Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null

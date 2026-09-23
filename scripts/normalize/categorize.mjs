@@ -11,6 +11,9 @@ const RULES = [
   { category: 'deadline', match: /\b(deadline|due date|last day to|registration (opens|closes)|order by|sign[- ]?ups? (due|close)|forms? due)\b/i },
   { category: 'performance', match: /\b(concert|performance|recital|musical|showcase|art show|band|choir|orchestra)\b/i },
   { category: 'pta', match: /\b(pta|pto|parent teacher (association|organization)|booster)\b/i },
+  // Dress-up days borrow sports words ("Bears vs. Packers colors") but are not
+  // games. Claim them before the sports rule sees the "vs".
+  { category: 'event', match: /\b(spirit (days?|weeks?)|dress[- ]?(up|down)|pajama|crazy hair|hat day|colou?rs? day)\b/i },
   // Deliberately narrow: a bare "meet" or "game" is usually a family event,
   // not athletics ("Meet the Teacher", "Family Game Night").
   { category: 'sports', match: /\b(vs\.?|basketball|volleyball|track meet|soccer|wrestling|cross country|baseball|softball|tournament|scrimmage)\b/i },
@@ -61,7 +64,7 @@ const ACTION_RULES = [
   /\bbook fair\b/i,
   /\bfield trip\b/i,
   /\b(permission|consent) (slip|form)/i,
-  /\b(pajama|pyjama|crazy hair|hat day|dress[- ]?(up|down)|spirit (day|week)|wear|costume|twin day|color day|colour day)\b/i,
+  /\b(pajama|pyjama|crazy hair|hat day|dress[- ]?(up|down)|spirit (days?|weeks?)|wear|costume|twin day|colou?rs? day)\b/i,
   /\b(food|coat|clothing|toy|book|supply) drive\b/i,
   /\bdonation|canned goods\b/i,
   /\b(fun ?run|walk[- ]?a[- ]?thon|track[- ]?a[- ]?thon|read[- ]?a[- ]?thon|jog[- ]?a[- ]?thon|fundraiser)\b/i,

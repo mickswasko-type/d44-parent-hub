@@ -5,7 +5,8 @@ import SchoolPicker from '../components/SchoolPicker.astro';
 import TaskGrid from '../components/TaskGrid.astro';
 import InstallCard from '../components/InstallCard.astro';
 import WeekStrip from '../components/WeekStrip.astro';
-import { allEvents, tasks, upcomingFrom, syncStatuses } from '../lib/data';
+import NewsletterDigest from '../components/NewsletterDigest.astro';
+import { allEvents, tasks, upcomingFrom, syncStatuses, newsletters, NEWSLETTER_FRESH_DAYS } from '../lib/data';
 import { todayIso, schoolWeek, addDays, dateOf } from '../lib/dates';
 import { siteConfig } from '../../site.config';
 
@@ -41,6 +42,7 @@ const calendarHref = `${import.meta.env.BASE_URL}calendar`.replace(/\/{2,}/g, '/
 const settingsHref = `${import.meta.env.BASE_URL}settings`.replace(/\/{2,}/g, '/');
 const resourcesHref = `${import.meta.env.BASE_URL}resources`.replace(/\/{2,}/g, '/');
 const failing = syncStatuses.filter((s) => !s.ok);
+const freshNewsletters = newsletters.filter((n) => n.postedOn >= addDays(today, -NEWSLETTER_FRESH_DAYS));
 ---
 <Base showDate>
   <p class="eyebrow">{siteConfig.tagline}</p>
@@ -78,6 +80,8 @@ const failing = syncStatuses.filter((s) => !s.ok);
   </section>
 
   <InstallCard />
+
+  {freshNewsletters.map((digest) => <NewsletterDigest digest={digest} today={today} />)}
 
   {dontForget.length > 0 && (
     <section>

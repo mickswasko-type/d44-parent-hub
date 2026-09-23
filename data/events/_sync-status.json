@@ -1,13 +1,13 @@
 {
-  "ranAt": "2026-09-22T14:02:30.752Z",
+  "ranAt": "2026-09-23T00:24:21.371Z",
   "statuses": [
     {
       "sourceId": "d44-district",
       "sourceName": "District 44 Public Calendar",
       "ok": true,
       "empty": false,
-      "eventCount": 183,
-      "lastChecked": "2026-09-22T14:02:30.752Z",
+      "eventCount": 197,
+      "lastChecked": "2026-09-23T00:24:21.371Z",
       "error": null,
       "servingStaleData": false
     },
@@ -17,7 +17,7 @@
       "ok": true,
       "empty": false,
       "eventCount": 123,
-      "lastChecked": "2026-09-22T14:02:30.752Z",
+      "lastChecked": "2026-09-23T00:24:21.371Z",
       "error": null,
       "servingStaleData": false
     },
@@ -27,7 +27,7 @@
       "ok": true,
       "empty": true,
       "eventCount": 0,
-      "lastChecked": "2026-09-22T14:02:30.752Z",
+      "lastChecked": "2026-09-23T00:24:21.371Z",
       "error": null,
       "servingStaleData": false
     },
@@ -37,7 +37,7 @@
       "ok": true,
       "empty": false,
       "eventCount": 90,
-      "lastChecked": "2026-09-22T14:02:30.752Z",
+      "lastChecked": "2026-09-23T00:24:21.371Z",
       "error": null,
       "servingStaleData": false
     },
@@ -47,7 +47,7 @@
       "ok": true,
       "empty": false,
       "eventCount": 15,
-      "lastChecked": "2026-09-22T14:02:30.752Z",
+      "lastChecked": "2026-09-23T00:24:21.371Z",
       "error": null,
       "servingStaleData": false
     },
@@ -56,8 +56,8 @@
       "sourceName": "Madison Elementary Calendar",
       "ok": true,
       "empty": false,
-      "eventCount": 95,
-      "lastChecked": "2026-09-22T14:02:30.752Z",
+      "eventCount": 96,
+      "lastChecked": "2026-09-23T00:24:21.371Z",
       "error": null,
       "servingStaleData": false
     },
@@ -67,7 +67,7 @@
       "ok": true,
       "empty": false,
       "eventCount": 20,
-      "lastChecked": "2026-09-22T14:02:30.752Z",
+      "lastChecked": "2026-09-23T00:24:21.371Z",
       "error": null,
       "servingStaleData": false
     },
@@ -76,8 +76,8 @@
       "sourceName": "Park View Elementary Calendar",
       "ok": true,
       "empty": false,
-      "eventCount": 179,
-      "lastChecked": "2026-09-22T14:02:30.752Z",
+      "eventCount": 178,
+      "lastChecked": "2026-09-23T00:24:21.371Z",
       "error": null,
       "servingStaleData": false
     },
@@ -87,7 +87,7 @@
       "ok": true,
       "empty": false,
       "eventCount": 240,
-      "lastChecked": "2026-09-22T14:02:30.752Z",
+      "lastChecked": "2026-09-23T00:24:21.371Z",
       "error": null,
       "servingStaleData": false
     }

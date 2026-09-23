@@ -1,6 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
-import { syncStatuses, syncRanAt, schools } from '../lib/data';
+import { syncStatuses, syncRanAt, schools, newsletters } from '../lib/data';
 import { sinceLabel } from '../lib/dates';
 import { siteConfig } from '../../site.config';
 
@@ -54,6 +54,27 @@ const needsReview = schools.filter((s) => s.needsReview.length > 0);
       ))}
     </div>
   </section>
+
+  {newsletters.length > 0 && (
+    <section>
+      <h2>School newsletters</h2>
+      <p class="lede">
+        Where a principal has agreed, this site reads the school's public ParentSquare newsletter and summarises it:
+        dates, things to do and links — never the newsletter's own wording, and never anyone's contact details.
+        The newsletter itself is always the authority.
+      </p>
+      <div class="stack">
+        {newsletters.map((n) => (
+          <div class="card">
+            <h3>{n.name}</h3>
+            <p class="meta" style="color:var(--text-muted);margin:4px 0 0">
+              Latest issue {n.postedOn} · checked {sinceLabel(n.lastChecked)} · <a href={n.postUrl} rel="noopener">read it</a>
+            </p>
+          </div>
+        ))}
+      </div>
+    </section>
+  )}
 
   {needsReview.length > 0 && (
     <section>

@@ -1,0 +1,161 @@
+{
+  "id": "wh-star",
+  "schoolId": "wh",
+  "name": "The Hammerschmidt Star",
+  "postTitle": "Week of 9/21- 9/25: The Hammerschmidt Star",
+  "postUrl": "https://www.parentsquare.com/feeds/88737643",
+  "postedOn": "2026-09-18",
+  "sourceName": "The Hammerschmidt Star, Sep 18 issue",
+  "sourceUrl": "https://wh.sd44.org/about-us/weekly-updates",
+  "lastChecked": "2026-09-23T00:26:48.348Z",
+  "todo": [
+    {
+      "verb": "Volunteer",
+      "topic": "Trunk or Treat",
+      "date": "2026-10-29",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSdH61iiCIVSSOQvFmgsWcNluMqAiQyChoJ9e8dhtjbucB4_2g/viewform?usp=sharing&ouid=114526846155490348525"
+    },
+    {
+      "verb": "Donate",
+      "topic": "Trunk or Treat",
+      "date": "2026-10-29",
+      "url": "https://www.amazon.com/hz/wishlist/ls/3K76NTKI133UT?ref=cm_sw_em_r_un_un_FWmkKLZql8Py2"
+    },
+    {
+      "verb": "Buy tickets",
+      "topic": "Hammerween (Adult Only) Party",
+      "date": "2026-10-23",
+      "url": "https://whs.givebacks.com/shop/items/4c3dfde711a2"
+    },
+    {
+      "verb": "Give feedback",
+      "topic": "Classroom Connection & Playground Social",
+      "date": null,
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSdzY4ZskY-oRJ7TEvLdelT6NKHtnkT7iAHtPVXq_RhY6X6QgQ/viewform?usp=dialog"
+    },
+    {
+      "verb": "Propose a session",
+      "topic": "Hammer T.I.M.E",
+      "date": null,
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLScO29I2O0XV1GLPMq5YDiw7oFfNlF4ObnY5I1LB_zAl51d27w/viewform?usp=publish-editor"
+    },
+    {
+      "verb": "Join",
+      "topic": "PTA Membership",
+      "date": null,
+      "url": "https://whs.givebacks.com/shop"
+    }
+  ],
+  "dates": [
+    {
+      "start": "2026-10-01",
+      "end": null,
+      "label": "WHS PTA Track-a-thon",
+      "onCalendar": true,
+      "needsAction": true
+    },
+    {
+      "start": "2026-10-02",
+      "end": null,
+      "label": "Student Council Spirit Days - WHS Colors",
+      "onCalendar": false,
+      "needsAction": true
+    },
+    {
+      "start": "2026-10-05",
+      "end": "2026-10-09",
+      "label": "PTA Walk + Roll Week",
+      "onCalendar": true,
+      "needsAction": false
+    },
+    {
+      "start": "2026-10-07",
+      "end": null,
+      "label": "PTA Dine Out, Billy Bricks",
+      "onCalendar": true,
+      "needsAction": false
+    },
+    {
+      "start": "2026-10-09",
+      "end": null,
+      "label": "NO SCHOOL - Institute Day",
+      "onCalendar": true,
+      "needsAction": false
+    },
+    {
+      "start": "2026-10-12",
+      "end": null,
+      "label": "NO SCHOOL - Holiday",
+      "onCalendar": true,
+      "needsAction": false
+    },
+    {
+      "start": "2026-10-13",
+      "end": null,
+      "label": "NO SCHOOL - SIP DAY",
+      "onCalendar": true,
+      "needsAction": false
+    },
+    {
+      "start": "2026-10-19",
+      "end": null,
+      "label": "WHS PTA Meeting",
+      "onCalendar": true,
+      "needsAction": false
+    },
+    {
+      "start": "2026-10-21",
+      "end": null,
+      "label": "Lifetouch Picture Retake Day",
+      "onCalendar": false,
+      "needsAction": true
+    },
+    {
+      "start": "2026-10-22",
+      "end": null,
+      "label": "Student Council Spirit Day - Bears vs. Packers Colors",
+      "onCalendar": false,
+      "needsAction": true
+    },
+    {
+      "start": "2026-10-23",
+      "end": null,
+      "label": "PTA Hammerween (Adult event)",
+      "onCalendar": true,
+      "needsAction": false
+    },
+    {
+      "start": "2026-10-29",
+      "end": null,
+      "label": "PTA Trunk or Treat, 5-7pm",
+      "onCalendar": true,
+      "needsAction": false
+    },
+    {
+      "start": "2026-10-30",
+      "end": null,
+      "label": "Early Release Day, 1:15pm dismissal",
+      "onCalendar": true,
+      "needsAction": false
+    }
+  ],
+  "topics": [
+    "PTA Dine Out",
+    "PTA Track-a Thon",
+    "Walk & Roll To School Week"
+  ],
+  "resources": [
+    {
+      "label": "School Calendar 2026- 2027",
+      "url": "https://www.sd44.org/resources/calendars"
+    },
+    {
+      "label": "Student Breaks & Holidays",
+      "url": "https://drive.google.com/file/d/1e18q0Sjyc40IARAIxgj7634vU993MLZu/view"
+    },
+    {
+      "label": "Things to know about WHS",
+      "url": "https://docs.google.com/document/d/1hk76naqSHYTf0LvE8yxwqNJP3O2Q7owXcd_bY-f5c3U/edit?usp=sharing"
+    }
+  ]
+}

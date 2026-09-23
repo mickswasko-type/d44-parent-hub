@@ -27,7 +27,7 @@ export interface HubEvent {
   actionDeadline: string | null;
 }
 
-export type SourceType = 'ics' | 'manual' | 'html';
+export type SourceType = 'ics' | 'manual' | 'html' | 'newsletter';
 
 export type EventCategory =
   | 'no-school'
@@ -100,4 +100,21 @@ export interface SyncStatus {
   /** Set when the most recent run failed and stale-but-valid data was kept. */
   error: string | null;
   servingStaleData: boolean;
+}
+
+/** A rule-built summary of one school newsletter issue. No prose is stored. */
+export interface NewsletterDigest {
+  id: string;
+  schoolId: string;
+  name: string;
+  postTitle: string;
+  postUrl: string;
+  postedOn: string;
+  sourceName: string;
+  sourceUrl: string;
+  lastChecked: string;
+  todo: { verb: string; topic: string; date: string | null; url: string }[];
+  dates: { start: string; end: string | null; label: string; onCalendar: boolean; needsAction: boolean }[];
+  topics: string[];
+  resources: { label: string; url: string }[];
 }

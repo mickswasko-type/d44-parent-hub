@@ -97,6 +97,43 @@ async function main() {
     if (t.url.startsWith('http')) urls.push([t.id, t.url]);
   }
 
+  // Newsletter digests: shape, provenance, and a hard privacy check. Posts
+  // routinely include volunteers' personal emails and phone numbers; none of
+  // that may ever be published.
+  const EMAIL = /[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/i;
+  const PHONE = /\b\d{3}[-.\s)]{1,2}\d{3}[-.\s]\d{4}\b/;
+  const scan = (value, where) => {
+    if (typeof value === 'string') {
+      if (!/^https?:\/\//.test(value) && (EMAIL.test(value) || PHONE.test(value))) {
+        fail(`${where}: contains what looks like a personal email or phone number`);
+      }
+    } else if (Array.isArray(value)) value.forEach((v, i) => scan(v, `${where}[${i}]`));
+    else if (value && typeof value === 'object') for (const [k, v] of Object.entries(value)) scan(v, `${where}.${k}`);
+  };
+  const nlDir = path.join(ROOT, 'data/newsletters');
+  if (existsSync(nlDir)) {
+    for (const file of (await readdir(nlDir)).filter((f) => f.endsWith('.json') && !f.startsWith('_'))) {
+      const d = await readJson(`data/newsletters/${file}`);
+      for (const field of ['id', 'schoolId', 'name', 'postUrl', 'postedOn', 'lastChecked']) {
+        if (!d[field]) fail(`newsletters/${file}: missing "${field}"`);
+      }
+      if (!schoolIds.has(d.schoolId)) fail(`newsletters/${file}: unknown schoolId "${d.schoolId}"`);
+      if (!/^https:\/\/www\.parentsquare\.com\/feeds\/\d+$/.test(d.postUrl ?? '')) fail(`newsletters/${file}: postUrl is not a ParentSquare post`);
+      for (const t of d.todo ?? []) if (!/^https?:\/\//.test(t.url)) fail(`newsletters/${file}: to-do "${t.topic}" has no usable link`);
+      scan(d, `newsletters/${file}`);
+    }
+    if (existsSync(path.join(nlDir, '_status.json'))) {
+      for (const st of (await readJson('data/newsletters/_status.json')).statuses) {
+        if (!st.ok) warn(`newsletter "${st.id}" last sync FAILED: ${st.error} (previous digest kept)`);
+      }
+    }
+  }
+  for (const file of existsSync(generatedDir) ? await readdir(generatedDir) : []) {
+    if (!file.endsWith('.json')) continue;
+    const doc = await readJson(`data/events/generated/${file}`);
+    if (doc.events?.some((e) => e.sourceType === 'newsletter')) scan(doc, `events/generated/${file}`);
+  }
+
   const { questions } = await readJson('data/resources/questions.json');
   for (const q of questions) {
     if (!q.question || !q.answer) fail(`question ${q.id}: missing question or answer`);

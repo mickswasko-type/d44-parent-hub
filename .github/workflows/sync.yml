@@ -28,6 +28,12 @@ jobs:
         continue-on-error: true
         run: npm run sync
 
+      - name: Summarise school newsletters
+        id: newsletters
+        # Runs after the calendars, because it only adds dates they are missing.
+        continue-on-error: true
+        run: npm run sync:newsletters
+
       - name: Validate generated data
         run: npm run validate
 
@@ -44,13 +50,13 @@ jobs:
           git push
 
       - name: Open an issue if a source failed
-        if: steps.sync.outcome == 'failure'
+        if: steps.sync.outcome == 'failure' || steps.newsletters.outcome == 'failure'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          title="Calendar sync failed"
+          title="Data sync failed"
           existing=$(gh issue list --state open --search "$title in:title" --json number --jq '.[0].number')
-          body=$(printf 'The scheduled calendar sync reported at least one failing source.\n\nRun: %s/%s/actions/runs/%s\n\nThe site is still serving the last known good data for those sources — check `data/events/_sync-status.json` for the error text.\n\nIf a feed format changed upstream, fix the parser in `scripts/normalize/`; do not hand-edit generated files.' "$GITHUB_SERVER_URL" "$GITHUB_REPOSITORY" "$GITHUB_RUN_ID")
+          body=$(printf 'The scheduled sync reported at least one failing source (calendars or newsletters).\n\nRun: %s/%s/actions/runs/%s\n\nThe site is still serving the last known good data for those sources — check `data/events/_sync-status.json` and `data/newsletters/_status.json` for the error text.\n\nIf a feed format changed upstream, fix the parser in `scripts/normalize/`; do not hand-edit generated files.' "$GITHUB_SERVER_URL" "$GITHUB_REPOSITORY" "$GITHUB_RUN_ID")
           if [[ -n "$existing" ]]; then
             gh issue comment "$existing" --body "$body"
           else
@@ -59,7 +65,7 @@ jobs:
           fi
 
       - name: Fail the job if a source failed
-        if: steps.sync.outcome == 'failure'
+        if: steps.sync.outcome == 'failure' || steps.newsletters.outcome == 'failure'
         run: |
           echo "::error::One or more sources failed to sync. See data/events/_sync-status.json."
           exit 1

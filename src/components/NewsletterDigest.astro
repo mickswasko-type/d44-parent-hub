@@ -1,0 +1,83 @@
+---
+/**
+ * "This week at <school>", summarised from the school's own newsletter.
+ *
+ * Order is the point: the dates the school calendar is missing come first
+ * (these are nearly always "wear this / bring this" days), then things to do,
+ * soonest first, then everything else in a single line. Every item links to
+ * where it came from, and the whole card links to the full newsletter.
+ */
+import type { NewsletterDigest } from '../lib/types';
+import SourceLine from './SourceLine.astro';
+import { dayOfWeek, dayNumber, monthShort } from '../lib/dates';
+import { schoolLabel } from '../lib/data';
+
+interface Props { digest: NewsletterDigest; today: string; alwaysShow?: boolean; }
+const { digest, today, alwaysShow = false } = Astro.props;
+
+const short = (iso: string) => `${dayOfWeek(iso)} ${monthShort(iso)} ${dayNumber(iso)}`;
+const upcoming = digest.dates.filter((d) => (d.end ?? d.start) >= today);
+const headsUp = upcoming.filter((d) => !d.onCalendar);
+const todo = digest.todo.filter((t) => !t.date || t.date >= today);
+---
+<section
+  class="newsletter"
+  data-newsletter
+  data-posted={digest.postedOn}
+  data-schools={alwaysShow ? undefined : digest.schoolId}
+>
+  <p class="eyebrow">From {digest.name}</p>
+  <h2 class="nl-title">This week at {schoolLabel(digest.schoolId)}</h2>
+  <p class="nl-meta">
+    Issue of {monthShort(digest.postedOn)} {dayNumber(digest.postedOn)} ·
+    <a href={digest.postUrl} rel="noopener">Read the full newsletter</a>
+  </p>
+
+  {headsUp.length > 0 && (
+    <div class="nl-block">
+      <h3>Heads up</h3>
+      <ul class="nl-list nl-dated">
+        {headsUp.map((d) => (
+          <li>
+            <span class="nl-when">{short(d.start)}{d.end && ` – ${monthShort(d.end)} ${dayNumber(d.end)}`}</span>
+            <span>
+              {d.label}
+              {d.needsAction && <> <span class="badge action">Plan ahead</span></>}
+            </span>
+          </li>
+        ))}
+      </ul>
+      <p class="nl-note">Only in the newsletter, not on the school calendar yet — added to yours below.</p>
+    </div>
+  )}
+
+  {todo.length > 0 && (
+    <div class="nl-block">
+      <h3>To do</h3>
+      <ul class="nl-list nl-todo">
+        {todo.map((t) => (
+          <li>
+            <a class="nl-action" href={t.url} rel="noopener">{t.verb}</a>
+            <span>{t.topic}{t.date && <span class="nl-when"> · {monthShort(t.date)} {dayNumber(t.date)}</span>}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  )}
+
+  {digest.topics.length > 0 && (
+    <p class="nl-also"><strong>Also in this issue:</strong> {digest.topics.join(' · ')}</p>
+  )}
+
+  {digest.resources.length > 0 && (
+    <p class="nl-also">
+      <strong>Handy links:</strong>{' '}
+      {digest.resources.map((r, i) => (
+        <>{i > 0 && ' · '}<a href={r.url} rel="noopener">{r.label}</a></>
+      ))}
+    </p>
+  )}
+
+  <SourceLine sourceName={digest.name} sourceUrl={digest.postUrl} lastChecked={digest.lastChecked} />
+  <p class="nl-fineprint">Summarised automatically from the school's public newsletter. The newsletter is the authority.</p>
+</section>

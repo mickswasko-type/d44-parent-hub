@@ -1,5 +1,5 @@
-import type { HubEvent, School, ParentTask, ResourceAnswer, SyncStatus } from './types';
-import { dateOf } from './dates';
+import type { HubEvent, School, ParentTask, ResourceAnswer, SyncStatus, NewsletterDigest } from './types';
+import { dateOf, addDays } from './dates';
 import schoolsDoc from '../../data/schools/schools.json';
 import tasksDoc from '../../data/resources/tasks.json';
 import questionsDoc from '../../data/resources/questions.json';
@@ -106,4 +106,21 @@ export function titleKeyFor(event: HubEvent): string {
     if (key.startsWith(name + ' ')) { key = key.slice(name.length).trim(); break; }
   }
   return key.slice(0, 48);
+}
+
+const newsletterFiles = import.meta.glob<NewsletterDigest>('../../data/newsletters/*.json', { eager: true, import: 'default' });
+
+/** Newsletter digests, keyed by school. `_status.json` is sync bookkeeping, not a digest. */
+export const newsletters: NewsletterDigest[] = Object.entries(newsletterFiles)
+  .filter(([file]) => !file.endsWith('/_status.json'))
+  .map(([, digest]) => digest);
+
+/**
+ * An issue stays on screen for ten days. After that it is last week's news
+ * dressed up as this week's, which is worse than showing nothing.
+ */
+export const NEWSLETTER_FRESH_DAYS = 10;
+
+export function freshNewsletterFor(schoolId: string, today: string): NewsletterDigest | undefined {
+  return newsletters.find((n) => n.schoolId === schoolId && n.postedOn >= addDays(today, -NEWSLETTER_FRESH_DAYS));
 }

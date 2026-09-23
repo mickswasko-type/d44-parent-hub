@@ -135,6 +135,10 @@ const nav = [
             if (end < today) card.remove();
           });
 
+          document.querySelectorAll('[data-newsletter][data-posted]').forEach(function (card) {
+            if (card.getAttribute('data-posted') < addDays(today, -10)) card.remove();
+          });
+
           var host = document.querySelector('[data-partition]');
           if (!host) return;
           var week = schoolWeek(today);

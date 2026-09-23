@@ -1,0 +1,74 @@
+{
+  "sourceId": "wh-star",
+  "sourceName": "The Hammerschmidt Star, Sep 18 issue",
+  "sourceUrl": "https://www.parentsquare.com/feeds/88737643",
+  "lastChecked": "2026-09-23T00:26:48.348Z",
+  "events": [
+    {
+      "id": "wh-star-3d5b80da2ed2",
+      "title": "Student Council Spirit Days - WHS Colors",
+      "description": null,
+      "startDate": "2026-10-02",
+      "endDate": "2026-10-02",
+      "allDay": true,
+      "location": null,
+      "schoolIds": [
+        "wh"
+      ],
+      "category": "event",
+      "needsAction": true,
+      "sourceId": "wh-star",
+      "sourceName": "The Hammerschmidt Star, Sep 18 issue",
+      "sourceUrl": "https://www.parentsquare.com/feeds/88737643",
+      "sourceType": "newsletter",
+      "importedAt": "2026-09-23T00:26:48.348Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "wh-star-fef967ff2590",
+      "title": "Lifetouch Picture Retake Day",
+      "description": null,
+      "startDate": "2026-10-21",
+      "endDate": "2026-10-21",
+      "allDay": true,
+      "location": null,
+      "schoolIds": [
+        "wh"
+      ],
+      "category": "event",
+      "needsAction": true,
+      "sourceId": "wh-star",
+      "sourceName": "The Hammerschmidt Star, Sep 18 issue",
+      "sourceUrl": "https://www.parentsquare.com/feeds/88737643",
+      "sourceType": "newsletter",
+      "importedAt": "2026-09-23T00:26:48.348Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "wh-star-6ef12cc65302",
+      "title": "Student Council Spirit Day - Bears vs. Packers Colors",
+      "description": null,
+      "startDate": "2026-10-22",
+      "endDate": "2026-10-22",
+      "allDay": true,
+      "location": null,
+      "schoolIds": [
+        "wh"
+      ],
+      "category": "event",
+      "needsAction": true,
+      "sourceId": "wh-star",
+      "sourceName": "The Hammerschmidt Star, Sep 18 issue",
+      "sourceUrl": "https://www.parentsquare.com/feeds/88737643",
+      "sourceType": "newsletter",
+      "importedAt": "2026-09-23T00:26:48.348Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    }
+  ]
+}

@@ -145,6 +145,28 @@ Conventions worth knowing:
   files are picked up automatically.
 - **Never hand-edit files in `data/events/generated/`.** They are overwritten by
   every sync. Corrections belong in `data/manual/manual-events.json`.
+- **School newsletters** (`data/sources/newsletters.json`) are read from each
+  school's public ParentSquare widget, `parentsquare.com/schools/<id>/rss_widget`,
+  which the school itself embeds on its "Weekly Updates" page. It lists the ten
+  latest posts, no login needed. ParentSquare's terms require the **owner's**
+  written consent to reuse post content — the owner is the school — so a
+  newsletter is `enabled` only once its principal has agreed, recorded in
+  `consent`. Hammerschmidt: yes. JSECC: not yet.
+  - `scripts/normalize/newsletter.mjs` summarises by rule. **No prose is ever
+    stored**: only dates with their event names, topic names from headings, an
+    action verb chosen by rule, and links. Never switch this to an LLM summary —
+    it runs unattended, and a garbled date is the failure this site cannot afford.
+  - Posts routinely include parent volunteers' personal emails and phone
+    numbers. The parser drops them, the sync refuses to write them, and
+    `npm run validate` fails if one appears. Keep all three layers.
+  - Only dates the school calendar lacks become events
+    (`data/events/generated/<id>.json`, `sourceType: 'newsletter'`), re-checked
+    daily, so a date the school later adds to its calendar is not shown twice.
+  - An issue is shown for 10 days, then hidden: last week's news presented as
+    this week's is worse than nothing.
+  - The layout is the principal's and will change. If a parse finds nothing the
+    sync fails loudly and keeps last week's digest; fix the rules, never
+    hand-edit the output.
 - **Lunch menus (FD MealPlanner) must not be ingested.** The district publishes
   no menus itself; its only channel is fdmealplanner.com (Whitsons Culinary
   Group). Their Terms of Use prohibit "systematic retrieval of data or other
@@ -213,7 +235,8 @@ Conventions worth knowing:
 public Google Calendar → ICS → scripts/normalize → normalized JSON → committed → site
 ```
 
-- `.github/workflows/sync.yml` runs daily at 09:20 UTC and on demand.
+- `.github/workflows/sync.yml` runs daily at 09:20 UTC and on demand: calendars
+  first, then newsletters (which compare against the calendars).
 - Each source is fetched independently. One failing source never affects another.
 - On failure the previous good file is **kept**, not emptied. A feed that used
   to have events and suddenly returns none is treated as a failure for the same
