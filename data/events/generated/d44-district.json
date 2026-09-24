@@ -2,30 +2,8 @@
   "sourceId": "d44-district",
   "sourceName": "District 44 Public Calendar",
   "sourceUrl": "https://www.sd44.org/resources/calendars",
-  "lastChecked": "2026-09-23T14:14:58.731Z",
+  "lastChecked": "2026-09-24T14:12:36.028Z",
   "events": [
-    {
-      "id": "d44-district-6c57ebf57408",
-      "title": "No School - School Improvement Day",
-      "description": null,
-      "startDate": "2026-08-25",
-      "endDate": "2026-08-25",
-      "allDay": true,
-      "location": null,
-      "schoolIds": [
-        "district"
-      ],
-      "category": "no-school",
-      "needsAction": false,
-      "sourceId": "d44-district",
-      "sourceName": "District 44 Public Calendar",
-      "sourceUrl": "https://www.sd44.org/resources/calendars",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:55:26.864Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
     {
       "id": "d44-district-05862da56673",
       "title": "Madison Meet the Teacher/Supply Drop Off",
@@ -775,28 +753,6 @@
       "actionDeadline": null
     },
     {
-      "id": "d44-district-d3c86c23a8ca",
-      "title": "Madison PTA Movie Night",
-      "description": null,
-      "startDate": "2026-10-02T23:30:00.000Z",
-      "endDate": "2026-10-03T01:30:00.000Z",
-      "allDay": false,
-      "location": "Madison Elementary School, 150 W Madison St, Lombard",
-      "schoolIds": [
-        "md"
-      ],
-      "category": "pta",
-      "needsAction": false,
-      "sourceId": "d44-district",
-      "sourceName": "District 44 Public Calendar",
-      "sourceUrl": "https://www.sd44.org/resources/calendars",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:31:45.611Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
-    {
       "id": "d44-district-b45cb019ae5b",
       "title": "Hammerschmidt PTA Walk and Roll to School",
       "description": null,
@@ -1034,6 +990,28 @@
       "sourceUrl": "https://www.sd44.org/resources/calendars",
       "sourceType": "ics",
       "importedAt": "2026-09-23T00:24:21.371Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "d44-district-f147ea19dc3e",
+      "title": "Madison PTA Movie Night",
+      "description": null,
+      "startDate": "2026-10-16T23:30:00.000Z",
+      "endDate": "2026-10-17T01:30:00.000Z",
+      "allDay": false,
+      "location": "Madison Elementary School, 150 W Madison St, Lombard",
+      "schoolIds": [
+        "md"
+      ],
+      "category": "pta",
+      "needsAction": false,
+      "sourceId": "d44-district",
+      "sourceName": "District 44 Public Calendar",
+      "sourceUrl": "https://www.sd44.org/resources/calendars",
+      "sourceType": "ics",
+      "importedAt": "2026-09-24T14:12:36.028Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null
@@ -1369,6 +1347,28 @@
       "actionDeadline": null
     },
     {
+      "id": "d44-district-3dfe03ed8e37",
+      "title": "Dia De Los Muertos, Day of the Dead Event",
+      "description": null,
+      "startDate": "2026-11-06T00:00:00.000Z",
+      "endDate": "2026-11-06T02:00:00.000Z",
+      "allDay": false,
+      "location": "Madison Elementary School, 150 W Madison St, Lombard",
+      "schoolIds": [
+        "district"
+      ],
+      "category": "event",
+      "needsAction": false,
+      "sourceId": "d44-district",
+      "sourceName": "District 44 Public Calendar",
+      "sourceUrl": "https://www.sd44.org/resources/calendars",
+      "sourceType": "ics",
+      "importedAt": "2026-09-24T14:12:36.028Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
       "id": "d44-district-f55c297cfeb1",
       "title": "MPA Meeting Choir Room 2111",
       "description": null,
@@ -1386,6 +1386,28 @@
       "sourceUrl": "https://www.sd44.org/resources/calendars",
       "sourceType": "ics",
       "importedAt": "2026-09-17T15:31:45.611Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "d44-district-cde743719c31",
+      "title": "PTA Movie Night",
+      "description": null,
+      "startDate": "2026-11-07T00:45:00.000Z",
+      "endDate": "2026-11-07T02:45:00.000Z",
+      "allDay": false,
+      "location": "Madison Elementary School, 150 W Madison St, Lombard",
+      "schoolIds": [
+        "district"
+      ],
+      "category": "pta",
+      "needsAction": false,
+      "sourceId": "d44-district",
+      "sourceName": "District 44 Public Calendar",
+      "sourceUrl": "https://www.sd44.org/resources/calendars",
+      "sourceType": "ics",
+      "importedAt": "2026-09-24T14:12:36.028Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null
@@ -1457,6 +1479,28 @@
       "actionDeadline": null
     },
     {
+      "id": "d44-district-fa10a4dd965b",
+      "title": "Madison PTA Meeting",
+      "description": null,
+      "startDate": "2026-11-13T01:00:00.000Z",
+      "endDate": "2026-11-13T02:00:00.000Z",
+      "allDay": false,
+      "location": "Madison Elementary School, 150 W Madison St, Lombard",
+      "schoolIds": [
+        "md"
+      ],
+      "category": "pta",
+      "needsAction": false,
+      "sourceId": "d44-district",
+      "sourceName": "District 44 Public Calendar",
+      "sourceUrl": "https://www.sd44.org/resources/calendars",
+      "sourceType": "ics",
+      "importedAt": "2026-09-24T14:12:36.028Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
       "id": "d44-district-9cb2847ec91b",
       "title": "American Education Week",
       "description": null,
@@ -1474,6 +1518,28 @@
       "sourceUrl": "https://www.sd44.org/resources/calendars",
       "sourceType": "ics",
       "importedAt": "2026-09-17T15:55:26.864Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "d44-district-3288bd148f08",
+      "title": "Madison Book Fair",
+      "description": null,
+      "startDate": "2026-11-16",
+      "endDate": "2026-11-20",
+      "allDay": true,
+      "location": null,
+      "schoolIds": [
+        "md"
+      ],
+      "category": "event",
+      "needsAction": true,
+      "sourceId": "d44-district",
+      "sourceName": "District 44 Public Calendar",
+      "sourceUrl": "https://www.sd44.org/resources/calendars",
+      "sourceType": "ics",
+      "importedAt": "2026-09-24T14:12:36.028Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null
@@ -1743,6 +1809,28 @@
       "actionDeadline": null
     },
     {
+      "id": "d44-district-cb5ac4ad8d7c",
+      "title": "Madison PTA Meeting",
+      "description": null,
+      "startDate": "2026-12-04T01:00:00.000Z",
+      "endDate": "2026-12-04T02:00:00.000Z",
+      "allDay": false,
+      "location": null,
+      "schoolIds": [
+        "md"
+      ],
+      "category": "pta",
+      "needsAction": false,
+      "sourceId": "d44-district",
+      "sourceName": "District 44 Public Calendar",
+      "sourceUrl": "https://www.sd44.org/resources/calendars",
+      "sourceType": "ics",
+      "importedAt": "2026-09-24T14:12:36.028Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
       "id": "d44-district-626e9a0129f7",
       "title": "JSECC Winter Fest",
       "description": null,
@@ -1782,6 +1870,72 @@
       "sourceUrl": "https://www.sd44.org/resources/calendars",
       "sourceType": "ics",
       "importedAt": "2026-09-17T15:31:45.611Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "d44-district-38d434350443",
+      "title": "Madison PTA Holiday Craft Fair",
+      "description": null,
+      "startDate": "2026-12-05T15:00:00.000Z",
+      "endDate": "2026-12-05T20:00:00.000Z",
+      "allDay": false,
+      "location": null,
+      "schoolIds": [
+        "md"
+      ],
+      "category": "pta",
+      "needsAction": false,
+      "sourceId": "d44-district",
+      "sourceName": "District 44 Public Calendar",
+      "sourceUrl": "https://www.sd44.org/resources/calendars",
+      "sourceType": "ics",
+      "importedAt": "2026-09-24T14:12:36.028Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "d44-district-804427bb29e3",
+      "title": "Madison PTA Pajama Jam",
+      "description": null,
+      "startDate": "2026-12-05T16:00:00.000Z",
+      "endDate": "2026-12-05T18:00:00.000Z",
+      "allDay": false,
+      "location": "Madison Elementary School, 150 W Madison St, Lombard",
+      "schoolIds": [
+        "md"
+      ],
+      "category": "pta",
+      "needsAction": true,
+      "sourceId": "d44-district",
+      "sourceName": "District 44 Public Calendar",
+      "sourceUrl": "https://www.sd44.org/resources/calendars",
+      "sourceType": "ics",
+      "importedAt": "2026-09-24T14:12:36.028Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "d44-district-181dfd6218ac",
+      "title": "Madison Holiday Shop",
+      "description": null,
+      "startDate": "2026-12-07",
+      "endDate": "2026-12-11",
+      "allDay": true,
+      "location": null,
+      "schoolIds": [
+        "md"
+      ],
+      "category": "holiday",
+      "needsAction": false,
+      "sourceId": "d44-district",
+      "sourceName": "District 44 Public Calendar",
+      "sourceUrl": "https://www.sd44.org/resources/calendars",
+      "sourceType": "ics",
+      "importedAt": "2026-09-24T14:12:36.028Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null
@@ -1848,6 +2002,28 @@
       "sourceUrl": "https://www.sd44.org/resources/calendars",
       "sourceType": "ics",
       "importedAt": "2026-09-17T15:31:45.611Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "d44-district-52115fc2bb00",
+      "title": "Madison PTA Movie Night",
+      "description": null,
+      "startDate": "2026-12-12T00:30:00.000Z",
+      "endDate": "2026-12-16T02:30:00.000Z",
+      "allDay": false,
+      "location": "Madison Elementary School, 150 W Madison St, Lombard",
+      "schoolIds": [
+        "md"
+      ],
+      "category": "pta",
+      "needsAction": false,
+      "sourceId": "d44-district",
+      "sourceName": "District 44 Public Calendar",
+      "sourceUrl": "https://www.sd44.org/resources/calendars",
+      "sourceType": "ics",
+      "importedAt": "2026-09-24T14:12:36.028Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null
@@ -3894,28 +4070,6 @@
       "sourceUrl": "https://www.sd44.org/resources/calendars",
       "sourceType": "ics",
       "importedAt": "2026-09-17T15:55:26.864Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
-    {
-      "id": "d44-district-5c3dd6b9b261",
-      "title": "Hammerschmidt K-2 Field Day",
-      "description": null,
-      "startDate": "2027-05-17T14:00:00.000Z",
-      "endDate": "2027-05-17T16:00:00.000Z",
-      "allDay": false,
-      "location": null,
-      "schoolIds": [
-        "wh"
-      ],
-      "category": "event",
-      "needsAction": false,
-      "sourceId": "d44-district",
-      "sourceName": "District 44 Public Calendar",
-      "sourceUrl": "https://www.sd44.org/resources/calendars",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:31:45.611Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null
