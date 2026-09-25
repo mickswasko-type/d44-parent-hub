@@ -2,74 +2,8 @@
   "sourceId": "pv-calendar",
   "sourceName": "Park View Elementary Calendar",
   "sourceUrl": "https://pv.sd44.org/",
-  "lastChecked": "2026-09-24T14:12:36.028Z",
+  "lastChecked": "2026-09-25T14:36:37.514Z",
   "events": [
-    {
-      "id": "pv-calendar-c44bb624cb2b",
-      "title": "Supply Drop Off",
-      "description": null,
-      "startDate": "2026-08-25T19:30:00.000Z",
-      "endDate": "2026-08-25T20:00:00.000Z",
-      "allDay": false,
-      "location": null,
-      "schoolIds": [
-        "pv"
-      ],
-      "category": "event",
-      "needsAction": true,
-      "sourceId": "pv-calendar",
-      "sourceName": "Park View Elementary Calendar",
-      "sourceUrl": "https://pv.sd44.org/",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:31:45.611Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
-    {
-      "id": "pv-calendar-bd172c3355f7",
-      "title": "1st Day of School - Half Day for Kindergarten, Full Day for Grades 1-5",
-      "description": null,
-      "startDate": "2026-08-26",
-      "endDate": "2026-08-26",
-      "allDay": true,
-      "location": null,
-      "schoolIds": [
-        "pv"
-      ],
-      "category": "early-dismissal",
-      "needsAction": false,
-      "sourceId": "pv-calendar",
-      "sourceName": "Park View Elementary Calendar",
-      "sourceUrl": "https://pv.sd44.org/",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:55:26.864Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
-    {
-      "id": "pv-calendar-d086412e7657",
-      "title": "PTA Coffee and Donuts",
-      "description": null,
-      "startDate": "2026-08-26T13:00:00.000Z",
-      "endDate": "2026-08-26T13:30:00.000Z",
-      "allDay": false,
-      "location": null,
-      "schoolIds": [
-        "pv"
-      ],
-      "category": "pta",
-      "needsAction": false,
-      "sourceId": "pv-calendar",
-      "sourceName": "Park View Elementary Calendar",
-      "sourceUrl": "https://pv.sd44.org/",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:31:45.611Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
     {
       "id": "pv-calendar-6551bb66ee05",
       "title": "Half Day of School for Kindergarten",

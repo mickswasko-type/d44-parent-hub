@@ -2,74 +2,8 @@
   "sourceId": "wh-calendar",
   "sourceName": "Hammerschmidt Elementary Calendar",
   "sourceUrl": "https://wh.sd44.org/",
-  "lastChecked": "2026-09-24T14:12:36.028Z",
+  "lastChecked": "2026-09-25T14:36:37.514Z",
   "events": [
-    {
-      "id": "wh-calendar-980256e7f144",
-      "title": "Supply Drop Off - Gr. 1-5",
-      "description": null,
-      "startDate": "2026-08-25T19:00:00.000Z",
-      "endDate": "2026-08-25T20:00:00.000Z",
-      "allDay": false,
-      "location": null,
-      "schoolIds": [
-        "wh"
-      ],
-      "category": "event",
-      "needsAction": true,
-      "sourceId": "wh-calendar",
-      "sourceName": "Hammerschmidt Elementary Calendar",
-      "sourceUrl": "https://wh.sd44.org/",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:31:45.611Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
-    {
-      "id": "wh-calendar-e268784f49f2",
-      "title": "First Day of Classes K-8",
-      "description": null,
-      "startDate": "2026-08-26",
-      "endDate": "2026-08-26",
-      "allDay": true,
-      "location": null,
-      "schoolIds": [
-        "wh"
-      ],
-      "category": "event",
-      "needsAction": false,
-      "sourceId": "wh-calendar",
-      "sourceName": "Hammerschmidt Elementary Calendar",
-      "sourceUrl": "https://wh.sd44.org/",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:55:26.864Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
-    {
-      "id": "wh-calendar-d21e5e265e4e",
-      "title": "Kindergarten 1/2 Day AM Attendance  Only",
-      "description": null,
-      "startDate": "2026-08-26",
-      "endDate": "2026-08-28",
-      "allDay": true,
-      "location": null,
-      "schoolIds": [
-        "wh"
-      ],
-      "category": "early-dismissal",
-      "needsAction": false,
-      "sourceId": "wh-calendar",
-      "sourceName": "Hammerschmidt Elementary Calendar",
-      "sourceUrl": "https://wh.sd44.org/",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:55:26.864Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
     {
       "id": "wh-calendar-e22e19b80a2f",
       "title": "PTA Dine- Out - Dairy Queen (20% all day!)",
@@ -335,6 +269,28 @@
       "actionDeadline": null
     },
     {
+      "id": "wh-calendar-85252c1d084b",
+      "title": "WHS Bike Bus",
+      "description": null,
+      "startDate": "2026-10-02T13:15:00.000Z",
+      "endDate": "2026-10-02T13:45:00.000Z",
+      "allDay": false,
+      "location": null,
+      "schoolIds": [
+        "wh"
+      ],
+      "category": "event",
+      "needsAction": false,
+      "sourceId": "wh-calendar",
+      "sourceName": "Hammerschmidt Elementary Calendar",
+      "sourceUrl": "https://wh.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-09-25T14:36:37.514Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
       "id": "wh-calendar-4cebcc131d9e",
       "title": "PTA Walk & Roll to School Week",
       "description": null,
@@ -440,6 +396,28 @@
       "sourceUrl": "https://wh.sd44.org/",
       "sourceType": "ics",
       "importedAt": "2026-09-17T15:55:26.864Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "wh-calendar-5103bb7857ee",
+      "title": "WHS Bike Bus",
+      "description": null,
+      "startDate": "2026-10-16T13:15:00.000Z",
+      "endDate": "2026-10-16T13:45:00.000Z",
+      "allDay": false,
+      "location": null,
+      "schoolIds": [
+        "wh"
+      ],
+      "category": "event",
+      "needsAction": false,
+      "sourceId": "wh-calendar",
+      "sourceName": "Hammerschmidt Elementary Calendar",
+      "sourceUrl": "https://wh.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-09-25T14:36:37.514Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null

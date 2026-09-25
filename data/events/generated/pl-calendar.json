@@ -2,74 +2,8 @@
   "sourceId": "pl-calendar",
   "sourceName": "Pleasant Lane Elementary Public Events",
   "sourceUrl": "https://pl.sd44.org/",
-  "lastChecked": "2026-09-24T14:12:36.028Z",
+  "lastChecked": "2026-09-25T14:36:37.514Z",
   "events": [
-    {
-      "id": "pl-calendar-f86432b2b744",
-      "title": "First Day of School! (Half Day for K, Dismissal for K @11:40am)",
-      "description": null,
-      "startDate": "2026-08-26T13:30:00.000Z",
-      "endDate": "2026-08-26T20:15:00.000Z",
-      "allDay": false,
-      "location": null,
-      "schoolIds": [
-        "pl"
-      ],
-      "category": "early-dismissal",
-      "needsAction": false,
-      "sourceId": "pl-calendar",
-      "sourceName": "Pleasant Lane Elementary Public Events",
-      "sourceUrl": "https://pl.sd44.org/",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:31:45.611Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
-    {
-      "id": "pl-calendar-9c1216dae28d",
-      "title": "K Coffee",
-      "description": null,
-      "startDate": "2026-08-26T13:30:00.000Z",
-      "endDate": "2026-08-26T14:00:00.000Z",
-      "allDay": false,
-      "location": null,
-      "schoolIds": [
-        "pl"
-      ],
-      "category": "event",
-      "needsAction": false,
-      "sourceId": "pl-calendar",
-      "sourceName": "Pleasant Lane Elementary Public Events",
-      "sourceUrl": "https://pl.sd44.org/",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:31:45.611Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
-    {
-      "id": "pl-calendar-f0af21b299af",
-      "title": "Kindergarten Half Day",
-      "description": null,
-      "startDate": "2026-08-26T13:30:00.000Z",
-      "endDate": "2026-08-26T16:45:00.000Z",
-      "allDay": false,
-      "location": null,
-      "schoolIds": [
-        "pl"
-      ],
-      "category": "early-dismissal",
-      "needsAction": false,
-      "sourceId": "pl-calendar",
-      "sourceName": "Pleasant Lane Elementary Public Events",
-      "sourceUrl": "https://pl.sd44.org/",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:31:45.611Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
     {
       "id": "pl-calendar-509ae9cf234c",
       "title": "Kindergarten Half Day",

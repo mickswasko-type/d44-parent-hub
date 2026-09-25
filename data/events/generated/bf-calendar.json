@@ -2,74 +2,8 @@
   "sourceId": "bf-calendar",
   "sourceName": "Butterfield Elementary Calendar",
   "sourceUrl": "https://bf.sd44.org/",
-  "lastChecked": "2026-09-24T14:12:36.028Z",
+  "lastChecked": "2026-09-25T14:36:37.514Z",
   "events": [
-    {
-      "id": "bf-calendar-fbe885916c4f",
-      "title": "Supply Drop-off",
-      "description": null,
-      "startDate": "2026-08-25T19:30:00.000Z",
-      "endDate": "2026-08-25T20:00:00.000Z",
-      "allDay": false,
-      "location": null,
-      "schoolIds": [
-        "bf"
-      ],
-      "category": "event",
-      "needsAction": false,
-      "sourceId": "bf-calendar",
-      "sourceName": "Butterfield Elementary Calendar",
-      "sourceUrl": "https://bf.sd44.org/",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:31:45.611Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
-    {
-      "id": "bf-calendar-e7b7bd44269e",
-      "title": "First FULL Day of School 1st - 5th",
-      "description": null,
-      "startDate": "2026-08-26",
-      "endDate": "2026-08-26",
-      "allDay": true,
-      "location": null,
-      "schoolIds": [
-        "bf"
-      ],
-      "category": "event",
-      "needsAction": false,
-      "sourceId": "bf-calendar",
-      "sourceName": "Butterfield Elementary Calendar",
-      "sourceUrl": "https://bf.sd44.org/",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:55:26.864Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
-    {
-      "id": "bf-calendar-f4ded89ef9ea",
-      "title": "Kindergarten 1/2 Day a.m.",
-      "description": null,
-      "startDate": "2026-08-26",
-      "endDate": "2026-08-26",
-      "allDay": true,
-      "location": null,
-      "schoolIds": [
-        "bf"
-      ],
-      "category": "early-dismissal",
-      "needsAction": false,
-      "sourceId": "bf-calendar",
-      "sourceName": "Butterfield Elementary Calendar",
-      "sourceUrl": "https://bf.sd44.org/",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:55:26.864Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
     {
       "id": "bf-calendar-1d64770b475f",
       "title": "Kindergarten 1/2 Day a.m.",
@@ -247,6 +181,28 @@
       "actionDeadline": null
     },
     {
+      "id": "bf-calendar-491bd8d673d7",
+      "title": "Walk and Talk Club",
+      "description": null,
+      "startDate": "2026-09-28T20:15:00.000Z",
+      "endDate": "2026-09-28T21:45:00.000Z",
+      "allDay": false,
+      "location": null,
+      "schoolIds": [
+        "bf"
+      ],
+      "category": "event",
+      "needsAction": false,
+      "sourceId": "bf-calendar",
+      "sourceName": "Butterfield Elementary Calendar",
+      "sourceUrl": "https://bf.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-09-25T14:36:37.514Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
       "id": "bf-calendar-fbf360ae8c0d",
       "title": "5th Grade Band & Orchestra Rehearsal",
       "description": null,
@@ -264,6 +220,28 @@
       "sourceUrl": "https://bf.sd44.org/",
       "sourceType": "ics",
       "importedAt": "2026-09-17T15:31:45.611Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "bf-calendar-b61c3904be7c",
+      "title": "Walk and Talk Club",
+      "description": null,
+      "startDate": "2026-10-05T20:15:00.000Z",
+      "endDate": "2026-10-05T21:45:00.000Z",
+      "allDay": false,
+      "location": null,
+      "schoolIds": [
+        "bf"
+      ],
+      "category": "event",
+      "needsAction": false,
+      "sourceId": "bf-calendar",
+      "sourceName": "Butterfield Elementary Calendar",
+      "sourceUrl": "https://bf.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-09-25T14:36:37.514Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null
@@ -423,6 +401,28 @@
       "actionDeadline": null
     },
     {
+      "id": "bf-calendar-af38c3696b37",
+      "title": "Walk and Talk Club",
+      "description": null,
+      "startDate": "2026-10-15T20:15:00.000Z",
+      "endDate": "2026-10-15T21:45:00.000Z",
+      "allDay": false,
+      "location": null,
+      "schoolIds": [
+        "bf"
+      ],
+      "category": "event",
+      "needsAction": false,
+      "sourceId": "bf-calendar",
+      "sourceName": "Butterfield Elementary Calendar",
+      "sourceUrl": "https://bf.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-09-25T14:36:37.514Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
       "id": "bf-calendar-4f4e2f63b5e3",
       "title": "5th Grade Band & Orchestra Rehearsal",
       "description": null,
@@ -440,6 +440,28 @@
       "sourceUrl": "https://bf.sd44.org/",
       "sourceType": "ics",
       "importedAt": "2026-09-17T15:31:45.611Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "bf-calendar-2cf38ae156bd",
+      "title": "Walk and Talk Club",
+      "description": null,
+      "startDate": "2026-10-19T20:15:00.000Z",
+      "endDate": "2026-10-19T21:45:00.000Z",
+      "allDay": false,
+      "location": null,
+      "schoolIds": [
+        "bf"
+      ],
+      "category": "event",
+      "needsAction": false,
+      "sourceId": "bf-calendar",
+      "sourceName": "Butterfield Elementary Calendar",
+      "sourceUrl": "https://bf.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-09-25T14:36:37.514Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null
@@ -506,6 +528,28 @@
       "sourceUrl": "https://bf.sd44.org/",
       "sourceType": "ics",
       "importedAt": "2026-09-17T15:55:26.864Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "bf-calendar-c160b15da79d",
+      "title": "Walk and Talk Club",
+      "description": null,
+      "startDate": "2026-10-26T20:15:00.000Z",
+      "endDate": "2026-10-26T21:45:00.000Z",
+      "allDay": false,
+      "location": null,
+      "schoolIds": [
+        "bf"
+      ],
+      "category": "event",
+      "needsAction": false,
+      "sourceId": "bf-calendar",
+      "sourceName": "Butterfield Elementary Calendar",
+      "sourceUrl": "https://bf.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-09-25T14:36:37.514Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null
@@ -599,6 +643,28 @@
       "actionDeadline": null
     },
     {
+      "id": "bf-calendar-9f7f3b5d7894",
+      "title": "Walk and Talk Club",
+      "description": null,
+      "startDate": "2026-11-02T21:15:00.000Z",
+      "endDate": "2026-11-02T22:45:00.000Z",
+      "allDay": false,
+      "location": null,
+      "schoolIds": [
+        "bf"
+      ],
+      "category": "event",
+      "needsAction": false,
+      "sourceId": "bf-calendar",
+      "sourceName": "Butterfield Elementary Calendar",
+      "sourceUrl": "https://bf.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-09-25T14:36:37.514Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
       "id": "bf-calendar-3e95df6bfad3",
       "title": "No School - General Election",
       "description": null,
@@ -682,6 +748,28 @@
       "sourceUrl": "https://bf.sd44.org/",
       "sourceType": "ics",
       "importedAt": "2026-09-17T15:31:45.611Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "bf-calendar-7fa7e46d4630",
+      "title": "Walk and Talk Club",
+      "description": null,
+      "startDate": "2026-11-09T21:15:00.000Z",
+      "endDate": "2026-11-09T22:45:00.000Z",
+      "allDay": false,
+      "location": null,
+      "schoolIds": [
+        "bf"
+      ],
+      "category": "event",
+      "needsAction": false,
+      "sourceId": "bf-calendar",
+      "sourceName": "Butterfield Elementary Calendar",
+      "sourceUrl": "https://bf.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-09-25T14:36:37.514Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null
