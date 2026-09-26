@@ -2,30 +2,8 @@
   "sourceId": "bf-calendar",
   "sourceName": "Butterfield Elementary Calendar",
   "sourceUrl": "https://bf.sd44.org/",
-  "lastChecked": "2026-09-25T14:36:37.514Z",
+  "lastChecked": "2026-09-26T13:45:06.144Z",
   "events": [
-    {
-      "id": "bf-calendar-1d64770b475f",
-      "title": "Kindergarten 1/2 Day a.m.",
-      "description": null,
-      "startDate": "2026-08-27",
-      "endDate": "2026-08-27",
-      "allDay": true,
-      "location": null,
-      "schoolIds": [
-        "bf"
-      ],
-      "category": "early-dismissal",
-      "needsAction": false,
-      "sourceId": "bf-calendar",
-      "sourceName": "Butterfield Elementary Calendar",
-      "sourceUrl": "https://bf.sd44.org/",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:55:26.864Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
     {
       "id": "bf-calendar-244c5d7ca542",
       "title": "Kindergarten 1/2 day a.m.",

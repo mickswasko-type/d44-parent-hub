@@ -2,52 +2,8 @@
   "sourceId": "d44-district",
   "sourceName": "District 44 Public Calendar",
   "sourceUrl": "https://www.sd44.org/resources/calendars",
-  "lastChecked": "2026-09-25T14:36:37.514Z",
+  "lastChecked": "2026-09-26T13:45:06.144Z",
   "events": [
-    {
-      "id": "d44-district-d7847f67f8a8",
-      "title": "Meet and Greet at JSECC. Please click on attachment for times",
-      "description": null,
-      "startDate": "2026-08-27",
-      "endDate": "2026-08-27",
-      "allDay": true,
-      "location": "John Schroder Early Childhood Center, 1519 Grace St, Lombard",
-      "schoolIds": [
-        "ec"
-      ],
-      "category": "event",
-      "needsAction": false,
-      "sourceId": "d44-district",
-      "sourceName": "District 44 Public Calendar",
-      "sourceUrl": "https://www.sd44.org/resources/calendars",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:55:26.864Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
-    {
-      "id": "d44-district-2967a8dfdc24",
-      "title": "Hammerschmidt PTA Coffee Talk",
-      "description": null,
-      "startDate": "2026-08-27T13:30:00.000Z",
-      "endDate": "2026-08-27T14:00:00.000Z",
-      "allDay": false,
-      "location": "Hammerschmidt Elementary School, 617 Hammerschmidt Ave, Lombard",
-      "schoolIds": [
-        "wh"
-      ],
-      "category": "pta",
-      "needsAction": false,
-      "sourceId": "d44-district",
-      "sourceName": "District 44 Public Calendar",
-      "sourceUrl": "https://www.sd44.org/resources/calendars",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:31:45.611Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
     {
       "id": "d44-district-64950e0a7d5d",
       "title": "Park View Ice Cream Social",

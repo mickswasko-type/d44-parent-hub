@@ -2,30 +2,8 @@
   "sourceId": "ec-calendar",
   "sourceName": "John Schroder Early Childhood Center Calendar",
   "sourceUrl": "https://ec.sd44.org/",
-  "lastChecked": "2026-09-25T14:36:37.514Z",
+  "lastChecked": "2026-09-26T13:45:06.144Z",
   "events": [
-    {
-      "id": "ec-calendar-11a92eb0f61a",
-      "title": "Meet the Teacher",
-      "description": null,
-      "startDate": "2026-08-27",
-      "endDate": "2026-08-27",
-      "allDay": true,
-      "location": null,
-      "schoolIds": [
-        "ec"
-      ],
-      "category": "event",
-      "needsAction": false,
-      "sourceId": "ec-calendar",
-      "sourceName": "John Schroder Early Childhood Center Calendar",
-      "sourceUrl": "https://ec.sd44.org/",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:55:26.864Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
     {
       "id": "ec-calendar-d4e060a4db47",
       "title": "No School - Labor Day",

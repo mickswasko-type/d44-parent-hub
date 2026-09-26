@@ -2,30 +2,8 @@
   "sourceId": "pv-calendar",
   "sourceName": "Park View Elementary Calendar",
   "sourceUrl": "https://pv.sd44.org/",
-  "lastChecked": "2026-09-25T14:36:37.514Z",
+  "lastChecked": "2026-09-26T13:45:06.144Z",
   "events": [
-    {
-      "id": "pv-calendar-6551bb66ee05",
-      "title": "Half Day of School for Kindergarten",
-      "description": null,
-      "startDate": "2026-08-27",
-      "endDate": "2026-08-27",
-      "allDay": true,
-      "location": null,
-      "schoolIds": [
-        "pv"
-      ],
-      "category": "early-dismissal",
-      "needsAction": false,
-      "sourceId": "pv-calendar",
-      "sourceName": "Park View Elementary Calendar",
-      "sourceUrl": "https://pv.sd44.org/",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:55:26.864Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
     {
       "id": "pv-calendar-8258952a9a3b",
       "title": "Half Day of School for Kindergarten",
@@ -3217,7 +3195,7 @@
       "actionDeadline": null
     },
     {
-      "id": "pv-calendar-75be94a275d1",
+      "id": "pv-calendar-877ef5ea1531",
       "title": "4th Grade Band & Orchestra Rehearsal",
       "description": null,
       "startDate": "2027-04-14T21:00:00.000Z",
@@ -3239,7 +3217,7 @@
       "actionDeadline": null
     },
     {
-      "id": "pv-calendar-877ef5ea1531",
+      "id": "pv-calendar-75be94a275d1",
       "title": "4th Grade Band & Orchestra Rehearsal",
       "description": null,
       "startDate": "2027-04-14T21:00:00.000Z",
