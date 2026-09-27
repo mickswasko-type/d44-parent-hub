@@ -1,5 +1,5 @@
 {
-  "ranAt": "2026-09-26T13:45:06.144Z",
+  "ranAt": "2026-09-27T14:42:02.398Z",
   "statuses": [
     {
       "sourceId": "d44-district",
@@ -7,7 +7,7 @@
       "ok": true,
       "empty": false,
       "eventCount": 195,
-      "lastChecked": "2026-09-26T13:45:06.144Z",
+      "lastChecked": "2026-09-27T14:42:02.398Z",
       "error": null,
       "servingStaleData": false
     },
@@ -16,8 +16,8 @@
       "sourceName": "Butterfield Elementary Calendar",
       "ok": true,
       "empty": false,
-      "eventCount": 125,
-      "lastChecked": "2026-09-26T13:45:06.144Z",
+      "eventCount": 124,
+      "lastChecked": "2026-09-27T14:42:02.398Z",
       "error": null,
       "servingStaleData": false
     },
@@ -27,7 +27,7 @@
       "ok": true,
       "empty": true,
       "eventCount": 0,
-      "lastChecked": "2026-09-26T13:45:06.144Z",
+      "lastChecked": "2026-09-27T14:42:02.398Z",
       "error": null,
       "servingStaleData": false
     },
@@ -37,7 +37,7 @@
       "ok": true,
       "empty": false,
       "eventCount": 87,
-      "lastChecked": "2026-09-26T13:45:06.144Z",
+      "lastChecked": "2026-09-27T14:42:02.398Z",
       "error": null,
       "servingStaleData": false
     },
@@ -47,7 +47,7 @@
       "ok": true,
       "empty": false,
       "eventCount": 13,
-      "lastChecked": "2026-09-26T13:45:06.144Z",
+      "lastChecked": "2026-09-27T14:42:02.398Z",
       "error": null,
       "servingStaleData": false
     },
@@ -56,8 +56,8 @@
       "sourceName": "Madison Elementary Calendar",
       "ok": true,
       "empty": false,
-      "eventCount": 91,
-      "lastChecked": "2026-09-26T13:45:06.144Z",
+      "eventCount": 90,
+      "lastChecked": "2026-09-27T14:42:02.398Z",
       "error": null,
       "servingStaleData": false
     },
@@ -66,8 +66,8 @@
       "sourceName": "Manor Hill Elementary Public Events",
       "ok": true,
       "empty": false,
-      "eventCount": 16,
-      "lastChecked": "2026-09-26T13:45:06.144Z",
+      "eventCount": 15,
+      "lastChecked": "2026-09-27T14:42:02.398Z",
       "error": null,
       "servingStaleData": false
     },
@@ -76,8 +76,8 @@
       "sourceName": "Park View Elementary Calendar",
       "ok": true,
       "empty": false,
-      "eventCount": 173,
-      "lastChecked": "2026-09-26T13:45:06.144Z",
+      "eventCount": 172,
+      "lastChecked": "2026-09-27T14:42:02.398Z",
       "error": null,
       "servingStaleData": false
     },
@@ -86,8 +86,8 @@
       "sourceName": "Pleasant Lane Elementary Public Events",
       "ok": true,
       "empty": false,
-      "eventCount": 235,
-      "lastChecked": "2026-09-26T13:45:06.144Z",
+      "eventCount": 234,
+      "lastChecked": "2026-09-27T14:42:02.398Z",
       "error": null,
       "servingStaleData": false
     }
