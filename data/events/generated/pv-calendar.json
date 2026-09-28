@@ -2,30 +2,8 @@
   "sourceId": "pv-calendar",
   "sourceName": "Park View Elementary Calendar",
   "sourceUrl": "https://pv.sd44.org/",
-  "lastChecked": "2026-09-27T14:42:02.398Z",
+  "lastChecked": "2026-09-28T17:39:27.415Z",
   "events": [
-    {
-      "id": "pv-calendar-3a47628ae643",
-      "title": "PTA Ice Cream Social",
-      "description": null,
-      "startDate": "2026-08-28T23:00:00.000Z",
-      "endDate": "2026-08-29T00:30:00.000Z",
-      "allDay": false,
-      "location": null,
-      "schoolIds": [
-        "pv"
-      ],
-      "category": "pta",
-      "needsAction": false,
-      "sourceId": "pv-calendar",
-      "sourceName": "Park View Elementary Calendar",
-      "sourceUrl": "https://pv.sd44.org/",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:31:45.611Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
     {
       "id": "pv-calendar-02042fe1bffc",
       "title": "Kindergarten - First Full Day",
@@ -731,6 +709,28 @@
       "actionDeadline": null
     },
     {
+      "id": "pv-calendar-2e3bb422d5b7",
+      "title": "Panther Success Squad",
+      "description": null,
+      "startDate": "2026-10-20T20:15:00.000Z",
+      "endDate": "2026-10-20T21:35:00.000Z",
+      "allDay": false,
+      "location": null,
+      "schoolIds": [
+        "pv"
+      ],
+      "category": "event",
+      "needsAction": false,
+      "sourceId": "pv-calendar",
+      "sourceName": "Park View Elementary Calendar",
+      "sourceUrl": "https://pv.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-09-28T17:39:27.415Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
       "id": "pv-calendar-66f97799aaf1",
       "title": "4th Grade Band & Orchestra Rehearsal",
       "description": null,
@@ -748,6 +748,50 @@
       "sourceUrl": "https://pv.sd44.org/",
       "sourceType": "ics",
       "importedAt": "2026-09-17T15:31:45.611Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "pv-calendar-eab724bd9d47",
+      "title": "Panther Success Squad",
+      "description": null,
+      "startDate": "2026-10-21T20:15:00.000Z",
+      "endDate": "2026-10-21T21:35:00.000Z",
+      "allDay": false,
+      "location": null,
+      "schoolIds": [
+        "pv"
+      ],
+      "category": "event",
+      "needsAction": false,
+      "sourceId": "pv-calendar",
+      "sourceName": "Park View Elementary Calendar",
+      "sourceUrl": "https://pv.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-09-28T17:39:27.415Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "pv-calendar-de3f2fb2b48d",
+      "title": "Panther Success Squad",
+      "description": null,
+      "startDate": "2026-10-22T20:15:00.000Z",
+      "endDate": "2026-10-22T21:35:00.000Z",
+      "allDay": false,
+      "location": null,
+      "schoolIds": [
+        "pv"
+      ],
+      "category": "event",
+      "needsAction": false,
+      "sourceId": "pv-calendar",
+      "sourceName": "Park View Elementary Calendar",
+      "sourceUrl": "https://pv.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-09-28T17:39:27.415Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null
@@ -819,6 +863,28 @@
       "actionDeadline": null
     },
     {
+      "id": "pv-calendar-4e2e45239c83",
+      "title": "Panther Success Squad",
+      "description": null,
+      "startDate": "2026-10-27T20:15:00.000Z",
+      "endDate": "2026-10-27T21:35:00.000Z",
+      "allDay": false,
+      "location": null,
+      "schoolIds": [
+        "pv"
+      ],
+      "category": "event",
+      "needsAction": false,
+      "sourceId": "pv-calendar",
+      "sourceName": "Park View Elementary Calendar",
+      "sourceUrl": "https://pv.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-09-28T17:39:27.415Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
       "id": "pv-calendar-bcaaf88e153f",
       "title": "4th Grade Band & Orchestra Rehearsal",
       "description": null,
@@ -836,6 +902,50 @@
       "sourceUrl": "https://pv.sd44.org/",
       "sourceType": "ics",
       "importedAt": "2026-09-17T15:31:45.611Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "pv-calendar-ce6d0e4cea1c",
+      "title": "Panther Success Squad",
+      "description": null,
+      "startDate": "2026-10-28T20:15:00.000Z",
+      "endDate": "2026-10-28T21:35:00.000Z",
+      "allDay": false,
+      "location": null,
+      "schoolIds": [
+        "pv"
+      ],
+      "category": "event",
+      "needsAction": false,
+      "sourceId": "pv-calendar",
+      "sourceName": "Park View Elementary Calendar",
+      "sourceUrl": "https://pv.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-09-28T17:39:27.415Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "pv-calendar-70f3bd82c8fd",
+      "title": "Panther Success Squad",
+      "description": null,
+      "startDate": "2026-10-29T20:15:00.000Z",
+      "endDate": "2026-10-29T21:35:00.000Z",
+      "allDay": false,
+      "location": null,
+      "schoolIds": [
+        "pv"
+      ],
+      "category": "event",
+      "needsAction": false,
+      "sourceId": "pv-calendar",
+      "sourceName": "Park View Elementary Calendar",
+      "sourceUrl": "https://pv.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-09-28T17:39:27.415Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null
@@ -929,6 +1039,50 @@
       "actionDeadline": null
     },
     {
+      "id": "pv-calendar-7debfcec0a17",
+      "title": "Panther Success Squad",
+      "description": null,
+      "startDate": "2026-11-04T21:15:00.000Z",
+      "endDate": "2026-11-04T22:35:00.000Z",
+      "allDay": false,
+      "location": null,
+      "schoolIds": [
+        "pv"
+      ],
+      "category": "event",
+      "needsAction": false,
+      "sourceId": "pv-calendar",
+      "sourceName": "Park View Elementary Calendar",
+      "sourceUrl": "https://pv.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-09-28T17:39:27.415Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "pv-calendar-4a15a0df0d4a",
+      "title": "Panther Success Squad",
+      "description": null,
+      "startDate": "2026-11-05T21:15:00.000Z",
+      "endDate": "2026-11-05T22:35:00.000Z",
+      "allDay": false,
+      "location": null,
+      "schoolIds": [
+        "pv"
+      ],
+      "category": "event",
+      "needsAction": false,
+      "sourceId": "pv-calendar",
+      "sourceName": "Park View Elementary Calendar",
+      "sourceUrl": "https://pv.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-09-28T17:39:27.415Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
       "id": "pv-calendar-0f69bf42403a",
       "title": "5th Grade Band & Orchestra Rehearsal",
       "description": null,
@@ -973,6 +1127,28 @@
       "actionDeadline": null
     },
     {
+      "id": "pv-calendar-d6b87519dade",
+      "title": "Panther Success Squad",
+      "description": null,
+      "startDate": "2026-11-10T21:15:00.000Z",
+      "endDate": "2026-11-10T22:35:00.000Z",
+      "allDay": false,
+      "location": null,
+      "schoolIds": [
+        "pv"
+      ],
+      "category": "event",
+      "needsAction": false,
+      "sourceId": "pv-calendar",
+      "sourceName": "Park View Elementary Calendar",
+      "sourceUrl": "https://pv.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-09-28T17:39:27.415Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
       "id": "pv-calendar-5bc4d5ccdc1e",
       "title": "4th Grade Band & Orchestra Rehearsal",
       "description": null,
@@ -1012,6 +1188,50 @@
       "sourceUrl": "https://pv.sd44.org/",
       "sourceType": "ics",
       "importedAt": "2026-09-17T15:31:45.611Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "pv-calendar-640682108a77",
+      "title": "Panther Success Squad",
+      "description": null,
+      "startDate": "2026-11-11T21:15:00.000Z",
+      "endDate": "2026-11-11T22:35:00.000Z",
+      "allDay": false,
+      "location": null,
+      "schoolIds": [
+        "pv"
+      ],
+      "category": "event",
+      "needsAction": false,
+      "sourceId": "pv-calendar",
+      "sourceName": "Park View Elementary Calendar",
+      "sourceUrl": "https://pv.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-09-28T17:39:27.415Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "pv-calendar-b259483c697e",
+      "title": "Panther Success Squad",
+      "description": null,
+      "startDate": "2026-11-12T21:15:00.000Z",
+      "endDate": "2026-11-12T22:35:00.000Z",
+      "allDay": false,
+      "location": null,
+      "schoolIds": [
+        "pv"
+      ],
+      "category": "event",
+      "needsAction": false,
+      "sourceId": "pv-calendar",
+      "sourceName": "Park View Elementary Calendar",
+      "sourceUrl": "https://pv.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-09-28T17:39:27.415Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null
@@ -1083,6 +1303,28 @@
       "actionDeadline": null
     },
     {
+      "id": "pv-calendar-f1d89d2ee42f",
+      "title": "Panther Success Squad",
+      "description": null,
+      "startDate": "2026-11-17T21:15:00.000Z",
+      "endDate": "2026-11-17T22:35:00.000Z",
+      "allDay": false,
+      "location": null,
+      "schoolIds": [
+        "pv"
+      ],
+      "category": "event",
+      "needsAction": false,
+      "sourceId": "pv-calendar",
+      "sourceName": "Park View Elementary Calendar",
+      "sourceUrl": "https://pv.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-09-28T17:39:27.415Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
       "id": "pv-calendar-11e36df5ddf9",
       "title": "4th Grade Band & Orchestra Rehearsal",
       "description": null,
@@ -1105,6 +1347,28 @@
       "actionDeadline": null
     },
     {
+      "id": "pv-calendar-52ceb556c546",
+      "title": "Panther Success Squad",
+      "description": null,
+      "startDate": "2026-11-18T21:15:00.000Z",
+      "endDate": "2026-11-18T22:35:00.000Z",
+      "allDay": false,
+      "location": null,
+      "schoolIds": [
+        "pv"
+      ],
+      "category": "event",
+      "needsAction": false,
+      "sourceId": "pv-calendar",
+      "sourceName": "Park View Elementary Calendar",
+      "sourceUrl": "https://pv.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-09-28T17:39:27.415Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
       "id": "pv-calendar-681fb0f5cbed",
       "title": "PTA's K-1 Bingo",
       "description": null,
@@ -1122,6 +1386,28 @@
       "sourceUrl": "https://pv.sd44.org/",
       "sourceType": "ics",
       "importedAt": "2026-09-17T15:31:45.611Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "pv-calendar-42d2ba6c19d4",
+      "title": "Panther Success Squad",
+      "description": null,
+      "startDate": "2026-11-19T21:15:00.000Z",
+      "endDate": "2026-11-19T22:35:00.000Z",
+      "allDay": false,
+      "location": null,
+      "schoolIds": [
+        "pv"
+      ],
+      "category": "event",
+      "needsAction": false,
+      "sourceId": "pv-calendar",
+      "sourceName": "Park View Elementary Calendar",
+      "sourceUrl": "https://pv.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-09-28T17:39:27.415Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null
@@ -1391,6 +1677,28 @@
       "actionDeadline": null
     },
     {
+      "id": "pv-calendar-453a3cbc8e51",
+      "title": "Panther Success Squad",
+      "description": null,
+      "startDate": "2026-12-01T21:15:00.000Z",
+      "endDate": "2026-12-01T22:35:00.000Z",
+      "allDay": false,
+      "location": null,
+      "schoolIds": [
+        "pv"
+      ],
+      "category": "event",
+      "needsAction": false,
+      "sourceId": "pv-calendar",
+      "sourceName": "Park View Elementary Calendar",
+      "sourceUrl": "https://pv.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-09-28T17:39:27.415Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
       "id": "pv-calendar-f09bef78cb8f",
       "title": "4th Grade Band & Orchestra Rehearsal",
       "description": null,
@@ -1408,6 +1716,50 @@
       "sourceUrl": "https://pv.sd44.org/",
       "sourceType": "ics",
       "importedAt": "2026-09-17T15:31:45.611Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "pv-calendar-3f0ea1251859",
+      "title": "Panther Success Squad",
+      "description": null,
+      "startDate": "2026-12-02T21:15:00.000Z",
+      "endDate": "2026-12-02T22:35:00.000Z",
+      "allDay": false,
+      "location": null,
+      "schoolIds": [
+        "pv"
+      ],
+      "category": "event",
+      "needsAction": false,
+      "sourceId": "pv-calendar",
+      "sourceName": "Park View Elementary Calendar",
+      "sourceUrl": "https://pv.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-09-28T17:39:27.415Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "pv-calendar-2ba6751d1199",
+      "title": "Panther Success Squad",
+      "description": null,
+      "startDate": "2026-12-03T21:15:00.000Z",
+      "endDate": "2026-12-03T22:35:00.000Z",
+      "allDay": false,
+      "location": null,
+      "schoolIds": [
+        "pv"
+      ],
+      "category": "event",
+      "needsAction": false,
+      "sourceId": "pv-calendar",
+      "sourceName": "Park View Elementary Calendar",
+      "sourceUrl": "https://pv.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-09-28T17:39:27.415Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null
@@ -1479,6 +1831,28 @@
       "actionDeadline": null
     },
     {
+      "id": "pv-calendar-c7e48a0d8caa",
+      "title": "Panther Success Squad",
+      "description": null,
+      "startDate": "2026-12-08T21:15:00.000Z",
+      "endDate": "2026-12-08T22:35:00.000Z",
+      "allDay": false,
+      "location": null,
+      "schoolIds": [
+        "pv"
+      ],
+      "category": "event",
+      "needsAction": false,
+      "sourceId": "pv-calendar",
+      "sourceName": "Park View Elementary Calendar",
+      "sourceUrl": "https://pv.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-09-28T17:39:27.415Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
       "id": "pv-calendar-00fcc50ad9de",
       "title": "4th Grade Band & Orchestra Rehearsal",
       "description": null,
@@ -1518,6 +1892,50 @@
       "sourceUrl": "https://pv.sd44.org/",
       "sourceType": "ics",
       "importedAt": "2026-09-17T15:31:45.611Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "pv-calendar-0e8e58670d68",
+      "title": "Panther Success Squad",
+      "description": null,
+      "startDate": "2026-12-09T21:15:00.000Z",
+      "endDate": "2026-12-09T22:35:00.000Z",
+      "allDay": false,
+      "location": null,
+      "schoolIds": [
+        "pv"
+      ],
+      "category": "event",
+      "needsAction": false,
+      "sourceId": "pv-calendar",
+      "sourceName": "Park View Elementary Calendar",
+      "sourceUrl": "https://pv.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-09-28T17:39:27.415Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "pv-calendar-a959cd159de3",
+      "title": "Panther Success Squad",
+      "description": null,
+      "startDate": "2026-12-10T21:15:00.000Z",
+      "endDate": "2026-12-10T22:35:00.000Z",
+      "allDay": false,
+      "location": null,
+      "schoolIds": [
+        "pv"
+      ],
+      "category": "event",
+      "needsAction": false,
+      "sourceId": "pv-calendar",
+      "sourceName": "Park View Elementary Calendar",
+      "sourceUrl": "https://pv.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-09-28T17:39:27.415Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null
@@ -3173,7 +3591,7 @@
       "actionDeadline": null
     },
     {
-      "id": "pv-calendar-75be94a275d1",
+      "id": "pv-calendar-877ef5ea1531",
       "title": "4th Grade Band & Orchestra Rehearsal",
       "description": null,
       "startDate": "2027-04-14T21:00:00.000Z",
@@ -3195,7 +3613,7 @@
       "actionDeadline": null
     },
     {
-      "id": "pv-calendar-877ef5ea1531",
+      "id": "pv-calendar-75be94a275d1",
       "title": "4th Grade Band & Orchestra Rehearsal",
       "description": null,
       "startDate": "2027-04-14T21:00:00.000Z",

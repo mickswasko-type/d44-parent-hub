@@ -2,30 +2,8 @@
   "sourceId": "mh-calendar",
   "sourceName": "Manor Hill Elementary Public Events",
   "sourceUrl": "https://mh.sd44.org/",
-  "lastChecked": "2026-09-27T14:42:02.398Z",
+  "lastChecked": "2026-09-28T17:39:27.415Z",
   "events": [
-    {
-      "id": "mh-calendar-57a7297a513e",
-      "title": "PTA Pool Party at Paradise Bay",
-      "description": null,
-      "startDate": "2026-08-29T00:00:00.000Z",
-      "endDate": "2026-08-29T02:00:00.000Z",
-      "allDay": false,
-      "location": "Paradise Bay Water Park, 437 E St Charles Rd, Lombard, IL 60148, USA",
-      "schoolIds": [
-        "mh"
-      ],
-      "category": "pta",
-      "needsAction": false,
-      "sourceId": "mh-calendar",
-      "sourceName": "Manor Hill Elementary Public Events",
-      "sourceUrl": "https://mh.sd44.org/",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:31:45.611Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
     {
       "id": "mh-calendar-4c8f4c3697fd",
       "title": "Kindergarten- First Full Day of Classes",
