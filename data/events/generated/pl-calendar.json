@@ -2,30 +2,8 @@
   "sourceId": "pl-calendar",
   "sourceName": "Pleasant Lane Elementary Public Events",
   "sourceUrl": "https://pl.sd44.org/",
-  "lastChecked": "2026-09-29T15:51:54.347Z",
+  "lastChecked": "2026-09-30T15:55:23.249Z",
   "events": [
-    {
-      "id": "pl-calendar-f78f17a1a8e9",
-      "title": "1st Full Day for Kindergarten",
-      "description": null,
-      "startDate": "2026-08-31T13:30:00.000Z",
-      "endDate": "2026-08-31T20:15:00.000Z",
-      "allDay": false,
-      "location": null,
-      "schoolIds": [
-        "pl"
-      ],
-      "category": "event",
-      "needsAction": false,
-      "sourceId": "pl-calendar",
-      "sourceName": "Pleasant Lane Elementary Public Events",
-      "sourceUrl": "https://pl.sd44.org/",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:31:45.611Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
     {
       "id": "pl-calendar-41b171552d74",
       "title": "PTA Meeting",
@@ -550,6 +528,28 @@
       "sourceUrl": "https://pl.sd44.org/",
       "sourceType": "ics",
       "importedAt": "2026-09-17T15:31:45.611Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "pl-calendar-49e5e3155b4d",
+      "title": "1st Grade Field Trip",
+      "description": null,
+      "startDate": "2026-10-05T14:15:00.000Z",
+      "endDate": "2026-10-05T16:30:00.000Z",
+      "allDay": false,
+      "location": null,
+      "schoolIds": [
+        "pl"
+      ],
+      "category": "event",
+      "needsAction": true,
+      "sourceId": "pl-calendar",
+      "sourceName": "Pleasant Lane Elementary Public Events",
+      "sourceUrl": "https://pl.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-09-30T15:55:23.249Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null
@@ -1606,6 +1606,28 @@
       "sourceUrl": "https://pl.sd44.org/",
       "sourceType": "ics",
       "importedAt": "2026-09-17T15:31:45.611Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "pl-calendar-ac05fa3a9c27",
+      "title": "3rd Grade Field Trip",
+      "description": null,
+      "startDate": "2026-11-12T16:20:00.000Z",
+      "endDate": "2026-11-12T19:45:00.000Z",
+      "allDay": false,
+      "location": null,
+      "schoolIds": [
+        "pl"
+      ],
+      "category": "event",
+      "needsAction": true,
+      "sourceId": "pl-calendar",
+      "sourceName": "Pleasant Lane Elementary Public Events",
+      "sourceUrl": "https://pl.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-09-30T15:55:23.249Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null
@@ -5038,6 +5060,28 @@
       "sourceUrl": "https://pl.sd44.org/",
       "sourceType": "ics",
       "importedAt": "2026-09-17T15:31:45.611Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "pl-calendar-90aa4a79ce1f",
+      "title": "HPL Field Trip",
+      "description": null,
+      "startDate": "2027-05-13T14:15:00.000Z",
+      "endDate": "2027-05-13T17:00:00.000Z",
+      "allDay": false,
+      "location": null,
+      "schoolIds": [
+        "pl"
+      ],
+      "category": "event",
+      "needsAction": true,
+      "sourceId": "pl-calendar",
+      "sourceName": "Pleasant Lane Elementary Public Events",
+      "sourceUrl": "https://pl.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-09-30T15:55:23.249Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null
