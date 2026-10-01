@@ -2,30 +2,8 @@
   "sourceId": "wh-calendar",
   "sourceName": "Hammerschmidt Elementary Calendar",
   "sourceUrl": "https://wh.sd44.org/",
-  "lastChecked": "2026-09-30T15:55:23.249Z",
+  "lastChecked": "2026-10-01T16:27:16.532Z",
   "events": [
-    {
-      "id": "wh-calendar-773466a29426",
-      "title": "PTA Meeting - LRC",
-      "description": "Join with Google Meet: https://meet.google.com/wpe-apmb-eqv\nOr dial: (US) +1 442-284-1282 PIN: 790843263#\nMore phone numbers: https://tel.meet/wpe-apmb-eqv?pin=2125695209808&hs=7\n\nLearn more about Meet at: https://support.google.com/a/users/answer/9282720",
-      "startDate": "2026-09-01T00:00:00.000Z",
-      "endDate": "2026-09-01T01:00:00.000Z",
-      "allDay": false,
-      "location": null,
-      "schoolIds": [
-        "wh"
-      ],
-      "category": "pta",
-      "needsAction": false,
-      "sourceId": "wh-calendar",
-      "sourceName": "Hammerschmidt Elementary Calendar",
-      "sourceUrl": "https://wh.sd44.org/",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:31:45.611Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
     {
       "id": "wh-calendar-7167767a8fcd",
       "title": "PTA Dine Out- Portillo's Villa Park (20% from 5-8pm)",

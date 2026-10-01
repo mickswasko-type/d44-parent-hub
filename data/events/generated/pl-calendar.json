@@ -2,7 +2,7 @@
   "sourceId": "pl-calendar",
   "sourceName": "Pleasant Lane Elementary Public Events",
   "sourceUrl": "https://pl.sd44.org/",
-  "lastChecked": "2026-09-30T15:55:23.249Z",
+  "lastChecked": "2026-10-01T16:27:16.532Z",
   "events": [
     {
       "id": "pl-calendar-41b171552d74",
@@ -379,6 +379,28 @@
       "actionDeadline": null
     },
     {
+      "id": "pl-calendar-03465816ab85",
+      "title": "Kickball Club",
+      "description": "Club sponsor - Ashley Zima",
+      "startDate": "2026-09-29T12:45:00.000Z",
+      "endDate": "2026-09-29T13:20:00.000Z",
+      "allDay": false,
+      "location": "Large Gym",
+      "schoolIds": [
+        "pl"
+      ],
+      "category": "event",
+      "needsAction": false,
+      "sourceId": "pl-calendar",
+      "sourceName": "Pleasant Lane Elementary Public Events",
+      "sourceUrl": "https://pl.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-10-01T16:27:16.532Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
       "id": "pl-calendar-81b2d653c9b0",
       "title": "Power Hour",
       "description": null,
@@ -440,6 +462,28 @@
       "sourceUrl": "https://pl.sd44.org/",
       "sourceType": "ics",
       "importedAt": "2026-09-17T15:31:45.611Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "pl-calendar-dfeec9305f1f",
+      "title": "Kickball Club",
+      "description": "Club sponsor - Ashley Zima",
+      "startDate": "2026-10-01T12:45:00.000Z",
+      "endDate": "2026-10-01T13:20:00.000Z",
+      "allDay": false,
+      "location": "Large Gym",
+      "schoolIds": [
+        "pl"
+      ],
+      "category": "event",
+      "needsAction": false,
+      "sourceId": "pl-calendar",
+      "sourceName": "Pleasant Lane Elementary Public Events",
+      "sourceUrl": "https://pl.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-10-01T16:27:16.532Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null
@@ -555,6 +599,28 @@
       "actionDeadline": null
     },
     {
+      "id": "pl-calendar-e97fbc0fcfda",
+      "title": "Kickball Club",
+      "description": "Club sponsor - Ashley Zima",
+      "startDate": "2026-10-06T12:45:00.000Z",
+      "endDate": "2026-10-06T13:20:00.000Z",
+      "allDay": false,
+      "location": "Large Gym",
+      "schoolIds": [
+        "pl"
+      ],
+      "category": "event",
+      "needsAction": false,
+      "sourceId": "pl-calendar",
+      "sourceName": "Pleasant Lane Elementary Public Events",
+      "sourceUrl": "https://pl.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-10-01T16:27:16.532Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
       "id": "pl-calendar-95d23e7155c0",
       "title": "Power Hour",
       "description": null,
@@ -660,6 +726,28 @@
       "sourceUrl": "https://pl.sd44.org/",
       "sourceType": "ics",
       "importedAt": "2026-09-17T15:31:45.611Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "pl-calendar-99ed07b33477",
+      "title": "Kickball Club",
+      "description": "Club sponsor - Ashley Zima",
+      "startDate": "2026-10-08T12:45:00.000Z",
+      "endDate": "2026-10-08T13:20:00.000Z",
+      "allDay": false,
+      "location": "Large Gym",
+      "schoolIds": [
+        "pl"
+      ],
+      "category": "event",
+      "needsAction": false,
+      "sourceId": "pl-calendar",
+      "sourceName": "Pleasant Lane Elementary Public Events",
+      "sourceUrl": "https://pl.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-10-01T16:27:16.532Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null
@@ -819,6 +907,28 @@
       "actionDeadline": null
     },
     {
+      "id": "pl-calendar-338c8f885733",
+      "title": "Kickball Club",
+      "description": "Club sponsor - Ashley Zima",
+      "startDate": "2026-10-15T12:45:00.000Z",
+      "endDate": "2026-10-15T13:20:00.000Z",
+      "allDay": false,
+      "location": "Large Gym",
+      "schoolIds": [
+        "pl"
+      ],
+      "category": "event",
+      "needsAction": false,
+      "sourceId": "pl-calendar",
+      "sourceName": "Pleasant Lane Elementary Public Events",
+      "sourceUrl": "https://pl.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-10-01T16:27:16.532Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
       "id": "pl-calendar-84f2250f5326",
       "title": "5th Grade Band & Orchestra Rehearsal",
       "description": null,
@@ -929,6 +1039,50 @@
       "actionDeadline": null
     },
     {
+      "id": "pl-calendar-e4e921e6ab51",
+      "title": "MIP Field Trip",
+      "description": null,
+      "startDate": "2026-10-19T14:00:00.000Z",
+      "endDate": "2026-10-19T19:00:00.000Z",
+      "allDay": false,
+      "location": null,
+      "schoolIds": [
+        "pl"
+      ],
+      "category": "event",
+      "needsAction": true,
+      "sourceId": "pl-calendar",
+      "sourceName": "Pleasant Lane Elementary Public Events",
+      "sourceUrl": "https://pl.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-10-01T16:27:16.532Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "pl-calendar-b9da6ee6781e",
+      "title": "Kickball Club",
+      "description": "Club sponsor - Ashley Zima",
+      "startDate": "2026-10-20T12:45:00.000Z",
+      "endDate": "2026-10-20T13:20:00.000Z",
+      "allDay": false,
+      "location": "Large Gym",
+      "schoolIds": [
+        "pl"
+      ],
+      "category": "event",
+      "needsAction": false,
+      "sourceId": "pl-calendar",
+      "sourceName": "Pleasant Lane Elementary Public Events",
+      "sourceUrl": "https://pl.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-10-01T16:27:16.532Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
       "id": "pl-calendar-b49bdfc28376",
       "title": "Power Hour",
       "description": null,
@@ -1012,6 +1166,28 @@
       "sourceUrl": "https://pl.sd44.org/",
       "sourceType": "ics",
       "importedAt": "2026-09-17T15:31:45.611Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "pl-calendar-2287445bfb38",
+      "title": "Kickball Club",
+      "description": "Club sponsor - Ashley Zima",
+      "startDate": "2026-10-22T12:45:00.000Z",
+      "endDate": "2026-10-22T13:20:00.000Z",
+      "allDay": false,
+      "location": "Large Gym",
+      "schoolIds": [
+        "pl"
+      ],
+      "category": "event",
+      "needsAction": false,
+      "sourceId": "pl-calendar",
+      "sourceName": "Pleasant Lane Elementary Public Events",
+      "sourceUrl": "https://pl.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-10-01T16:27:16.532Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null
@@ -1149,6 +1325,28 @@
       "actionDeadline": null
     },
     {
+      "id": "pl-calendar-f93b50b3adf5",
+      "title": "Kickball Club",
+      "description": "Club sponsor - Ashley Zima",
+      "startDate": "2026-10-27T12:45:00.000Z",
+      "endDate": "2026-10-27T13:20:00.000Z",
+      "allDay": false,
+      "location": "Large Gym",
+      "schoolIds": [
+        "pl"
+      ],
+      "category": "event",
+      "needsAction": false,
+      "sourceId": "pl-calendar",
+      "sourceName": "Pleasant Lane Elementary Public Events",
+      "sourceUrl": "https://pl.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-10-01T16:27:16.532Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
       "id": "pl-calendar-2860b1ae27fc",
       "title": "Power Hour",
       "description": null,
@@ -1232,6 +1430,28 @@
       "sourceUrl": "https://pl.sd44.org/",
       "sourceType": "ics",
       "importedAt": "2026-09-17T15:31:45.611Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "pl-calendar-80c018f27ce8",
+      "title": "Kickball Club",
+      "description": "Club sponsor - Ashley Zima",
+      "startDate": "2026-10-29T12:45:00.000Z",
+      "endDate": "2026-10-29T13:20:00.000Z",
+      "allDay": false,
+      "location": "Large Gym",
+      "schoolIds": [
+        "pl"
+      ],
+      "category": "event",
+      "needsAction": false,
+      "sourceId": "pl-calendar",
+      "sourceName": "Pleasant Lane Elementary Public Events",
+      "sourceUrl": "https://pl.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-10-01T16:27:16.532Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null
@@ -1413,6 +1633,28 @@
       "actionDeadline": null
     },
     {
+      "id": "pl-calendar-2aecb4a19220",
+      "title": "Kickball Club",
+      "description": "Club sponsor - Ashley Zima",
+      "startDate": "2026-11-05T13:45:00.000Z",
+      "endDate": "2026-11-05T14:20:00.000Z",
+      "allDay": false,
+      "location": "Large Gym",
+      "schoolIds": [
+        "pl"
+      ],
+      "category": "event",
+      "needsAction": false,
+      "sourceId": "pl-calendar",
+      "sourceName": "Pleasant Lane Elementary Public Events",
+      "sourceUrl": "https://pl.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-10-01T16:27:16.532Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
       "id": "pl-calendar-a453a2f87a5f",
       "title": "Power Hour",
       "description": null,
@@ -1496,6 +1738,28 @@
       "sourceUrl": "https://pl.sd44.org/",
       "sourceType": "ics",
       "importedAt": "2026-09-17T15:31:45.611Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "pl-calendar-1d06e828a420",
+      "title": "Kickball Club",
+      "description": "Club sponsor - Ashley Zima",
+      "startDate": "2026-11-10T13:45:00.000Z",
+      "endDate": "2026-11-10T14:20:00.000Z",
+      "allDay": false,
+      "location": "Large Gym",
+      "schoolIds": [
+        "pl"
+      ],
+      "category": "event",
+      "needsAction": false,
+      "sourceId": "pl-calendar",
+      "sourceName": "Pleasant Lane Elementary Public Events",
+      "sourceUrl": "https://pl.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-10-01T16:27:16.532Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null
@@ -1606,6 +1870,28 @@
       "sourceUrl": "https://pl.sd44.org/",
       "sourceType": "ics",
       "importedAt": "2026-09-17T15:31:45.611Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "pl-calendar-b10f074b41e9",
+      "title": "Kickball Club",
+      "description": "Club sponsor - Ashley Zima",
+      "startDate": "2026-11-12T13:45:00.000Z",
+      "endDate": "2026-11-12T14:20:00.000Z",
+      "allDay": false,
+      "location": "Large Gym",
+      "schoolIds": [
+        "pl"
+      ],
+      "category": "event",
+      "needsAction": false,
+      "sourceId": "pl-calendar",
+      "sourceName": "Pleasant Lane Elementary Public Events",
+      "sourceUrl": "https://pl.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-10-01T16:27:16.532Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null
@@ -1743,6 +2029,28 @@
       "actionDeadline": null
     },
     {
+      "id": "pl-calendar-7dee3f96a751",
+      "title": "Kickball Club",
+      "description": "Club sponsor - Ashley Zima",
+      "startDate": "2026-11-17T13:45:00.000Z",
+      "endDate": "2026-11-17T14:20:00.000Z",
+      "allDay": false,
+      "location": "Large Gym",
+      "schoolIds": [
+        "pl"
+      ],
+      "category": "event",
+      "needsAction": false,
+      "sourceId": "pl-calendar",
+      "sourceName": "Pleasant Lane Elementary Public Events",
+      "sourceUrl": "https://pl.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-10-01T16:27:16.532Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
       "id": "pl-calendar-9157d2e603a8",
       "title": "Power Hour",
       "description": null,
@@ -1826,6 +2134,28 @@
       "sourceUrl": "https://pl.sd44.org/",
       "sourceType": "ics",
       "importedAt": "2026-09-17T15:31:45.611Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "pl-calendar-c866abd2e261",
+      "title": "Kickball Club",
+      "description": "Club sponsor - Ashley Zima",
+      "startDate": "2026-11-19T13:45:00.000Z",
+      "endDate": "2026-11-19T14:20:00.000Z",
+      "allDay": false,
+      "location": "Large Gym",
+      "schoolIds": [
+        "pl"
+      ],
+      "category": "event",
+      "needsAction": false,
+      "sourceId": "pl-calendar",
+      "sourceName": "Pleasant Lane Elementary Public Events",
+      "sourceUrl": "https://pl.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-10-01T16:27:16.532Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null
@@ -2029,6 +2359,28 @@
       "actionDeadline": null
     },
     {
+      "id": "pl-calendar-e2156904ca82",
+      "title": "Kickball Club",
+      "description": "Club sponsor - Ashley Zima",
+      "startDate": "2026-12-01T13:45:00.000Z",
+      "endDate": "2026-12-01T14:20:00.000Z",
+      "allDay": false,
+      "location": "Large Gym",
+      "schoolIds": [
+        "pl"
+      ],
+      "category": "event",
+      "needsAction": false,
+      "sourceId": "pl-calendar",
+      "sourceName": "Pleasant Lane Elementary Public Events",
+      "sourceUrl": "https://pl.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-10-01T16:27:16.532Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
       "id": "pl-calendar-8713d72e40bd",
       "title": "4th Grade Band & Orchestra Rehearsal",
       "description": null,
@@ -2090,6 +2442,28 @@
       "sourceUrl": "https://pl.sd44.org/",
       "sourceType": "ics",
       "importedAt": "2026-09-17T15:31:45.611Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "pl-calendar-62e6e60d419e",
+      "title": "Kickball Club",
+      "description": "Club sponsor - Ashley Zima",
+      "startDate": "2026-12-03T13:45:00.000Z",
+      "endDate": "2026-12-03T14:20:00.000Z",
+      "allDay": false,
+      "location": "Large Gym",
+      "schoolIds": [
+        "pl"
+      ],
+      "category": "event",
+      "needsAction": false,
+      "sourceId": "pl-calendar",
+      "sourceName": "Pleasant Lane Elementary Public Events",
+      "sourceUrl": "https://pl.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-10-01T16:27:16.532Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null
@@ -2205,6 +2579,28 @@
       "actionDeadline": null
     },
     {
+      "id": "pl-calendar-8fbf56f4a8ff",
+      "title": "Kickball Club",
+      "description": "Club sponsor - Ashley Zima",
+      "startDate": "2026-12-08T13:45:00.000Z",
+      "endDate": "2026-12-08T14:20:00.000Z",
+      "allDay": false,
+      "location": "Large Gym",
+      "schoolIds": [
+        "pl"
+      ],
+      "category": "event",
+      "needsAction": false,
+      "sourceId": "pl-calendar",
+      "sourceName": "Pleasant Lane Elementary Public Events",
+      "sourceUrl": "https://pl.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-10-01T16:27:16.532Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
       "id": "pl-calendar-3b889186e5dc",
       "title": "Power Hour",
       "description": null,
@@ -2293,6 +2689,28 @@
       "actionDeadline": null
     },
     {
+      "id": "pl-calendar-7e85f09ac609",
+      "title": "Kickball Club",
+      "description": "Club sponsor - Ashley Zima",
+      "startDate": "2026-12-10T13:45:00.000Z",
+      "endDate": "2026-12-10T14:20:00.000Z",
+      "allDay": false,
+      "location": "Large Gym",
+      "schoolIds": [
+        "pl"
+      ],
+      "category": "event",
+      "needsAction": false,
+      "sourceId": "pl-calendar",
+      "sourceName": "Pleasant Lane Elementary Public Events",
+      "sourceUrl": "https://pl.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-10-01T16:27:16.532Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
       "id": "pl-calendar-80539040945a",
       "title": "5th Grade Band & Orchestra Rehearsal",
       "description": null,
@@ -2359,6 +2777,28 @@
       "actionDeadline": null
     },
     {
+      "id": "pl-calendar-12c3c6d98872",
+      "title": "Kickball Club",
+      "description": "Club sponsor - Ashley Zima",
+      "startDate": "2026-12-15T13:45:00.000Z",
+      "endDate": "2026-12-15T14:20:00.000Z",
+      "allDay": false,
+      "location": "Large Gym",
+      "schoolIds": [
+        "pl"
+      ],
+      "category": "event",
+      "needsAction": false,
+      "sourceId": "pl-calendar",
+      "sourceName": "Pleasant Lane Elementary Public Events",
+      "sourceUrl": "https://pl.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-10-01T16:27:16.532Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
       "id": "pl-calendar-067b1f30057f",
       "title": "Walkers & Talkers Plus",
       "description": "Meet at door 5 at 7:45 am and start walking at 7:50 am.",
@@ -2398,6 +2838,28 @@
       "sourceUrl": "https://pl.sd44.org/",
       "sourceType": "ics",
       "importedAt": "2026-09-17T15:31:45.611Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "pl-calendar-17b1483516bd",
+      "title": "Kickball Club",
+      "description": "Club sponsor - Ashley Zima",
+      "startDate": "2026-12-17T13:45:00.000Z",
+      "endDate": "2026-12-17T14:20:00.000Z",
+      "allDay": false,
+      "location": "Large Gym",
+      "schoolIds": [
+        "pl"
+      ],
+      "category": "event",
+      "needsAction": false,
+      "sourceId": "pl-calendar",
+      "sourceName": "Pleasant Lane Elementary Public Events",
+      "sourceUrl": "https://pl.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-10-01T16:27:16.532Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null
