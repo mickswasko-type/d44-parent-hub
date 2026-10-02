@@ -1,8 +1,8 @@
 {
   "sourceId": "ec-summary",
-  "sourceName": "The Schroder Summary, Sep 25 issue",
-  "sourceUrl": "https://www.parentsquare.com/feeds/89777790",
-  "lastChecked": "2026-10-01T16:27:20.315Z",
+  "sourceName": "The Schroder Summary, Oct 2 issue",
+  "sourceUrl": "https://www.parentsquare.com/feeds/90630107",
+  "lastChecked": "2026-10-02T15:49:27.353Z",
   "events": [
     {
       "id": "ec-summary-998b6e8b77c5",
@@ -18,10 +18,10 @@
       "category": "event",
       "needsAction": false,
       "sourceId": "ec-summary",
-      "sourceName": "The Schroder Summary, Sep 25 issue",
-      "sourceUrl": "https://www.parentsquare.com/feeds/89777790",
+      "sourceName": "The Schroder Summary, Oct 2 issue",
+      "sourceUrl": "https://www.parentsquare.com/feeds/90630107",
       "sourceType": "newsletter",
-      "importedAt": "2026-10-01T16:27:20.315Z",
+      "importedAt": "2026-10-02T15:49:27.353Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null
@@ -40,10 +40,10 @@
       "category": "event",
       "needsAction": true,
       "sourceId": "ec-summary",
-      "sourceName": "The Schroder Summary, Sep 25 issue",
-      "sourceUrl": "https://www.parentsquare.com/feeds/89777790",
+      "sourceName": "The Schroder Summary, Oct 2 issue",
+      "sourceUrl": "https://www.parentsquare.com/feeds/90630107",
       "sourceType": "newsletter",
-      "importedAt": "2026-10-01T16:27:20.315Z",
+      "importedAt": "2026-10-02T15:49:27.353Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null

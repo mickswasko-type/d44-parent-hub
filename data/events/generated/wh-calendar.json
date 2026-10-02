@@ -2,30 +2,8 @@
   "sourceId": "wh-calendar",
   "sourceName": "Hammerschmidt Elementary Calendar",
   "sourceUrl": "https://wh.sd44.org/",
-  "lastChecked": "2026-10-01T16:27:16.532Z",
+  "lastChecked": "2026-10-02T15:49:23.742Z",
   "events": [
-    {
-      "id": "wh-calendar-7167767a8fcd",
-      "title": "PTA Dine Out- Portillo's Villa Park (20% from 5-8pm)",
-      "description": null,
-      "startDate": "2026-09-02",
-      "endDate": "2026-09-02",
-      "allDay": true,
-      "location": null,
-      "schoolIds": [
-        "wh"
-      ],
-      "category": "pta",
-      "needsAction": false,
-      "sourceId": "wh-calendar",
-      "sourceName": "Hammerschmidt Elementary Calendar",
-      "sourceUrl": "https://wh.sd44.org/",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:55:26.864Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
     {
       "id": "wh-calendar-523d02d74ae5",
       "title": "No School Labor Day",
@@ -1562,6 +1540,28 @@
       "sourceUrl": "https://wh.sd44.org/",
       "sourceType": "ics",
       "importedAt": "2026-09-17T15:55:26.864Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "wh-calendar-eea2ceeb9604",
+      "title": "PTA Book Fair (Anderson's)",
+      "description": null,
+      "startDate": "2027-05-10",
+      "endDate": "2027-05-14",
+      "allDay": true,
+      "location": null,
+      "schoolIds": [
+        "wh"
+      ],
+      "category": "pta",
+      "needsAction": true,
+      "sourceId": "wh-calendar",
+      "sourceName": "Hammerschmidt Elementary Calendar",
+      "sourceUrl": "https://wh.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-10-02T15:49:23.742Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null

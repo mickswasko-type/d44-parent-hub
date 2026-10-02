@@ -7,14 +7,8 @@
   "postedOn": "2026-09-18",
   "sourceName": "The Hammerschmidt Star, Sep 18 issue",
   "sourceUrl": "https://wh.sd44.org/about-us/weekly-updates",
-  "lastChecked": "2026-10-01T16:27:20.315Z",
+  "lastChecked": "2026-10-02T15:49:27.353Z",
   "todo": [
-    {
-      "verb": "Remember",
-      "topic": "PTA Track-a Thon",
-      "date": "2026-10-01",
-      "url": "https://www.parentsquare.com/feeds/88737643"
-    },
     {
       "verb": "Volunteer",
       "topic": "Trunk or Treat",
@@ -26,6 +20,12 @@
       "topic": "Trunk or Treat",
       "date": "2026-10-29",
       "url": "https://www.amazon.com/hz/wishlist/ls/3K76NTKI133UT?ref=cm_sw_em_r_un_un_FWmkKLZql8Py2"
+    },
+    {
+      "verb": "Remember",
+      "topic": "PTA Track-a Thon",
+      "date": null,
+      "url": "https://www.parentsquare.com/feeds/88737643"
     },
     {
       "verb": "Buy tickets",
@@ -53,13 +53,6 @@
     }
   ],
   "dates": [
-    {
-      "start": "2026-10-01",
-      "end": null,
-      "label": "WHS PTA Track-a-thon",
-      "onCalendar": true,
-      "needsAction": true
-    },
     {
       "start": "2026-10-02",
       "end": null,
