@@ -2,30 +2,8 @@
   "sourceId": "wh-star",
   "sourceName": "The Hammerschmidt Star, Sep 18 issue",
   "sourceUrl": "https://www.parentsquare.com/feeds/88737643",
-  "lastChecked": "2026-10-02T15:49:27.353Z",
+  "lastChecked": "2026-10-03T14:19:05.038Z",
   "events": [
-    {
-      "id": "wh-star-3d5b80da2ed2",
-      "title": "Student Council Spirit Days - WHS Colors",
-      "description": null,
-      "startDate": "2026-10-02",
-      "endDate": "2026-10-02",
-      "allDay": true,
-      "location": null,
-      "schoolIds": [
-        "wh"
-      ],
-      "category": "event",
-      "needsAction": true,
-      "sourceId": "wh-star",
-      "sourceName": "The Hammerschmidt Star, Sep 18 issue",
-      "sourceUrl": "https://www.parentsquare.com/feeds/88737643",
-      "sourceType": "newsletter",
-      "importedAt": "2026-10-02T15:49:27.353Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
     {
       "id": "wh-star-fef967ff2590",
       "title": "Lifetouch Picture Retake Day",
@@ -43,7 +21,7 @@
       "sourceName": "The Hammerschmidt Star, Sep 18 issue",
       "sourceUrl": "https://www.parentsquare.com/feeds/88737643",
       "sourceType": "newsletter",
-      "importedAt": "2026-10-02T15:49:27.353Z",
+      "importedAt": "2026-10-03T14:19:05.038Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null
@@ -65,7 +43,7 @@
       "sourceName": "The Hammerschmidt Star, Sep 18 issue",
       "sourceUrl": "https://www.parentsquare.com/feeds/88737643",
       "sourceType": "newsletter",
-      "importedAt": "2026-10-02T15:49:27.353Z",
+      "importedAt": "2026-10-03T14:19:05.038Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null

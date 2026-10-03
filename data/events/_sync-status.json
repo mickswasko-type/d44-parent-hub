@@ -1,5 +1,5 @@
 {
-  "ranAt": "2026-10-02T15:49:23.742Z",
+  "ranAt": "2026-10-03T14:19:01.055Z",
   "statuses": [
     {
       "sourceId": "d44-district",
@@ -7,7 +7,7 @@
       "ok": true,
       "empty": false,
       "eventCount": 191,
-      "lastChecked": "2026-10-02T15:49:23.742Z",
+      "lastChecked": "2026-10-03T14:19:01.055Z",
       "error": null,
       "servingStaleData": false
     },
@@ -17,7 +17,7 @@
       "ok": true,
       "empty": false,
       "eventCount": 123,
-      "lastChecked": "2026-10-02T15:49:23.742Z",
+      "lastChecked": "2026-10-03T14:19:01.055Z",
       "error": null,
       "servingStaleData": false
     },
@@ -27,7 +27,7 @@
       "ok": true,
       "empty": true,
       "eventCount": 0,
-      "lastChecked": "2026-10-02T15:49:23.742Z",
+      "lastChecked": "2026-10-03T14:19:01.055Z",
       "error": null,
       "servingStaleData": false
     },
@@ -37,7 +37,7 @@
       "ok": true,
       "empty": false,
       "eventCount": 86,
-      "lastChecked": "2026-10-02T15:49:23.742Z",
+      "lastChecked": "2026-10-03T14:19:01.055Z",
       "error": null,
       "servingStaleData": false
     },
@@ -47,7 +47,7 @@
       "ok": true,
       "empty": false,
       "eventCount": 13,
-      "lastChecked": "2026-10-02T15:49:23.742Z",
+      "lastChecked": "2026-10-03T14:19:01.055Z",
       "error": null,
       "servingStaleData": false
     },
@@ -57,7 +57,7 @@
       "ok": true,
       "empty": false,
       "eventCount": 90,
-      "lastChecked": "2026-10-02T15:49:23.742Z",
+      "lastChecked": "2026-10-03T14:19:01.055Z",
       "error": null,
       "servingStaleData": false
     },
@@ -66,8 +66,8 @@
       "sourceName": "Manor Hill Elementary Public Events",
       "ok": true,
       "empty": false,
-      "eventCount": 13,
-      "lastChecked": "2026-10-02T15:49:23.742Z",
+      "eventCount": 12,
+      "lastChecked": "2026-10-03T14:19:01.055Z",
       "error": null,
       "servingStaleData": false
     },
@@ -77,7 +77,7 @@
       "ok": true,
       "empty": false,
       "eventCount": 190,
-      "lastChecked": "2026-10-02T15:49:23.742Z",
+      "lastChecked": "2026-10-03T14:19:01.055Z",
       "error": null,
       "servingStaleData": false
     },
@@ -87,7 +87,7 @@
       "ok": true,
       "empty": false,
       "eventCount": 255,
-      "lastChecked": "2026-10-02T15:49:23.742Z",
+      "lastChecked": "2026-10-03T14:19:01.055Z",
       "error": null,
       "servingStaleData": false
     }
