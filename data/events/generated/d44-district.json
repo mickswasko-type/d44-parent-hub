@@ -2,74 +2,8 @@
   "sourceId": "d44-district",
   "sourceName": "District 44 Public Calendar",
   "sourceUrl": "https://www.sd44.org/resources/calendars",
-  "lastChecked": "2026-10-03T14:19:01.055Z",
+  "lastChecked": "2026-10-04T14:47:44.116Z",
   "events": [
-    {
-      "id": "d44-district-b30fe76bc264",
-      "title": "Madison Curriculum Night",
-      "description": "Join with Google Meet: https://meet.google.com/dzf-xjon-fzt\nOr dial: (US) +1 413-893-3285 PIN: 950381805#\nMore phone numbers: https://tel.meet/dzf-xjon-fzt?pin=6008306268544&hs=7\n\nLearn more about Meet at: https://support.google.com/a/users/answer/9282720",
-      "startDate": "2026-09-03T22:30:00.000Z",
-      "endDate": "2026-09-04T00:00:00.000Z",
-      "allDay": false,
-      "location": "Madison Elementary School, 150 W Madison St, Lombard",
-      "schoolIds": [
-        "md"
-      ],
-      "category": "event",
-      "needsAction": false,
-      "sourceId": "d44-district",
-      "sourceName": "District 44 Public Calendar",
-      "sourceUrl": "https://www.sd44.org/resources/calendars",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:31:45.611Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
-    {
-      "id": "d44-district-581a15762601",
-      "title": "Pleasant Lane Curriculum Night",
-      "description": null,
-      "startDate": "2026-09-03T22:45:00.000Z",
-      "endDate": "2026-09-03T23:45:00.000Z",
-      "allDay": false,
-      "location": "Pleasant Lane Elementary School, 401 N Main St, Lombard",
-      "schoolIds": [
-        "pl"
-      ],
-      "category": "event",
-      "needsAction": false,
-      "sourceId": "d44-district",
-      "sourceName": "District 44 Public Calendar",
-      "sourceUrl": "https://www.sd44.org/resources/calendars",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:31:45.611Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
-    {
-      "id": "d44-district-f4946b40c890",
-      "title": "Park View Curriculum Night",
-      "description": null,
-      "startDate": "2026-09-03T23:00:00.000Z",
-      "endDate": "2026-09-03T23:45:00.000Z",
-      "allDay": false,
-      "location": "Park View Elementary School, 341 N Elizabeth St, Lombard",
-      "schoolIds": [
-        "pv"
-      ],
-      "category": "event",
-      "needsAction": false,
-      "sourceId": "d44-district",
-      "sourceName": "District 44 Public Calendar",
-      "sourceUrl": "https://www.sd44.org/resources/calendars",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:31:45.611Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
     {
       "id": "d44-district-2b616561a573",
       "title": "No School Labor Day",
