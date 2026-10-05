@@ -1,5 +1,5 @@
 {
-  "ranAt": "2026-10-04T14:47:44.116Z",
+  "ranAt": "2026-10-05T18:28:20.548Z",
   "statuses": [
     {
       "sourceId": "d44-district",
@@ -7,7 +7,7 @@
       "ok": true,
       "empty": false,
       "eventCount": 188,
-      "lastChecked": "2026-10-04T14:47:44.116Z",
+      "lastChecked": "2026-10-05T18:28:20.548Z",
       "error": null,
       "servingStaleData": false
     },
@@ -17,7 +17,7 @@
       "ok": true,
       "empty": false,
       "eventCount": 123,
-      "lastChecked": "2026-10-04T14:47:44.116Z",
+      "lastChecked": "2026-10-05T18:28:20.548Z",
       "error": null,
       "servingStaleData": false
     },
@@ -27,7 +27,7 @@
       "ok": true,
       "empty": true,
       "eventCount": 0,
-      "lastChecked": "2026-10-04T14:47:44.116Z",
+      "lastChecked": "2026-10-05T18:28:20.548Z",
       "error": null,
       "servingStaleData": false
     },
@@ -37,7 +37,7 @@
       "ok": true,
       "empty": false,
       "eventCount": 86,
-      "lastChecked": "2026-10-04T14:47:44.116Z",
+      "lastChecked": "2026-10-05T18:28:20.548Z",
       "error": null,
       "servingStaleData": false
     },
@@ -47,7 +47,7 @@
       "ok": true,
       "empty": false,
       "eventCount": 13,
-      "lastChecked": "2026-10-04T14:47:44.116Z",
+      "lastChecked": "2026-10-05T18:28:20.548Z",
       "error": null,
       "servingStaleData": false
     },
@@ -57,7 +57,7 @@
       "ok": true,
       "empty": false,
       "eventCount": 89,
-      "lastChecked": "2026-10-04T14:47:44.116Z",
+      "lastChecked": "2026-10-05T18:28:20.548Z",
       "error": null,
       "servingStaleData": false
     },
@@ -67,7 +67,7 @@
       "ok": true,
       "empty": false,
       "eventCount": 12,
-      "lastChecked": "2026-10-04T14:47:44.116Z",
+      "lastChecked": "2026-10-05T18:28:20.548Z",
       "error": null,
       "servingStaleData": false
     },
@@ -77,7 +77,7 @@
       "ok": true,
       "empty": false,
       "eventCount": 189,
-      "lastChecked": "2026-10-04T14:47:44.116Z",
+      "lastChecked": "2026-10-05T18:28:20.548Z",
       "error": null,
       "servingStaleData": false
     },
@@ -87,7 +87,7 @@
       "ok": true,
       "empty": false,
       "eventCount": 255,
-      "lastChecked": "2026-10-04T14:47:44.116Z",
+      "lastChecked": "2026-10-05T18:28:20.548Z",
       "error": null,
       "servingStaleData": false
     }
