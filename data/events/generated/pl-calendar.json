@@ -2,7 +2,7 @@
   "sourceId": "pl-calendar",
   "sourceName": "Pleasant Lane Elementary Public Events",
   "sourceUrl": "https://pl.sd44.org/",
-  "lastChecked": "2026-10-07T16:28:28.773Z",
+  "lastChecked": "2026-10-08T16:28:31.274Z",
   "events": [
     {
       "id": "pl-calendar-4c3810300cc2",
@@ -1655,6 +1655,28 @@
       "actionDeadline": null
     },
     {
+      "id": "pl-calendar-5976e2b563f7",
+      "title": "Music Parents Association (MPA) Meeting @ GWMS",
+      "description": "Enter through Door 17. Meeting in Choir Room #2111.",
+      "startDate": "2026-11-06T00:00:00.000Z",
+      "endDate": "2026-11-06T01:00:00.000Z",
+      "allDay": false,
+      "location": "Glenn Westlake Middle School, 1514 S Main St, Lombard, IL 60148, USA",
+      "schoolIds": [
+        "gw"
+      ],
+      "category": "performance",
+      "needsAction": false,
+      "sourceId": "pl-calendar",
+      "sourceName": "Pleasant Lane Elementary Public Events",
+      "sourceUrl": "https://pl.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-10-08T16:28:31.274Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
       "id": "pl-calendar-2a60c8a0c33d",
       "title": "Chorus Rehearsal",
       "description": null,
@@ -3129,6 +3151,28 @@
       "actionDeadline": null
     },
     {
+      "id": "pl-calendar-ebf29648c36b",
+      "title": "Music Parents Association (MPA) Meeting @ GWMS",
+      "description": "Enter through Door 17. Meeting in Choir Room #2111.",
+      "startDate": "2027-01-13T00:00:00.000Z",
+      "endDate": "2027-01-13T01:00:00.000Z",
+      "allDay": false,
+      "location": "Glenn Westlake Middle School, 1514 S Main St, Lombard, IL 60148, USA",
+      "schoolIds": [
+        "gw"
+      ],
+      "category": "performance",
+      "needsAction": false,
+      "sourceId": "pl-calendar",
+      "sourceName": "Pleasant Lane Elementary Public Events",
+      "sourceUrl": "https://pl.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-10-08T16:28:31.274Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
       "id": "pl-calendar-37a75db8b6e2",
       "title": "Walkers & Talkers Plus",
       "description": "Meet at door 5 at 7:45 am and start walking at 7:50 am.",
@@ -4185,6 +4229,28 @@
       "actionDeadline": null
     },
     {
+      "id": "pl-calendar-a9cff4799aea",
+      "title": "Music Parents Association (MPA) Meeting @ GWMS",
+      "description": "Enter through Door 17. Meeting in Choir Room #2111.",
+      "startDate": "2027-03-02T00:00:00.000Z",
+      "endDate": "2027-03-02T01:00:00.000Z",
+      "allDay": false,
+      "location": "Glenn Westlake Middle School, 1514 S Main St, Lombard, IL 60148, USA",
+      "schoolIds": [
+        "gw"
+      ],
+      "category": "performance",
+      "needsAction": false,
+      "sourceId": "pl-calendar",
+      "sourceName": "Pleasant Lane Elementary Public Events",
+      "sourceUrl": "https://pl.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-10-08T16:28:31.274Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
       "id": "pl-calendar-d66912ee45b4",
       "title": "4th Grade Band & Orchestra Rehearsal",
       "description": null,
@@ -4774,6 +4840,28 @@
       "sourceUrl": "https://pl.sd44.org/",
       "sourceType": "ics",
       "importedAt": "2026-09-17T15:31:45.611Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "pl-calendar-d4597bf920b3",
+      "title": "Music Parents Association (MPA) Meeting @ GWMS",
+      "description": "Enter through Door 17. Meeting in Choir Room #2111.",
+      "startDate": "2027-04-06T23:00:00.000Z",
+      "endDate": "2027-04-07T00:00:00.000Z",
+      "allDay": false,
+      "location": "Glenn Westlake Middle School, 1514 S Main St, Lombard, IL 60148, USA",
+      "schoolIds": [
+        "gw"
+      ],
+      "category": "performance",
+      "needsAction": false,
+      "sourceId": "pl-calendar",
+      "sourceName": "Pleasant Lane Elementary Public Events",
+      "sourceUrl": "https://pl.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-10-08T16:28:31.274Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null
@@ -5412,6 +5500,28 @@
       "sourceUrl": "https://pl.sd44.org/",
       "sourceType": "ics",
       "importedAt": "2026-09-17T15:31:45.611Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "pl-calendar-45e88327f15a",
+      "title": "Music Parents Association (MPA) Meeting @ GWMS",
+      "description": "Enter through Door 17. Meeting in Choir Room #2111.",
+      "startDate": "2027-05-06T23:00:00.000Z",
+      "endDate": "2027-05-07T00:00:00.000Z",
+      "allDay": false,
+      "location": "Glenn Westlake Middle School, 1514 S Main St, Lombard, IL 60148, USA",
+      "schoolIds": [
+        "gw"
+      ],
+      "category": "performance",
+      "needsAction": false,
+      "sourceId": "pl-calendar",
+      "sourceName": "Pleasant Lane Elementary Public Events",
+      "sourceUrl": "https://pl.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-10-08T16:28:31.274Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null

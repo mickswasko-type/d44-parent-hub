@@ -7,7 +7,7 @@
   "postedOn": "2026-09-18",
   "sourceName": "The Hammerschmidt Star, Sep 18 issue",
   "sourceUrl": "https://wh.sd44.org/about-us/weekly-updates",
-  "lastChecked": "2026-10-07T16:28:32.404Z",
+  "lastChecked": "2026-10-08T16:28:34.856Z",
   "todo": [
     {
       "verb": "Volunteer",
@@ -61,13 +61,6 @@
       "needsAction": false
     },
     {
-      "start": "2026-10-07",
-      "end": null,
-      "label": "PTA Dine Out, Billy Bricks",
-      "onCalendar": true,
-      "needsAction": false
-    },
-    {
       "start": "2026-10-09",
       "end": null,
       "label": "NO SCHOOL - Institute Day",
@@ -99,7 +92,7 @@
       "start": "2026-10-21",
       "end": null,
       "label": "Lifetouch Picture Retake Day",
-      "onCalendar": false,
+      "onCalendar": true,
       "needsAction": true
     },
     {

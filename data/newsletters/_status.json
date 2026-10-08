@@ -1,13 +1,13 @@
 {
-  "ranAt": "2026-10-07T16:28:32.404Z",
+  "ranAt": "2026-10-08T16:28:34.856Z",
   "statuses": [
     {
       "id": "wh-star",
       "ok": true,
       "postedOn": "2026-09-18",
-      "newDates": 2,
+      "newDates": 1,
       "error": null,
-      "lastChecked": "2026-10-07T16:28:32.404Z"
+      "lastChecked": "2026-10-08T16:28:34.856Z"
     },
     {
       "id": "ec-summary",
@@ -15,7 +15,7 @@
       "postedOn": "2026-10-02",
       "newDates": 2,
       "error": null,
-      "lastChecked": "2026-10-07T16:28:32.404Z"
+      "lastChecked": "2026-10-08T16:28:34.856Z"
     }
   ]
 }

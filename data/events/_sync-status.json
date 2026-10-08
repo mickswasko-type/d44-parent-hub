@@ -1,5 +1,5 @@
 {
-  "ranAt": "2026-10-07T16:28:28.773Z",
+  "ranAt": "2026-10-08T16:28:31.274Z",
   "statuses": [
     {
       "sourceId": "d44-district",
@@ -7,7 +7,7 @@
       "ok": true,
       "empty": false,
       "eventCount": 187,
-      "lastChecked": "2026-10-07T16:28:28.773Z",
+      "lastChecked": "2026-10-08T16:28:31.274Z",
       "error": null,
       "servingStaleData": false
     },
@@ -17,7 +17,7 @@
       "ok": true,
       "empty": false,
       "eventCount": 122,
-      "lastChecked": "2026-10-07T16:28:28.773Z",
+      "lastChecked": "2026-10-08T16:28:31.274Z",
       "error": null,
       "servingStaleData": false
     },
@@ -27,7 +27,7 @@
       "ok": true,
       "empty": true,
       "eventCount": 0,
-      "lastChecked": "2026-10-07T16:28:28.773Z",
+      "lastChecked": "2026-10-08T16:28:31.274Z",
       "error": null,
       "servingStaleData": false
     },
@@ -36,8 +36,8 @@
       "sourceName": "Hammerschmidt Elementary Calendar",
       "ok": true,
       "empty": false,
-      "eventCount": 86,
-      "lastChecked": "2026-10-07T16:28:28.773Z",
+      "eventCount": 87,
+      "lastChecked": "2026-10-08T16:28:31.274Z",
       "error": null,
       "servingStaleData": false
     },
@@ -47,7 +47,7 @@
       "ok": true,
       "empty": false,
       "eventCount": 12,
-      "lastChecked": "2026-10-07T16:28:28.773Z",
+      "lastChecked": "2026-10-08T16:28:31.274Z",
       "error": null,
       "servingStaleData": false
     },
@@ -57,7 +57,7 @@
       "ok": true,
       "empty": false,
       "eventCount": 88,
-      "lastChecked": "2026-10-07T16:28:28.773Z",
+      "lastChecked": "2026-10-08T16:28:31.274Z",
       "error": null,
       "servingStaleData": false
     },
@@ -66,8 +66,8 @@
       "sourceName": "Manor Hill Elementary Public Events",
       "ok": true,
       "empty": false,
-      "eventCount": 56,
-      "lastChecked": "2026-10-07T16:28:28.773Z",
+      "eventCount": 58,
+      "lastChecked": "2026-10-08T16:28:31.274Z",
       "error": null,
       "servingStaleData": false
     },
@@ -77,7 +77,7 @@
       "ok": true,
       "empty": false,
       "eventCount": 188,
-      "lastChecked": "2026-10-07T16:28:28.773Z",
+      "lastChecked": "2026-10-08T16:28:31.274Z",
       "error": null,
       "servingStaleData": false
     },
@@ -86,8 +86,8 @@
       "sourceName": "Pleasant Lane Elementary Public Events",
       "ok": true,
       "empty": false,
-      "eventCount": 254,
-      "lastChecked": "2026-10-07T16:28:28.773Z",
+      "eventCount": 259,
+      "lastChecked": "2026-10-08T16:28:31.274Z",
       "error": null,
       "servingStaleData": false
     }

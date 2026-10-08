@@ -2,7 +2,7 @@
   "sourceId": "wh-calendar",
   "sourceName": "Hammerschmidt Elementary Calendar",
   "sourceUrl": "https://wh.sd44.org/",
-  "lastChecked": "2026-10-07T16:28:28.773Z",
+  "lastChecked": "2026-10-08T16:28:31.274Z",
   "events": [
     {
       "id": "wh-calendar-ede5d4e0b4b7",
@@ -352,6 +352,28 @@
       "sourceUrl": "https://wh.sd44.org/",
       "sourceType": "ics",
       "importedAt": "2026-09-17T15:31:45.611Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "wh-calendar-3196d2fc0df6",
+      "title": "Lifetouch Picture Retake Day & Yearbook Candids",
+      "description": null,
+      "startDate": "2026-10-21",
+      "endDate": "2026-10-21",
+      "allDay": true,
+      "location": null,
+      "schoolIds": [
+        "wh"
+      ],
+      "category": "event",
+      "needsAction": true,
+      "sourceId": "wh-calendar",
+      "sourceName": "Hammerschmidt Elementary Calendar",
+      "sourceUrl": "https://wh.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-10-08T16:28:31.274Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null
