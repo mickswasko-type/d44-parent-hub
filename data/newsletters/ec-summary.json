@@ -2,21 +2,14 @@
   "id": "ec-summary",
   "schoolId": "ec",
   "name": "The Schroder Summary",
-  "postTitle": "Here is this week's Schroder Summary: October 2, 2026",
-  "postUrl": "https://www.parentsquare.com/feeds/90630107",
-  "postedOn": "2026-10-02",
-  "sourceName": "The Schroder Summary, Oct 2 issue",
+  "postTitle": "Here is this week's Schroder Summary: October 8, 2026",
+  "postUrl": "https://www.parentsquare.com/feeds/91791249",
+  "postedOn": "2026-10-08",
+  "sourceName": "The Schroder Summary, Oct 8 issue",
   "sourceUrl": "https://ec.sd44.org/about-us/weekly-updates",
-  "lastChecked": "2026-10-08T16:28:34.856Z",
+  "lastChecked": "2026-10-09T16:12:51.022Z",
   "todo": [],
   "dates": [
-    {
-      "start": "2026-10-08",
-      "end": null,
-      "label": "Create With Me Day",
-      "onCalendar": false,
-      "needsAction": false
-    },
     {
       "start": "2026-10-09",
       "end": null,
@@ -68,13 +61,11 @@
     }
   ],
   "topics": [
-    "🚗 Car Seat Safety",
-    "Under age 2",
-    "Ages 2–4",
-    "All car seats and booster seats",
-    "🍂 Create with Me Day: Fall into Autumn",
-    "Event Times",
-    "💛 Meet Our Team: Ms. Jenn"
+    "🍁 I Hope to See You Today",
+    "🏡 You may take your child home at the end of the event",
+    "🧡 A Few Days to Make Memories",
+    "🩷 Meet Our Team: Ms. Alyssa",
+    "❤️ From My Heart to Yours"
   ],
   "resources": []
 }
