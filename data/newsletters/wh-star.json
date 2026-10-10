@@ -7,7 +7,7 @@
   "postedOn": "2026-09-18",
   "sourceName": "The Hammerschmidt Star, Sep 18 issue",
   "sourceUrl": "https://wh.sd44.org/about-us/weekly-updates",
-  "lastChecked": "2026-10-09T16:12:51.022Z",
+  "lastChecked": "2026-10-10T15:23:01.799Z",
   "todo": [
     {
       "verb": "Volunteer",
@@ -53,20 +53,6 @@
     }
   ],
   "dates": [
-    {
-      "start": "2026-10-05",
-      "end": "2026-10-09",
-      "label": "PTA Walk + Roll Week",
-      "onCalendar": true,
-      "needsAction": false
-    },
-    {
-      "start": "2026-10-09",
-      "end": null,
-      "label": "NO SCHOOL - Institute Day",
-      "onCalendar": true,
-      "needsAction": false
-    },
     {
       "start": "2026-10-12",
       "end": null,

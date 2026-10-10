@@ -2,7 +2,7 @@
   "sourceId": "pv-calendar",
   "sourceName": "Park View Elementary Calendar",
   "sourceUrl": "https://pv.sd44.org/",
-  "lastChecked": "2026-10-09T16:12:47.831Z",
+  "lastChecked": "2026-10-10T15:22:58.397Z",
   "events": [
     {
       "id": "pv-calendar-6dadb4eb2c2e",
@@ -3547,7 +3547,7 @@
       "actionDeadline": null
     },
     {
-      "id": "pv-calendar-75be94a275d1",
+      "id": "pv-calendar-877ef5ea1531",
       "title": "4th Grade Band & Orchestra Rehearsal",
       "description": null,
       "startDate": "2027-04-14T21:00:00.000Z",
@@ -3569,7 +3569,7 @@
       "actionDeadline": null
     },
     {
-      "id": "pv-calendar-877ef5ea1531",
+      "id": "pv-calendar-75be94a275d1",
       "title": "4th Grade Band & Orchestra Rehearsal",
       "description": null,
       "startDate": "2027-04-14T21:00:00.000Z",
