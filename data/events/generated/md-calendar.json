@@ -2,30 +2,8 @@
   "sourceId": "md-calendar",
   "sourceName": "Madison Elementary Calendar",
   "sourceUrl": "https://md.sd44.org/",
-  "lastChecked": "2026-10-10T15:22:58.397Z",
+  "lastChecked": "2026-10-11T15:41:08.745Z",
   "events": [
-    {
-      "id": "md-calendar-1d217d07be41",
-      "title": "PTA Meeting - LRC",
-      "description": null,
-      "startDate": "2026-09-11T00:00:00.000Z",
-      "endDate": "2026-09-11T01:00:00.000Z",
-      "allDay": false,
-      "location": null,
-      "schoolIds": [
-        "md"
-      ],
-      "category": "pta",
-      "needsAction": false,
-      "sourceId": "md-calendar",
-      "sourceName": "Madison Elementary Calendar",
-      "sourceUrl": "https://md.sd44.org/",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:31:45.611Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
     {
       "id": "md-calendar-cc08c70e986b",
       "title": "PTA Movie Night - Gym",

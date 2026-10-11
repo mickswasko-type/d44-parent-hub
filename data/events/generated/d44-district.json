@@ -2,74 +2,8 @@
   "sourceId": "d44-district",
   "sourceName": "District 44 Public Calendar",
   "sourceUrl": "https://www.sd44.org/resources/calendars",
-  "lastChecked": "2026-10-10T15:22:58.397Z",
+  "lastChecked": "2026-10-11T15:41:08.745Z",
   "events": [
-    {
-      "id": "d44-district-8bb8630b1ba4",
-      "title": "Hammerschmidt Back To School Playground Social",
-      "description": null,
-      "startDate": "2026-09-10T22:00:00.000Z",
-      "endDate": "2026-09-10T23:30:00.000Z",
-      "allDay": false,
-      "location": "Hammerschmidt Elementary School, 617 Hammerschmidt Ave, Lombard",
-      "schoolIds": [
-        "wh"
-      ],
-      "category": "event",
-      "needsAction": false,
-      "sourceId": "d44-district",
-      "sourceName": "District 44 Public Calendar",
-      "sourceUrl": "https://www.sd44.org/resources/calendars",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:31:45.611Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
-    {
-      "id": "d44-district-32d57af1dfb6",
-      "title": "MPA Meeting Choir Room 2111",
-      "description": null,
-      "startDate": "2026-09-10T23:00:00.000Z",
-      "endDate": "2026-09-11T00:00:00.000Z",
-      "allDay": false,
-      "location": "Glenn Westlake Middle School, 1514 S Main St, Lombard",
-      "schoolIds": [
-        "district"
-      ],
-      "category": "performance",
-      "needsAction": false,
-      "sourceId": "d44-district",
-      "sourceName": "District 44 Public Calendar",
-      "sourceUrl": "https://www.sd44.org/resources/calendars",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:31:45.611Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
-    {
-      "id": "d44-district-070e575a57be",
-      "title": "Madison PTA Meeting LRC",
-      "description": null,
-      "startDate": "2026-09-11T00:00:00.000Z",
-      "endDate": "2026-09-11T01:00:00.000Z",
-      "allDay": false,
-      "location": null,
-      "schoolIds": [
-        "md"
-      ],
-      "category": "pta",
-      "needsAction": false,
-      "sourceId": "d44-district",
-      "sourceName": "District 44 Public Calendar",
-      "sourceUrl": "https://www.sd44.org/resources/calendars",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:31:45.611Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
     {
       "id": "d44-district-f587d7b34f79",
       "title": "Hammerschmidt PTA Movie Night",
