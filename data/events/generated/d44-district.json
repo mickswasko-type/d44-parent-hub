@@ -2,52 +2,8 @@
   "sourceId": "d44-district",
   "sourceName": "District 44 Public Calendar",
   "sourceUrl": "https://www.sd44.org/resources/calendars",
-  "lastChecked": "2026-10-11T15:41:08.745Z",
+  "lastChecked": "2026-10-12T19:03:06.477Z",
   "events": [
-    {
-      "id": "d44-district-f587d7b34f79",
-      "title": "Hammerschmidt PTA Movie Night",
-      "description": null,
-      "startDate": "2026-09-11T23:15:00.000Z",
-      "endDate": "2026-09-12T01:15:00.000Z",
-      "allDay": false,
-      "location": "Hammerschmidt Elementary School, 617 Hammerschmidt Ave, Lombard",
-      "schoolIds": [
-        "wh"
-      ],
-      "category": "pta",
-      "needsAction": false,
-      "sourceId": "d44-district",
-      "sourceName": "District 44 Public Calendar",
-      "sourceUrl": "https://www.sd44.org/resources/calendars",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:31:45.611Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
-    {
-      "id": "d44-district-28f528a28914",
-      "title": "Madison PTA Family Picnic and Outdoor Movie Night",
-      "description": null,
-      "startDate": "2026-09-11T23:30:00.000Z",
-      "endDate": "2026-09-12T02:00:00.000Z",
-      "allDay": false,
-      "location": null,
-      "schoolIds": [
-        "md"
-      ],
-      "category": "pta",
-      "needsAction": false,
-      "sourceId": "d44-district",
-      "sourceName": "District 44 Public Calendar",
-      "sourceUrl": "https://www.sd44.org/resources/calendars",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:31:45.611Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
     {
       "id": "d44-district-c2c3b3e4de39",
       "title": "Hammerschmidt Fall Picture Day",
@@ -4048,6 +4004,28 @@
       "sourceUrl": "https://www.sd44.org/resources/calendars",
       "sourceType": "ics",
       "importedAt": "2026-09-28T17:39:27.415Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "d44-district-fecea294bfbd",
+      "title": "American Education Week",
+      "description": null,
+      "startDate": "2027-11-16",
+      "endDate": "2027-11-20",
+      "allDay": true,
+      "location": null,
+      "schoolIds": [
+        "district"
+      ],
+      "category": "event",
+      "needsAction": false,
+      "sourceId": "d44-district",
+      "sourceName": "District 44 Public Calendar",
+      "sourceUrl": "https://www.sd44.org/resources/calendars",
+      "sourceType": "ics",
+      "importedAt": "2026-10-12T19:03:06.477Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null
