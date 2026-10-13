@@ -2,7 +2,7 @@
   "sourceId": "pv-calendar",
   "sourceName": "Park View Elementary Calendar",
   "sourceUrl": "https://pv.sd44.org/",
-  "lastChecked": "2026-10-12T19:03:06.477Z",
+  "lastChecked": "2026-10-13T16:56:48.246Z",
   "events": [
     {
       "id": "pv-calendar-6dadb4eb2c2e",
@@ -599,28 +599,6 @@
       "actionDeadline": null
     },
     {
-      "id": "pv-calendar-2fd189576557",
-      "title": "Lifetouch Picture Retakes",
-      "description": null,
-      "startDate": "2026-10-20",
-      "endDate": "2026-10-20",
-      "allDay": true,
-      "location": null,
-      "schoolIds": [
-        "pv"
-      ],
-      "category": "event",
-      "needsAction": true,
-      "sourceId": "pv-calendar",
-      "sourceName": "Park View Elementary Calendar",
-      "sourceUrl": "https://pv.sd44.org/",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:55:26.864Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
-    {
       "id": "pv-calendar-982087a7fd15",
       "title": "Chorus Rehersal",
       "description": null,
@@ -704,6 +682,28 @@
       "sourceUrl": "https://pv.sd44.org/",
       "sourceType": "ics",
       "importedAt": "2026-09-28T17:39:27.415Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "pv-calendar-3173d261e5d3",
+      "title": "Lifetouch Picture Retakes",
+      "description": null,
+      "startDate": "2026-10-22",
+      "endDate": "2026-10-22",
+      "allDay": true,
+      "location": null,
+      "schoolIds": [
+        "pv"
+      ],
+      "category": "event",
+      "needsAction": true,
+      "sourceId": "pv-calendar",
+      "sourceName": "Park View Elementary Calendar",
+      "sourceUrl": "https://pv.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-10-13T16:56:48.246Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null

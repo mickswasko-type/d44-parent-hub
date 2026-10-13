@@ -2,7 +2,7 @@
   "sourceId": "d44-district",
   "sourceName": "District 44 Public Calendar",
   "sourceUrl": "https://www.sd44.org/resources/calendars",
-  "lastChecked": "2026-10-12T19:03:06.477Z",
+  "lastChecked": "2026-10-13T16:56:48.246Z",
   "events": [
     {
       "id": "d44-district-c2c3b3e4de39",
@@ -555,28 +555,6 @@
       "actionDeadline": null
     },
     {
-      "id": "d44-district-328acc5425a2",
-      "title": "Park View Picture Retake",
-      "description": null,
-      "startDate": "2026-10-20",
-      "endDate": "2026-10-20",
-      "allDay": true,
-      "location": null,
-      "schoolIds": [
-        "pv"
-      ],
-      "category": "event",
-      "needsAction": true,
-      "sourceId": "d44-district",
-      "sourceName": "District 44 Public Calendar",
-      "sourceUrl": "https://www.sd44.org/resources/calendars",
-      "sourceType": "ics",
-      "importedAt": "2026-09-23T00:24:21.371Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
-    {
       "id": "d44-district-0bbc5321b4b7",
       "title": "Hammerschmidt PTA Meeting LRC",
       "description": null,
@@ -594,6 +572,28 @@
       "sourceUrl": "https://www.sd44.org/resources/calendars",
       "sourceType": "ics",
       "importedAt": "2026-09-17T15:31:45.611Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "d44-district-54ff7dce38ea",
+      "title": "Park View Picture Retake",
+      "description": null,
+      "startDate": "2026-10-22",
+      "endDate": "2026-10-22",
+      "allDay": true,
+      "location": null,
+      "schoolIds": [
+        "pv"
+      ],
+      "category": "event",
+      "needsAction": true,
+      "sourceId": "d44-district",
+      "sourceName": "District 44 Public Calendar",
+      "sourceUrl": "https://www.sd44.org/resources/calendars",
+      "sourceType": "ics",
+      "importedAt": "2026-10-13T16:56:48.246Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null
