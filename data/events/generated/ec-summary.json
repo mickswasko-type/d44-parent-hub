@@ -2,29 +2,6 @@
   "sourceId": "ec-summary",
   "sourceName": "The Schroder Summary, Oct 8 issue",
   "sourceUrl": "https://www.parentsquare.com/feeds/91791249",
-  "lastChecked": "2026-10-14T14:31:01.336Z",
-  "events": [
-    {
-      "id": "ec-summary-6f711bac08cc",
-      "title": "Wear Pink Breast Cancer Awareness Day",
-      "description": null,
-      "startDate": "2026-10-14",
-      "endDate": "2026-10-14",
-      "allDay": true,
-      "location": null,
-      "schoolIds": [
-        "ec"
-      ],
-      "category": "event",
-      "needsAction": true,
-      "sourceId": "ec-summary",
-      "sourceName": "The Schroder Summary, Oct 8 issue",
-      "sourceUrl": "https://www.parentsquare.com/feeds/91791249",
-      "sourceType": "newsletter",
-      "importedAt": "2026-10-14T14:31:01.336Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    }
-  ]
+  "lastChecked": "2026-10-15T14:10:06.326Z",
+  "events": []
 }
