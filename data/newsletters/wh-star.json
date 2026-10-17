@@ -2,13 +2,25 @@
   "id": "wh-star",
   "schoolId": "wh",
   "name": "The Hammerschmidt Star",
-  "postTitle": "Week of 9/21- 9/25: The Hammerschmidt Star",
-  "postUrl": "https://www.parentsquare.com/feeds/88737643",
-  "postedOn": "2026-09-18",
-  "sourceName": "The Hammerschmidt Star, Sep 18 issue",
+  "postTitle": "Week of 10/19- 10/23: The Hammerschmidt Star",
+  "postUrl": "https://www.parentsquare.com/feeds/92402225",
+  "postedOn": "2026-10-16",
+  "sourceName": "The Hammerschmidt Star, Oct 16 issue",
   "sourceUrl": "https://wh.sd44.org/about-us/weekly-updates",
-  "lastChecked": "2026-10-16T13:57:51.745Z",
+  "lastChecked": "2026-10-17T12:58:32.490Z",
   "todo": [
+    {
+      "verb": "Remember",
+      "topic": "Picture Retake Day- Wednesday, 10/21",
+      "date": "2026-10-21",
+      "url": "https://www.parentsquare.com/feeds/92402225"
+    },
+    {
+      "verb": "Remember",
+      "topic": "WHS SPIRIT DAYS",
+      "date": "2026-10-22",
+      "url": "https://www.parentsquare.com/feeds/92402225"
+    },
     {
       "verb": "Volunteer",
       "topic": "Trunk or Treat",
@@ -23,9 +35,9 @@
     },
     {
       "verb": "Remember",
-      "topic": "PTA Track-a Thon",
+      "topic": "Order Pizza TONIGHT and Support the PTA",
       "date": null,
-      "url": "https://www.parentsquare.com/feeds/88737643"
+      "url": "https://www.parentsquare.com/feeds/92402225"
     },
     {
       "verb": "Buy tickets",
@@ -34,16 +46,10 @@
       "url": "https://whs.givebacks.com/shop/items/4c3dfde711a2"
     },
     {
-      "verb": "Give feedback",
-      "topic": "Classroom Connection & Playground Social",
+      "verb": "Donate",
+      "topic": "Donations Accepted and APPRECIATED",
       "date": null,
-      "url": "https://docs.google.com/forms/d/e/1FAIpQLSdzY4ZskY-oRJ7TEvLdelT6NKHtnkT7iAHtPVXq_RhY6X6QgQ/viewform?usp=dialog"
-    },
-    {
-      "verb": "Propose a session",
-      "topic": "Hammer T.I.M.E",
-      "date": null,
-      "url": "https://docs.google.com/forms/d/e/1FAIpQLScO29I2O0XV1GLPMq5YDiw7oFfNlF4ObnY5I1LB_zAl51d27w/viewform?usp=publish-editor"
+      "url": "https://www.amazon.com/hz/wishlist/ls/1T8S4MM4BU8O6?ref_=wl_share"
     },
     {
       "verb": "Join",
@@ -63,14 +69,14 @@
     {
       "start": "2026-10-21",
       "end": null,
-      "label": "Lifetouch Picture Retake Day",
+      "label": "Lifetouch Picture Retake Day &",
       "onCalendar": true,
       "needsAction": true
     },
     {
       "start": "2026-10-22",
       "end": null,
-      "label": "Student Council Spirit Day - Bears vs. Packers Colors",
+      "label": "Student Council Spirit Day - Bears Colors",
       "onCalendar": false,
       "needsAction": true
     },
@@ -97,8 +103,14 @@
     }
   ],
   "topics": [
-    "PTA Dine Out",
-    "Walk & Roll To School Week"
+    "Veteran's Day Assembly- Invite WHS Community Vets",
+    "Introducing the Let Grow Homework Challenge",
+    "The School Wide Homework Challenge",
+    "PTA Reflections- Workshop Info",
+    "What Is The PTA Reflections Program?",
+    "Congrats to our Walk & Roll Winners",
+    "Walk & Talk has been EXTENTED",
+    "Save the Date-- April 16, 2027"
   ],
   "resources": [
     {

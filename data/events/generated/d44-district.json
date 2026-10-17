@@ -2,30 +2,8 @@
   "sourceId": "d44-district",
   "sourceName": "District 44 Public Calendar",
   "sourceUrl": "https://www.sd44.org/resources/calendars",
-  "lastChecked": "2026-10-16T13:57:48.083Z",
+  "lastChecked": "2026-10-17T12:58:29.499Z",
   "events": [
-    {
-      "id": "d44-district-0dacb313bbd5",
-      "title": "Madison Picture Day",
-      "description": null,
-      "startDate": "2026-09-17",
-      "endDate": "2026-09-17",
-      "allDay": true,
-      "location": null,
-      "schoolIds": [
-        "md"
-      ],
-      "category": "event",
-      "needsAction": true,
-      "sourceId": "d44-district",
-      "sourceName": "District 44 Public Calendar",
-      "sourceUrl": "https://www.sd44.org/resources/calendars",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:55:26.864Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
     {
       "id": "d44-district-50be58393483",
       "title": "Early Release Day",
