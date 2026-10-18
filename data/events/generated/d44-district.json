@@ -2,52 +2,8 @@
   "sourceId": "d44-district",
   "sourceName": "District 44 Public Calendar",
   "sourceUrl": "https://www.sd44.org/resources/calendars",
-  "lastChecked": "2026-10-17T12:58:29.499Z",
+  "lastChecked": "2026-10-18T13:17:57.277Z",
   "events": [
-    {
-      "id": "d44-district-50be58393483",
-      "title": "Early Release Day",
-      "description": null,
-      "startDate": "2026-09-18",
-      "endDate": "2026-09-18",
-      "allDay": true,
-      "location": null,
-      "schoolIds": [
-        "district"
-      ],
-      "category": "early-dismissal",
-      "needsAction": false,
-      "sourceId": "d44-district",
-      "sourceName": "District 44 Public Calendar",
-      "sourceUrl": "https://www.sd44.org/resources/calendars",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:55:26.864Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
-    {
-      "id": "d44-district-8cdc663b63bb",
-      "title": "Park View PTA Meeting",
-      "description": null,
-      "startDate": "2026-09-18T00:00:00.000Z",
-      "endDate": "2026-09-18T01:00:00.000Z",
-      "allDay": false,
-      "location": "Park View Elementary School, 341 N Elizabeth St, Lombard",
-      "schoolIds": [
-        "pv"
-      ],
-      "category": "pta",
-      "needsAction": false,
-      "sourceId": "d44-district",
-      "sourceName": "District 44 Public Calendar",
-      "sourceUrl": "https://www.sd44.org/resources/calendars",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:31:45.611Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
     {
       "id": "d44-district-5886d99cde66",
       "title": "Pleasant Lane Picture Day",
