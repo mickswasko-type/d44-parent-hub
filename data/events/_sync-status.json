@@ -1,5 +1,5 @@
 {
-  "ranAt": "2026-10-18T13:17:57.277Z",
+  "ranAt": "2026-10-19T16:28:05.651Z",
   "statuses": [
     {
       "sourceId": "d44-district",
@@ -7,7 +7,7 @@
       "ok": true,
       "empty": false,
       "eventCount": 179,
-      "lastChecked": "2026-10-18T13:17:57.277Z",
+      "lastChecked": "2026-10-19T16:28:05.651Z",
       "error": null,
       "servingStaleData": false
     },
@@ -17,7 +17,7 @@
       "ok": true,
       "empty": false,
       "eventCount": 122,
-      "lastChecked": "2026-10-18T13:17:57.277Z",
+      "lastChecked": "2026-10-19T16:28:05.651Z",
       "error": null,
       "servingStaleData": false
     },
@@ -27,7 +27,7 @@
       "ok": true,
       "empty": true,
       "eventCount": 0,
-      "lastChecked": "2026-10-18T13:17:57.277Z",
+      "lastChecked": "2026-10-19T16:28:05.651Z",
       "error": null,
       "servingStaleData": false
     },
@@ -37,7 +37,7 @@
       "ok": true,
       "empty": false,
       "eventCount": 82,
-      "lastChecked": "2026-10-18T13:17:57.277Z",
+      "lastChecked": "2026-10-19T16:28:05.651Z",
       "error": null,
       "servingStaleData": false
     },
@@ -47,7 +47,7 @@
       "ok": true,
       "empty": false,
       "eventCount": 12,
-      "lastChecked": "2026-10-18T13:17:57.277Z",
+      "lastChecked": "2026-10-19T16:28:05.651Z",
       "error": null,
       "servingStaleData": false
     },
@@ -57,7 +57,7 @@
       "ok": true,
       "empty": false,
       "eventCount": 87,
-      "lastChecked": "2026-10-18T13:17:57.277Z",
+      "lastChecked": "2026-10-19T16:28:05.651Z",
       "error": null,
       "servingStaleData": false
     },
@@ -67,7 +67,7 @@
       "ok": true,
       "empty": false,
       "eventCount": 78,
-      "lastChecked": "2026-10-18T13:17:57.277Z",
+      "lastChecked": "2026-10-19T16:28:05.651Z",
       "error": null,
       "servingStaleData": false
     },
@@ -76,8 +76,8 @@
       "sourceName": "Park View Elementary Calendar",
       "ok": true,
       "empty": false,
-      "eventCount": 193,
-      "lastChecked": "2026-10-18T13:17:57.277Z",
+      "eventCount": 192,
+      "lastChecked": "2026-10-19T16:28:05.651Z",
       "error": null,
       "servingStaleData": false
     },
@@ -86,8 +86,8 @@
       "sourceName": "Pleasant Lane Elementary Public Events",
       "ok": true,
       "empty": false,
-      "eventCount": 256,
-      "lastChecked": "2026-10-18T13:17:57.277Z",
+      "eventCount": 254,
+      "lastChecked": "2026-10-19T16:28:05.651Z",
       "error": null,
       "servingStaleData": false
     }
