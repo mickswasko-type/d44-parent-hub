@@ -1,13 +1,13 @@
 {
-  "ranAt": "2026-10-19T16:28:05.651Z",
+  "ranAt": "2026-10-20T14:18:37.633Z",
   "statuses": [
     {
       "sourceId": "d44-district",
       "sourceName": "District 44 Public Calendar",
       "ok": true,
       "empty": false,
-      "eventCount": 179,
-      "lastChecked": "2026-10-19T16:28:05.651Z",
+      "eventCount": 180,
+      "lastChecked": "2026-10-20T14:18:37.633Z",
       "error": null,
       "servingStaleData": false
     },
@@ -17,7 +17,7 @@
       "ok": true,
       "empty": false,
       "eventCount": 122,
-      "lastChecked": "2026-10-19T16:28:05.651Z",
+      "lastChecked": "2026-10-20T14:18:37.633Z",
       "error": null,
       "servingStaleData": false
     },
@@ -27,7 +27,7 @@
       "ok": true,
       "empty": true,
       "eventCount": 0,
-      "lastChecked": "2026-10-19T16:28:05.651Z",
+      "lastChecked": "2026-10-20T14:18:37.633Z",
       "error": null,
       "servingStaleData": false
     },
@@ -37,7 +37,7 @@
       "ok": true,
       "empty": false,
       "eventCount": 82,
-      "lastChecked": "2026-10-19T16:28:05.651Z",
+      "lastChecked": "2026-10-20T14:18:37.633Z",
       "error": null,
       "servingStaleData": false
     },
@@ -46,8 +46,8 @@
       "sourceName": "John Schroder Early Childhood Center Calendar",
       "ok": true,
       "empty": false,
-      "eventCount": 12,
-      "lastChecked": "2026-10-19T16:28:05.651Z",
+      "eventCount": 17,
+      "lastChecked": "2026-10-20T14:18:37.633Z",
       "error": null,
       "servingStaleData": false
     },
@@ -57,7 +57,7 @@
       "ok": true,
       "empty": false,
       "eventCount": 87,
-      "lastChecked": "2026-10-19T16:28:05.651Z",
+      "lastChecked": "2026-10-20T14:18:37.633Z",
       "error": null,
       "servingStaleData": false
     },
@@ -67,7 +67,7 @@
       "ok": true,
       "empty": false,
       "eventCount": 78,
-      "lastChecked": "2026-10-19T16:28:05.651Z",
+      "lastChecked": "2026-10-20T14:18:37.633Z",
       "error": null,
       "servingStaleData": false
     },
@@ -77,7 +77,7 @@
       "ok": true,
       "empty": false,
       "eventCount": 192,
-      "lastChecked": "2026-10-19T16:28:05.651Z",
+      "lastChecked": "2026-10-20T14:18:37.633Z",
       "error": null,
       "servingStaleData": false
     },
@@ -87,7 +87,7 @@
       "ok": true,
       "empty": false,
       "eventCount": 254,
-      "lastChecked": "2026-10-19T16:28:05.651Z",
+      "lastChecked": "2026-10-20T14:18:37.633Z",
       "error": null,
       "servingStaleData": false
     }

@@ -2,7 +2,7 @@
   "sourceId": "d44-district",
   "sourceName": "District 44 Public Calendar",
   "sourceUrl": "https://www.sd44.org/resources/calendars",
-  "lastChecked": "2026-10-19T16:28:05.651Z",
+  "lastChecked": "2026-10-20T14:18:37.633Z",
   "events": [
     {
       "id": "d44-district-5886d99cde66",
@@ -1892,6 +1892,28 @@
       "sourceUrl": "https://www.sd44.org/resources/calendars",
       "sourceType": "ics",
       "importedAt": "2026-09-17T15:55:26.864Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "d44-district-fdd9fe589c3a",
+      "title": "Glenn Westlake Prime Night",
+      "description": null,
+      "startDate": "2027-01-29T00:00:00.000Z",
+      "endDate": "2027-01-29T01:00:00.000Z",
+      "allDay": false,
+      "location": "Glenn Westlake Middle School, 1514 S Main St, Lombard",
+      "schoolIds": [
+        "gw"
+      ],
+      "category": "event",
+      "needsAction": false,
+      "sourceId": "d44-district",
+      "sourceName": "District 44 Public Calendar",
+      "sourceUrl": "https://www.sd44.org/resources/calendars",
+      "sourceType": "ics",
+      "importedAt": "2026-10-20T14:18:37.633Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null
