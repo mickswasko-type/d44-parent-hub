@@ -1,7 +1,74 @@
 {
   "sourceId": "ec-summary",
-  "sourceName": "The Schroder Summary, Oct 8 issue",
-  "sourceUrl": "https://www.parentsquare.com/feeds/91791249",
-  "lastChecked": "2026-10-20T14:18:40.960Z",
-  "events": []
+  "sourceName": "The Schroder Summary, Oct 16 issue",
+  "sourceUrl": "https://www.parentsquare.com/feeds/91937514",
+  "lastChecked": "2026-10-21T14:29:51.776Z",
+  "events": [
+    {
+      "id": "ec-summary-5e770e328196",
+      "title": "Pajama Day",
+      "description": null,
+      "startDate": "2026-11-02",
+      "endDate": "2026-11-02",
+      "allDay": true,
+      "location": null,
+      "schoolIds": [
+        "ec"
+      ],
+      "category": "event",
+      "needsAction": true,
+      "sourceId": "ec-summary",
+      "sourceName": "The Schroder Summary, Oct 16 issue",
+      "sourceUrl": "https://www.parentsquare.com/feeds/91937514",
+      "sourceType": "newsletter",
+      "importedAt": "2026-10-21T14:29:51.776Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "ec-summary-1e909cdd8b67",
+      "title": "Tradition Boxes Due",
+      "description": null,
+      "startDate": "2026-11-19",
+      "endDate": "2026-11-19",
+      "allDay": true,
+      "location": null,
+      "schoolIds": [
+        "ec"
+      ],
+      "category": "event",
+      "needsAction": true,
+      "sourceId": "ec-summary",
+      "sourceName": "The Schroder Summary, Oct 16 issue",
+      "sourceUrl": "https://www.parentsquare.com/feeds/91937514",
+      "sourceType": "newsletter",
+      "importedAt": "2026-10-21T14:29:51.776Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "ec-summary-6cb30380791e",
+      "title": "December 5 - Book Fair 📚",
+      "description": null,
+      "startDate": "2026-11-23",
+      "endDate": "2026-11-23",
+      "allDay": true,
+      "location": null,
+      "schoolIds": [
+        "ec"
+      ],
+      "category": "event",
+      "needsAction": true,
+      "sourceId": "ec-summary",
+      "sourceName": "The Schroder Summary, Oct 16 issue",
+      "sourceUrl": "https://www.parentsquare.com/feeds/91937514",
+      "sourceType": "newsletter",
+      "importedAt": "2026-10-21T14:29:51.776Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    }
+  ]
 }

@@ -2,30 +2,8 @@
   "sourceId": "d44-district",
   "sourceName": "District 44 Public Calendar",
   "sourceUrl": "https://www.sd44.org/resources/calendars",
-  "lastChecked": "2026-10-20T14:18:37.633Z",
+  "lastChecked": "2026-10-21T14:29:47.815Z",
   "events": [
-    {
-      "id": "d44-district-5886d99cde66",
-      "title": "Pleasant Lane Picture Day",
-      "description": null,
-      "startDate": "2026-09-21",
-      "endDate": "2026-09-21",
-      "allDay": true,
-      "location": null,
-      "schoolIds": [
-        "pl"
-      ],
-      "category": "event",
-      "needsAction": true,
-      "sourceId": "d44-district",
-      "sourceName": "District 44 Public Calendar",
-      "sourceUrl": "https://www.sd44.org/resources/calendars",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:55:26.864Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
     {
       "id": "d44-district-a81423bd9cf0",
       "title": "Hammerschmidt PTA Meeting",
@@ -687,11 +665,11 @@
       "actionDeadline": null
     },
     {
-      "id": "d44-district-abb580886aec",
+      "id": "d44-district-51660c003222",
       "title": "Hammerschmidt PTA Trunk or Treat Event",
       "description": null,
-      "startDate": "2026-10-29T22:00:00.000Z",
-      "endDate": "2026-10-30T00:00:00.000Z",
+      "startDate": "2026-10-29T22:30:00.000Z",
+      "endDate": "2026-10-30T00:30:00.000Z",
       "allDay": false,
       "location": null,
       "schoolIds": [
@@ -703,7 +681,7 @@
       "sourceName": "District 44 Public Calendar",
       "sourceUrl": "https://www.sd44.org/resources/calendars",
       "sourceType": "ics",
-      "importedAt": "2026-09-17T15:31:45.611Z",
+      "importedAt": "2026-10-21T14:29:47.815Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null

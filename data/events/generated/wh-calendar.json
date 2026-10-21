@@ -2,7 +2,7 @@
   "sourceId": "wh-calendar",
   "sourceName": "Hammerschmidt Elementary Calendar",
   "sourceUrl": "https://wh.sd44.org/",
-  "lastChecked": "2026-10-20T14:18:37.633Z",
+  "lastChecked": "2026-10-21T14:29:47.815Z",
   "events": [
     {
       "id": "wh-calendar-0af93b2c16c7",
@@ -291,10 +291,10 @@
       "actionDeadline": null
     },
     {
-      "id": "wh-calendar-6619cea1bc3d",
+      "id": "wh-calendar-b85b18be169a",
       "title": "PTA Trunk or Treat Event",
       "description": null,
-      "startDate": "2026-10-29T22:00:00.000Z",
+      "startDate": "2026-10-29T22:30:00.000Z",
       "endDate": "2026-10-30T00:00:00.000Z",
       "allDay": false,
       "location": null,
@@ -307,7 +307,7 @@
       "sourceName": "Hammerschmidt Elementary Calendar",
       "sourceUrl": "https://wh.sd44.org/",
       "sourceType": "ics",
-      "importedAt": "2026-09-17T15:31:45.611Z",
+      "importedAt": "2026-10-21T14:29:47.815Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null

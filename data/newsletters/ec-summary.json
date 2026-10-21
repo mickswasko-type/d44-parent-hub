@@ -2,13 +2,26 @@
   "id": "ec-summary",
   "schoolId": "ec",
   "name": "The Schroder Summary",
-  "postTitle": "Here is this week's Schroder Summary: October 8, 2026",
-  "postUrl": "https://www.parentsquare.com/feeds/91791249",
-  "postedOn": "2026-10-08",
-  "sourceName": "The Schroder Summary, Oct 8 issue",
+  "postTitle": "Here is this week's Schroder Summary: October 16, 2026",
+  "postUrl": "https://www.parentsquare.com/feeds/91937514",
+  "postedOn": "2026-10-16",
+  "sourceName": "The Schroder Summary, Oct 16 issue",
   "sourceUrl": "https://ec.sd44.org/about-us/weekly-updates",
-  "lastChecked": "2026-10-20T14:18:40.960Z",
-  "todo": [],
+  "lastChecked": "2026-10-21T14:29:51.776Z",
+  "todo": [
+    {
+      "verb": "Remember",
+      "topic": "Monday, October 19th, is Picture Day",
+      "date": "2026-11-09",
+      "url": "https://www.parentsquare.com/feeds/91937514"
+    },
+    {
+      "verb": "Remember",
+      "topic": "📌 10/19 - Picture Day 📸",
+      "date": "2026-11-09",
+      "url": "https://www.parentsquare.com/feeds/91937514"
+    }
+  ],
   "dates": [
     {
       "start": "2026-10-26",
@@ -20,17 +33,56 @@
     {
       "start": "2026-10-30",
       "end": null,
-      "label": "Character Day Parade",
+      "label": "Character Day Parade 🎃",
+      "onCalendar": true,
+      "needsAction": false
+    },
+    {
+      "start": "2026-11-02",
+      "end": null,
+      "label": "Pajama Day",
+      "onCalendar": false,
+      "needsAction": true
+    },
+    {
+      "start": "2026-11-03",
+      "end": null,
+      "label": "No School: Election Day",
+      "onCalendar": true,
+      "needsAction": false
+    },
+    {
+      "start": "2026-11-09",
+      "end": null,
+      "label": "Picture Retake Day 📸",
+      "onCalendar": true,
+      "needsAction": true
+    },
+    {
+      "start": "2026-11-19",
+      "end": null,
+      "label": "Tradition Boxes Due",
+      "onCalendar": false,
+      "needsAction": true
+    },
+    {
+      "start": "2026-11-23",
+      "end": null,
+      "label": "December 5 - Book Fair 📚",
+      "onCalendar": false,
+      "needsAction": true
+    },
+    {
+      "start": "2026-11-25",
+      "end": "2026-11-27",
+      "label": "No School: Thanksgiving Break 🦃",
       "onCalendar": true,
       "needsAction": false
     }
   ],
   "topics": [
-    "🍁 I Hope to See You Today",
-    "🏡 You may take your child home at the end of the event",
-    "🧡 A Few Days to Make Memories",
-    "🩷 Meet Our Team: Ms. Alyssa",
-    "❤️ From My Heart to Yours"
+    "🩵 Meet Our Team: Ms. Stefani🩵",
+    "Parent Helpers Wanted"
   ],
   "resources": []
 }
