@@ -2,29 +2,6 @@
   "sourceId": "wh-star",
   "sourceName": "The Hammerschmidt Star, Oct 16 issue",
   "sourceUrl": "https://www.parentsquare.com/feeds/92402225",
-  "lastChecked": "2026-10-22T14:31:05.008Z",
-  "events": [
-    {
-      "id": "wh-star-76eb8b419c72",
-      "title": "Student Council Spirit Day - Bears Colors",
-      "description": null,
-      "startDate": "2026-10-22",
-      "endDate": "2026-10-22",
-      "allDay": true,
-      "location": null,
-      "schoolIds": [
-        "wh"
-      ],
-      "category": "event",
-      "needsAction": true,
-      "sourceId": "wh-star",
-      "sourceName": "The Hammerschmidt Star, Oct 16 issue",
-      "sourceUrl": "https://www.parentsquare.com/feeds/92402225",
-      "sourceType": "newsletter",
-      "importedAt": "2026-10-22T14:31:05.008Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    }
-  ]
+  "lastChecked": "2026-10-23T14:14:52.667Z",
+  "events": []
 }
