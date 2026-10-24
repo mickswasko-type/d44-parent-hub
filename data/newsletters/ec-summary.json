@@ -2,26 +2,13 @@
   "id": "ec-summary",
   "schoolId": "ec",
   "name": "The Schroder Summary",
-  "postTitle": "Here is this week's Schroder Summary: October 16, 2026",
-  "postUrl": "https://www.parentsquare.com/feeds/91937514",
-  "postedOn": "2026-10-16",
-  "sourceName": "The Schroder Summary, Oct 16 issue",
+  "postTitle": "Here is this week's Schroder Summary: October 23, 2026",
+  "postUrl": "https://www.parentsquare.com/feeds/93403349",
+  "postedOn": "2026-10-23",
+  "sourceName": "The Schroder Summary, Oct 23 issue",
   "sourceUrl": "https://ec.sd44.org/about-us/weekly-updates",
-  "lastChecked": "2026-10-23T14:14:52.667Z",
-  "todo": [
-    {
-      "verb": "Remember",
-      "topic": "Monday, October 19th, is Picture Day",
-      "date": "2026-11-09",
-      "url": "https://www.parentsquare.com/feeds/91937514"
-    },
-    {
-      "verb": "Remember",
-      "topic": "📌 10/19 - Picture Day 📸",
-      "date": "2026-11-09",
-      "url": "https://www.parentsquare.com/feeds/91937514"
-    }
-  ],
+  "lastChecked": "2026-10-24T13:20:20.746Z",
+  "todo": [],
   "dates": [
     {
       "start": "2026-10-26",
@@ -78,11 +65,23 @@
       "label": "No School: Thanksgiving Break 🦃",
       "onCalendar": true,
       "needsAction": false
+    },
+    {
+      "start": "2026-12-05",
+      "end": null,
+      "label": "Winterfest",
+      "onCalendar": true,
+      "needsAction": false
     }
   ],
   "topics": [
-    "🩵 Meet Our Team: Ms. Stefani🩵",
-    "Parent Helpers Wanted"
+    "🎃 Get Ready for Our Character Day Parade",
+    "Here is what you can expect",
+    "Where to stand",
+    "The parade",
+    "A special performance",
+    "Dismissal",
+    "D44 is Hiring"
   ],
   "resources": []
 }
