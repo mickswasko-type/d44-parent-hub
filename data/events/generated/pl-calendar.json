@@ -2,52 +2,8 @@
   "sourceId": "pl-calendar",
   "sourceName": "Pleasant Lane Elementary Public Events",
   "sourceUrl": "https://pl.sd44.org/",
-  "lastChecked": "2026-10-24T13:20:17.145Z",
+  "lastChecked": "2026-10-25T13:43:02.282Z",
   "events": [
-    {
-      "id": "pl-calendar-016b129ab749",
-      "title": "Power Hour",
-      "description": null,
-      "startDate": "2026-09-24T20:15:00.000Z",
-      "endDate": "2026-09-24T21:30:00.000Z",
-      "allDay": false,
-      "location": null,
-      "schoolIds": [
-        "pl"
-      ],
-      "category": "event",
-      "needsAction": false,
-      "sourceId": "pl-calendar",
-      "sourceName": "Pleasant Lane Elementary Public Events",
-      "sourceUrl": "https://pl.sd44.org/",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:31:45.611Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
-    {
-      "id": "pl-calendar-676637204b80",
-      "title": "5th Grade Band & Orchestra Rehearsal",
-      "description": null,
-      "startDate": "2026-09-24T20:45:00.000Z",
-      "endDate": "2026-09-24T21:45:00.000Z",
-      "allDay": false,
-      "location": "Glenn Westlake Middle School, 1514 S Main St, Lombard, IL 60148, USA",
-      "schoolIds": [
-        "pl"
-      ],
-      "category": "performance",
-      "needsAction": false,
-      "sourceId": "pl-calendar",
-      "sourceName": "Pleasant Lane Elementary Public Events",
-      "sourceUrl": "https://pl.sd44.org/",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:31:45.611Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
     {
       "id": "pl-calendar-d87d39424e57",
       "title": "Chorus Rehearsal",
