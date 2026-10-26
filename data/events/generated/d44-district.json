@@ -2,30 +2,8 @@
   "sourceId": "d44-district",
   "sourceName": "District 44 Public Calendar",
   "sourceUrl": "https://www.sd44.org/resources/calendars",
-  "lastChecked": "2026-10-25T13:43:02.282Z",
+  "lastChecked": "2026-10-26T16:07:41.044Z",
   "events": [
-    {
-      "id": "d44-district-14aa1c0102d3",
-      "title": "Madison MAD Dads Glow Run",
-      "description": null,
-      "startDate": "2026-09-25T23:00:00.000Z",
-      "endDate": "2026-09-26T01:00:00.000Z",
-      "allDay": false,
-      "location": "Madison Blacktop",
-      "schoolIds": [
-        "md"
-      ],
-      "category": "event",
-      "needsAction": false,
-      "sourceId": "d44-district",
-      "sourceName": "District 44 Public Calendar",
-      "sourceUrl": "https://www.sd44.org/resources/calendars",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:31:45.611Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
     {
       "id": "d44-district-e03da8187ac5",
       "title": "Park View Parent's Night Out at Shannons",
@@ -776,14 +754,14 @@
     },
     {
       "id": "d44-district-cde743719c31",
-      "title": "PTA Movie Night",
+      "title": "Madison PTA Movie Night",
       "description": null,
       "startDate": "2026-11-07T00:45:00.000Z",
       "endDate": "2026-11-07T02:45:00.000Z",
       "allDay": false,
       "location": "Madison Elementary School, 150 W Madison St, Lombard",
       "schoolIds": [
-        "district"
+        "md"
       ],
       "category": "pta",
       "needsAction": false,

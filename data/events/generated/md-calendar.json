@@ -2,30 +2,8 @@
   "sourceId": "md-calendar",
   "sourceName": "Madison Elementary Calendar",
   "sourceUrl": "https://md.sd44.org/",
-  "lastChecked": "2026-10-25T13:43:02.282Z",
+  "lastChecked": "2026-10-26T16:07:41.044Z",
   "events": [
-    {
-      "id": "md-calendar-dae206b668aa",
-      "title": "Mad Dads 2nd Annual Glow Run",
-      "description": "<ul><li><b>Friday, 9/25 – GLOW RUN</b><ul><li>6:00 PM – Bark in the Dark Pre-Party</li><li>7:00 PM – Fun Run</li><li>7:30 PM – Post-Party</li></ul></li></ul><br><a href=\"https://mail.google.com/mail/u/0?ui=2&amp;ik=6a83827b46&amp;attid=0.1&amp;permmsgid=msg-f:1875066643417582111&amp;th=1a05932d7b16ca1f&amp;view=att&amp;zw&amp;disp=safe\">https://mail.google.com/mail/u/0?ui=2&amp;ik=6a83827b46&amp;attid=0.1&amp;permmsgid=msg-f:1875066643417582111&amp;th=1a05932d7b16ca1f&amp;view=att&amp;zw&amp;disp=safe</a>",
-      "startDate": "2026-09-25T23:00:00.000Z",
-      "endDate": "2026-09-26T01:00:00.000Z",
-      "allDay": false,
-      "location": null,
-      "schoolIds": [
-        "md"
-      ],
-      "category": "event",
-      "needsAction": true,
-      "sourceId": "md-calendar",
-      "sourceName": "Madison Elementary Calendar",
-      "sourceUrl": "https://md.sd44.org/",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:31:45.611Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
     {
       "id": "md-calendar-95c23ba4a2f2",
       "title": "PTA Meeting - LRC",
