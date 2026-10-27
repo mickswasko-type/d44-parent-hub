@@ -2,30 +2,8 @@
   "sourceId": "d44-district",
   "sourceName": "District 44 Public Calendar",
   "sourceUrl": "https://www.sd44.org/resources/calendars",
-  "lastChecked": "2026-10-26T16:07:41.044Z",
+  "lastChecked": "2026-10-27T15:21:25.780Z",
   "events": [
-    {
-      "id": "d44-district-e03da8187ac5",
-      "title": "Park View Parent's Night Out at Shannons",
-      "description": null,
-      "startDate": "2026-09-26T23:00:00.000Z",
-      "endDate": "2026-09-27T03:00:00.000Z",
-      "allDay": false,
-      "location": "Shannon's Deli, 11 S Park Ave, Lombard",
-      "schoolIds": [
-        "pv"
-      ],
-      "category": "event",
-      "needsAction": false,
-      "sourceId": "d44-district",
-      "sourceName": "District 44 Public Calendar",
-      "sourceUrl": "https://www.sd44.org/resources/calendars",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:31:45.611Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
     {
       "id": "d44-district-428697714df5",
       "title": "Park View Picture Day",
