@@ -2,30 +2,8 @@
   "sourceId": "bf-calendar",
   "sourceName": "Butterfield Elementary Calendar",
   "sourceUrl": "https://bf.sd44.org/",
-  "lastChecked": "2026-10-28T16:02:57.540Z",
+  "lastChecked": "2026-10-29T16:07:21.916Z",
   "events": [
-    {
-      "id": "bf-calendar-491bd8d673d7",
-      "title": "Walk and Talk Club",
-      "description": null,
-      "startDate": "2026-09-28T20:15:00.000Z",
-      "endDate": "2026-09-28T21:45:00.000Z",
-      "allDay": false,
-      "location": null,
-      "schoolIds": [
-        "bf"
-      ],
-      "category": "event",
-      "needsAction": false,
-      "sourceId": "bf-calendar",
-      "sourceName": "Butterfield Elementary Calendar",
-      "sourceUrl": "https://bf.sd44.org/",
-      "sourceType": "ics",
-      "importedAt": "2026-09-25T14:36:37.514Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
     {
       "id": "bf-calendar-fbf360ae8c0d",
       "title": "5th Grade Band & Orchestra Rehearsal",
@@ -1628,6 +1606,28 @@
       "sourceUrl": "https://bf.sd44.org/",
       "sourceType": "ics",
       "importedAt": "2026-09-17T15:55:26.864Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "bf-calendar-4d90b4357b42",
+      "title": "Book Fair",
+      "description": null,
+      "startDate": "2027-02-16",
+      "endDate": "2027-02-19",
+      "allDay": true,
+      "location": null,
+      "schoolIds": [
+        "bf"
+      ],
+      "category": "event",
+      "needsAction": true,
+      "sourceId": "bf-calendar",
+      "sourceName": "Butterfield Elementary Calendar",
+      "sourceUrl": "https://bf.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-10-29T16:07:21.916Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null

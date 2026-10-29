@@ -2,74 +2,8 @@
   "sourceId": "pv-calendar",
   "sourceName": "Park View Elementary Calendar",
   "sourceUrl": "https://pv.sd44.org/",
-  "lastChecked": "2026-10-28T16:02:57.540Z",
+  "lastChecked": "2026-10-29T16:07:21.916Z",
   "events": [
-    {
-      "id": "pv-calendar-b6eee0e44416",
-      "title": "Cycling Club",
-      "description": null,
-      "startDate": "2026-09-28T20:20:00.000Z",
-      "endDate": "2026-09-28T21:35:00.000Z",
-      "allDay": false,
-      "location": null,
-      "schoolIds": [
-        "pv"
-      ],
-      "category": "event",
-      "needsAction": false,
-      "sourceId": "pv-calendar",
-      "sourceName": "Park View Elementary Calendar",
-      "sourceUrl": "https://pv.sd44.org/",
-      "sourceType": "ics",
-      "importedAt": "2026-09-19T13:10:21.106Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
-    {
-      "id": "pv-calendar-8b9e67ab99b4",
-      "title": "Lifetouch Picture Day",
-      "description": null,
-      "startDate": "2026-09-29",
-      "endDate": "2026-09-29",
-      "allDay": true,
-      "location": null,
-      "schoolIds": [
-        "pv"
-      ],
-      "category": "event",
-      "needsAction": true,
-      "sourceId": "pv-calendar",
-      "sourceName": "Park View Elementary Calendar",
-      "sourceUrl": "https://pv.sd44.org/",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:55:26.864Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
-    {
-      "id": "pv-calendar-cbc03ac2e763",
-      "title": "Chorus Rehersal",
-      "description": null,
-      "startDate": "2026-09-29T12:45:00.000Z",
-      "endDate": "2026-09-29T13:30:00.000Z",
-      "allDay": false,
-      "location": null,
-      "schoolIds": [
-        "pv"
-      ],
-      "category": "event",
-      "needsAction": false,
-      "sourceId": "pv-calendar",
-      "sourceName": "Park View Elementary Calendar",
-      "sourceUrl": "https://pv.sd44.org/",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:55:26.864Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
     {
       "id": "pv-calendar-10583e2155ef",
       "title": "Cycling Club",

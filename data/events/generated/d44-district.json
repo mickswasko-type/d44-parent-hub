@@ -2,30 +2,8 @@
   "sourceId": "d44-district",
   "sourceName": "District 44 Public Calendar",
   "sourceUrl": "https://www.sd44.org/resources/calendars",
-  "lastChecked": "2026-10-28T16:02:57.540Z",
+  "lastChecked": "2026-10-29T16:07:21.916Z",
   "events": [
-    {
-      "id": "d44-district-428697714df5",
-      "title": "Park View Picture Day",
-      "description": null,
-      "startDate": "2026-09-29",
-      "endDate": "2026-09-29",
-      "allDay": true,
-      "location": null,
-      "schoolIds": [
-        "pv"
-      ],
-      "category": "event",
-      "needsAction": true,
-      "sourceId": "d44-district",
-      "sourceName": "District 44 Public Calendar",
-      "sourceUrl": "https://www.sd44.org/resources/calendars",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:55:26.864Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
     {
       "id": "d44-district-dd0cdef4d218",
       "title": "Hammerschmidt PTA Track a Thon",

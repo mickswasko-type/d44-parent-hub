@@ -1,21 +1,21 @@
 {
-  "ranAt": "2026-10-28T16:03:01.366Z",
+  "ranAt": "2026-10-29T16:07:25.492Z",
   "statuses": [
     {
       "id": "wh-star",
-      "ok": false,
-      "postedOn": null,
+      "ok": true,
+      "postedOn": "2026-10-16",
       "newDates": 0,
-      "error": "The operation was aborted due to timeout",
-      "lastChecked": "2026-10-28T16:03:01.366Z"
+      "error": null,
+      "lastChecked": "2026-10-29T16:07:25.492Z"
     },
     {
       "id": "ec-summary",
-      "ok": false,
-      "postedOn": null,
-      "newDates": 0,
-      "error": "The operation was aborted due to timeout",
-      "lastChecked": "2026-10-28T16:03:01.366Z"
+      "ok": true,
+      "postedOn": "2026-10-23",
+      "newDates": 3,
+      "error": null,
+      "lastChecked": "2026-10-29T16:07:25.492Z"
     }
   ]
 }
