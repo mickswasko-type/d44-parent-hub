@@ -7,20 +7,8 @@
   "postedOn": "2026-10-16",
   "sourceName": "The Hammerschmidt Star, Oct 16 issue",
   "sourceUrl": "https://wh.sd44.org/about-us/weekly-updates",
-  "lastChecked": "2026-10-29T16:07:25.492Z",
+  "lastChecked": "2026-10-30T15:56:19.084Z",
   "todo": [
-    {
-      "verb": "Volunteer",
-      "topic": "Trunk or Treat",
-      "date": "2026-10-29",
-      "url": "https://docs.google.com/forms/d/e/1FAIpQLSdH61iiCIVSSOQvFmgsWcNluMqAiQyChoJ9e8dhtjbucB4_2g/viewform?usp=sharing&ouid=114526846155490348525"
-    },
-    {
-      "verb": "Donate",
-      "topic": "Trunk or Treat",
-      "date": "2026-10-29",
-      "url": "https://www.amazon.com/hz/wishlist/ls/3K76NTKI133UT?ref=cm_sw_em_r_un_un_FWmkKLZql8Py2"
-    },
     {
       "verb": "Remember",
       "topic": "WHS SPIRIT DAYS",
@@ -38,6 +26,18 @@
       "topic": "Order Pizza TONIGHT and Support the PTA",
       "date": null,
       "url": "https://www.parentsquare.com/feeds/92402225"
+    },
+    {
+      "verb": "Volunteer",
+      "topic": "Trunk or Treat",
+      "date": null,
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSdH61iiCIVSSOQvFmgsWcNluMqAiQyChoJ9e8dhtjbucB4_2g/viewform?usp=sharing&ouid=114526846155490348525"
+    },
+    {
+      "verb": "Donate",
+      "topic": "Trunk or Treat",
+      "date": null,
+      "url": "https://www.amazon.com/hz/wishlist/ls/3K76NTKI133UT?ref=cm_sw_em_r_un_un_FWmkKLZql8Py2"
     },
     {
       "verb": "Buy tickets",
@@ -59,13 +59,6 @@
     }
   ],
   "dates": [
-    {
-      "start": "2026-10-29",
-      "end": null,
-      "label": "PTA Trunk or Treat, 5-7pm",
-      "onCalendar": true,
-      "needsAction": false
-    },
     {
       "start": "2026-10-30",
       "end": null,
