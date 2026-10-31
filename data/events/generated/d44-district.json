@@ -2,52 +2,8 @@
   "sourceId": "d44-district",
   "sourceName": "District 44 Public Calendar",
   "sourceUrl": "https://www.sd44.org/resources/calendars",
-  "lastChecked": "2026-10-30T15:56:15.629Z",
+  "lastChecked": "2026-10-31T15:19:41.385Z",
   "events": [
-    {
-      "id": "d44-district-dd0cdef4d218",
-      "title": "Hammerschmidt PTA Track a Thon",
-      "description": null,
-      "startDate": "2026-10-01",
-      "endDate": "2026-10-01",
-      "allDay": true,
-      "location": null,
-      "schoolIds": [
-        "wh"
-      ],
-      "category": "pta",
-      "needsAction": true,
-      "sourceId": "d44-district",
-      "sourceName": "District 44 Public Calendar",
-      "sourceUrl": "https://www.sd44.org/resources/calendars",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:55:26.864Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
-    {
-      "id": "d44-district-6cf54688a92f",
-      "title": "October is Physical Therapy Appreciation Month",
-      "description": null,
-      "startDate": "2026-10-01",
-      "endDate": "2026-10-01",
-      "allDay": true,
-      "location": null,
-      "schoolIds": [
-        "district"
-      ],
-      "category": "event",
-      "needsAction": false,
-      "sourceId": "d44-district",
-      "sourceName": "District 44 Public Calendar",
-      "sourceUrl": "https://www.sd44.org/resources/calendars",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:55:26.864Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
     {
       "id": "d44-district-56acf6ce7cde",
       "title": "Madison PTA Meeting LRC",
@@ -1364,6 +1320,28 @@
       "sourceUrl": "https://www.sd44.org/resources/calendars",
       "sourceType": "ics",
       "importedAt": "2026-09-17T15:31:45.611Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "d44-district-0d53d1b6b954",
+      "title": "AD Center Support Staff Meeting",
+      "description": null,
+      "startDate": "2026-12-15T21:30:00.000Z",
+      "endDate": "2026-12-15T22:30:00.000Z",
+      "allDay": false,
+      "location": "Lombard School District 44, IL, USA",
+      "schoolIds": [
+        "district"
+      ],
+      "category": "meeting",
+      "needsAction": false,
+      "sourceId": "d44-district",
+      "sourceName": "District 44 Public Calendar",
+      "sourceUrl": "https://www.sd44.org/resources/calendars",
+      "sourceType": "ics",
+      "importedAt": "2026-10-31T15:19:41.385Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null

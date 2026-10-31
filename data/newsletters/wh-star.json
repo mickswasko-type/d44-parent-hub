@@ -7,7 +7,7 @@
   "postedOn": "2026-10-16",
   "sourceName": "The Hammerschmidt Star, Oct 16 issue",
   "sourceUrl": "https://wh.sd44.org/about-us/weekly-updates",
-  "lastChecked": "2026-10-30T15:56:19.084Z",
+  "lastChecked": "2026-10-31T15:19:44.868Z",
   "todo": [
     {
       "verb": "Remember",
@@ -58,15 +58,7 @@
       "url": "https://whs.givebacks.com/shop"
     }
   ],
-  "dates": [
-    {
-      "start": "2026-10-30",
-      "end": null,
-      "label": "Early Release Day, 1:15pm dismissal",
-      "onCalendar": true,
-      "needsAction": false
-    }
-  ],
+  "dates": [],
   "topics": [
     "Veteran's Day Assembly- Invite WHS Community Vets",
     "Introducing the Let Grow Homework Challenge",
