@@ -2,52 +2,8 @@
   "sourceId": "pv-calendar",
   "sourceName": "Park View Elementary Calendar",
   "sourceUrl": "https://pv.sd44.org/",
-  "lastChecked": "2026-10-31T15:19:41.385Z",
+  "lastChecked": "2026-11-01T16:01:52.347Z",
   "events": [
-    {
-      "id": "pv-calendar-d1151bba0690",
-      "title": "5th Grade Band & Orchestra Rehearsal",
-      "description": null,
-      "startDate": "2026-10-01T20:45:00.000Z",
-      "endDate": "2026-10-01T21:45:00.000Z",
-      "allDay": false,
-      "location": "Glenn Westlake Middle School, 1514 S Main St, Lombard, IL 60148, USA",
-      "schoolIds": [
-        "pv"
-      ],
-      "category": "performance",
-      "needsAction": false,
-      "sourceId": "pv-calendar",
-      "sourceName": "Park View Elementary Calendar",
-      "sourceUrl": "https://pv.sd44.org/",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:31:45.611Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
-    {
-      "id": "pv-calendar-ebff3865331b",
-      "title": "PTA - Fall Fest Planning Meeting",
-      "description": null,
-      "startDate": "2026-10-02T00:00:00.000Z",
-      "endDate": "2026-10-02T01:00:00.000Z",
-      "allDay": false,
-      "location": null,
-      "schoolIds": [
-        "pv"
-      ],
-      "category": "pta",
-      "needsAction": false,
-      "sourceId": "pv-calendar",
-      "sourceName": "Park View Elementary Calendar",
-      "sourceUrl": "https://pv.sd44.org/",
-      "sourceType": "ics",
-      "importedAt": "2026-09-22T14:02:30.752Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
     {
       "id": "pv-calendar-7d7d52a07c06",
       "title": "Chorus Rehersal",
@@ -797,28 +753,6 @@
       "actionDeadline": null
     },
     {
-      "id": "pv-calendar-242054108f3d",
-      "title": "4th Grade Band & Orchestra Rehearsal",
-      "description": null,
-      "startDate": "2026-11-03T22:00:00.000Z",
-      "endDate": "2026-11-03T23:00:00.000Z",
-      "allDay": false,
-      "location": "Glenn Westlake Middle School, 1514 S Main St, Lombard, IL 60148, USA",
-      "schoolIds": [
-        "pv"
-      ],
-      "category": "performance",
-      "needsAction": false,
-      "sourceId": "pv-calendar",
-      "sourceName": "Park View Elementary Calendar",
-      "sourceUrl": "https://pv.sd44.org/",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:31:45.611Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
-    {
       "id": "pv-calendar-7debfcec0a17",
       "title": "Panther Success Squad",
       "description": null,
@@ -1325,28 +1259,6 @@
       "actionDeadline": null
     },
     {
-      "id": "pv-calendar-bc9b0eacdb63",
-      "title": "4th Grade Band & Orchestra Rehearsal",
-      "description": null,
-      "startDate": "2026-11-24T22:00:00.000Z",
-      "endDate": "2026-11-24T23:00:00.000Z",
-      "allDay": false,
-      "location": "Glenn Westlake Middle School, 1514 S Main St, Lombard, IL 60148, USA",
-      "schoolIds": [
-        "pv"
-      ],
-      "category": "performance",
-      "needsAction": false,
-      "sourceId": "pv-calendar",
-      "sourceName": "Park View Elementary Calendar",
-      "sourceUrl": "https://pv.sd44.org/",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:31:45.611Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
-    {
       "id": "pv-calendar-bb9e75834b3b",
       "title": "No School",
       "description": null,
@@ -1386,28 +1298,6 @@
       "sourceUrl": "https://pv.sd44.org/",
       "sourceType": "ics",
       "importedAt": "2026-09-17T15:55:26.864Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
-    {
-      "id": "pv-calendar-fdc1e5be27cb",
-      "title": "5th Grade Band & Orchestra Rehearsal",
-      "description": null,
-      "startDate": "2026-11-26T21:45:00.000Z",
-      "endDate": "2026-11-26T22:45:00.000Z",
-      "allDay": false,
-      "location": "Glenn Westlake Middle School, 1514 S Main St, Lombard, IL 60148, USA",
-      "schoolIds": [
-        "pv"
-      ],
-      "category": "performance",
-      "needsAction": false,
-      "sourceId": "pv-calendar",
-      "sourceName": "Park View Elementary Calendar",
-      "sourceUrl": "https://pv.sd44.org/",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:31:45.611Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null
@@ -3415,7 +3305,7 @@
       "actionDeadline": null
     },
     {
-      "id": "pv-calendar-877ef5ea1531",
+      "id": "pv-calendar-75be94a275d1",
       "title": "4th Grade Band & Orchestra Rehearsal",
       "description": null,
       "startDate": "2027-04-14T21:00:00.000Z",
@@ -3437,7 +3327,7 @@
       "actionDeadline": null
     },
     {
-      "id": "pv-calendar-75be94a275d1",
+      "id": "pv-calendar-877ef5ea1531",
       "title": "4th Grade Band & Orchestra Rehearsal",
       "description": null,
       "startDate": "2027-04-14T21:00:00.000Z",
