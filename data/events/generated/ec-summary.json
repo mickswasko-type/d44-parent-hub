@@ -2,30 +2,8 @@
   "sourceId": "ec-summary",
   "sourceName": "The Schroder Summary, Oct 30 issue",
   "sourceUrl": "https://www.parentsquare.com/feeds/94639316",
-  "lastChecked": "2026-11-02T19:29:26.528Z",
+  "lastChecked": "2026-11-03T17:03:51.927Z",
   "events": [
-    {
-      "id": "ec-summary-5e770e328196",
-      "title": "Pajama Day",
-      "description": null,
-      "startDate": "2026-11-02",
-      "endDate": "2026-11-02",
-      "allDay": true,
-      "location": null,
-      "schoolIds": [
-        "ec"
-      ],
-      "category": "event",
-      "needsAction": true,
-      "sourceId": "ec-summary",
-      "sourceName": "The Schroder Summary, Oct 30 issue",
-      "sourceUrl": "https://www.parentsquare.com/feeds/94639316",
-      "sourceType": "newsletter",
-      "importedAt": "2026-11-02T19:29:26.528Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
     {
       "id": "ec-summary-1e909cdd8b67",
       "title": "Tradition Boxes Due",
@@ -43,7 +21,7 @@
       "sourceName": "The Schroder Summary, Oct 30 issue",
       "sourceUrl": "https://www.parentsquare.com/feeds/94639316",
       "sourceType": "newsletter",
-      "importedAt": "2026-11-02T19:29:26.528Z",
+      "importedAt": "2026-11-03T17:03:51.927Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null
@@ -65,7 +43,7 @@
       "sourceName": "The Schroder Summary, Oct 30 issue",
       "sourceUrl": "https://www.parentsquare.com/feeds/94639316",
       "sourceType": "newsletter",
-      "importedAt": "2026-11-02T19:29:26.528Z",
+      "importedAt": "2026-11-03T17:03:51.927Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null
