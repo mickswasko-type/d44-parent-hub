@@ -2,30 +2,8 @@
   "sourceId": "d44-district",
   "sourceName": "District 44 Public Calendar",
   "sourceUrl": "https://www.sd44.org/resources/calendars",
-  "lastChecked": "2026-11-05T17:24:09.868Z",
+  "lastChecked": "2026-11-06T16:46:09.563Z",
   "events": [
-    {
-      "id": "d44-district-094c7bb0d136",
-      "title": "Stringfest 7th and 8th grades Orchestra",
-      "description": null,
-      "startDate": "2026-10-07T00:00:00.000Z",
-      "endDate": "2026-10-07T01:30:00.000Z",
-      "allDay": false,
-      "location": "Glenbard East High School",
-      "schoolIds": [
-        "district"
-      ],
-      "category": "performance",
-      "needsAction": false,
-      "sourceId": "d44-district",
-      "sourceName": "District 44 Public Calendar",
-      "sourceUrl": "https://www.sd44.org/resources/calendars",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:31:45.611Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
     {
       "id": "d44-district-630b8d513aec",
       "title": "No School- Institute Day",
@@ -666,14 +644,14 @@
     },
     {
       "id": "d44-district-fb70bf878e3e",
-      "title": "Madison PTA Meeting at the Administration Center",
+      "title": "PTA Council Meeting",
       "description": null,
       "startDate": "2026-11-12T01:30:00.000Z",
       "endDate": "2026-11-12T02:30:00.000Z",
       "allDay": false,
       "location": "Lombard Elementary District 44, 150 W Madison St, Lombard",
       "schoolIds": [
-        "md"
+        "district"
       ],
       "category": "pta",
       "needsAction": false,
@@ -1502,14 +1480,14 @@
     },
     {
       "id": "d44-district-b0373755ac18",
-      "title": "Madison PTA Meeting at the Administration Center",
+      "title": "PTA Council Meeting",
       "description": null,
       "startDate": "2027-01-14T01:30:00.000Z",
       "endDate": "2027-01-14T02:30:00.000Z",
       "allDay": false,
       "location": "Lombard Elementary District 44, 150 W Madison St, Lombard",
       "schoolIds": [
-        "md"
+        "district"
       ],
       "category": "pta",
       "needsAction": false,
@@ -2294,14 +2272,14 @@
     },
     {
       "id": "d44-district-7cc96ca111a6",
-      "title": "Madison PTA Meeting at the Administration Center",
+      "title": "PTA Council Meeting",
       "description": null,
       "startDate": "2027-03-11T01:30:00.000Z",
       "endDate": "2027-03-11T02:30:00.000Z",
       "allDay": false,
       "location": "Lombard Elementary District 44, 150 W Madison St, Lombard",
       "schoolIds": [
-        "md"
+        "district"
       ],
       "category": "pta",
       "needsAction": false,
@@ -3196,14 +3174,14 @@
     },
     {
       "id": "d44-district-fec824e712e7",
-      "title": "Madison PTA Meeting at the Administration Center",
+      "title": "PTA Council Meeting",
       "description": null,
       "startDate": "2027-05-13T00:30:00.000Z",
       "endDate": "2027-05-13T01:30:00.000Z",
       "allDay": false,
       "location": "Lombard Elementary District 44, 150 W Madison St, Lombard",
       "schoolIds": [
-        "md"
+        "district"
       ],
       "category": "pta",
       "needsAction": false,
