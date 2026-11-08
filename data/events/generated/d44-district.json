@@ -2,30 +2,8 @@
   "sourceId": "d44-district",
   "sourceName": "District 44 Public Calendar",
   "sourceUrl": "https://www.sd44.org/resources/calendars",
-  "lastChecked": "2026-11-07T15:39:41.880Z",
+  "lastChecked": "2026-11-08T15:58:13.155Z",
   "events": [
-    {
-      "id": "d44-district-630b8d513aec",
-      "title": "No School- Institute Day",
-      "description": null,
-      "startDate": "2026-10-09",
-      "endDate": "2026-10-09",
-      "allDay": true,
-      "location": null,
-      "schoolIds": [
-        "district"
-      ],
-      "category": "no-school",
-      "needsAction": false,
-      "sourceId": "d44-district",
-      "sourceName": "District 44 Public Calendar",
-      "sourceUrl": "https://www.sd44.org/resources/calendars",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:55:26.864Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
     {
       "id": "d44-district-2ae580d4d943",
       "title": "National School Lunch Week",
