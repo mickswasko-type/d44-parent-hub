@@ -2,13 +2,20 @@
   "id": "ec-summary",
   "schoolId": "ec",
   "name": "The Schroder Summary",
-  "postTitle": "Here is this week's Schroder Summary: October 30, 2026",
-  "postUrl": "https://www.parentsquare.com/feeds/94639316",
-  "postedOn": "2026-10-30",
-  "sourceName": "The Schroder Summary, Oct 30 issue",
+  "postTitle": "Here is this week's Schroder Summary: November 6, 2026",
+  "postUrl": "https://www.parentsquare.com/feeds/95839905",
+  "postedOn": "2026-11-06",
+  "sourceName": "The Schroder Summary, Nov 6 issue",
   "sourceUrl": "https://ec.sd44.org/about-us/weekly-updates",
-  "lastChecked": "2026-11-08T15:58:16.761Z",
-  "todo": [],
+  "lastChecked": "2026-11-09T19:48:48.183Z",
+  "todo": [
+    {
+      "verb": "Remember",
+      "topic": "Scholastic Book Fair is coming to JSECC",
+      "date": "2026-11-23",
+      "url": "https://www.parentsquare.com/feeds/95839905"
+    }
+  ],
   "dates": [
     {
       "start": "2026-11-09",
@@ -20,7 +27,7 @@
     {
       "start": "2026-11-19",
       "end": null,
-      "label": "Tradition Boxes Due",
+      "label": "Tradition Boxes DUE 🎁",
       "onCalendar": false,
       "needsAction": true
     },
@@ -41,16 +48,36 @@
     {
       "start": "2026-12-05",
       "end": null,
-      "label": "Winterfest",
+      "label": "Winterfest ❄️",
+      "onCalendar": true,
+      "needsAction": false
+    },
+    {
+      "start": "2026-12-21",
+      "end": null,
+      "label": "January 1 - No School: Winter Break ☃️",
+      "onCalendar": true,
+      "needsAction": false
+    },
+    {
+      "start": "2027-01-04",
+      "end": null,
+      "label": "No School: Screenings",
+      "onCalendar": true,
+      "needsAction": false
+    },
+    {
+      "start": "2027-01-15",
+      "end": null,
+      "label": "No School: Institute Day",
       "onCalendar": true,
       "needsAction": false
     }
   ],
   "topics": [
-    "🎃 Today is our Character Day Parade",
-    "Here is what you can expect",
-    "Reminder there is No School on Tuesday, November 3rd for Election Day",
-    "D44 is Hiring"
+    "💜 Meet Our Team: Ms. Jen 💜",
+    "D44 is Hiring",
+    "November 23 - December 5"
   ],
   "resources": []
 }
