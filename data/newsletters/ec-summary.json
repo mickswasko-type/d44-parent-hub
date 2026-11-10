@@ -7,7 +7,7 @@
   "postedOn": "2026-11-06",
   "sourceName": "The Schroder Summary, Nov 6 issue",
   "sourceUrl": "https://ec.sd44.org/about-us/weekly-updates",
-  "lastChecked": "2026-11-09T19:48:48.183Z",
+  "lastChecked": "2026-11-10T17:02:14.583Z",
   "todo": [
     {
       "verb": "Remember",
@@ -17,13 +17,6 @@
     }
   ],
   "dates": [
-    {
-      "start": "2026-11-09",
-      "end": null,
-      "label": "Picture Retake Day 📸",
-      "onCalendar": true,
-      "needsAction": true
-    },
     {
       "start": "2026-11-19",
       "end": null,
