@@ -2,30 +2,8 @@
   "sourceId": "wh-calendar",
   "sourceName": "Hammerschmidt Elementary Calendar",
   "sourceUrl": "https://wh.sd44.org/",
-  "lastChecked": "2026-11-10T17:02:11.142Z",
+  "lastChecked": "2026-11-11T17:07:43.931Z",
   "events": [
-    {
-      "id": "wh-calendar-c1d18b758c7a",
-      "title": "No School Columbus Day",
-      "description": null,
-      "startDate": "2026-10-12",
-      "endDate": "2026-10-12",
-      "allDay": true,
-      "location": null,
-      "schoolIds": [
-        "wh"
-      ],
-      "category": "no-school",
-      "needsAction": false,
-      "sourceId": "wh-calendar",
-      "sourceName": "Hammerschmidt Elementary Calendar",
-      "sourceUrl": "https://wh.sd44.org/",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:55:26.864Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
     {
       "id": "wh-calendar-ca2326517d5f",
       "title": "No School- School Improvement Day",

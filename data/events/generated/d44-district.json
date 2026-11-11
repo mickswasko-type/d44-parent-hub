@@ -2,52 +2,8 @@
   "sourceId": "d44-district",
   "sourceName": "District 44 Public Calendar",
   "sourceUrl": "https://www.sd44.org/resources/calendars",
-  "lastChecked": "2026-11-10T17:02:11.142Z",
+  "lastChecked": "2026-11-11T17:07:43.931Z",
   "events": [
-    {
-      "id": "d44-district-2ae580d4d943",
-      "title": "National School Lunch Week",
-      "description": null,
-      "startDate": "2026-10-12",
-      "endDate": "2026-10-16",
-      "allDay": true,
-      "location": null,
-      "schoolIds": [
-        "district"
-      ],
-      "category": "event",
-      "needsAction": false,
-      "sourceId": "d44-district",
-      "sourceName": "District 44 Public Calendar",
-      "sourceUrl": "https://www.sd44.org/resources/calendars",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:55:26.864Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
-    {
-      "id": "d44-district-0a291306c768",
-      "title": "No School Columbus Day",
-      "description": null,
-      "startDate": "2026-10-12",
-      "endDate": "2026-10-12",
-      "allDay": true,
-      "location": null,
-      "schoolIds": [
-        "district"
-      ],
-      "category": "no-school",
-      "needsAction": false,
-      "sourceId": "d44-district",
-      "sourceName": "District 44 Public Calendar",
-      "sourceUrl": "https://www.sd44.org/resources/calendars",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:55:26.864Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
     {
       "id": "d44-district-44b27db5162e",
       "title": "No School- School Improvement Day",
