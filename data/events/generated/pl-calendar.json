@@ -2,30 +2,8 @@
   "sourceId": "pl-calendar",
   "sourceName": "Pleasant Lane Elementary Public Events",
   "sourceUrl": "https://pl.sd44.org/",
-  "lastChecked": "2026-11-11T17:07:43.931Z",
+  "lastChecked": "2026-11-12T17:35:47.565Z",
   "events": [
-    {
-      "id": "pl-calendar-c21ce5a51a8d",
-      "title": "NO SCHOOL - School Improvement Day",
-      "description": null,
-      "startDate": "2026-10-13",
-      "endDate": "2026-10-13",
-      "allDay": true,
-      "location": null,
-      "schoolIds": [
-        "pl"
-      ],
-      "category": "no-school",
-      "needsAction": false,
-      "sourceId": "pl-calendar",
-      "sourceName": "Pleasant Lane Elementary Public Events",
-      "sourceUrl": "https://pl.sd44.org/",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:55:26.864Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
     {
       "id": "pl-calendar-d76af7775d8c",
       "title": "Walkers & Talkers Plus",
@@ -1369,6 +1347,28 @@
       "actionDeadline": null
     },
     {
+      "id": "pl-calendar-b000c64217c3",
+      "title": "Book Fair Preview",
+      "description": "Thursday Nov. 19th: Student Preview Day\nFriday Nov. 20th: Student shopping Day\nMonday and Tuesday Nov. 23rd and 24th: Book Fair open for parent shopping during conferences.",
+      "startDate": "2026-11-19",
+      "endDate": "2026-11-19",
+      "allDay": true,
+      "location": null,
+      "schoolIds": [
+        "pl"
+      ],
+      "category": "conference",
+      "needsAction": true,
+      "sourceId": "pl-calendar",
+      "sourceName": "Pleasant Lane Elementary Public Events",
+      "sourceUrl": "https://pl.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-11-12T17:35:47.565Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
       "id": "pl-calendar-c866abd2e261",
       "title": "Kickball Club",
       "description": "Club sponsor - Ashley Zima",
@@ -1413,6 +1413,28 @@
       "actionDeadline": null
     },
     {
+      "id": "pl-calendar-810c22a8f477",
+      "title": "Book Fair Shopping Day!",
+      "description": "Thursday Nov. 19th: Student Preview Day\nFriday Nov. 20th: Student Shopping Day\nMonday and Tuesday Nov. 23rd and 24th: Book Fair open for parent shopping during conferences.",
+      "startDate": "2026-11-20",
+      "endDate": "2026-11-20",
+      "allDay": true,
+      "location": null,
+      "schoolIds": [
+        "pl"
+      ],
+      "category": "conference",
+      "needsAction": true,
+      "sourceId": "pl-calendar",
+      "sourceName": "Pleasant Lane Elementary Public Events",
+      "sourceUrl": "https://pl.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-11-12T17:35:47.565Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
       "id": "pl-calendar-e856988e3e90",
       "title": "Conferences 1-8pm / NO SCHOOL",
       "description": "1-4pm / 5:30-8pm",
@@ -1435,23 +1457,23 @@
       "actionDeadline": null
     },
     {
-      "id": "pl-calendar-31dc5a951f73",
-      "title": "Chorus Rehearsal",
-      "description": null,
-      "startDate": "2026-11-23T13:45:00.000Z",
-      "endDate": "2026-11-23T14:30:00.000Z",
-      "allDay": false,
+      "id": "pl-calendar-e61dbb18e4b8",
+      "title": "PTA Book Fair",
+      "description": "Monday and Tuesday Nov. 23rd and 24th: book fair open for parent shopping during conferences",
+      "startDate": "2026-11-23",
+      "endDate": "2026-11-24",
+      "allDay": true,
       "location": null,
       "schoolIds": [
         "pl"
       ],
-      "category": "event",
-      "needsAction": false,
+      "category": "conference",
+      "needsAction": true,
       "sourceId": "pl-calendar",
       "sourceName": "Pleasant Lane Elementary Public Events",
       "sourceUrl": "https://pl.sd44.org/",
       "sourceType": "ics",
-      "importedAt": "2026-09-18T02:19:44.670Z",
+      "importedAt": "2026-11-12T17:35:47.565Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null

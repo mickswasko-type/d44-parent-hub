@@ -2,7 +2,7 @@
   "sourceId": "ec-summary",
   "sourceName": "The Schroder Summary, Nov 6 issue",
   "sourceUrl": "https://www.parentsquare.com/feeds/95839905",
-  "lastChecked": "2026-11-11T17:07:46.981Z",
+  "lastChecked": "2026-11-12T17:35:50.531Z",
   "events": [
     {
       "id": "ec-summary-9842fbc93697",
@@ -21,7 +21,7 @@
       "sourceName": "The Schroder Summary, Nov 6 issue",
       "sourceUrl": "https://www.parentsquare.com/feeds/95839905",
       "sourceType": "newsletter",
-      "importedAt": "2026-11-11T17:07:46.981Z",
+      "importedAt": "2026-11-12T17:35:50.531Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null
@@ -43,7 +43,7 @@
       "sourceName": "The Schroder Summary, Nov 6 issue",
       "sourceUrl": "https://www.parentsquare.com/feeds/95839905",
       "sourceType": "newsletter",
-      "importedAt": "2026-11-11T17:07:46.981Z",
+      "importedAt": "2026-11-12T17:35:50.531Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null
