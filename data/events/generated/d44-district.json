@@ -2,30 +2,8 @@
   "sourceId": "d44-district",
   "sourceName": "District 44 Public Calendar",
   "sourceUrl": "https://www.sd44.org/resources/calendars",
-  "lastChecked": "2026-11-12T17:35:47.565Z",
+  "lastChecked": "2026-11-13T17:12:48.146Z",
   "events": [
-    {
-      "id": "d44-district-ba558c0812e4",
-      "title": "Regular Board Meeting",
-      "description": null,
-      "startDate": "2026-10-13T23:00:00.000Z",
-      "endDate": "2026-10-14T00:00:00.000Z",
-      "allDay": false,
-      "location": "150 W Madison St, Lombard",
-      "schoolIds": [
-        "district"
-      ],
-      "category": "meeting",
-      "needsAction": false,
-      "sourceId": "d44-district",
-      "sourceName": "District 44 Public Calendar",
-      "sourceUrl": "https://www.sd44.org/resources/calendars",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:31:45.611Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
     {
       "id": "d44-district-4a0b10a07dff",
       "title": "Madison Picture Retakes",
