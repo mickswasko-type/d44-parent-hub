@@ -2,30 +2,8 @@
   "sourceId": "bf-calendar",
   "sourceName": "Butterfield Elementary Calendar",
   "sourceUrl": "https://bf.sd44.org/",
-  "lastChecked": "2026-11-13T17:12:48.146Z",
+  "lastChecked": "2026-11-14T15:48:36.199Z",
   "events": [
-    {
-      "id": "bf-calendar-101244c3a437",
-      "title": "4th Grade Band & Orchestra Rehearsal",
-      "description": null,
-      "startDate": "2026-10-14T21:00:00.000Z",
-      "endDate": "2026-10-14T22:00:00.000Z",
-      "allDay": false,
-      "location": null,
-      "schoolIds": [
-        "bf"
-      ],
-      "category": "performance",
-      "needsAction": false,
-      "sourceId": "bf-calendar",
-      "sourceName": "Butterfield Elementary Calendar",
-      "sourceUrl": "https://bf.sd44.org/",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:31:45.611Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
     {
       "id": "bf-calendar-af38c3696b37",
       "title": "Walk and Talk Club",
