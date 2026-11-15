@@ -2,74 +2,8 @@
   "sourceId": "d44-district",
   "sourceName": "District 44 Public Calendar",
   "sourceUrl": "https://www.sd44.org/resources/calendars",
-  "lastChecked": "2026-11-14T15:48:36.199Z",
+  "lastChecked": "2026-11-15T16:21:32.125Z",
   "events": [
-    {
-      "id": "d44-district-4a0b10a07dff",
-      "title": "Madison Picture Retakes",
-      "description": null,
-      "startDate": "2026-10-16",
-      "endDate": "2026-10-16",
-      "allDay": true,
-      "location": null,
-      "schoolIds": [
-        "md"
-      ],
-      "category": "event",
-      "needsAction": true,
-      "sourceId": "d44-district",
-      "sourceName": "District 44 Public Calendar",
-      "sourceUrl": "https://www.sd44.org/resources/calendars",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:55:26.864Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
-    {
-      "id": "d44-district-680e676e41ef",
-      "title": "Fall Concert 7th and 8th grades Band, Orchestra",
-      "description": null,
-      "startDate": "2026-10-16T00:00:00.000Z",
-      "endDate": "2026-10-16T01:30:00.000Z",
-      "allDay": false,
-      "location": "GWMS Gym",
-      "schoolIds": [
-        "district"
-      ],
-      "category": "performance",
-      "needsAction": false,
-      "sourceId": "d44-district",
-      "sourceName": "District 44 Public Calendar",
-      "sourceUrl": "https://www.sd44.org/resources/calendars",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:31:45.611Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
-    {
-      "id": "d44-district-0be98d053874",
-      "title": "Park View PTA meeting",
-      "description": null,
-      "startDate": "2026-10-16T00:00:00.000Z",
-      "endDate": "2026-10-16T01:00:00.000Z",
-      "allDay": false,
-      "location": "Park View Elementary School, 341 N Elizabeth St, Lombard",
-      "schoolIds": [
-        "pv"
-      ],
-      "category": "pta",
-      "needsAction": false,
-      "sourceId": "d44-district",
-      "sourceName": "District 44 Public Calendar",
-      "sourceUrl": "https://www.sd44.org/resources/calendars",
-      "sourceType": "ics",
-      "importedAt": "2026-09-23T00:24:21.371Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
     {
       "id": "d44-district-f147ea19dc3e",
       "title": "Madison PTA Movie Night",
