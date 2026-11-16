@@ -2,30 +2,8 @@
   "sourceId": "d44-district",
   "sourceName": "District 44 Public Calendar",
   "sourceUrl": "https://www.sd44.org/resources/calendars",
-  "lastChecked": "2026-11-15T16:21:32.125Z",
+  "lastChecked": "2026-11-16T19:36:24.391Z",
   "events": [
-    {
-      "id": "d44-district-f147ea19dc3e",
-      "title": "Madison PTA Movie Night",
-      "description": null,
-      "startDate": "2026-10-16T23:30:00.000Z",
-      "endDate": "2026-10-17T01:30:00.000Z",
-      "allDay": false,
-      "location": "Madison Elementary School, 150 W Madison St, Lombard",
-      "schoolIds": [
-        "md"
-      ],
-      "category": "pta",
-      "needsAction": false,
-      "sourceId": "d44-district",
-      "sourceName": "District 44 Public Calendar",
-      "sourceUrl": "https://www.sd44.org/resources/calendars",
-      "sourceType": "ics",
-      "importedAt": "2026-09-24T14:12:36.028Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
     {
       "id": "d44-district-74d9523ffdea",
       "title": "JSECC Picture Day",
