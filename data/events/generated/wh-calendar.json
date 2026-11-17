@@ -2,7 +2,7 @@
   "sourceId": "wh-calendar",
   "sourceName": "Hammerschmidt Elementary Calendar",
   "sourceUrl": "https://wh.sd44.org/",
-  "lastChecked": "2026-11-16T19:36:24.391Z",
+  "lastChecked": "2026-11-17T18:34:01.599Z",
   "events": [
     {
       "id": "wh-calendar-566941b3fd49",
@@ -704,6 +704,28 @@
       "sourceUrl": "https://wh.sd44.org/",
       "sourceType": "ics",
       "importedAt": "2026-09-17T15:55:26.864Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "wh-calendar-4c66616f32c0",
+      "title": "WHS Teacher Appreciation Week 2/8- 2/12",
+      "description": null,
+      "startDate": "2027-02-08",
+      "endDate": "2027-02-12",
+      "allDay": true,
+      "location": null,
+      "schoolIds": [
+        "wh"
+      ],
+      "category": "event",
+      "needsAction": false,
+      "sourceId": "wh-calendar",
+      "sourceName": "Hammerschmidt Elementary Calendar",
+      "sourceUrl": "https://wh.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-11-17T18:34:01.599Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null

@@ -1,5 +1,5 @@
 {
-  "ranAt": "2026-11-16T19:36:24.391Z",
+  "ranAt": "2026-11-17T18:34:01.599Z",
   "statuses": [
     {
       "sourceId": "d44-district",
@@ -7,7 +7,7 @@
       "ok": true,
       "empty": false,
       "eventCount": 161,
-      "lastChecked": "2026-11-16T19:36:24.391Z",
+      "lastChecked": "2026-11-17T18:34:01.599Z",
       "error": null,
       "servingStaleData": false
     },
@@ -17,7 +17,7 @@
       "ok": true,
       "empty": false,
       "eventCount": 113,
-      "lastChecked": "2026-11-16T19:36:24.391Z",
+      "lastChecked": "2026-11-17T18:34:01.599Z",
       "error": null,
       "servingStaleData": false
     },
@@ -27,7 +27,7 @@
       "ok": true,
       "empty": true,
       "eventCount": 0,
-      "lastChecked": "2026-11-16T19:36:24.391Z",
+      "lastChecked": "2026-11-17T18:34:01.599Z",
       "error": null,
       "servingStaleData": false
     },
@@ -36,8 +36,8 @@
       "sourceName": "Hammerschmidt Elementary Calendar",
       "ok": true,
       "empty": false,
-      "eventCount": 73,
-      "lastChecked": "2026-11-16T19:36:24.391Z",
+      "eventCount": 74,
+      "lastChecked": "2026-11-17T18:34:01.599Z",
       "error": null,
       "servingStaleData": false
     },
@@ -47,7 +47,7 @@
       "ok": true,
       "empty": false,
       "eventCount": 16,
-      "lastChecked": "2026-11-16T19:36:24.391Z",
+      "lastChecked": "2026-11-17T18:34:01.599Z",
       "error": null,
       "servingStaleData": false
     },
@@ -57,7 +57,7 @@
       "ok": true,
       "empty": false,
       "eventCount": 82,
-      "lastChecked": "2026-11-16T19:36:24.391Z",
+      "lastChecked": "2026-11-17T18:34:01.599Z",
       "error": null,
       "servingStaleData": false
     },
@@ -67,7 +67,7 @@
       "ok": true,
       "empty": false,
       "eventCount": 223,
-      "lastChecked": "2026-11-16T19:36:24.391Z",
+      "lastChecked": "2026-11-17T18:34:01.599Z",
       "error": null,
       "servingStaleData": false
     },
@@ -76,8 +76,8 @@
       "sourceName": "Park View Elementary Calendar",
       "ok": true,
       "empty": false,
-      "eventCount": 165,
-      "lastChecked": "2026-11-16T19:36:24.391Z",
+      "eventCount": 168,
+      "lastChecked": "2026-11-17T18:34:01.599Z",
       "error": null,
       "servingStaleData": false
     },
@@ -87,7 +87,7 @@
       "ok": true,
       "empty": false,
       "eventCount": 223,
-      "lastChecked": "2026-11-16T19:36:24.391Z",
+      "lastChecked": "2026-11-17T18:34:01.599Z",
       "error": null,
       "servingStaleData": false
     }

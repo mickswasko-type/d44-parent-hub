@@ -2,7 +2,7 @@
   "sourceId": "pv-calendar",
   "sourceName": "Park View Elementary Calendar",
   "sourceUrl": "https://pv.sd44.org/",
-  "lastChecked": "2026-11-16T19:36:24.391Z",
+  "lastChecked": "2026-11-17T18:34:01.599Z",
   "events": [
     {
       "id": "pv-calendar-f34b3acccb9b",
@@ -1017,28 +1017,6 @@
       "actionDeadline": null
     },
     {
-      "id": "pv-calendar-135662491a04",
-      "title": "Book Fair",
-      "description": null,
-      "startDate": "2026-11-30",
-      "endDate": "2026-12-04",
-      "allDay": true,
-      "location": null,
-      "schoolIds": [
-        "pv"
-      ],
-      "category": "event",
-      "needsAction": true,
-      "sourceId": "pv-calendar",
-      "sourceName": "Park View Elementary Calendar",
-      "sourceUrl": "https://pv.sd44.org/",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:55:26.864Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
-    {
       "id": "pv-calendar-f00ae42a1e9e",
       "title": "Classes Resume",
       "description": null,
@@ -1127,6 +1105,28 @@
       "actionDeadline": null
     },
     {
+      "id": "pv-calendar-5af00f65fb3f",
+      "title": "Book Fair - Preview Day",
+      "description": null,
+      "startDate": "2026-12-02",
+      "endDate": "2026-12-02",
+      "allDay": true,
+      "location": null,
+      "schoolIds": [
+        "pv"
+      ],
+      "category": "event",
+      "needsAction": true,
+      "sourceId": "pv-calendar",
+      "sourceName": "Park View Elementary Calendar",
+      "sourceUrl": "https://pv.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-11-17T18:34:01.599Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
       "id": "pv-calendar-3f0ea1251859",
       "title": "Panther Success Squad",
       "description": null,
@@ -1144,6 +1144,28 @@
       "sourceUrl": "https://pv.sd44.org/",
       "sourceType": "ics",
       "importedAt": "2026-09-28T17:39:27.415Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "pv-calendar-fcebf3226e18",
+      "title": "Book Fair - In-School Shopping",
+      "description": null,
+      "startDate": "2026-12-03",
+      "endDate": "2026-12-03",
+      "allDay": true,
+      "location": null,
+      "schoolIds": [
+        "pv"
+      ],
+      "category": "event",
+      "needsAction": true,
+      "sourceId": "pv-calendar",
+      "sourceName": "Park View Elementary Calendar",
+      "sourceUrl": "https://pv.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-11-17T18:34:01.599Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null
@@ -1188,6 +1210,50 @@
       "sourceUrl": "https://pv.sd44.org/",
       "sourceType": "ics",
       "importedAt": "2026-09-17T15:31:45.611Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "pv-calendar-3c2753e9b38d",
+      "title": "Book Fair - Family Book Fair & Open Mic Night",
+      "description": null,
+      "startDate": "2026-12-04",
+      "endDate": "2026-12-04",
+      "allDay": true,
+      "location": null,
+      "schoolIds": [
+        "pv"
+      ],
+      "category": "event",
+      "needsAction": true,
+      "sourceId": "pv-calendar",
+      "sourceName": "Park View Elementary Calendar",
+      "sourceUrl": "https://pv.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-11-17T18:34:01.599Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "pv-calendar-51463461f45d",
+      "title": "PTA's Panther Cafe:  Open Mic & Book Fair",
+      "description": "With open mic &amp; student lounge in gym during event",
+      "startDate": "2026-12-05T00:00:00.000Z",
+      "endDate": "2026-12-05T01:30:00.000Z",
+      "allDay": false,
+      "location": null,
+      "schoolIds": [
+        "pv"
+      ],
+      "category": "pta",
+      "needsAction": true,
+      "sourceId": "pv-calendar",
+      "sourceName": "Park View Elementary Calendar",
+      "sourceUrl": "https://pv.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-11-17T18:34:01.599Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null
