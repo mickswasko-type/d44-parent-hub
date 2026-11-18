@@ -2,74 +2,8 @@
   "sourceId": "pl-calendar",
   "sourceName": "Pleasant Lane Elementary Public Events",
   "sourceUrl": "https://pl.sd44.org/",
-  "lastChecked": "2026-11-17T18:34:01.599Z",
+  "lastChecked": "2026-11-18T18:03:54.588Z",
   "events": [
-    {
-      "id": "pl-calendar-b4dc3101c6a2",
-      "title": "Chorus Rehearsal",
-      "description": null,
-      "startDate": "2026-10-19T12:45:00.000Z",
-      "endDate": "2026-10-19T13:30:00.000Z",
-      "allDay": false,
-      "location": null,
-      "schoolIds": [
-        "pl"
-      ],
-      "category": "event",
-      "needsAction": false,
-      "sourceId": "pl-calendar",
-      "sourceName": "Pleasant Lane Elementary Public Events",
-      "sourceUrl": "https://pl.sd44.org/",
-      "sourceType": "ics",
-      "importedAt": "2026-09-18T02:19:44.670Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
-    {
-      "id": "pl-calendar-005119d0d801",
-      "title": "Walkers & Talkers Plus",
-      "description": "Meet at door 5 at 7:45 am and start walking at 7:50 am.",
-      "startDate": "2026-10-19T12:45:00.000Z",
-      "endDate": "2026-10-19T13:15:00.000Z",
-      "allDay": false,
-      "location": "Large Gym",
-      "schoolIds": [
-        "pl"
-      ],
-      "category": "event",
-      "needsAction": false,
-      "sourceId": "pl-calendar",
-      "sourceName": "Pleasant Lane Elementary Public Events",
-      "sourceUrl": "https://pl.sd44.org/",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:31:45.611Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
-    {
-      "id": "pl-calendar-e4e921e6ab51",
-      "title": "MIP Field Trip",
-      "description": null,
-      "startDate": "2026-10-19T14:00:00.000Z",
-      "endDate": "2026-10-19T19:00:00.000Z",
-      "allDay": false,
-      "location": null,
-      "schoolIds": [
-        "pl"
-      ],
-      "category": "event",
-      "needsAction": true,
-      "sourceId": "pl-calendar",
-      "sourceName": "Pleasant Lane Elementary Public Events",
-      "sourceUrl": "https://pl.sd44.org/",
-      "sourceType": "ics",
-      "importedAt": "2026-10-01T16:27:16.532Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
     {
       "id": "pl-calendar-b9da6ee6781e",
       "title": "Kickball Club",

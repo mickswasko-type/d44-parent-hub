@@ -2,30 +2,8 @@
   "sourceId": "d44-district",
   "sourceName": "District 44 Public Calendar",
   "sourceUrl": "https://www.sd44.org/resources/calendars",
-  "lastChecked": "2026-11-17T18:34:01.599Z",
+  "lastChecked": "2026-11-18T18:03:54.588Z",
   "events": [
-    {
-      "id": "d44-district-74d9523ffdea",
-      "title": "JSECC Picture Day",
-      "description": null,
-      "startDate": "2026-10-19",
-      "endDate": "2026-10-19",
-      "allDay": true,
-      "location": null,
-      "schoolIds": [
-        "ec"
-      ],
-      "category": "event",
-      "needsAction": true,
-      "sourceId": "d44-district",
-      "sourceName": "District 44 Public Calendar",
-      "sourceUrl": "https://www.sd44.org/resources/calendars",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:55:26.864Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
     {
       "id": "d44-district-0bbc5321b4b7",
       "title": "Hammerschmidt PTA Meeting LRC",
