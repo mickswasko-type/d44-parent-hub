@@ -2,7 +2,7 @@
   "sourceId": "d44-district",
   "sourceName": "District 44 Public Calendar",
   "sourceUrl": "https://www.sd44.org/resources/calendars",
-  "lastChecked": "2026-11-19T18:16:13.774Z",
+  "lastChecked": "2026-11-20T17:48:27.467Z",
   "events": [
     {
       "id": "d44-district-54ff7dce38ea",
@@ -955,7 +955,7 @@
       "title": "Madison PTA Movie Night",
       "description": null,
       "startDate": "2026-12-12T00:30:00.000Z",
-      "endDate": "2026-12-16T02:30:00.000Z",
+      "endDate": "2026-12-12T02:30:00.000Z",
       "allDay": false,
       "location": "Madison Elementary School, 150 W Madison St, Lombard",
       "schoolIds": [
@@ -2601,11 +2601,11 @@
       "actionDeadline": null
     },
     {
-      "id": "d44-district-e55356a42890",
+      "id": "d44-district-ff7c949ace23",
       "title": "Park View Open House and Art Show",
       "description": null,
-      "startDate": "2027-04-29T22:00:00.000Z",
-      "endDate": "2027-04-29T23:00:00.000Z",
+      "startDate": "2027-04-28T22:00:00.000Z",
+      "endDate": "2027-04-28T23:00:00.000Z",
       "allDay": false,
       "location": "Park View Elementary School, 341 N Elizabeth St, Lombard",
       "schoolIds": [
@@ -2617,7 +2617,7 @@
       "sourceName": "District 44 Public Calendar",
       "sourceUrl": "https://www.sd44.org/resources/calendars",
       "sourceType": "ics",
-      "importedAt": "2026-09-23T00:24:21.371Z",
+      "importedAt": "2026-11-20T17:48:27.467Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null
