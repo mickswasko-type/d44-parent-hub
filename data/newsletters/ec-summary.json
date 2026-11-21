@@ -2,18 +2,30 @@
   "id": "ec-summary",
   "schoolId": "ec",
   "name": "The Schroder Summary",
-  "postTitle": "Here is this week's Schroder Summary: November 13, 2026",
-  "postUrl": "https://www.parentsquare.com/feeds/96564831",
-  "postedOn": "2026-11-13",
-  "sourceName": "The Schroder Summary, Nov 13 issue",
+  "postTitle": "Here is this week's Schroder Summary: November 20, 2026",
+  "postUrl": "https://www.parentsquare.com/feeds/97076835",
+  "postedOn": "2026-11-20",
+  "sourceName": "The Schroder Summary, Nov 20 issue",
   "sourceUrl": "https://ec.sd44.org/about-us/weekly-updates",
-  "lastChecked": "2026-11-20T17:48:31.577Z",
+  "lastChecked": "2026-11-21T16:46:58.467Z",
   "todo": [
     {
       "verb": "Remember",
-      "topic": "Scholastic Book Fair is coming to JSECC",
+      "topic": "November 23 – December 5: Scholastic Book Fair 📚",
       "date": "2026-11-23",
-      "url": "https://www.parentsquare.com/feeds/96564831"
+      "url": "https://www.parentsquare.com/feeds/97076835"
+    },
+    {
+      "verb": "Remember",
+      "topic": "Parent-Teacher Conferences",
+      "date": null,
+      "url": "https://www.parentsquare.com/feeds/97076835"
+    },
+    {
+      "verb": "Give feedback",
+      "topic": "D44 Family Technology & Screen Time Survey",
+      "date": null,
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSdPGtP9nlLUjn7TSk3c4qxvvDWCPLLDKO_xxKNjc4C0ZSli2A/viewform?usp=dialog"
     }
   ],
   "dates": [
@@ -61,11 +73,12 @@
     }
   ],
   "topics": [
-    "❤️🧡Meet Our Team: Ms. Kim❤️🧡",
+    "Making Memories This Thanksgiving! 🧡",
+    "💜💙 Meet Our Team: Ms. Karly 💜💙",
+    "Happy Thanksgiving",
     "Join Our Team – No Prior Experience Required",
     "No prior experience is necessary",
-    "D44 is Hiring",
-    "November 23 - December 5"
+    "D44 is Hiring"
   ],
   "resources": []
 }

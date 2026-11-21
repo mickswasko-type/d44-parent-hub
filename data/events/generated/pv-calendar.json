@@ -2,52 +2,8 @@
   "sourceId": "pv-calendar",
   "sourceName": "Park View Elementary Calendar",
   "sourceUrl": "https://pv.sd44.org/",
-  "lastChecked": "2026-11-20T17:48:27.467Z",
+  "lastChecked": "2026-11-21T16:46:55.002Z",
   "events": [
-    {
-      "id": "pv-calendar-eab724bd9d47",
-      "title": "Panther Success Squad",
-      "description": null,
-      "startDate": "2026-10-21T20:15:00.000Z",
-      "endDate": "2026-10-21T21:35:00.000Z",
-      "allDay": false,
-      "location": null,
-      "schoolIds": [
-        "pv"
-      ],
-      "category": "event",
-      "needsAction": false,
-      "sourceId": "pv-calendar",
-      "sourceName": "Park View Elementary Calendar",
-      "sourceUrl": "https://pv.sd44.org/",
-      "sourceType": "ics",
-      "importedAt": "2026-09-28T17:39:27.415Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
-    {
-      "id": "pv-calendar-3173d261e5d3",
-      "title": "Lifetouch Picture Retakes",
-      "description": null,
-      "startDate": "2026-10-22",
-      "endDate": "2026-10-22",
-      "allDay": true,
-      "location": null,
-      "schoolIds": [
-        "pv"
-      ],
-      "category": "event",
-      "needsAction": true,
-      "sourceId": "pv-calendar",
-      "sourceName": "Park View Elementary Calendar",
-      "sourceUrl": "https://pv.sd44.org/",
-      "sourceType": "ics",
-      "importedAt": "2026-10-13T16:56:48.246Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
     {
       "id": "pv-calendar-66d0d55e3726",
       "title": "5th Grade Band & Orchestra Rehearsal",
@@ -3212,6 +3168,28 @@
       "sourceUrl": "https://pv.sd44.org/",
       "sourceType": "ics",
       "importedAt": "2026-09-17T15:55:26.864Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "pv-calendar-2ccf3c48c584",
+      "title": "Park View Open House & Art Show",
+      "description": null,
+      "startDate": "2027-04-28T22:00:00.000Z",
+      "endDate": "2027-04-28T23:00:00.000Z",
+      "allDay": false,
+      "location": null,
+      "schoolIds": [
+        "pv"
+      ],
+      "category": "performance",
+      "needsAction": false,
+      "sourceId": "pv-calendar",
+      "sourceName": "Park View Elementary Calendar",
+      "sourceUrl": "https://pv.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-11-21T16:46:55.002Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null
