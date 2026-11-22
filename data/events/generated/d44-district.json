@@ -2,52 +2,8 @@
   "sourceId": "d44-district",
   "sourceName": "District 44 Public Calendar",
   "sourceUrl": "https://www.sd44.org/resources/calendars",
-  "lastChecked": "2026-11-21T16:46:55.002Z",
+  "lastChecked": "2026-11-22T17:09:14.847Z",
   "events": [
-    {
-      "id": "d44-district-2fc317ffcaab",
-      "title": "Hammerschmidt PTA Hammerween Parent Party",
-      "description": null,
-      "startDate": "2026-10-23",
-      "endDate": "2026-10-23",
-      "allDay": true,
-      "location": null,
-      "schoolIds": [
-        "wh"
-      ],
-      "category": "pta",
-      "needsAction": false,
-      "sourceId": "d44-district",
-      "sourceName": "District 44 Public Calendar",
-      "sourceUrl": "https://www.sd44.org/resources/calendars",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:55:26.864Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
-    {
-      "id": "d44-district-29eccda928e3",
-      "title": "GWMS Fall Play Information",
-      "description": null,
-      "startDate": "2026-10-23T00:00:00.000Z",
-      "endDate": "2026-10-23T01:00:00.000Z",
-      "allDay": false,
-      "location": "Glenn Westlake Middle School, 1514 S Main St, Lombard",
-      "schoolIds": [
-        "gw"
-      ],
-      "category": "event",
-      "needsAction": false,
-      "sourceId": "d44-district",
-      "sourceName": "District 44 Public Calendar",
-      "sourceUrl": "https://www.sd44.org/resources/calendars",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:31:45.611Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
     {
       "id": "d44-district-4d42133365c3",
       "title": "GWMS Fall Play Information",

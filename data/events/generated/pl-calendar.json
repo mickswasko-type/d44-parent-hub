@@ -2,74 +2,8 @@
   "sourceId": "pl-calendar",
   "sourceName": "Pleasant Lane Elementary Public Events",
   "sourceUrl": "https://pl.sd44.org/",
-  "lastChecked": "2026-11-21T16:46:55.002Z",
+  "lastChecked": "2026-11-22T17:09:14.847Z",
   "events": [
-    {
-      "id": "pl-calendar-3c37c8d3da2b",
-      "title": "Power Hour",
-      "description": null,
-      "startDate": "2026-10-22T20:15:00.000Z",
-      "endDate": "2026-10-22T21:30:00.000Z",
-      "allDay": false,
-      "location": null,
-      "schoolIds": [
-        "pl"
-      ],
-      "category": "event",
-      "needsAction": false,
-      "sourceId": "pl-calendar",
-      "sourceName": "Pleasant Lane Elementary Public Events",
-      "sourceUrl": "https://pl.sd44.org/",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:31:45.611Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
-    {
-      "id": "pl-calendar-a8054d07f206",
-      "title": "5th Grade Band & Orchestra Rehearsal",
-      "description": null,
-      "startDate": "2026-10-22T20:45:00.000Z",
-      "endDate": "2026-10-22T21:45:00.000Z",
-      "allDay": false,
-      "location": "Glenn Westlake Middle School, 1514 S Main St, Lombard, IL 60148, USA",
-      "schoolIds": [
-        "pl"
-      ],
-      "category": "performance",
-      "needsAction": false,
-      "sourceId": "pl-calendar",
-      "sourceName": "Pleasant Lane Elementary Public Events",
-      "sourceUrl": "https://pl.sd44.org/",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:31:45.611Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
-    {
-      "id": "pl-calendar-0ddd906f3d65",
-      "title": "School Picture Retake Day",
-      "description": null,
-      "startDate": "2026-10-23",
-      "endDate": "2026-10-23",
-      "allDay": true,
-      "location": null,
-      "schoolIds": [
-        "pl"
-      ],
-      "category": "event",
-      "needsAction": true,
-      "sourceId": "pl-calendar",
-      "sourceName": "Pleasant Lane Elementary Public Events",
-      "sourceUrl": "https://pl.sd44.org/",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:55:26.864Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
     {
       "id": "pl-calendar-10b6d854887c",
       "title": "PTA Fall Fest - D44 Connect Center",
