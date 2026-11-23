@@ -2,74 +2,8 @@
   "sourceId": "d44-district",
   "sourceName": "District 44 Public Calendar",
   "sourceUrl": "https://www.sd44.org/resources/calendars",
-  "lastChecked": "2026-11-22T17:09:14.847Z",
+  "lastChecked": "2026-11-23T21:24:34.903Z",
   "events": [
-    {
-      "id": "d44-district-4d42133365c3",
-      "title": "GWMS Fall Play Information",
-      "description": null,
-      "startDate": "2026-10-24T00:00:00.000Z",
-      "endDate": "2026-10-24T01:00:00.000Z",
-      "allDay": false,
-      "location": "Glenn Westlake Middle School, 1514 S Main St, Lombard",
-      "schoolIds": [
-        "gw"
-      ],
-      "category": "event",
-      "needsAction": false,
-      "sourceId": "d44-district",
-      "sourceName": "District 44 Public Calendar",
-      "sourceUrl": "https://www.sd44.org/resources/calendars",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:31:45.611Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
-    {
-      "id": "d44-district-50ab63da208c",
-      "title": "Madison PTA Halloween Party",
-      "description": null,
-      "startDate": "2026-10-24T00:00:00.000Z",
-      "endDate": "2026-10-24T02:00:00.000Z",
-      "allDay": false,
-      "location": "Madison Elementary School, 150 W Madison St, Lombard",
-      "schoolIds": [
-        "md"
-      ],
-      "category": "pta",
-      "needsAction": false,
-      "sourceId": "d44-district",
-      "sourceName": "District 44 Public Calendar",
-      "sourceUrl": "https://www.sd44.org/resources/calendars",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:31:45.611Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
-    {
-      "id": "d44-district-089e241c2c84",
-      "title": "Park View PTA's Fall Fest",
-      "description": null,
-      "startDate": "2026-10-24T19:00:00.000Z",
-      "endDate": "2026-10-24T22:00:00.000Z",
-      "allDay": false,
-      "location": null,
-      "schoolIds": [
-        "pv"
-      ],
-      "category": "pta",
-      "needsAction": false,
-      "sourceId": "d44-district",
-      "sourceName": "District 44 Public Calendar",
-      "sourceUrl": "https://www.sd44.org/resources/calendars",
-      "sourceType": "ics",
-      "importedAt": "2026-09-23T00:24:21.371Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
     {
       "id": "d44-district-d669ef272e2d",
       "title": "District developmental screening. by appointment only",

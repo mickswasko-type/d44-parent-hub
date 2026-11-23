@@ -2,7 +2,7 @@
   "sourceId": "bf-calendar",
   "sourceName": "Butterfield Elementary Calendar",
   "sourceUrl": "https://bf.sd44.org/",
-  "lastChecked": "2026-11-22T17:09:14.847Z",
+  "lastChecked": "2026-11-23T21:24:34.903Z",
   "events": [
     {
       "id": "bf-calendar-4efd536bb3f4",
@@ -1056,6 +1056,28 @@
       "sourceUrl": "https://bf.sd44.org/",
       "sourceType": "ics",
       "importedAt": "2026-09-17T15:31:45.611Z",
+      "manualOverride": false,
+      "featured": false,
+      "actionDeadline": null
+    },
+    {
+      "id": "bf-calendar-bd4a4dd8a3db",
+      "title": "Bowling Event",
+      "description": null,
+      "startDate": "2027-01-24T20:00:00.000Z",
+      "endDate": "2027-01-24T22:00:00.000Z",
+      "allDay": false,
+      "location": null,
+      "schoolIds": [
+        "bf"
+      ],
+      "category": "event",
+      "needsAction": false,
+      "sourceId": "bf-calendar",
+      "sourceName": "Butterfield Elementary Calendar",
+      "sourceUrl": "https://bf.sd44.org/",
+      "sourceType": "ics",
+      "importedAt": "2026-11-23T21:24:34.903Z",
       "manualOverride": false,
       "featured": false,
       "actionDeadline": null
