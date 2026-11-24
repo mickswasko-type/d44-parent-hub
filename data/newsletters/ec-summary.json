@@ -7,17 +7,17 @@
   "postedOn": "2026-11-20",
   "sourceName": "The Schroder Summary, Nov 20 issue",
   "sourceUrl": "https://ec.sd44.org/about-us/weekly-updates",
-  "lastChecked": "2026-11-23T21:24:37.883Z",
+  "lastChecked": "2026-11-24T20:09:39.391Z",
   "todo": [
     {
       "verb": "Remember",
-      "topic": "November 23 – December 5: Scholastic Book Fair 📚",
-      "date": "2026-11-23",
+      "topic": "Parent-Teacher Conferences",
+      "date": null,
       "url": "https://www.parentsquare.com/feeds/97076835"
     },
     {
       "verb": "Remember",
-      "topic": "Parent-Teacher Conferences",
+      "topic": "November 23 – December 5: Scholastic Book Fair 📚",
       "date": null,
       "url": "https://www.parentsquare.com/feeds/97076835"
     },
@@ -29,13 +29,6 @@
     }
   ],
   "dates": [
-    {
-      "start": "2026-11-23",
-      "end": null,
-      "label": "December 5 - Book Fair 📚",
-      "onCalendar": false,
-      "needsAction": true
-    },
     {
       "start": "2026-11-25",
       "end": "2026-11-27",
