@@ -2,52 +2,8 @@
   "sourceId": "pl-calendar",
   "sourceName": "Pleasant Lane Elementary Public Events",
   "sourceUrl": "https://pl.sd44.org/",
-  "lastChecked": "2026-11-25T19:15:38.805Z",
+  "lastChecked": "2026-11-26T18:59:39.107Z",
   "events": [
-    {
-      "id": "pl-calendar-c8feb09efb94",
-      "title": "FALL SPIRIT WEEK - \"FE-LINE\" FESTIVE!",
-      "description": "Celebrate National Black Cat Day by wearing black or cat apparel.",
-      "startDate": "2026-10-27",
-      "endDate": "2026-10-27",
-      "allDay": true,
-      "location": null,
-      "schoolIds": [
-        "pl"
-      ],
-      "category": "event",
-      "needsAction": true,
-      "sourceId": "pl-calendar",
-      "sourceName": "Pleasant Lane Elementary Public Events",
-      "sourceUrl": "https://pl.sd44.org/",
-      "sourceType": "ics",
-      "importedAt": "2026-10-24T13:20:17.145Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
-    {
-      "id": "pl-calendar-f93b50b3adf5",
-      "title": "Kickball Club",
-      "description": "Club sponsor - Ashley Zima",
-      "startDate": "2026-10-27T12:45:00.000Z",
-      "endDate": "2026-10-27T13:20:00.000Z",
-      "allDay": false,
-      "location": "Large Gym",
-      "schoolIds": [
-        "pl"
-      ],
-      "category": "event",
-      "needsAction": false,
-      "sourceId": "pl-calendar",
-      "sourceName": "Pleasant Lane Elementary Public Events",
-      "sourceUrl": "https://pl.sd44.org/",
-      "sourceType": "ics",
-      "importedAt": "2026-10-01T16:27:16.532Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
     {
       "id": "pl-calendar-2860b1ae27fc",
       "title": "Power Hour",
