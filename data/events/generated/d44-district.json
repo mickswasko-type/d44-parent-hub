@@ -2,52 +2,8 @@
   "sourceId": "d44-district",
   "sourceName": "District 44 Public Calendar",
   "sourceUrl": "https://www.sd44.org/resources/calendars",
-  "lastChecked": "2026-11-26T18:59:39.107Z",
+  "lastChecked": "2026-11-27T18:58:55.666Z",
   "events": [
-    {
-      "id": "d44-district-b4529cd3e8a8",
-      "title": "District Developmental Screening. By appointment only",
-      "description": null,
-      "startDate": "2026-10-28",
-      "endDate": "2026-10-28",
-      "allDay": true,
-      "location": "John Schroder Early Childhood Center, 1519 Grace St, Lombard",
-      "schoolIds": [
-        "district"
-      ],
-      "category": "event",
-      "needsAction": false,
-      "sourceId": "d44-district",
-      "sourceName": "District 44 Public Calendar",
-      "sourceUrl": "https://www.sd44.org/resources/calendars",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:55:26.864Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
-    {
-      "id": "d44-district-3fc007d6f639",
-      "title": "Voices of East Concert 6th-8th grades Choirs 430PM student call time",
-      "description": null,
-      "startDate": "2026-10-28T00:00:00.000Z",
-      "endDate": "2026-10-28T01:30:00.000Z",
-      "allDay": false,
-      "location": "Glenbard East High School, Lombard",
-      "schoolIds": [
-        "district"
-      ],
-      "category": "performance",
-      "needsAction": false,
-      "sourceId": "d44-district",
-      "sourceName": "District 44 Public Calendar",
-      "sourceUrl": "https://www.sd44.org/resources/calendars",
-      "sourceType": "ics",
-      "importedAt": "2026-09-17T15:31:45.611Z",
-      "manualOverride": false,
-      "featured": false,
-      "actionDeadline": null
-    },
     {
       "id": "d44-district-51660c003222",
       "title": "Hammerschmidt PTA Trunk or Treat Event",
